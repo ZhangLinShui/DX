@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Object.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Object.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_object_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//场景上所有的和图形渲染相关的对象的基类</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//包括摄像机,灯光,渲染的静态,动态物体</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_engine_def_8h.html">EngineDef.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_picture_8h.html">Picture.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_c_object.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_object.html">CObject</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">//构造函数</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_c_object.html#ac44111d5ac75248a616df61b038c4153">CObject</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_object.html#a93a3c3bc7d9a6462ef00e25404d9b0eb">~CObject</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_object.html#ad0311beb25b0a0f4fcb79fbd0bc35796">   17</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_object.html#ad0311beb25b0a0f4fcb79fbd0bc35796">Draw</a>() {}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_c_object.html#afe203e2f62197728f3c56ac9723b2638">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a> *node) = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//设置对象的设备对象</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_object.html#a0217187468f7d24af2181c10d652b656">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_object.html#a0217187468f7d24af2181c10d652b656">SetDevice</a>(IDirect3DDevice9* pDevice)                   {<a class="code" href="class_c_object.html#a7fba9a1ccf460d15433d21bf26c62cc6">m_pDevice</a> = pDevice;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//获得对象的设备对象</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_object.html#a24735ff6d21c39956d70556290e5a65f">   23</a></span>&#160;    IDirect3DDevice9* <a class="code" href="class_c_object.html#a24735ff6d21c39956d70556290e5a65f">GetDevice</a>(<span class="keywordtype">void</span>)                           {<span class="keywordflow">return</span> <a class="code" href="class_c_object.html#a7fba9a1ccf460d15433d21bf26c62cc6">m_pDevice</a>;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//获取对象的类型</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_object.html#ab90e7a2249d0cf7487514d09da4ec439">   26</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_object.html#ab90e7a2249d0cf7487514d09da4ec439">GetType</a>(<span class="keywordtype">void</span>)                                          {<span class="keywordflow">return</span> <a class="code" href="class_c_object.html#a8cc325b0d8d1ba9a30eaccee756a6309">m_lType</a>;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//设置对象的位置(子类可重新实现)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_object.html#a0170f98843b3132217f8e4fcb7ad0b7d">   29</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_object.html#a0170f98843b3132217f8e4fcb7ad0b7d">SetPos</a>(D3DXVECTOR3 pos)                        {<a class="code" href="class_c_object.html#a1368b53eb514cffe6b1b4d9662cd3c29">m_vPos</a> = pos;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_object.html#a9f0dac6e1373023861fcb68df97befc3">   30</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_object.html#a9f0dac6e1373023861fcb68df97befc3">SetPos1</a>(D3DXVECTOR3 pos)                       { <a class="code" href="class_c_object.html#a3ef2c351145571cfd5c6be2937e27e12">m_vPos1</a> = pos; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_object.html#a5ce1b1b3f962eed4de2c913ab059fbc8">   31</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_object.html#a5ce1b1b3f962eed4de2c913ab059fbc8">SetPos</a>(<span class="keywordtype">float</span> posX, <span class="keywordtype">float</span> posY, <span class="keywordtype">float</span> posZ)     { <a class="code" href="class_c_object.html#a1368b53eb514cffe6b1b4d9662cd3c29">m_vPos</a>.x = posX; <a class="code" href="class_c_object.html#a1368b53eb514cffe6b1b4d9662cd3c29">m_vPos</a>.y = posY; <a class="code" href="class_c_object.html#a1368b53eb514cffe6b1b4d9662cd3c29">m_vPos</a>.z = posZ; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_object.html#a74570aaab79de43ea11fa2bef2c086bd">   32</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_object.html#a74570aaab79de43ea11fa2bef2c086bd">SetPos1</a>(<span class="keywordtype">float</span> posX, <span class="keywordtype">float</span> posY, <span class="keywordtype">float</span> posZ)    { <a class="code" href="class_c_object.html#a3ef2c351145571cfd5c6be2937e27e12">m_vPos1</a>.x = posX; <a class="code" href="class_c_object.html#a3ef2c351145571cfd5c6be2937e27e12">m_vPos1</a>.y = posY; <a class="code" href="class_c_object.html#a3ef2c351145571cfd5c6be2937e27e12">m_vPos1</a>.z = posZ; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_object.html#a24d00fe1fd2889302db33cfa611d6718">   33</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_object.html#a24d00fe1fd2889302db33cfa611d6718">ChangePos</a>(D3DXVECTOR3 pos)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_c_object.html#a1368b53eb514cffe6b1b4d9662cd3c29">m_vPos</a> += pos;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//获得对象的位置(子类可重新实现)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_object.html#a78e12803d6e2b229f6d22b4c02a81333">   38</a></span>&#160;    <span class="keyword">virtual</span> D3DXVECTOR3 <a class="code" href="class_c_object.html#a78e12803d6e2b229f6d22b4c02a81333">GetPos</a>(<span class="keywordtype">void</span>)                            </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    { </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_c_object.html#a1368b53eb514cffe6b1b4d9662cd3c29">m_vPos</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_object.html#a86ab9c37b975dc7383174815228f39c0">   42</a></span>&#160;    <span class="keyword">virtual</span> D3DXVECTOR3 <a class="code" href="class_c_object.html#a86ab9c37b975dc7383174815228f39c0">GetPos1</a>(<span class="keywordtype">void</span>)                           </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    { </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_c_object.html#a3ef2c351145571cfd5c6be2937e27e12">m_vPos1</a>; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//Object的类型()</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_object.html#a8cc325b0d8d1ba9a30eaccee756a6309">   49</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_object.html#a8cc325b0d8d1ba9a30eaccee756a6309">m_lType</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//Object在世界场景中的位置</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_object.html#a1368b53eb514cffe6b1b4d9662cd3c29">   52</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_object.html#a1368b53eb514cffe6b1b4d9662cd3c29">m_vPos</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_object.html#a3ef2c351145571cfd5c6be2937e27e12">   53</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_object.html#a3ef2c351145571cfd5c6be2937e27e12">m_vPos1</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//D3D设备对象</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_object.html#a7fba9a1ccf460d15433d21bf26c62cc6">   55</a></span>&#160;    IDirect3DDevice9* <a class="code" href="class_c_object.html#a7fba9a1ccf460d15433d21bf26c62cc6">m_pDevice</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="ttc" id="class_c_object_html_a3ef2c351145571cfd5c6be2937e27e12"><div class="ttname"><a href="class_c_object.html#a3ef2c351145571cfd5c6be2937e27e12">CObject::m_vPos1</a></div><div class="ttdeci">D3DXVECTOR3 m_vPos1</div><div class="ttdef"><b>Definition:</b> Object.h:53</div></div>
+<div class="ttc" id="class_c_object_html_ab90e7a2249d0cf7487514d09da4ec439"><div class="ttname"><a href="class_c_object.html#ab90e7a2249d0cf7487514d09da4ec439">CObject::GetType</a></div><div class="ttdeci">long GetType(void)</div><div class="ttdef"><b>Definition:</b> Object.h:26</div></div>
+<div class="ttc" id="class_c_object_html_ad0311beb25b0a0f4fcb79fbd0bc35796"><div class="ttname"><a href="class_c_object.html#ad0311beb25b0a0f4fcb79fbd0bc35796">CObject::Draw</a></div><div class="ttdeci">virtual void Draw()</div><div class="ttdef"><b>Definition:</b> Object.h:17</div></div>
+<div class="ttc" id="class_c_object_html_a0170f98843b3132217f8e4fcb7ad0b7d"><div class="ttname"><a href="class_c_object.html#a0170f98843b3132217f8e4fcb7ad0b7d">CObject::SetPos</a></div><div class="ttdeci">virtual void SetPos(D3DXVECTOR3 pos)</div><div class="ttdef"><b>Definition:</b> Object.h:29</div></div>
+<div class="ttc" id="class_c_object_html_a1368b53eb514cffe6b1b4d9662cd3c29"><div class="ttname"><a href="class_c_object.html#a1368b53eb514cffe6b1b4d9662cd3c29">CObject::m_vPos</a></div><div class="ttdeci">D3DXVECTOR3 m_vPos</div><div class="ttdef"><b>Definition:</b> Object.h:52</div></div>
+<div class="ttc" id="class_c_object_html_a78e12803d6e2b229f6d22b4c02a81333"><div class="ttname"><a href="class_c_object.html#a78e12803d6e2b229f6d22b4c02a81333">CObject::GetPos</a></div><div class="ttdeci">virtual D3DXVECTOR3 GetPos(void)</div><div class="ttdef"><b>Definition:</b> Object.h:38</div></div>
+<div class="ttc" id="class_c_object_html_a74570aaab79de43ea11fa2bef2c086bd"><div class="ttname"><a href="class_c_object.html#a74570aaab79de43ea11fa2bef2c086bd">CObject::SetPos1</a></div><div class="ttdeci">virtual void SetPos1(float posX, float posY, float posZ)</div><div class="ttdef"><b>Definition:</b> Object.h:32</div></div>
+<div class="ttc" id="class_c_object_html_a24735ff6d21c39956d70556290e5a65f"><div class="ttname"><a href="class_c_object.html#a24735ff6d21c39956d70556290e5a65f">CObject::GetDevice</a></div><div class="ttdeci">IDirect3DDevice9 * GetDevice(void)</div><div class="ttdef"><b>Definition:</b> Object.h:23</div></div>
+<div class="ttc" id="class_c_object_html_a86ab9c37b975dc7383174815228f39c0"><div class="ttname"><a href="class_c_object.html#a86ab9c37b975dc7383174815228f39c0">CObject::GetPos1</a></div><div class="ttdeci">virtual D3DXVECTOR3 GetPos1(void)</div><div class="ttdef"><b>Definition:</b> Object.h:42</div></div>
+<div class="ttc" id="class_c_object_html_a8cc325b0d8d1ba9a30eaccee756a6309"><div class="ttname"><a href="class_c_object.html#a8cc325b0d8d1ba9a30eaccee756a6309">CObject::m_lType</a></div><div class="ttdeci">long m_lType</div><div class="ttdef"><b>Definition:</b> Object.h:49</div></div>
+<div class="ttc" id="class_c_object_html_a7fba9a1ccf460d15433d21bf26c62cc6"><div class="ttname"><a href="class_c_object.html#a7fba9a1ccf460d15433d21bf26c62cc6">CObject::m_pDevice</a></div><div class="ttdeci">IDirect3DDevice9 * m_pDevice</div><div class="ttdef"><b>Definition:</b> Object.h:55</div></div>
+<div class="ttc" id="_picture_8h_html"><div class="ttname"><a href="_picture_8h.html">Picture.h</a></div></div>
+<div class="ttc" id="class_c_object_html_a93a3c3bc7d9a6462ef00e25404d9b0eb"><div class="ttname"><a href="class_c_object.html#a93a3c3bc7d9a6462ef00e25404d9b0eb">CObject::~CObject</a></div><div class="ttdeci">virtual ~CObject()</div><div class="ttdef"><b>Definition:</b> Object.cpp:13</div></div>
+<div class="ttc" id="class_c_object_html_a24d00fe1fd2889302db33cfa611d6718"><div class="ttname"><a href="class_c_object.html#a24d00fe1fd2889302db33cfa611d6718">CObject::ChangePos</a></div><div class="ttdeci">virtual void ChangePos(D3DXVECTOR3 pos)</div><div class="ttdef"><b>Definition:</b> Object.h:33</div></div>
+<div class="ttc" id="class_c_object_html_a0217187468f7d24af2181c10d652b656"><div class="ttname"><a href="class_c_object.html#a0217187468f7d24af2181c10d652b656">CObject::SetDevice</a></div><div class="ttdeci">void SetDevice(IDirect3DDevice9 *pDevice)</div><div class="ttdef"><b>Definition:</b> Object.h:20</div></div>
+<div class="ttc" id="class_c_object_html_ac44111d5ac75248a616df61b038c4153"><div class="ttname"><a href="class_c_object.html#ac44111d5ac75248a616df61b038c4153">CObject::CObject</a></div><div class="ttdeci">CObject()</div><div class="ttdef"><b>Definition:</b> Object.cpp:5</div></div>
+<div class="ttc" id="class_c_object_html_a9f0dac6e1373023861fcb68df97befc3"><div class="ttname"><a href="class_c_object.html#a9f0dac6e1373023861fcb68df97befc3">CObject::SetPos1</a></div><div class="ttdeci">virtual void SetPos1(D3DXVECTOR3 pos)</div><div class="ttdef"><b>Definition:</b> Object.h:30</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_object_html_a5ce1b1b3f962eed4de2c913ab059fbc8"><div class="ttname"><a href="class_c_object.html#a5ce1b1b3f962eed4de2c913ab059fbc8">CObject::SetPos</a></div><div class="ttdeci">virtual void SetPos(float posX, float posY, float posZ)</div><div class="ttdef"><b>Definition:</b> Object.h:31</div></div>
+<div class="ttc" id="_engine_def_8h_html"><div class="ttname"><a href="_engine_def_8h.html">EngineDef.h</a></div></div>
+<div class="ttc" id="class_c_object_html"><div class="ttname"><a href="class_c_object.html">CObject</a></div><div class="ttdef"><b>Definition:</b> Object.h:7</div></div>
+<div class="ttc" id="class_c_object_html_afe203e2f62197728f3c56ac9723b2638"><div class="ttname"><a href="class_c_object.html#afe203e2f62197728f3c56ac9723b2638">CObject::Init</a></div><div class="ttdeci">virtual BOOL Init(TiXmlElement *node)=0</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

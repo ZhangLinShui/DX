@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: ParticleAffector类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_particle_affector-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ParticleAffector类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_particle_affector_8h_source.html">ParticleAffector.h</a>&gt;</code></p>
+<div class="dynheader">
+类 ParticleAffector 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_particle_affector.png" usemap="#ParticleAffector_map" alt=""/>
+  <map id="ParticleAffector_map" name="ParticleAffector_map">
+<area href="class_color_fade_affector.html" alt="ColorFadeAffector" shape="rect" coords="0,56,128,80"/>
+<area href="class_color_image_affector.html" alt="ColorImageAffector" shape="rect" coords="138,56,266,80"/>
+<area href="class_linear_force_affector.html" alt="LinearForceAffector" shape="rect" coords="276,56,404,80"/>
+<area href="class_rotation_affector.html" alt="RotationAffector" shape="rect" coords="414,56,542,80"/>
+<area href="class_scale_affector.html" alt="ScaleAffector" shape="rect" coords="552,56,680,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3970b9593cf8d3a245c1e3793e2db22f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#a3970b9593cf8d3a245c1e3793e2db22f">ParticleAffector</a> (<a class="el" href="class_particle_group.html">ParticleGroup</a> *pParent)</td></tr>
+<tr class="separator:a3970b9593cf8d3a245c1e3793e2db22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1991ec0b48bd8be2cf7712940d67e7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#aff1991ec0b48bd8be2cf7712940d67e7">~ParticleAffector</a> ()</td></tr>
+<tr class="separator:aff1991ec0b48bd8be2cf7712940d67e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e4e1f1750749ed413d578f8388e2a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#a18e4e1f1750749ed413d578f8388e2a4">InitParticle</a> (<a class="el" href="class_particle.html">Particle</a> *p)</td></tr>
+<tr class="separator:a18e4e1f1750749ed413d578f8388e2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2b1060d5395368b32b369a8e188548"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#a3a2b1060d5395368b32b369a8e188548">AffectParticle</a> (float fElapsedTime)=0</td></tr>
+<tr class="separator:a3a2b1060d5395368b32b369a8e188548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d85fd872ed2d7af9b709ebc72060d1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#a36d85fd872ed2d7af9b709ebc72060d1">Load</a> (<a class="el" href="class_ti_xml_element.html">TiXmlElement</a> *pElemAffector)=0</td></tr>
+<tr class="separator:a36d85fd872ed2d7af9b709ebc72060d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2b8797bf6d7e9c9d609064af9b400e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#aea2b8797bf6d7e9c9d609064af9b400e">Save</a> (<a class="el" href="class_ti_xml_element.html">TiXmlElement</a> *pElemAffector)</td></tr>
+<tr class="separator:aea2b8797bf6d7e9c9d609064af9b400e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34603ad36872d2b29ed320a61ae462c"><td class="memItemLeft" align="right" valign="top">virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#af34603ad36872d2b29ed320a61ae462c">InvalidateDeviceObjects</a> ()</td></tr>
+<tr class="separator:af34603ad36872d2b29ed320a61ae462c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66b08777de7dd1288c131bf7c126303"><td class="memItemLeft" align="right" valign="top">virtual HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#ad66b08777de7dd1288c131bf7c126303">RestoreDeviceObjects</a> ()</td></tr>
+<tr class="separator:ad66b08777de7dd1288c131bf7c126303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d5d1abe109b43b05ce0112e2a15c8f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#a21d5d1abe109b43b05ce0112e2a15c8f">Clone</a> (<a class="el" href="class_particle_affector.html">ParticleAffector</a> *pe)=0</td></tr>
+<tr class="separator:a21d5d1abe109b43b05ce0112e2a15c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a6d2b3b43d96cd8d97e0d98aba9e8821e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_particle_group.html">ParticleGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#a6d2b3b43d96cd8d97e0d98aba9e8821e">m_pParent</a></td></tr>
+<tr class="separator:a6d2b3b43d96cd8d97e0d98aba9e8821e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93eda799bc9d7407b48abbe5103c4d27"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_affector.html#a93eda799bc9d7407b48abbe5103c4d27">m_Type</a></td></tr>
+<tr class="separator:a93eda799bc9d7407b48abbe5103c4d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>粒子效果器，动态改变粒子的属性 </p><dl class="section remark"><dt>备注</dt><dd>效果器的纯虚基类。和发射器不同，效果器没有共同的属性，此类定义了大部分效果器 需要实现的抽象接口。不同的效果器类提供不同的属性和实现。 </dd></dl>
+<dl class="section user"><dt></dt><dd>由于效果器种类很多，这里最好使用工厂模式来设计。此实现并没有使用 工厂模式。教师可以在讲解发射器时介绍一下设计模式的概念。 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a3970b9593cf8d3a245c1e3793e2db22f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParticleAffector::ParticleAffector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_particle_group.html">ParticleGroup</a> *&#160;</td>
+          <td class="paramname"><em>pParent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aff1991ec0b48bd8be2cf7712940d67e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParticleAffector::~ParticleAffector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a3a2b1060d5395368b32b369a8e188548"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ParticleAffector::AffectParticle </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fElapsedTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>每帧调用此函数影响粒子属性。 </p>
+
+<p>在 <a class="el" href="class_scale_affector.html#a011964785a1a8cb5f2e05236cc5075bb">ScaleAffector</a>, <a class="el" href="class_rotation_affector.html#a6455e1373a41cc58c93c849e85f50960">RotationAffector</a>, <a class="el" href="class_color_image_affector.html#a543697b40100a1e30f5028291ad6eefa">ColorImageAffector</a>, <a class="el" href="class_color_fade_affector.html#a3e19b5bccf2b002cfed4e19ef6c8e2ce">ColorFadeAffector</a> , 以及 <a class="el" href="class_linear_force_affector.html#aec6dda837381bc8e76d7a3fc10316e8f">LinearForceAffector</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21d5d1abe109b43b05ce0112e2a15c8f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ParticleAffector::Clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_particle_affector.html">ParticleAffector</a> *&#160;</td>
+          <td class="paramname"><em>pe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_scale_affector.html#ad8bc23d7cec2dd594848da414e7561e1">ScaleAffector</a>, <a class="el" href="class_rotation_affector.html#acbb767e6c52cff5c0231bd38ff9b3768">RotationAffector</a>, <a class="el" href="class_color_image_affector.html#ac7308f85fada21d9eed2e1ef5f7be4d1">ColorImageAffector</a>, <a class="el" href="class_color_fade_affector.html#a6416a9f1ad8ff8ff2d7e10f5ce4112a9">ColorFadeAffector</a> , 以及 <a class="el" href="class_linear_force_affector.html#a737c5bbfb65855af2c5d7663e39ccb01">LinearForceAffector</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a18e4e1f1750749ed413d578f8388e2a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleAffector::InitParticle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_particle.html">Particle</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>新粒子发射时调用此函数初始化粒子属性。 </p>
+
+<p>被 <a class="el" href="class_scale_affector.html#a6e491b0c91c1284720c9aecc30b77120">ScaleAffector</a>, <a class="el" href="class_rotation_affector.html#a821fca206c9afa7f8e298d8b1a9b2289">RotationAffector</a> , 以及 <a class="el" href="class_color_image_affector.html#a87da133d507241921c0f2c85983769cf">ColorImageAffector</a> 重载.</p>
+
+</div>
+</div>
+<a class="anchor" id="af34603ad36872d2b29ed320a61ae462c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual HRESULT ParticleAffector::InvalidateDeviceObjects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36d85fd872ed2d7af9b709ebc72060d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ParticleAffector::Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ti_xml_element.html">TiXmlElement</a> *&#160;</td>
+          <td class="paramname"><em>pElemAffector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>读取粒子文件初始化此affector </p>
+
+<p>在 <a class="el" href="class_scale_affector.html#a98df14696318dd9a71b276b35e4c5bcc">ScaleAffector</a>, <a class="el" href="class_rotation_affector.html#a41c03a49ba2785f1cf08eaab3f88b247">RotationAffector</a>, <a class="el" href="class_color_image_affector.html#a4476b5a68b430c3c59087c4930942c25">ColorImageAffector</a>, <a class="el" href="class_color_fade_affector.html#a460b1e1a58baa0a83438c2f294c802d0">ColorFadeAffector</a> , 以及 <a class="el" href="class_linear_force_affector.html#aafafc1b2dad09a7d482b83318afdab1b">LinearForceAffector</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad66b08777de7dd1288c131bf7c126303"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual HRESULT ParticleAffector::RestoreDeviceObjects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea2b8797bf6d7e9c9d609064af9b400e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParticleAffector::Save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ti_xml_element.html">TiXmlElement</a> *&#160;</td>
+          <td class="paramname"><em>pElemAffector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>向文件中存储粒子信息 </p>
+
+<p>被 <a class="el" href="class_scale_affector.html#a80295e088d3752601a46bf32d53f2b7d">ScaleAffector</a>, <a class="el" href="class_rotation_affector.html#a6121e46c7662aa3ddb987f01d2c4dc08">RotationAffector</a>, <a class="el" href="class_color_image_affector.html#a5079523df8323d4c35323bcf6554848f">ColorImageAffector</a>, <a class="el" href="class_color_fade_affector.html#ad6d2f844bc6a788bbf0b261bc3622024">ColorFadeAffector</a> , 以及 <a class="el" href="class_linear_force_affector.html#a67c25d8577db921543da4fdc9ed363e7">LinearForceAffector</a> 重载.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a6d2b3b43d96cd8d97e0d98aba9e8821e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_particle_group.html">ParticleGroup</a>* ParticleAffector::m_pParent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a93eda799bc9d7407b48abbe5103c4d27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ParticleAffector::m_Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/<a class="el" href="_particle_affector_8h_source.html">ParticleAffector.h</a></li>
+<li>M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/<a class="el" href="_particle_affector_8cpp.html">ParticleAffector.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:10 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/GUIManager.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GUIManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_g_u_i_manager_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//GUI系统的管理器,全局一个实例,使用单件模式</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//所有的COMPONENT实例对象的显示,操作,消息响应都由GUI管理器统一管理</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//这个GUI系统是基于LUA的,一个PAGE对应了一个LUA函数</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//PAGE的位置,相应函数等都不是简单的配置,而是基于绑定了的C++函数</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_observer_8h.html">Observer.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_g_u_i_manager.html">CGUIManager</a> : <span class="keyword">public</span> <a class="code" href="class_i_observable.html">IObservable</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_c_g_u_i_manager.html#af59b59cdc4a2f57c5895cf75ce258575">~CGUIManager</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//取得全局唯一的&quot;GUI管理器&quot;的实例</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_g_u_i_manager.html">CGUIManager</a>* <a class="code" href="class_c_g_u_i_manager.html#adaedbce7d27781651af17e19a8ab807e">GetInstance</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//初始化&quot;GUI管理器&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_g_u_i_manager.html#aadade850b5f30745a4ad510983ccc2b6">Init</a>(<span class="keywordtype">string</span> fileName);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//释放&quot;GUI管理器&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#a1fe7a8bc5c8b3a67a1624857fa7a72aa">Release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//创建一个PAGE,参数为执行的函数</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_g_u_i_manager.html#a0c746228100adcb93eae0f97b91c80ae">LoadPage</a>(<span class="keywordtype">string</span> filename);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//创建一个GUI组件</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_c_component.html">CComponent</a>* <a class="code" href="class_c_g_u_i_manager.html#adff440af4e0234588aeedb59bf5d49c9">CreateComponent</a>(<span class="keywordtype">long</span> ComponentType, <span class="keywordtype">string</span> ComponentName);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//void ProcessGUIEvent(long x, long y);</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//处理键盘的事件响应</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#aedfba6b99d161f9f97582155812ce75e">ProcessKeyEvent</a>(<span class="keywordtype">char</span> key);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//处理鼠标移动的事件响应</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#a44ce63ccae6c670a544fa04eb8d7dc68">ProcessMouseMove</a>(<span class="keywordtype">long</span> x, <span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#a4272dad4935120c15711fed3241bd1bc">ProcessMouseLBDown</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//处理鼠标左键弹起的事件响应</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#a75a4f29a15b088c1de35e37940ed7ee9">ProcessMouseLBUp</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//处理鼠标右键按下的事件响应</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#a058c6bf68292fbe2151c8a96a67ad066">ProcessMouseRBDown</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//处理鼠标右键弹起的事件响应</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#ad91140bdb6c4e99125950c0bbc2577d7">ProcessMouseRBUp</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//处理鼠标滚轮滚动的事件响应</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#a306d654c9111f88ca2fc421cad9c16a6">ProcessMouseWheel</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//获得一个组件的指针</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//参数为这个组件名字</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_c_component.html">CComponent</a>* <a class="code" href="class_c_g_u_i_manager.html#af8aa386a976ef6d88f981327f3235bcc">GetComponentByName</a>(<span class="keywordtype">string</span> ComponentName);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//设置设备对象</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#aafb207ccfcafcd47c79ed53b1552101a">   59</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#aafb207ccfcafcd47c79ed53b1552101a">SetDevice</a>(IDirect3DDevice9* pDevice) { <a class="code" href="class_c_g_u_i_manager.html#aec9d7060495a77d65ce67642228de5d2">m_pDevice</a> = pDevice; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#a84cdab45e10d6b496db70080530eafb6">   60</a></span>&#160;    IDirect3DDevice9* <a class="code" href="class_c_g_u_i_manager.html#a84cdab45e10d6b496db70080530eafb6">GetDevice</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_g_u_i_manager.html#aec9d7060495a77d65ce67642228de5d2">m_pDevice</a>; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#a66ed9386d66442113242b7bbd7d7f46f">   61</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_u_i_manager.html#a66ed9386d66442113242b7bbd7d7f46f">SetIsDraw</a>(<span class="keywordtype">bool</span> IsDraw){<a class="code" href="class_c_g_u_i_manager.html#a9632d6b7e9c680ad70cbb3b01609ce11">IsDrawAll</a> = IsDraw;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#a902fe2340fe24a2c5d43afc62022f4c7">   62</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_g_u_i_manager.html#a902fe2340fe24a2c5d43afc62022f4c7">GetIsDraw</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_g_u_i_manager.html#a9632d6b7e9c680ad70cbb3b01609ce11">IsDrawAll</a>; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//单件模式下构造函数是私有的</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_c_g_u_i_manager.html#aca617c92a4dda2976bebde486445d63d">CGUIManager</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//全局唯一的&quot;场景管理器&quot;的实例</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#ac1ee0abb58df35ae0cc5a14a2b7e3ca0">   73</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_g_u_i_manager.html">CGUIManager</a>* <a class="code" href="class_c_g_u_i_manager.html#ac1ee0abb58df35ae0cc5a14a2b7e3ca0">m_Instance</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//GUI管理器中的所有的GUI组件对象</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#a9dba00bd48db97b161a660368be14ecc">   76</a></span>&#160;    map&lt;string,CComponent*&gt; <a class="code" href="class_c_g_u_i_manager.html#a9dba00bd48db97b161a660368be14ecc">m_mapComponent</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#ab4947adfcdbb546fafc82f9a8f434521">   77</a></span>&#160;    map&lt;string,CComponent*&gt;::iterator <a class="code" href="class_c_g_u_i_manager.html#ab4947adfcdbb546fafc82f9a8f434521">m_mapComponentIT</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//map&lt;string,CBaseInterface*&gt;m_mapInterface</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//控制器里的IComponent对象,用于传输到图形系统渲染</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#a5c5aade6f10d14da0de373bbb8658081">   81</a></span>&#160;    <a class="code" href="class_i_component.html">IComponent</a>* <a class="code" href="class_c_g_u_i_manager.html#a5c5aade6f10d14da0de373bbb8658081">m_ImapComponent</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//上一帧的鼠标的位置</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#a115521857b536a0b97c1d5a7aedd7f79">   84</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_g_u_i_manager.html#a115521857b536a0b97c1d5a7aedd7f79">m_lXOld</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#ac929e74dcc83d409de0a6bad944da63f">   85</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_g_u_i_manager.html#ac929e74dcc83d409de0a6bad944da63f">m_lYOld</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//这一帧鼠标的位置的偏移量</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#aedd736293966b3519bc35a0b9a6ac6ad">   88</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_g_u_i_manager.html#aedd736293966b3519bc35a0b9a6ac6ad">m_lXOffset</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#a6466fc0231cc73717b1126967b902bc0">   89</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_g_u_i_manager.html#a6466fc0231cc73717b1126967b902bc0">m_lYOffset</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//D3D设备对象</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#aec9d7060495a77d65ce67642228de5d2">   92</a></span>&#160;    IDirect3DDevice9* <a class="code" href="class_c_g_u_i_manager.html#aec9d7060495a77d65ce67642228de5d2">m_pDevice</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_c_g_u_i_manager.html#a9632d6b7e9c680ad70cbb3b01609ce11">   94</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_g_u_i_manager.html#a9632d6b7e9c680ad70cbb3b01609ce11">IsDrawAll</a>=<span class="keyword">false</span>;<span class="comment">//控制所有方块的绘制；开始UI进入游戏后再绘制；</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">//CGUIManager* GetGUIMgr();</span></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a9dba00bd48db97b161a660368be14ecc"><div class="ttname"><a href="class_c_g_u_i_manager.html#a9dba00bd48db97b161a660368be14ecc">CGUIManager::m_mapComponent</a></div><div class="ttdeci">map&lt; string, CComponent * &gt; m_mapComponent</div><div class="ttdef"><b>Definition:</b> GUIManager.h:76</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a75a4f29a15b088c1de35e37940ed7ee9"><div class="ttname"><a href="class_c_g_u_i_manager.html#a75a4f29a15b088c1de35e37940ed7ee9">CGUIManager::ProcessMouseLBUp</a></div><div class="ttdeci">void ProcessMouseLBUp(long x, long y)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:199</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_aec9d7060495a77d65ce67642228de5d2"><div class="ttname"><a href="class_c_g_u_i_manager.html#aec9d7060495a77d65ce67642228de5d2">CGUIManager::m_pDevice</a></div><div class="ttdeci">IDirect3DDevice9 * m_pDevice</div><div class="ttdef"><b>Definition:</b> GUIManager.h:92</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_aafb207ccfcafcd47c79ed53b1552101a"><div class="ttname"><a href="class_c_g_u_i_manager.html#aafb207ccfcafcd47c79ed53b1552101a">CGUIManager::SetDevice</a></div><div class="ttdeci">void SetDevice(IDirect3DDevice9 *pDevice)</div><div class="ttdef"><b>Definition:</b> GUIManager.h:59</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_af8aa386a976ef6d88f981327f3235bcc"><div class="ttname"><a href="class_c_g_u_i_manager.html#af8aa386a976ef6d88f981327f3235bcc">CGUIManager::GetComponentByName</a></div><div class="ttdeci">CComponent * GetComponentByName(string ComponentName)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:231</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a306d654c9111f88ca2fc421cad9c16a6"><div class="ttname"><a href="class_c_g_u_i_manager.html#a306d654c9111f88ca2fc421cad9c16a6">CGUIManager::ProcessMouseWheel</a></div><div class="ttdeci">void ProcessMouseWheel()</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:224</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a66ed9386d66442113242b7bbd7d7f46f"><div class="ttname"><a href="class_c_g_u_i_manager.html#a66ed9386d66442113242b7bbd7d7f46f">CGUIManager::SetIsDraw</a></div><div class="ttdeci">void SetIsDraw(bool IsDraw)</div><div class="ttdef"><b>Definition:</b> GUIManager.h:61</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html"><div class="ttname"><a href="class_c_g_u_i_manager.html">CGUIManager</a></div><div class="ttdef"><b>Definition:</b> GUIManager.h:10</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_aca617c92a4dda2976bebde486445d63d"><div class="ttname"><a href="class_c_g_u_i_manager.html#aca617c92a4dda2976bebde486445d63d">CGUIManager::CGUIManager</a></div><div class="ttdeci">CGUIManager()</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:26</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_adff440af4e0234588aeedb59bf5d49c9"><div class="ttname"><a href="class_c_g_u_i_manager.html#adff440af4e0234588aeedb59bf5d49c9">CGUIManager::CreateComponent</a></div><div class="ttdeci">CComponent * CreateComponent(long ComponentType, string ComponentName)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:102</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a84cdab45e10d6b496db70080530eafb6"><div class="ttname"><a href="class_c_g_u_i_manager.html#a84cdab45e10d6b496db70080530eafb6">CGUIManager::GetDevice</a></div><div class="ttdeci">IDirect3DDevice9 * GetDevice()</div><div class="ttdef"><b>Definition:</b> GUIManager.h:60</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_aedd736293966b3519bc35a0b9a6ac6ad"><div class="ttname"><a href="class_c_g_u_i_manager.html#aedd736293966b3519bc35a0b9a6ac6ad">CGUIManager::m_lXOffset</a></div><div class="ttdeci">long m_lXOffset</div><div class="ttdef"><b>Definition:</b> GUIManager.h:88</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a058c6bf68292fbe2151c8a96a67ad066"><div class="ttname"><a href="class_c_g_u_i_manager.html#a058c6bf68292fbe2151c8a96a67ad066">CGUIManager::ProcessMouseRBDown</a></div><div class="ttdeci">void ProcessMouseRBDown(long x, long y)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:212</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a9632d6b7e9c680ad70cbb3b01609ce11"><div class="ttname"><a href="class_c_g_u_i_manager.html#a9632d6b7e9c680ad70cbb3b01609ce11">CGUIManager::IsDrawAll</a></div><div class="ttdeci">bool IsDrawAll</div><div class="ttdef"><b>Definition:</b> GUIManager.h:94</div></div>
+<div class="ttc" id="class_i_observable_html"><div class="ttname"><a href="class_i_observable.html">IObservable</a></div><div class="ttdef"><b>Definition:</b> Observer.h:60</div></div>
+<div class="ttc" id="_observer_8h_html"><div class="ttname"><a href="_observer_8h.html">Observer.h</a></div></div>
+<div class="ttc" id="class_i_component_html"><div class="ttname"><a href="class_i_component.html">IComponent</a></div><div class="ttdef"><b>Definition:</b> Observer.h:110</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a6466fc0231cc73717b1126967b902bc0"><div class="ttname"><a href="class_c_g_u_i_manager.html#a6466fc0231cc73717b1126967b902bc0">CGUIManager::m_lYOffset</a></div><div class="ttdeci">long m_lYOffset</div><div class="ttdef"><b>Definition:</b> GUIManager.h:89</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_aedfba6b99d161f9f97582155812ce75e"><div class="ttname"><a href="class_c_g_u_i_manager.html#aedfba6b99d161f9f97582155812ce75e">CGUIManager::ProcessKeyEvent</a></div><div class="ttdeci">void ProcessKeyEvent(char key)</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a1fe7a8bc5c8b3a67a1624857fa7a72aa"><div class="ttname"><a href="class_c_g_u_i_manager.html#a1fe7a8bc5c8b3a67a1624857fa7a72aa">CGUIManager::Release</a></div><div class="ttdeci">void Release(void)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:59</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_ac1ee0abb58df35ae0cc5a14a2b7e3ca0"><div class="ttname"><a href="class_c_g_u_i_manager.html#ac1ee0abb58df35ae0cc5a14a2b7e3ca0">CGUIManager::m_Instance</a></div><div class="ttdeci">static CGUIManager * m_Instance</div><div class="ttdef"><b>Definition:</b> GUIManager.h:73</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a0c746228100adcb93eae0f97b91c80ae"><div class="ttname"><a href="class_c_g_u_i_manager.html#a0c746228100adcb93eae0f97b91c80ae">CGUIManager::LoadPage</a></div><div class="ttdeci">bool LoadPage(string filename)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:70</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a115521857b536a0b97c1d5a7aedd7f79"><div class="ttname"><a href="class_c_g_u_i_manager.html#a115521857b536a0b97c1d5a7aedd7f79">CGUIManager::m_lXOld</a></div><div class="ttdeci">long m_lXOld</div><div class="ttdef"><b>Definition:</b> GUIManager.h:84</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_af59b59cdc4a2f57c5895cf75ce258575"><div class="ttname"><a href="class_c_g_u_i_manager.html#af59b59cdc4a2f57c5895cf75ce258575">CGUIManager::~CGUIManager</a></div><div class="ttdeci">~CGUIManager()</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:33</div></div>
+<div class="ttc" id="_component_8h_html"><div class="ttname"><a href="_component_8h.html">Component.h</a></div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_adaedbce7d27781651af17e19a8ab807e"><div class="ttname"><a href="class_c_g_u_i_manager.html#adaedbce7d27781651af17e19a8ab807e">CGUIManager::GetInstance</a></div><div class="ttdeci">static CGUIManager * GetInstance()</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:16</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_ac929e74dcc83d409de0a6bad944da63f"><div class="ttname"><a href="class_c_g_u_i_manager.html#ac929e74dcc83d409de0a6bad944da63f">CGUIManager::m_lYOld</a></div><div class="ttdeci">long m_lYOld</div><div class="ttdef"><b>Definition:</b> GUIManager.h:85</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a5c5aade6f10d14da0de373bbb8658081"><div class="ttname"><a href="class_c_g_u_i_manager.html#a5c5aade6f10d14da0de373bbb8658081">CGUIManager::m_ImapComponent</a></div><div class="ttdeci">IComponent * m_ImapComponent</div><div class="ttdef"><b>Definition:</b> GUIManager.h:81</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_aadade850b5f30745a4ad510983ccc2b6"><div class="ttname"><a href="class_c_g_u_i_manager.html#aadade850b5f30745a4ad510983ccc2b6">CGUIManager::Init</a></div><div class="ttdeci">bool Init(string fileName)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:40</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a44ce63ccae6c670a544fa04eb8d7dc68"><div class="ttname"><a href="class_c_g_u_i_manager.html#a44ce63ccae6c670a544fa04eb8d7dc68">CGUIManager::ProcessMouseMove</a></div><div class="ttdeci">void ProcessMouseMove(long x, long y)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:155</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_ab4947adfcdbb546fafc82f9a8f434521"><div class="ttname"><a href="class_c_g_u_i_manager.html#ab4947adfcdbb546fafc82f9a8f434521">CGUIManager::m_mapComponentIT</a></div><div class="ttdeci">map&lt; string, CComponent * &gt;::iterator m_mapComponentIT</div><div class="ttdef"><b>Definition:</b> GUIManager.h:77</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a902fe2340fe24a2c5d43afc62022f4c7"><div class="ttname"><a href="class_c_g_u_i_manager.html#a902fe2340fe24a2c5d43afc62022f4c7">CGUIManager::GetIsDraw</a></div><div class="ttdeci">bool GetIsDraw()</div><div class="ttdef"><b>Definition:</b> GUIManager.h:62</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_ad91140bdb6c4e99125950c0bbc2577d7"><div class="ttname"><a href="class_c_g_u_i_manager.html#ad91140bdb6c4e99125950c0bbc2577d7">CGUIManager::ProcessMouseRBUp</a></div><div class="ttdeci">void ProcessMouseRBUp(long x, long y)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:218</div></div>
+<div class="ttc" id="class_c_component_html"><div class="ttname"><a href="class_c_component.html">CComponent</a></div><div class="ttdef"><b>Definition:</b> Component.h:7</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html_a4272dad4935120c15711fed3241bd1bc"><div class="ttname"><a href="class_c_g_u_i_manager.html#a4272dad4935120c15711fed3241bd1bc">CGUIManager::ProcessMouseLBDown</a></div><div class="ttdeci">void ProcessMouseLBDown(long x, long y)</div><div class="ttdef"><b>Definition:</b> GUIManager.cpp:193</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

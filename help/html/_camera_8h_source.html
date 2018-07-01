@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Camera.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Camera.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_camera_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_object_8h.html">Object.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_c_camera.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_camera.html">CCamera</a> :</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_c_object.html">CObject</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_c_camera.html#a2eb95595766a84cb745ec00783595190">CCamera</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_c_camera.html#a0123231b9f52caebf8cc7e95baa1403e">~CCamera</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    BOOL <a class="code" href="class_c_camera.html#a46ee1b2e8fb8a5877e6988faececb02f">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a> *node);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_camera.html#ae4780a81c49d8e3a3a3c8b8cc8eca90d">InitCamera</a>(D3DXVECTOR3 Pos);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_camera.html#a638f389e357e37cefd7045c16c8b3fd2">SetCamera</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    D3DXVECTOR3&amp;  <a class="code" href="class_c_camera.html#a013a158b2e03b634266e635171bba623">GetRightDir</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    D3DXVECTOR3&amp;  <a class="code" href="class_c_camera.html#a90bb4865e0473971af23ac9465da5ea5">GetUpDir</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    D3DXVECTOR3&amp;  <a class="code" href="class_c_camera.html#a36bc6925208822440f40152e8cacc7c5">GetForwordDir</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_camera.html#ae819a9447cc8325891de0d625c784045">SetRightDir</a>(D3DXVECTOR3 dir);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_camera.html#a1fbe7decf96166fa4f3760c192a75e1c">SetUpDir</a>(D3DXVECTOR3 dir);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_camera.html#ad20ab01fc1d5d0cb3db86989ff7e7dc0">SetForwordDir</a>(D3DXVECTOR3 dir);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_camera.html#ad03adb07205e6be7e6f82586866cc1e6">GetCamareToObjectDist</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_camera.html#a852e4b995134e851b40e69f64353a92e">   20</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_camera.html#a852e4b995134e851b40e69f64353a92e">cameraRightDir</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_camera.html#a8bb5ef076004494cb5686979b9f33d43">   21</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_camera.html#a8bb5ef076004494cb5686979b9f33d43">cameraUpDir</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_camera.html#a69b53fa49dd89a0c89921120c76f0b47">   22</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_camera.html#a69b53fa49dd89a0c89921120c76f0b47">cameraForwordDir</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_camera.html#a7b97d624251cc8ceb0d53273fa1975cb">   23</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_camera.html#a7b97d624251cc8ceb0d53273fa1975cb">CamareToObjectDist</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_camera.html#ac5e984f087bd8356a86decb9867db1bf">   24</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_camera.html#ac5e984f087bd8356a86decb9867db1bf">matView</a>;<span class="comment">//观察矩阵</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_camera.html#a4b198efd0ea0053fe53b373c435c7a9a">   25</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_camera.html#a4b198efd0ea0053fe53b373c435c7a9a">matProj</a>;<span class="comment">//投影矩阵</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_camera.html#a451383b44323e05f40cb97277375f873">   26</a></span>&#160;    LPDIRECT3DDEVICE9  <a class="code" href="class_c_camera.html#a451383b44323e05f40cb97277375f873">m_pDevice</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_camera.html#a9b4bf1650a7406262a2245ff0bd12539">   27</a></span>&#160;    HWND <a class="code" href="class_c_camera.html#a9b4bf1650a7406262a2245ff0bd12539">m_hwnd</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="ttc" id="class_c_camera_html_a852e4b995134e851b40e69f64353a92e"><div class="ttname"><a href="class_c_camera.html#a852e4b995134e851b40e69f64353a92e">CCamera::cameraRightDir</a></div><div class="ttdeci">D3DXVECTOR3 cameraRightDir</div><div class="ttdef"><b>Definition:</b> Camera.h:20</div></div>
+<div class="ttc" id="class_c_camera_html_a4b198efd0ea0053fe53b373c435c7a9a"><div class="ttname"><a href="class_c_camera.html#a4b198efd0ea0053fe53b373c435c7a9a">CCamera::matProj</a></div><div class="ttdeci">D3DXMATRIX matProj</div><div class="ttdef"><b>Definition:</b> Camera.h:25</div></div>
+<div class="ttc" id="class_c_camera_html"><div class="ttname"><a href="class_c_camera.html">CCamera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:3</div></div>
+<div class="ttc" id="class_c_camera_html_a9b4bf1650a7406262a2245ff0bd12539"><div class="ttname"><a href="class_c_camera.html#a9b4bf1650a7406262a2245ff0bd12539">CCamera::m_hwnd</a></div><div class="ttdeci">HWND m_hwnd</div><div class="ttdef"><b>Definition:</b> Camera.h:27</div></div>
+<div class="ttc" id="class_c_camera_html_ad20ab01fc1d5d0cb3db86989ff7e7dc0"><div class="ttname"><a href="class_c_camera.html#ad20ab01fc1d5d0cb3db86989ff7e7dc0">CCamera::SetForwordDir</a></div><div class="ttdeci">void SetForwordDir(D3DXVECTOR3 dir)</div><div class="ttdef"><b>Definition:</b> Camera.cpp:83</div></div>
+<div class="ttc" id="class_c_camera_html_ad03adb07205e6be7e6f82586866cc1e6"><div class="ttname"><a href="class_c_camera.html#ad03adb07205e6be7e6f82586866cc1e6">CCamera::GetCamareToObjectDist</a></div><div class="ttdeci">float GetCamareToObjectDist()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:88</div></div>
+<div class="ttc" id="class_c_camera_html_a90bb4865e0473971af23ac9465da5ea5"><div class="ttname"><a href="class_c_camera.html#a90bb4865e0473971af23ac9465da5ea5">CCamera::GetUpDir</a></div><div class="ttdeci">D3DXVECTOR3 &amp; GetUpDir()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:63</div></div>
+<div class="ttc" id="class_c_camera_html_ae4780a81c49d8e3a3a3c8b8cc8eca90d"><div class="ttname"><a href="class_c_camera.html#ae4780a81c49d8e3a3a3c8b8cc8eca90d">CCamera::InitCamera</a></div><div class="ttdeci">void InitCamera(D3DXVECTOR3 Pos)</div><div class="ttdef"><b>Definition:</b> Camera.cpp:29</div></div>
+<div class="ttc" id="class_c_camera_html_a46ee1b2e8fb8a5877e6988faececb02f"><div class="ttname"><a href="class_c_camera.html#a46ee1b2e8fb8a5877e6988faececb02f">CCamera::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *node)</div><div class="ttdef"><b>Definition:</b> Camera.cpp:14</div></div>
+<div class="ttc" id="class_c_camera_html_a013a158b2e03b634266e635171bba623"><div class="ttname"><a href="class_c_camera.html#a013a158b2e03b634266e635171bba623">CCamera::GetRightDir</a></div><div class="ttdeci">D3DXVECTOR3 &amp; GetRightDir()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:58</div></div>
+<div class="ttc" id="class_c_camera_html_a638f389e357e37cefd7045c16c8b3fd2"><div class="ttname"><a href="class_c_camera.html#a638f389e357e37cefd7045c16c8b3fd2">CCamera::SetCamera</a></div><div class="ttdeci">void SetCamera()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:46</div></div>
+<div class="ttc" id="class_c_camera_html_a1fbe7decf96166fa4f3760c192a75e1c"><div class="ttname"><a href="class_c_camera.html#a1fbe7decf96166fa4f3760c192a75e1c">CCamera::SetUpDir</a></div><div class="ttdeci">void SetUpDir(D3DXVECTOR3 dir)</div><div class="ttdef"><b>Definition:</b> Camera.cpp:78</div></div>
+<div class="ttc" id="_object_8h_html"><div class="ttname"><a href="_object_8h.html">Object.h</a></div></div>
+<div class="ttc" id="class_c_camera_html_a36bc6925208822440f40152e8cacc7c5"><div class="ttname"><a href="class_c_camera.html#a36bc6925208822440f40152e8cacc7c5">CCamera::GetForwordDir</a></div><div class="ttdeci">D3DXVECTOR3 &amp; GetForwordDir()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:68</div></div>
+<div class="ttc" id="class_c_camera_html_a451383b44323e05f40cb97277375f873"><div class="ttname"><a href="class_c_camera.html#a451383b44323e05f40cb97277375f873">CCamera::m_pDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 m_pDevice</div><div class="ttdef"><b>Definition:</b> Camera.h:26</div></div>
+<div class="ttc" id="class_c_camera_html_a0123231b9f52caebf8cc7e95baa1403e"><div class="ttname"><a href="class_c_camera.html#a0123231b9f52caebf8cc7e95baa1403e">CCamera::~CCamera</a></div><div class="ttdeci">~CCamera()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:10</div></div>
+<div class="ttc" id="class_c_camera_html_ac5e984f087bd8356a86decb9867db1bf"><div class="ttname"><a href="class_c_camera.html#ac5e984f087bd8356a86decb9867db1bf">CCamera::matView</a></div><div class="ttdeci">D3DXMATRIX matView</div><div class="ttdef"><b>Definition:</b> Camera.h:24</div></div>
+<div class="ttc" id="class_c_camera_html_a8bb5ef076004494cb5686979b9f33d43"><div class="ttname"><a href="class_c_camera.html#a8bb5ef076004494cb5686979b9f33d43">CCamera::cameraUpDir</a></div><div class="ttdeci">D3DXVECTOR3 cameraUpDir</div><div class="ttdef"><b>Definition:</b> Camera.h:21</div></div>
+<div class="ttc" id="class_c_camera_html_ae819a9447cc8325891de0d625c784045"><div class="ttname"><a href="class_c_camera.html#ae819a9447cc8325891de0d625c784045">CCamera::SetRightDir</a></div><div class="ttdeci">void SetRightDir(D3DXVECTOR3 dir)</div><div class="ttdef"><b>Definition:</b> Camera.cpp:73</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_camera_html_a2eb95595766a84cb745ec00783595190"><div class="ttname"><a href="class_c_camera.html#a2eb95595766a84cb745ec00783595190">CCamera::CCamera</a></div><div class="ttdeci">CCamera()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:5</div></div>
+<div class="ttc" id="class_c_camera_html_a7b97d624251cc8ceb0d53273fa1975cb"><div class="ttname"><a href="class_c_camera.html#a7b97d624251cc8ceb0d53273fa1975cb">CCamera::CamareToObjectDist</a></div><div class="ttdeci">float CamareToObjectDist</div><div class="ttdef"><b>Definition:</b> Camera.h:23</div></div>
+<div class="ttc" id="class_c_camera_html_a69b53fa49dd89a0c89921120c76f0b47"><div class="ttname"><a href="class_c_camera.html#a69b53fa49dd89a0c89921120c76f0b47">CCamera::cameraForwordDir</a></div><div class="ttdeci">D3DXVECTOR3 cameraForwordDir</div><div class="ttdef"><b>Definition:</b> Camera.h:22</div></div>
+<div class="ttc" id="class_c_object_html"><div class="ttname"><a href="class_c_object.html">CObject</a></div><div class="ttdef"><b>Definition:</b> Object.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

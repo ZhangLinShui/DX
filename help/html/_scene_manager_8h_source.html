@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/SceneManager.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SceneManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_scene_manager_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Name:SceneManager.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//场景管理器主要负责场景的创建和销毁</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//场景管理器负责对象的初始化,读取LUA的场景初始化脚本文件</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//场景管理器每帧将需要渲染的对象加入一个渲染队列</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//然后图形系统输出需要渲染的对象</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_observer_8h.html">Observer.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_object_8h.html">Object.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_scene_manager.html">CSceneManager</a>: <span class="keyword">public</span> <a class="code" href="class_i_observable.html">IObservable</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_c_scene_manager.html#a8f9bae5361fe27dd07f3f5a89e11354f">~CSceneManager</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//取得全局唯一的&quot;场景管理器&quot;的实例</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_scene_manager.html">CSceneManager</a>* <a class="code" href="class_c_scene_manager.html#a82234d9f657ea752a28ff54a5f57a65a">GetInstance</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//初始化&quot;场景管理器&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_scene_manager.html#a8396cfa11621690cb0fed5f78a630c78">Init</a>(<span class="keywordtype">string</span> fileName);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//释放&quot;场景管理器&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#aa4acd64dbc48cba43dca06290f81cf9f">Release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//销毁一个场景</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#a8b1c4acf948381041ef9b5aeba52d4f9">DestroyScene</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//创建一个对象</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_c_object.html">CObject</a>* <a class="code" href="class_c_scene_manager.html#a300d85b50d8f56352aab9b73c711fa2d">CreateObject</a>(<span class="keywordtype">long</span> objecttype,<span class="keywordtype">string</span> objectname);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//销毁一个对象</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#ae5f8e9fc642d7ced06e6c80639eaec7b">DestroyObject</a>(<span class="keywordtype">string</span> objectname);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//返回场景管理器的对象容器MAP</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//供各个系统调用</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a2bcc20bad04fb88a66d5de38b77114cc">   38</a></span>&#160;    map&lt;string,CObject*&gt; <a class="code" href="class_c_scene_manager.html#a2bcc20bad04fb88a66d5de38b77114cc">GetSceneObject</a>()       {<span class="keywordflow">return</span> <a class="code" href="class_c_scene_manager.html#a96903d82b489d9c3f7acd48df728d707">m_mapObject</a>;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//设置D3D设备对象</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a65c95d83af60ed841c82e10f553df763">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#a65c95d83af60ed841c82e10f553df763">SetDevice</a>(IDirect3DDevice9* pDevice)   {<a class="code" href="class_c_scene_manager.html#ad5030a7c3f80687ff91ac8fc9a068158">m_pDevice</a> = pDevice;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//通过对象名获得对象实体的指针</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a3e83dabaaa6a136dd93d8d5662e9f51e">   44</a></span>&#160;    <a class="code" href="class_c_object.html">CObject</a>* <a class="code" href="class_c_scene_manager.html#a3e83dabaaa6a136dd93d8d5662e9f51e">GetObjectByName</a>(<span class="keywordtype">string</span> ObjectName) {<span class="keywordflow">return</span> <a class="code" href="class_c_scene_manager.html#a96903d82b489d9c3f7acd48df728d707">m_mapObject</a>[ObjectName];}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//单件模式下构造函数是私有的</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_c_scene_manager.html#aac7331a7a92c7c0781a5e2358ec636a8">CSceneManager</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//全局唯一的&quot;场景管理器&quot;的实例</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a7f454451e529e27df5d461503b192c72">   54</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_scene_manager.html">CSceneManager</a>* <a class="code" href="class_c_scene_manager.html#a7f454451e529e27df5d461503b192c72">m_Instance</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//场景管理器中的所有的对象</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a96903d82b489d9c3f7acd48df728d707">   57</a></span>&#160;    map&lt;string,CObject*&gt; <a class="code" href="class_c_scene_manager.html#a96903d82b489d9c3f7acd48df728d707">m_mapObject</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//控制器里的ImapObject对象</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#aabb3b90faf2642bd33dc3f2ae9763f74">   60</a></span>&#160;    <a class="code" href="class_imap_object.html">ImapObject</a>* <a class="code" href="class_c_scene_manager.html#aabb3b90faf2642bd33dc3f2ae9763f74">m_ImapObject</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//标示场景里面有多少个对象</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a2e2393f946c6291bd4a40a1d4577f4b7">   63</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_scene_manager.html#a2e2393f946c6291bd4a40a1d4577f4b7">m_lNumOfObject</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//D3D设备对象</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#ad5030a7c3f80687ff91ac8fc9a068158">   66</a></span>&#160;    IDirect3DDevice9* <a class="code" href="class_c_scene_manager.html#ad5030a7c3f80687ff91ac8fc9a068158">m_pDevice</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="class_c_scene_manager.html">CSceneManager</a>* <a class="code" href="_scene_manager_8h.html#aea91b2e7e2f2f5a510be6976c35faec3">GetSceneMgr</a>();</div>
+<div class="ttc" id="class_c_scene_manager_html_a300d85b50d8f56352aab9b73c711fa2d"><div class="ttname"><a href="class_c_scene_manager.html#a300d85b50d8f56352aab9b73c711fa2d">CSceneManager::CreateObject</a></div><div class="ttdeci">CObject * CreateObject(long objecttype, string objectname)</div></div>
+<div class="ttc" id="class_c_scene_manager_html_a82234d9f657ea752a28ff54a5f57a65a"><div class="ttname"><a href="class_c_scene_manager.html#a82234d9f657ea752a28ff54a5f57a65a">CSceneManager::GetInstance</a></div><div class="ttdeci">static CSceneManager * GetInstance()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:9</div></div>
+<div class="ttc" id="class_c_scene_manager_html_a65c95d83af60ed841c82e10f553df763"><div class="ttname"><a href="class_c_scene_manager.html#a65c95d83af60ed841c82e10f553df763">CSceneManager::SetDevice</a></div><div class="ttdeci">void SetDevice(IDirect3DDevice9 *pDevice)</div><div class="ttdef"><b>Definition:</b> SceneManager.h:41</div></div>
+<div class="ttc" id="class_c_scene_manager_html_ae5f8e9fc642d7ced06e6c80639eaec7b"><div class="ttname"><a href="class_c_scene_manager.html#ae5f8e9fc642d7ced06e6c80639eaec7b">CSceneManager::DestroyObject</a></div><div class="ttdeci">void DestroyObject(string objectname)</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:132</div></div>
+<div class="ttc" id="class_i_observable_html"><div class="ttname"><a href="class_i_observable.html">IObservable</a></div><div class="ttdef"><b>Definition:</b> Observer.h:60</div></div>
+<div class="ttc" id="_observer_8h_html"><div class="ttname"><a href="_observer_8h.html">Observer.h</a></div></div>
+<div class="ttc" id="class_imap_object_html"><div class="ttname"><a href="class_imap_object.html">ImapObject</a></div><div class="ttdef"><b>Definition:</b> Observer.h:102</div></div>
+<div class="ttc" id="class_c_scene_manager_html_aac7331a7a92c7c0781a5e2358ec636a8"><div class="ttname"><a href="class_c_scene_manager.html#aac7331a7a92c7c0781a5e2358ec636a8">CSceneManager::CSceneManager</a></div><div class="ttdeci">CSceneManager()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:19</div></div>
+<div class="ttc" id="class_c_scene_manager_html_a2e2393f946c6291bd4a40a1d4577f4b7"><div class="ttname"><a href="class_c_scene_manager.html#a2e2393f946c6291bd4a40a1d4577f4b7">CSceneManager::m_lNumOfObject</a></div><div class="ttdeci">long m_lNumOfObject</div><div class="ttdef"><b>Definition:</b> SceneManager.h:63</div></div>
+<div class="ttc" id="class_c_scene_manager_html_aabb3b90faf2642bd33dc3f2ae9763f74"><div class="ttname"><a href="class_c_scene_manager.html#aabb3b90faf2642bd33dc3f2ae9763f74">CSceneManager::m_ImapObject</a></div><div class="ttdeci">ImapObject * m_ImapObject</div><div class="ttdef"><b>Definition:</b> SceneManager.h:60</div></div>
+<div class="ttc" id="class_c_scene_manager_html_a2bcc20bad04fb88a66d5de38b77114cc"><div class="ttname"><a href="class_c_scene_manager.html#a2bcc20bad04fb88a66d5de38b77114cc">CSceneManager::GetSceneObject</a></div><div class="ttdeci">map&lt; string, CObject * &gt; GetSceneObject()</div><div class="ttdef"><b>Definition:</b> SceneManager.h:38</div></div>
+<div class="ttc" id="class_c_scene_manager_html_a96903d82b489d9c3f7acd48df728d707"><div class="ttname"><a href="class_c_scene_manager.html#a96903d82b489d9c3f7acd48df728d707">CSceneManager::m_mapObject</a></div><div class="ttdeci">map&lt; string, CObject * &gt; m_mapObject</div><div class="ttdef"><b>Definition:</b> SceneManager.h:57</div></div>
+<div class="ttc" id="class_c_scene_manager_html_a7f454451e529e27df5d461503b192c72"><div class="ttname"><a href="class_c_scene_manager.html#a7f454451e529e27df5d461503b192c72">CSceneManager::m_Instance</a></div><div class="ttdeci">static CSceneManager * m_Instance</div><div class="ttdef"><b>Definition:</b> SceneManager.h:54</div></div>
+<div class="ttc" id="_scene_manager_8h_html_aea91b2e7e2f2f5a510be6976c35faec3"><div class="ttname"><a href="_scene_manager_8h.html#aea91b2e7e2f2f5a510be6976c35faec3">GetSceneMgr</a></div><div class="ttdeci">CSceneManager * GetSceneMgr()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:150</div></div>
+<div class="ttc" id="_object_8h_html"><div class="ttname"><a href="_object_8h.html">Object.h</a></div></div>
+<div class="ttc" id="class_c_scene_manager_html_a8f9bae5361fe27dd07f3f5a89e11354f"><div class="ttname"><a href="class_c_scene_manager.html#a8f9bae5361fe27dd07f3f5a89e11354f">CSceneManager::~CSceneManager</a></div><div class="ttdeci">~CSceneManager()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:28</div></div>
+<div class="ttc" id="class_c_scene_manager_html_aa4acd64dbc48cba43dca06290f81cf9f"><div class="ttname"><a href="class_c_scene_manager.html#aa4acd64dbc48cba43dca06290f81cf9f">CSceneManager::Release</a></div><div class="ttdeci">void Release(void)</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:112</div></div>
+<div class="ttc" id="class_c_scene_manager_html_ad5030a7c3f80687ff91ac8fc9a068158"><div class="ttname"><a href="class_c_scene_manager.html#ad5030a7c3f80687ff91ac8fc9a068158">CSceneManager::m_pDevice</a></div><div class="ttdeci">IDirect3DDevice9 * m_pDevice</div><div class="ttdef"><b>Definition:</b> SceneManager.h:66</div></div>
+<div class="ttc" id="class_c_scene_manager_html_a3e83dabaaa6a136dd93d8d5662e9f51e"><div class="ttname"><a href="class_c_scene_manager.html#a3e83dabaaa6a136dd93d8d5662e9f51e">CSceneManager::GetObjectByName</a></div><div class="ttdeci">CObject * GetObjectByName(string ObjectName)</div><div class="ttdef"><b>Definition:</b> SceneManager.h:44</div></div>
+<div class="ttc" id="class_c_object_html"><div class="ttname"><a href="class_c_object.html">CObject</a></div><div class="ttdef"><b>Definition:</b> Object.h:7</div></div>
+<div class="ttc" id="class_c_scene_manager_html_a8b1c4acf948381041ef9b5aeba52d4f9"><div class="ttname"><a href="class_c_scene_manager.html#a8b1c4acf948381041ef9b5aeba52d4f9">CSceneManager::DestroyScene</a></div><div class="ttdeci">void DestroyScene(void)</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:121</div></div>
+<div class="ttc" id="class_c_scene_manager_html"><div class="ttname"><a href="class_c_scene_manager.html">CSceneManager</a></div><div class="ttdef"><b>Definition:</b> SceneManager.h:13</div></div>
+<div class="ttc" id="class_c_scene_manager_html_a8396cfa11621690cb0fed5f78a630c78"><div class="ttname"><a href="class_c_scene_manager.html#a8396cfa11621690cb0fed5f78a630c78">CSceneManager::Init</a></div><div class="ttdeci">bool Init(string fileName)</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

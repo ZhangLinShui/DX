@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/MultiAnim.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MultiAnim.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_multi_anim_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_object_8h.html">Object.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_multi_anim.html">CMultiAnim</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>CAnimInstance;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Name: class CMultiAnimAllocateHierarchy</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// Desc: Inheriting from ID3DXAllocateHierarchy, this class handles the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//       allocation and release of the memory used by animation frames and</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//       meshes.  Applications derive their own version of this class so</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//       that they can customize the behavior of allocation and release.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_allocate_hierarchy.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_allocate_hierarchy.html">CAllocateHierarchy</a> : <span class="keyword">public</span> ID3DXAllocateHierarchy</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    STDMETHOD(<a class="code" href="class_c_allocate_hierarchy.html#a7175d10f7dec9d4d5d6945d65e81084f">CreateFrame</a>)(THIS_ LPCSTR Name, LPD3DXFRAME *ppNewFrame);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    STDMETHOD(<a class="code" href="class_c_allocate_hierarchy.html#ae05ae185a7b349ff68aac1499cf7eaf9">CreateMeshContainer</a>)(THIS_</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        LPCSTR Name,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        CONST D3DXMESHDATA *pMeshData,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        CONST D3DXMATERIAL *pMaterials,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        CONST D3DXEFFECTINSTANCE *pEffectInstances,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        DWORD NumMaterials,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        CONST DWORD *pAdjacency,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        LPD3DXSKININFO pSkinInfo,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        LPD3DXMESHCONTAINER *ppNewMeshContainer);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    STDMETHOD(<a class="code" href="class_c_allocate_hierarchy.html#a0fae88e112096051e2f4e74b4915d751">DestroyFrame</a>)(THIS_ LPD3DXFRAME pFrameToFree);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    STDMETHOD(<a class="code" href="class_c_allocate_hierarchy.html#a7c549e283f32f0928036848f7eab520e">DestroyMeshContainer</a>)(THIS_ LPD3DXMESHCONTAINER pMeshContainerBase);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_allocate_hierarchy.html#a02bfaf2d3b079e6cdba6f7cb4ffc6941">   42</a></span>&#160;    <a class="code" href="class_c_allocate_hierarchy.html#a02bfaf2d3b079e6cdba6f7cb4ffc6941">CAllocateHierarchy</a>() {}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_allocate_hierarchy.html#a9677e12738b58f5c5222d7a1dff9c563">   44</a></span>&#160;    <a class="code" href="class_c_multi_anim.html">CMultiAnim</a> *<a class="code" href="class_c_allocate_hierarchy.html#a9677e12738b58f5c5222d7a1dff9c563">m_pParent</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html">   49</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html">D3DXFRAME_DERIVED</a> : <span class="keyword">public</span> D3DXFRAME</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#a6a18a99dd82f64b4ff457cc755f07f64">   51</a></span>&#160;    D3DXMATRIXA16        <a class="code" href="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#a6a18a99dd82f64b4ff457cc755f07f64">CombinedTransformationMatrix</a>;      <span class="comment">// absolute matrix</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#aee9c6868862fda787de38d1674a628d8">   52</a></span>&#160;    D3DXMATRIX           <a class="code" href="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#aee9c6868862fda787de38d1674a628d8">ExTransformationMatrix</a>;            <span class="comment">// 扩展变换矩阵(用于外界设置骨骼的变换，该矩阵与骨骼源矩阵相乘得到骨骼的最终变换矩阵)</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html">   55</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html">D3DXMESHCONTAINER_DERIVED</a> : <span class="keyword">public</span> D3DXMESHCONTAINER</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a37d0e84b0c0297a2a869596e76250b22">   57</a></span>&#160;    LPDIRECT3DTEXTURE9*  <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a37d0e84b0c0297a2a869596e76250b22">ppTextures</a>;       <span class="comment">// array of textures, entries are NULL if no texture specified</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#aad54cdbdd64f4d8a2d71ea295f0b3409">   58</a></span>&#160;    std::vector&lt;std::string&gt; <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#aad54cdbdd64f4d8a2d71ea295f0b3409">vecTexFileName</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// 皮肤信息             </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a33524a808f23f5f09da7857de9fa5f51">   61</a></span>&#160;    LPD3DXMESH           <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a33524a808f23f5f09da7857de9fa5f51">pOrigMesh</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a3d3c92c22ed9d94a077e955f4a3ccffe">   62</a></span>&#160;    LPD3DXATTRIBUTERANGE <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a3d3c92c22ed9d94a077e955f4a3ccffe">pAttributeTable</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a43e8d9c73820f0f8d54e6a637a2c99c3">   63</a></span>&#160;    DWORD                <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a43e8d9c73820f0f8d54e6a637a2c99c3">NumAttributeGroups</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ab10656dec96efc7f43f0f4138b2220e8">   64</a></span>&#160;    DWORD                <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ab10656dec96efc7f43f0f4138b2220e8">NumInfl</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ab8e0fa0bc62a5417f9e2667dd53c4b29">   65</a></span>&#160;    LPD3DXBUFFER         <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ab8e0fa0bc62a5417f9e2667dd53c4b29">pBoneCombinationBuf</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a210cdbf70996e166f10273e84f571164">   66</a></span>&#160;    D3DXMATRIX**         <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a210cdbf70996e166f10273e84f571164">ppBoneMatrixPtrs</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#af252edb71aeeeb66ab205a764cbe70cd">   67</a></span>&#160;    D3DXMATRIX*          <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#af252edb71aeeeb66ab205a764cbe70cd">pBoneOffsetMatrices</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#aca8eb76ee2c00bb66291b19ba6df6440">   68</a></span>&#160;    D3DXMATRIX *        <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#aca8eb76ee2c00bb66291b19ba6df6440">m_pBoneMatrices</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ab81e15e6ba55b54565e3b4622f540e22">   69</a></span>&#160;    DWORD                <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ab81e15e6ba55b54565e3b4622f540e22">NumPaletteEntries</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a7cad30f6587a5825cf6421120b771e4e">   70</a></span>&#160;    <span class="keywordtype">bool</span>                 <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a7cad30f6587a5825cf6421120b771e4e">UseSoftwareVP</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a48c97eedb628959a0a1bdbbc26749f6c">   71</a></span>&#160;    DWORD                <a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a48c97eedb628959a0a1bdbbc26749f6c">iAttributeSW</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">// Name: class CMultiAnim</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">// Desc: This class encapsulates a mesh hierarchy (typically loaded from an</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//       .X file).  It has a list of CAnimInstance objects that all share</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">//       the mesh hierarchy here, as well as using a copy of our animation</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//       controller.  CMultiAnim loads and keeps an effect object that it</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">//       renders the meshes with.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html">   86</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_multi_anim.html">CMultiAnim</a>:<span class="keyword">public</span> <a class="code" href="class_c_object.html">CObject</a></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html#aa5af99121369042e6bdc8c1adc0e8905">   88</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_c_allocate_hierarchy.html">CAllocateHierarchy</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html#a4ac5444c3752d141281348ad14a60b82">   89</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_c_multi_anim.html#a4ac5444c3752d141281348ad14a60b82">CAnimInstance</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html#a4f86d495f7ff7b3db8ee7e3659ed364d">   90</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="class_c_multi_anim.html#a4f86d495f7ff7b3db8ee7e3659ed364d">MultiAnimFrame</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html#a2202f8a764cc34144947ed38c732b67e">   91</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="class_c_multi_anim.html#a2202f8a764cc34144947ed38c732b67e">MultiAnimMC</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html#a11f3d59c08985922afee58e34b84c8ee">   95</a></span>&#160;    <a class="code" href="class_c_allocate_hierarchy.html">CAllocateHierarchy</a>      <a class="code" href="class_c_multi_anim.html#a11f3d59c08985922afee58e34b84c8ee">m_Alloc</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html#a93b2ebdf8774d281ad6e1979b9f40514">   98</a></span>&#160;    D3DXFRAME* <a class="code" href="class_c_multi_anim.html#a93b2ebdf8774d281ad6e1979b9f40514">m_pFrameRoot</a>;           <span class="comment">// shared between all instances</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html#a5a478960ac47a544bdde058b15c1ac9d">   99</a></span>&#160;    LPD3DXANIMATIONCONTROLLER <a class="code" href="class_c_multi_anim.html#a5a478960ac47a544bdde058b15c1ac9d">m_pAC</a>;                  <span class="comment">// AC that all children clone from -- to clone clean, no keys</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    HRESULT <a class="code" href="class_c_multi_anim.html#a182878127ebc2ea83299d24247d0eb17">GenerateSkinnedMesh</a>(<a class="code" href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html">D3DXMESHCONTAINER_DERIVED</a> *pMeshContainer);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    HRESULT             <a class="code" href="class_c_multi_anim.html#a2421d8622ccd65a86826fceadb35f466">SetupBonePtrs</a>(D3DXFRAME* pFrame);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    HRESULT <a class="code" href="class_c_multi_anim.html#a13c4671e0b511d3d601e40d8e62c6797">SetupBoneMatrixPointersOnMesh</a>(LPD3DXMESHCONTAINER pMeshContainerBase);</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html#aa937f582d28f59c7aa358c0c113c9efc">  106</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_multi_anim.html#aa937f582d28f59c7aa358c0c113c9efc">m_TextruePath</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_c_multi_anim.html#a08605eae53c5d0f166632af15d4119b9">  107</a></span>&#160;    <span class="keywordtype">string</span> &amp;<a class="code" href="class_c_multi_anim.html#a08605eae53c5d0f166632af15d4119b9">m_</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_multi_anim.html#aa937f582d28f59c7aa358c0c113c9efc">m_TextruePath</a>; }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="class_c_multi_anim.html#a6c6cf25e62b5d66ca24d201b7f74b6c2">CMultiAnim</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">virtual</span>             <a class="code" href="class_c_multi_anim.html#aeb8bf9bb598ef2d0398b03319a2e97cb">~CMultiAnim</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="class_c_multi_anim.html#a4ac5444c3752d141281348ad14a60b82">CAnimInstance</a>*      <a class="code" href="class_c_multi_anim.html#a3837ebba5fbd157a1309359bc20a0a85">CreateInstance</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    BOOL <a class="code" href="class_c_multi_anim.html#aed758430fddb10a92a2f8924935a43c6">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a>* element);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">virtual</span> HRESULT     <a class="code" href="class_c_multi_anim.html#a5bc6546d0ff0f3bec39a691d20dc0f0b">Cleanup</a>(<a class="code" href="class_c_allocate_hierarchy.html">CAllocateHierarchy</a>* pAH);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a3d3c92c22ed9d94a077e955f4a3ccffe"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a3d3c92c22ed9d94a077e955f4a3ccffe">D3DXMESHCONTAINER_DERIVED::pAttributeTable</a></div><div class="ttdeci">LPD3DXATTRIBUTERANGE pAttributeTable</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:62</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a2202f8a764cc34144947ed38c732b67e"><div class="ttname"><a href="class_c_multi_anim.html#a2202f8a764cc34144947ed38c732b67e">CMultiAnim::MultiAnimMC</a></div><div class="ttdeci">friend struct MultiAnimMC</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:91</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a2421d8622ccd65a86826fceadb35f466"><div class="ttname"><a href="class_c_multi_anim.html#a2421d8622ccd65a86826fceadb35f466">CMultiAnim::SetupBonePtrs</a></div><div class="ttdeci">HRESULT SetupBonePtrs(D3DXFRAME *pFrame)</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:549</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a43e8d9c73820f0f8d54e6a637a2c99c3"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a43e8d9c73820f0f8d54e6a637a2c99c3">D3DXMESHCONTAINER_DERIVED::NumAttributeGroups</a></div><div class="ttdeci">DWORD NumAttributeGroups</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:63</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a6c6cf25e62b5d66ca24d201b7f74b6c2"><div class="ttname"><a href="class_c_multi_anim.html#a6c6cf25e62b5d66ca24d201b7f74b6c2">CMultiAnim::CMultiAnim</a></div><div class="ttdeci">CMultiAnim()</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:307</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a5a478960ac47a544bdde058b15c1ac9d"><div class="ttname"><a href="class_c_multi_anim.html#a5a478960ac47a544bdde058b15c1ac9d">CMultiAnim::m_pAC</a></div><div class="ttdeci">LPD3DXANIMATIONCONTROLLER m_pAC</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:99</div></div>
+<div class="ttc" id="class_c_allocate_hierarchy_html_a0fae88e112096051e2f4e74b4915d751"><div class="ttname"><a href="class_c_allocate_hierarchy.html#a0fae88e112096051e2f4e74b4915d751">CAllocateHierarchy::DestroyFrame</a></div><div class="ttdeci">STDMETHOD() DestroyFrame(THIS_ LPD3DXFRAME pFrameToFree)</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:258</div></div>
+<div class="ttc" id="class_c_allocate_hierarchy_html"><div class="ttname"><a href="class_c_allocate_hierarchy.html">CAllocateHierarchy</a></div><div class="ttdef"><b>Definition:</b> MultiAnim.h:18</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_ab81e15e6ba55b54565e3b4622f540e22"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ab81e15e6ba55b54565e3b4622f540e22">D3DXMESHCONTAINER_DERIVED::NumPaletteEntries</a></div><div class="ttdeci">DWORD NumPaletteEntries</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:69</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a4ac5444c3752d141281348ad14a60b82"><div class="ttname"><a href="class_c_multi_anim.html#a4ac5444c3752d141281348ad14a60b82">CMultiAnim::CAnimInstance</a></div><div class="ttdeci">friend class CAnimInstance</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:89</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_af252edb71aeeeb66ab205a764cbe70cd"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#af252edb71aeeeb66ab205a764cbe70cd">D3DXMESHCONTAINER_DERIVED::pBoneOffsetMatrices</a></div><div class="ttdeci">D3DXMATRIX * pBoneOffsetMatrices</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:67</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a4f86d495f7ff7b3db8ee7e3659ed364d"><div class="ttname"><a href="class_c_multi_anim.html#a4f86d495f7ff7b3db8ee7e3659ed364d">CMultiAnim::MultiAnimFrame</a></div><div class="ttdeci">friend struct MultiAnimFrame</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:90</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a3837ebba5fbd157a1309359bc20a0a85"><div class="ttname"><a href="class_c_multi_anim.html#a3837ebba5fbd157a1309359bc20a0a85">CMultiAnim::CreateInstance</a></div><div class="ttdeci">CAnimInstance * CreateInstance()</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:456</div></div>
+<div class="ttc" id="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d_html"><div class="ttname"><a href="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html">D3DXFRAME_DERIVED</a></div><div class="ttdef"><b>Definition:</b> MultiAnim.h:49</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_ab8e0fa0bc62a5417f9e2667dd53c4b29"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ab8e0fa0bc62a5417f9e2667dd53c4b29">D3DXMESHCONTAINER_DERIVED::pBoneCombinationBuf</a></div><div class="ttdeci">LPD3DXBUFFER pBoneCombinationBuf</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:65</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a13c4671e0b511d3d601e40d8e62c6797"><div class="ttname"><a href="class_c_multi_anim.html#a13c4671e0b511d3d601e40d8e62c6797">CMultiAnim::SetupBoneMatrixPointersOnMesh</a></div><div class="ttdeci">HRESULT SetupBoneMatrixPointersOnMesh(LPD3DXMESHCONTAINER pMeshContainerBase)</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:420</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a182878127ebc2ea83299d24247d0eb17"><div class="ttname"><a href="class_c_multi_anim.html#a182878127ebc2ea83299d24247d0eb17">CMultiAnim::GenerateSkinnedMesh</a></div><div class="ttdeci">HRESULT GenerateSkinnedMesh(D3DXMESHCONTAINER_DERIVED *pMeshContainer)</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:501</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a37d0e84b0c0297a2a869596e76250b22"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a37d0e84b0c0297a2a869596e76250b22">D3DXMESHCONTAINER_DERIVED::ppTextures</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 * ppTextures</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:57</div></div>
+<div class="ttc" id="class_c_allocate_hierarchy_html_a7c549e283f32f0928036848f7eab520e"><div class="ttname"><a href="class_c_allocate_hierarchy.html#a7c549e283f32f0928036848f7eab520e">CAllocateHierarchy::DestroyMeshContainer</a></div><div class="ttdeci">STDMETHOD() DestroyMeshContainer(THIS_ LPD3DXMESHCONTAINER pMeshContainerBase)</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:272</div></div>
+<div class="ttc" id="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d_html_aee9c6868862fda787de38d1674a628d8"><div class="ttname"><a href="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#aee9c6868862fda787de38d1674a628d8">D3DXFRAME_DERIVED::ExTransformationMatrix</a></div><div class="ttdeci">D3DXMATRIX ExTransformationMatrix</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:52</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a08605eae53c5d0f166632af15d4119b9"><div class="ttname"><a href="class_c_multi_anim.html#a08605eae53c5d0f166632af15d4119b9">CMultiAnim::m_</a></div><div class="ttdeci">string &amp; m_()</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:107</div></div>
+<div class="ttc" id="class_c_allocate_hierarchy_html_a9677e12738b58f5c5222d7a1dff9c563"><div class="ttname"><a href="class_c_allocate_hierarchy.html#a9677e12738b58f5c5222d7a1dff9c563">CAllocateHierarchy::m_pParent</a></div><div class="ttdeci">CMultiAnim * m_pParent</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:44</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html">D3DXMESHCONTAINER_DERIVED</a></div><div class="ttdef"><b>Definition:</b> MultiAnim.h:55</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a7cad30f6587a5825cf6421120b771e4e"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a7cad30f6587a5825cf6421120b771e4e">D3DXMESHCONTAINER_DERIVED::UseSoftwareVP</a></div><div class="ttdeci">bool UseSoftwareVP</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:70</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a48c97eedb628959a0a1bdbbc26749f6c"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a48c97eedb628959a0a1bdbbc26749f6c">D3DXMESHCONTAINER_DERIVED::iAttributeSW</a></div><div class="ttdeci">DWORD iAttributeSW</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:71</div></div>
+<div class="ttc" id="class_c_allocate_hierarchy_html_a7175d10f7dec9d4d5d6945d65e81084f"><div class="ttname"><a href="class_c_allocate_hierarchy.html#a7175d10f7dec9d4d5d6945d65e81084f">CAllocateHierarchy::CreateFrame</a></div><div class="ttdeci">STDMETHOD() CreateFrame(THIS_ LPCSTR Name, LPD3DXFRAME *ppNewFrame)</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:28</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_aad54cdbdd64f4d8a2d71ea295f0b3409"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#aad54cdbdd64f4d8a2d71ea295f0b3409">D3DXMESHCONTAINER_DERIVED::vecTexFileName</a></div><div class="ttdeci">std::vector&lt; std::string &gt; vecTexFileName</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:58</div></div>
+<div class="ttc" id="_object_8h_html"><div class="ttname"><a href="_object_8h.html">Object.h</a></div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_ab10656dec96efc7f43f0f4138b2220e8"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ab10656dec96efc7f43f0f4138b2220e8">D3DXMESHCONTAINER_DERIVED::NumInfl</a></div><div class="ttdeci">DWORD NumInfl</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:64</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a11f3d59c08985922afee58e34b84c8ee"><div class="ttname"><a href="class_c_multi_anim.html#a11f3d59c08985922afee58e34b84c8ee">CMultiAnim::m_Alloc</a></div><div class="ttdeci">CAllocateHierarchy m_Alloc</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:95</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a210cdbf70996e166f10273e84f571164"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a210cdbf70996e166f10273e84f571164">D3DXMESHCONTAINER_DERIVED::ppBoneMatrixPtrs</a></div><div class="ttdeci">D3DXMATRIX ** ppBoneMatrixPtrs</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:66</div></div>
+<div class="ttc" id="class_c_allocate_hierarchy_html_ae05ae185a7b349ff68aac1499cf7eaf9"><div class="ttname"><a href="class_c_allocate_hierarchy.html#ae05ae185a7b349ff68aac1499cf7eaf9">CAllocateHierarchy::CreateMeshContainer</a></div><div class="ttdeci">STDMETHOD() CreateMeshContainer(THIS_ LPCSTR Name, CONST D3DXMESHDATA *pMeshData, CONST D3DXMATERIAL *pMaterials, CONST D3DXEFFECTINSTANCE *pEffectInstances, DWORD NumMaterials, CONST DWORD *pAdjacency, LPD3DXSKININFO pSkinInfo, LPD3DXMESHCONTAINER *ppNewMeshContainer)</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:70</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a5bc6546d0ff0f3bec39a691d20dc0f0b"><div class="ttname"><a href="class_c_multi_anim.html#a5bc6546d0ff0f3bec39a691d20dc0f0b">CMultiAnim::Cleanup</a></div><div class="ttdeci">virtual HRESULT Cleanup(CAllocateHierarchy *pAH)</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:401</div></div>
+<div class="ttc" id="class_c_multi_anim_html"><div class="ttname"><a href="class_c_multi_anim.html">CMultiAnim</a></div><div class="ttdef"><b>Definition:</b> MultiAnim.h:86</div></div>
+<div class="ttc" id="class_c_multi_anim_html_aeb8bf9bb598ef2d0398b03319a2e97cb"><div class="ttname"><a href="class_c_multi_anim.html#aeb8bf9bb598ef2d0398b03319a2e97cb">CMultiAnim::~CMultiAnim</a></div><div class="ttdeci">virtual ~CMultiAnim()</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:320</div></div>
+<div class="ttc" id="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d_html_a6a18a99dd82f64b4ff457cc755f07f64"><div class="ttname"><a href="struct_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#a6a18a99dd82f64b4ff457cc755f07f64">D3DXFRAME_DERIVED::CombinedTransformationMatrix</a></div><div class="ttdeci">D3DXMATRIXA16 CombinedTransformationMatrix</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:51</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_allocate_hierarchy_html_a02bfaf2d3b079e6cdba6f7cb4ffc6941"><div class="ttname"><a href="class_c_allocate_hierarchy.html#a02bfaf2d3b079e6cdba6f7cb4ffc6941">CAllocateHierarchy::CAllocateHierarchy</a></div><div class="ttdeci">CAllocateHierarchy()</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:42</div></div>
+<div class="ttc" id="class_c_multi_anim_html_a93b2ebdf8774d281ad6e1979b9f40514"><div class="ttname"><a href="class_c_multi_anim.html#a93b2ebdf8774d281ad6e1979b9f40514">CMultiAnim::m_pFrameRoot</a></div><div class="ttdeci">D3DXFRAME * m_pFrameRoot</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:98</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_aca8eb76ee2c00bb66291b19ba6df6440"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#aca8eb76ee2c00bb66291b19ba6df6440">D3DXMESHCONTAINER_DERIVED::m_pBoneMatrices</a></div><div class="ttdeci">D3DXMATRIX * m_pBoneMatrices</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:68</div></div>
+<div class="ttc" id="class_c_object_html"><div class="ttname"><a href="class_c_object.html">CObject</a></div><div class="ttdef"><b>Definition:</b> Object.h:7</div></div>
+<div class="ttc" id="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a33524a808f23f5f09da7857de9fa5f51"><div class="ttname"><a href="struct_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a33524a808f23f5f09da7857de9fa5f51">D3DXMESHCONTAINER_DERIVED::pOrigMesh</a></div><div class="ttdeci">LPD3DXMESH pOrigMesh</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:61</div></div>
+<div class="ttc" id="class_c_multi_anim_html_aa937f582d28f59c7aa358c0c113c9efc"><div class="ttname"><a href="class_c_multi_anim.html#aa937f582d28f59c7aa358c0c113c9efc">CMultiAnim::m_TextruePath</a></div><div class="ttdeci">string m_TextruePath</div><div class="ttdef"><b>Definition:</b> MultiAnim.h:106</div></div>
+<div class="ttc" id="class_c_multi_anim_html_aed758430fddb10a92a2f8924935a43c6"><div class="ttname"><a href="class_c_multi_anim.html#aed758430fddb10a92a2f8924935a43c6">CMultiAnim::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *element)</div><div class="ttdef"><b>Definition:</b> MultiAnim.cpp:336</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

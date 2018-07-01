@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Frame.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Frame.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_frame_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//框架组件,一个PAGE有一个框架,所有的其中的控件都是它的子组件</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//它控制了PAGE的显示和隐藏,也控制了PAGE的拖曳</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_c_frame.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_frame.html">CFrame</a> : <span class="keyword">public</span> <a class="code" href="class_c_component.html">CComponent</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">//构造函数</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_c_frame.html#af0e3dd238c2ea178e71889d1c0c5a386">CFrame</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_c_frame.html#a6a1cd5a47dbde7799f2c58d14e4adcc2">~CFrame</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_frame.html#a7db73e122c69956450510a13974a04c1">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a>* element);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//处理鼠标左键按下的事件响应</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_frame.html#a6125d1f825ff1a79458004abcf482304">ProcessMouseLBDown</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//处理鼠标左键弹起的事件响应</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_frame.html#a67111c4c0c73497395483c36008e2428">ProcessMouseLBUp</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//处理鼠标移动的事件响应</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_frame.html#a009c63d6b4d56f741529d3e1a456f589">ProcessMouseMove</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="ttc" id="class_c_frame_html_a7db73e122c69956450510a13974a04c1"><div class="ttname"><a href="class_c_frame.html#a7db73e122c69956450510a13974a04c1">CFrame::Init</a></div><div class="ttdeci">void Init(TiXmlElement *element)</div><div class="ttdef"><b>Definition:</b> Frame.cpp:16</div></div>
+<div class="ttc" id="class_c_frame_html"><div class="ttname"><a href="class_c_frame.html">CFrame</a></div><div class="ttdef"><b>Definition:</b> Frame.h:7</div></div>
+<div class="ttc" id="class_c_frame_html_a6a1cd5a47dbde7799f2c58d14e4adcc2"><div class="ttname"><a href="class_c_frame.html#a6a1cd5a47dbde7799f2c58d14e4adcc2">CFrame::~CFrame</a></div><div class="ttdeci">~CFrame()</div><div class="ttdef"><b>Definition:</b> Frame.cpp:11</div></div>
+<div class="ttc" id="_component_8h_html"><div class="ttname"><a href="_component_8h.html">Component.h</a></div></div>
+<div class="ttc" id="class_c_frame_html_a009c63d6b4d56f741529d3e1a456f589"><div class="ttname"><a href="class_c_frame.html#a009c63d6b4d56f741529d3e1a456f589">CFrame::ProcessMouseMove</a></div><div class="ttdeci">void ProcessMouseMove(long x, long y)</div><div class="ttdef"><b>Definition:</b> Frame.cpp:60</div></div>
+<div class="ttc" id="class_c_frame_html_a6125d1f825ff1a79458004abcf482304"><div class="ttname"><a href="class_c_frame.html#a6125d1f825ff1a79458004abcf482304">CFrame::ProcessMouseLBDown</a></div><div class="ttdeci">void ProcessMouseLBDown(long x, long y)</div><div class="ttdef"><b>Definition:</b> Frame.cpp:22</div></div>
+<div class="ttc" id="class_c_frame_html_af0e3dd238c2ea178e71889d1c0c5a386"><div class="ttname"><a href="class_c_frame.html#af0e3dd238c2ea178e71889d1c0c5a386">CFrame::CFrame</a></div><div class="ttdeci">CFrame()</div><div class="ttdef"><b>Definition:</b> Frame.cpp:5</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_frame_html_a67111c4c0c73497395483c36008e2428"><div class="ttname"><a href="class_c_frame.html#a67111c4c0c73497395483c36008e2428">CFrame::ProcessMouseLBUp</a></div><div class="ttdeci">void ProcessMouseLBUp(long x, long y)</div><div class="ttdef"><b>Definition:</b> Frame.cpp:54</div></div>
+<div class="ttc" id="class_c_component_html"><div class="ttname"><a href="class_c_component.html">CComponent</a></div><div class="ttdef"><b>Definition:</b> Component.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

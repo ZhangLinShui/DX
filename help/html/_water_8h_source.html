@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Water.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Water.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_water_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_object_8h.html">RenderObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_c_water.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_water.html">CWater</a> :</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_c_render_object.html">CRenderObject</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_c_water.html#adfe46d06b3cbc0f9ac7063de726ffe6f">CWater</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_c_water.html#aed255b6e643b13f081a5b3336d4e6d5f">~CWater</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    BOOL <a class="code" href="class_c_water.html#a381791f09658ed01a58870a87d95c48c">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a> *node);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_water.html#aaa6d22adf0f9df9c63406a072500ff21">Draw</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_water.html#a9935727034a41fe84286c34ce238c6c4">DoFrame</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_water.html#ab2676f14c4efa3c1212030be0c417b3c">   13</a></span>&#160;    LPDIRECT3DTEXTURE9 <a class="code" href="class_c_water.html#ab2676f14c4efa3c1212030be0c417b3c">m_pText</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_water.html#a006ee9b9d77a8e4a842bfa523730b14a">   14</a></span>&#160;    LPDIRECT3DTEXTURE9* <a class="code" href="class_c_water.html#a006ee9b9d77a8e4a842bfa523730b14a">m_pWaterText</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_water.html#ad898de93d8b868f7bc31aa6201c4a412">   15</a></span>&#160;    LPDIRECT3DVERTEXBUFFER9 <a class="code" href="class_c_water.html#ad898de93d8b868f7bc31aa6201c4a412">m_pVerBuff</a>;<span class="comment">//顶点缓冲接口指针</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_water.html#a826ddc0c91c887a6f1095c65d727f2e0">   16</a></span>&#160;    LPDIRECT3DINDEXBUFFER9 <a class="code" href="class_c_water.html#a826ddc0c91c887a6f1095c65d727f2e0">m_pIndexBuff</a>;<span class="comment">//索引缓冲接口指针</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_water.html#afbd525cca99ab6412083aa5f19e60348">   17</a></span>&#160;    <a class="code" href="struct_c_u_s_t_o_m_v_e_r_t_e_x.html">CUSTOMVERTEX</a> *<a class="code" href="class_c_water.html#afbd525cca99ab6412083aa5f19e60348">m_CustomVer</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_water.html#a7ea95cb33c005a67c4d578e2893adf2c">   18</a></span>&#160;    WORD  *<a class="code" href="class_c_water.html#a7ea95cb33c005a67c4d578e2893adf2c">m_Index</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_water.html#ae97387814f53e41fad4fa7169ef753a4">   19</a></span>&#160;    <span class="keywordtype">void</span>*  <a class="code" href="class_c_water.html#ae97387814f53e41fad4fa7169ef753a4">pVBData</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_water.html#ae6f32d7c5a9642663ca0af1c60f45c6c">   20</a></span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="class_c_water.html#ae6f32d7c5a9642663ca0af1c60f45c6c">pIBData</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_water.html#aa73c9075e8de0a140ae35107c1741226">   21</a></span>&#160;    D3DMATERIAL9 <a class="code" href="class_c_water.html#aa73c9075e8de0a140ae35107c1741226">g_Material</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_water.html#aa6fd337cb905e0ab5ecb72bafb316df6">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_water.html#aa6fd337cb905e0ab5ecb72bafb316df6">m_wCurFrame</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_water.html#a06a213876756d73ae27cee857e58ae48">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_water.html#a06a213876756d73ae27cee857e58ae48">m_Count</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="ttc" id="class_c_water_html_adfe46d06b3cbc0f9ac7063de726ffe6f"><div class="ttname"><a href="class_c_water.html#adfe46d06b3cbc0f9ac7063de726ffe6f">CWater::CWater</a></div><div class="ttdeci">CWater()</div><div class="ttdef"><b>Definition:</b> Water.cpp:5</div></div>
+<div class="ttc" id="class_c_water_html"><div class="ttname"><a href="class_c_water.html">CWater</a></div><div class="ttdef"><b>Definition:</b> Water.h:3</div></div>
+<div class="ttc" id="class_c_water_html_ad898de93d8b868f7bc31aa6201c4a412"><div class="ttname"><a href="class_c_water.html#ad898de93d8b868f7bc31aa6201c4a412">CWater::m_pVerBuff</a></div><div class="ttdeci">LPDIRECT3DVERTEXBUFFER9 m_pVerBuff</div><div class="ttdef"><b>Definition:</b> Water.h:15</div></div>
+<div class="ttc" id="_render_object_8h_html"><div class="ttname"><a href="_render_object_8h.html">RenderObject.h</a></div></div>
+<div class="ttc" id="class_c_water_html_ae97387814f53e41fad4fa7169ef753a4"><div class="ttname"><a href="class_c_water.html#ae97387814f53e41fad4fa7169ef753a4">CWater::pVBData</a></div><div class="ttdeci">void * pVBData</div><div class="ttdef"><b>Definition:</b> Water.h:19</div></div>
+<div class="ttc" id="class_c_render_object_html"><div class="ttname"><a href="class_c_render_object.html">CRenderObject</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:27</div></div>
+<div class="ttc" id="class_c_water_html_a381791f09658ed01a58870a87d95c48c"><div class="ttname"><a href="class_c_water.html#a381791f09658ed01a58870a87d95c48c">CWater::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *node)</div><div class="ttdef"><b>Definition:</b> Water.cpp:15</div></div>
+<div class="ttc" id="class_c_water_html_a826ddc0c91c887a6f1095c65d727f2e0"><div class="ttname"><a href="class_c_water.html#a826ddc0c91c887a6f1095c65d727f2e0">CWater::m_pIndexBuff</a></div><div class="ttdeci">LPDIRECT3DINDEXBUFFER9 m_pIndexBuff</div><div class="ttdef"><b>Definition:</b> Water.h:16</div></div>
+<div class="ttc" id="class_c_water_html_ae6f32d7c5a9642663ca0af1c60f45c6c"><div class="ttname"><a href="class_c_water.html#ae6f32d7c5a9642663ca0af1c60f45c6c">CWater::pIBData</a></div><div class="ttdeci">void * pIBData</div><div class="ttdef"><b>Definition:</b> Water.h:20</div></div>
+<div class="ttc" id="class_c_water_html_aa6fd337cb905e0ab5ecb72bafb316df6"><div class="ttname"><a href="class_c_water.html#aa6fd337cb905e0ab5ecb72bafb316df6">CWater::m_wCurFrame</a></div><div class="ttdeci">int m_wCurFrame</div><div class="ttdef"><b>Definition:</b> Water.h:22</div></div>
+<div class="ttc" id="class_c_water_html_aaa6d22adf0f9df9c63406a072500ff21"><div class="ttname"><a href="class_c_water.html#aaa6d22adf0f9df9c63406a072500ff21">CWater::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Water.cpp:61</div></div>
+<div class="ttc" id="class_c_water_html_ab2676f14c4efa3c1212030be0c417b3c"><div class="ttname"><a href="class_c_water.html#ab2676f14c4efa3c1212030be0c417b3c">CWater::m_pText</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 m_pText</div><div class="ttdef"><b>Definition:</b> Water.h:13</div></div>
+<div class="ttc" id="class_c_water_html_a7ea95cb33c005a67c4d578e2893adf2c"><div class="ttname"><a href="class_c_water.html#a7ea95cb33c005a67c4d578e2893adf2c">CWater::m_Index</a></div><div class="ttdeci">WORD * m_Index</div><div class="ttdef"><b>Definition:</b> Water.h:18</div></div>
+<div class="ttc" id="class_c_water_html_a9935727034a41fe84286c34ce238c6c4"><div class="ttname"><a href="class_c_water.html#a9935727034a41fe84286c34ce238c6c4">CWater::DoFrame</a></div><div class="ttdeci">void DoFrame()</div><div class="ttdef"><b>Definition:</b> Water.cpp:97</div></div>
+<div class="ttc" id="class_c_water_html_aed255b6e643b13f081a5b3336d4e6d5f"><div class="ttname"><a href="class_c_water.html#aed255b6e643b13f081a5b3336d4e6d5f">CWater::~CWater</a></div><div class="ttdeci">~CWater()</div><div class="ttdef"><b>Definition:</b> Water.cpp:11</div></div>
+<div class="ttc" id="struct_c_u_s_t_o_m_v_e_r_t_e_x_html"><div class="ttname"><a href="struct_c_u_s_t_o_m_v_e_r_t_e_x.html">CUSTOMVERTEX</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:9</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_water_html_afbd525cca99ab6412083aa5f19e60348"><div class="ttname"><a href="class_c_water.html#afbd525cca99ab6412083aa5f19e60348">CWater::m_CustomVer</a></div><div class="ttdeci">CUSTOMVERTEX * m_CustomVer</div><div class="ttdef"><b>Definition:</b> Water.h:17</div></div>
+<div class="ttc" id="class_c_water_html_a006ee9b9d77a8e4a842bfa523730b14a"><div class="ttname"><a href="class_c_water.html#a006ee9b9d77a8e4a842bfa523730b14a">CWater::m_pWaterText</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 * m_pWaterText</div><div class="ttdef"><b>Definition:</b> Water.h:14</div></div>
+<div class="ttc" id="class_c_water_html_aa73c9075e8de0a140ae35107c1741226"><div class="ttname"><a href="class_c_water.html#aa73c9075e8de0a140ae35107c1741226">CWater::g_Material</a></div><div class="ttdeci">D3DMATERIAL9 g_Material</div><div class="ttdef"><b>Definition:</b> Water.h:21</div></div>
+<div class="ttc" id="class_c_water_html_a06a213876756d73ae27cee857e58ae48"><div class="ttname"><a href="class_c_water.html#a06a213876756d73ae27cee857e58ae48">CWater::m_Count</a></div><div class="ttdeci">int m_Count</div><div class="ttdef"><b>Definition:</b> Water.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

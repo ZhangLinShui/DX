@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Utility.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">Utility.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_utility_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a9bbcd82e77c41df827c09759def05c9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a9bbcd82e77c41df827c09759def05c9a">SAFE_DELETE</a>(p)&#160;&#160;&#160;{ if(p) { delete (p);     (p)=NULL; } }</td></tr>
+<tr class="separator:a9bbcd82e77c41df827c09759def05c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506b3685b3eb05aac751f9e14cbed93b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a506b3685b3eb05aac751f9e14cbed93b">SAFE_DELETE_ARRAY</a>(p)&#160;&#160;&#160;{ if(p) { delete[] (p);   (p)=NULL; } }</td></tr>
+<tr class="separator:a506b3685b3eb05aac751f9e14cbed93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6038f7bdb274c2e159988a57dedbf93d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a>(p)&#160;&#160;&#160;{ if(p) { (p)-&gt;Release(); (p)=NULL; } }</td></tr>
+<tr class="separator:a6038f7bdb274c2e159988a57dedbf93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2e64c561275bcf703c30edd5494288"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a5d2e64c561275bcf703c30edd5494288">V</a>(x)&#160;&#160;&#160;{ hr = x; }</td></tr>
+<tr class="separator:a5d2e64c561275bcf703c30edd5494288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b382cafebcd802f68fbdee2fba77fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#af2b382cafebcd802f68fbdee2fba77fa">V_RETURN</a>(x)&#160;&#160;&#160;{ hr = x; if( FAILED(hr) ) { return hr; } }</td></tr>
+<tr class="separator:af2b382cafebcd802f68fbdee2fba77fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4bb11e23457a736ce25340a8a0956c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a3a4bb11e23457a736ce25340a8a0956c">COLOR_GETAVALUE</a>(argb)&#160;&#160;&#160;( (BYTE)( ( argb ) &gt;&gt; 24 ) )</td></tr>
+<tr class="separator:a3a4bb11e23457a736ce25340a8a0956c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81135d7cc7b17846395bd841125c59b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a81135d7cc7b17846395bd841125c59b5">COLOR_GETRVALUE</a>(argb)&#160;&#160;&#160;( (BYTE)( ( argb ) &gt;&gt; 16 ) )</td></tr>
+<tr class="separator:a81135d7cc7b17846395bd841125c59b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7670e30cee61a27663a195b598b884c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a7670e30cee61a27663a195b598b884c9">COLOR_GETGVALUE</a>(argb)&#160;&#160;&#160;( (BYTE)( ( argb ) &gt;&gt; 8 ) )</td></tr>
+<tr class="separator:a7670e30cee61a27663a195b598b884c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d7e4949e605faf0e9108efb952ed14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#aa3d7e4949e605faf0e9108efb952ed14">COLOR_GETBVALUE</a>(argb)&#160;&#160;&#160;( (BYTE)( argb ) )</td></tr>
+<tr class="separator:aa3d7e4949e605faf0e9108efb952ed14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a03d4311aef65ec9ec9d9eb009dca4689"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689">SceneBlendType</a> { <br />
+&#160;&#160;<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a2f4c1aa4905a9deba369c495a06b3817">SBT_OPAQUE</a> = 0, 
+<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a8ac92678016fd66279eb129a566f5f6e">SBT_TRANSPARENT_ALPHA</a>, 
+<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689aba9e23244b1c784996c717e411200d11">SBT_TRANSPARENT_COLOR</a>, 
+<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a6088cabcc7a22f8e24dbdf61421ac542">SBT_ADD_COLOR</a>, 
+<br />
+&#160;&#160;<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a041ca70fbdfc5a8cbfe77cabcef98aec">SBT_ADD_ALPHA</a>, 
+<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a039282bca309bca4b7a5f3e08340734d">SBT_MODULATE</a>, 
+<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689ac32e16d9a361bc6b06a273e14ab766fc">SBT_MODULATE2</a>, 
+<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a053f1be0b13d4eb891b045ad4e13e9c1">SBT_TRANSPARENT_DIFFUSE</a>, 
+<br />
+&#160;&#160;<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a1d0084f9d06ebce565073b1e66084aeb">SBT_MAX_NUMBER</a>
+<br />
+ }</td></tr>
+<tr class="separator:a03d4311aef65ec9ec9d9eb009dca4689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1f17d0bb5e93aae139133321d845782e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a1f17d0bb5e93aae139133321d845782e">GetRealFileName</a> (std::string &amp;name)</td></tr>
+<tr class="separator:a1f17d0bb5e93aae139133321d845782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4f051b5c55f6a69432683d9bccca57"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#abd4f051b5c55f6a69432683d9bccca57">Vec3Mutiply</a> (const D3DXVECTOR3 &amp;v1, const D3DXVECTOR3 &amp;v2)</td></tr>
+<tr class="separator:abd4f051b5c55f6a69432683d9bccca57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fdabd0beb44a7b2c364177bb9821d6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a0fdabd0beb44a7b2c364177bb9821d6a">Vec3Perpendicular</a> (D3DXVECTOR3 &amp;out, const D3DXVECTOR3 &amp;src)</td></tr>
+<tr class="separator:a0fdabd0beb44a7b2c364177bb9821d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc6a4b6b03e91d140dcfb765a7c2533"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a1cc6a4b6b03e91d140dcfb765a7c2533">RandomDeviant</a> (D3DXVECTOR3 &amp;result, const D3DXVECTOR3 &amp;dir, float fAngle)</td></tr>
+<tr class="separator:a1cc6a4b6b03e91d140dcfb765a7c2533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8222f6aabf6852a2ba89366555d849ca"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a8222f6aabf6852a2ba89366555d849ca">UnitRandom</a> ()</td></tr>
+<tr class="separator:a8222f6aabf6852a2ba89366555d849ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5a32131b529a419ed731bffcb50d97"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a5e5a32131b529a419ed731bffcb50d97">RangeRandom</a> (float fLow, float fHigh)</td></tr>
+<tr class="separator:a5e5a32131b529a419ed731bffcb50d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa18e13379c2cfc10093b2cde5e4342"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#afaa18e13379c2cfc10093b2cde5e4342">SymmetricRandom</a> ()</td></tr>
+<tr class="separator:afaa18e13379c2cfc10093b2cde5e4342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711aca21b00164c4824b0bf58792aba7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a711aca21b00164c4824b0bf58792aba7">ChangeFileNameToDDS</a> (string &amp;name)</td></tr>
+<tr class="separator:a711aca21b00164c4824b0bf58792aba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fc247b8fa6ddd5b7780314e165bd72"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a86fc247b8fa6ddd5b7780314e165bd72">F2DW</a> (FLOAT f)</td></tr>
+<tr class="separator:a86fc247b8fa6ddd5b7780314e165bd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771449eba878ed4cd53f39d21c1ff675"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_8h.html#a771449eba878ed4cd53f39d21c1ff675">DW2F</a> (DWORD dw)</td></tr>
+<tr class="separator:a771449eba878ed4cd53f39d21c1ff675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a3a4bb11e23457a736ce25340a8a0956c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLOR_GETAVALUE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">argb</td><td>)</td>
+          <td>&#160;&#160;&#160;( (BYTE)( ( argb ) &gt;&gt; 24 ) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa3d7e4949e605faf0e9108efb952ed14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLOR_GETBVALUE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">argb</td><td>)</td>
+          <td>&#160;&#160;&#160;( (BYTE)( argb ) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7670e30cee61a27663a195b598b884c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLOR_GETGVALUE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">argb</td><td>)</td>
+          <td>&#160;&#160;&#160;( (BYTE)( ( argb ) &gt;&gt; 8 ) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a81135d7cc7b17846395bd841125c59b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLOR_GETRVALUE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">argb</td><td>)</td>
+          <td>&#160;&#160;&#160;( (BYTE)( ( argb ) &gt;&gt; 16 ) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9bbcd82e77c41df827c09759def05c9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAFE_DELETE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;{ if(p) { delete (p);     (p)=NULL; } }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a506b3685b3eb05aac751f9e14cbed93b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAFE_DELETE_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;{ if(p) { delete[] (p);   (p)=NULL; } }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6038f7bdb274c2e159988a57dedbf93d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAFE_RELEASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;{ if(p) { (p)-&gt;Release(); (p)=NULL; } }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d2e64c561275bcf703c30edd5494288"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define V</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;{ hr = x; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af2b382cafebcd802f68fbdee2fba77fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define V_RETURN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;{ hr = x; if( FAILED(hr) ) { return hr; } }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689">SceneBlendType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>与场景混合的类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689a2f4c1aa4905a9deba369c495a06b3817"></a>SBT_OPAQUE&#160;</td><td class="fielddoc">
+<p>不透明 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689a8ac92678016fd66279eb129a566f5f6e"></a>SBT_TRANSPARENT_ALPHA&#160;</td><td class="fielddoc">
+<p>Alpha半透明 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689aba9e23244b1c784996c717e411200d11"></a>SBT_TRANSPARENT_COLOR&#160;</td><td class="fielddoc">
+<p>使用源颜色做Alpha因子，实现半透明 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689a6088cabcc7a22f8e24dbdf61421ac542"></a>SBT_ADD_COLOR&#160;</td><td class="fielddoc">
+<p>与场景颜色相加，通常用来加亮 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689a041ca70fbdfc5a8cbfe77cabcef98aec"></a>SBT_ADD_ALPHA&#160;</td><td class="fielddoc">
+<p>与场景颜色相加,通常用来增加原场景的细节 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689a039282bca309bca4b7a5f3e08340734d"></a>SBT_MODULATE&#160;</td><td class="fielddoc">
+<p>与场景颜色相乘 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689ac32e16d9a361bc6b06a273e14ab766fc"></a>SBT_MODULATE2&#160;</td><td class="fielddoc">
+<p>与场景颜色相乘的2倍 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689a053f1be0b13d4eb891b045ad4e13e9c1"></a>SBT_TRANSPARENT_DIFFUSE&#160;</td><td class="fielddoc">
+<p>使用顶点色的Alpha通道，实现半透明 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a03d4311aef65ec9ec9d9eb009dca4689a1d0084f9d06ebce565073b1e66084aeb"></a>SBT_MAX_NUMBER&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a711aca21b00164c4824b0bf58792aba7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChangeFileNameToDDS </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a771449eba878ed4cd53f39d21c1ff675"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DW2F </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dw</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86fc247b8fa6ddd5b7780314e165bd72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD F2DW </td>
+          <td>(</td>
+          <td class="paramtype">FLOAT&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f17d0bb5e93aae139133321d845782e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetRealFileName </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>路径解析 </p><dl class="section remark"><dt>备注</dt><dd>.x文件中有的文件名包含路径，此函数可以将路径去掉。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1cc6a4b6b03e91d140dcfb765a7c2533"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RandomDeviant </td>
+          <td>(</td>
+          <td class="paramtype">D3DXVECTOR3 &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const D3DXVECTOR3 &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>已知一向量和一角度定位的锥体，求穿过锥体顶点并位于锥体内的随机向量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>已知向量，锥体的轴 </td></tr>
+    <tr><td class="paramname">fAngle</td><td>已知角度，轴到锥体某一边的弧度 </td></tr>
+    <tr><td class="paramname">result</td><td>返回结果。穿过锥体顶点，并且位于锥体内的向量。</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>求出粒子的发射方向等于该锥体内穿过发射器位置的一条射线。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e5a32131b529a419ed731bffcb50d97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RangeRandom </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fLow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fHigh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>随机值： fLow-fHigh </p>
+
+</div>
+</div>
+<a class="anchor" id="afaa18e13379c2cfc10093b2cde5e4342"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SymmetricRandom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>随机值： (-1) - (1) </p>
+
+</div>
+</div>
+<a class="anchor" id="a8222f6aabf6852a2ba89366555d849ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float UnitRandom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>随机值： 0-1 </p>
+
+</div>
+</div>
+<a class="anchor" id="abd4f051b5c55f6a69432683d9bccca57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 Vec3Mutiply </td>
+          <td>(</td>
+          <td class="paramtype">const D3DXVECTOR3 &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const D3DXVECTOR3 &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>向量各分量相乘 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0fdabd0beb44a7b2c364177bb9821d6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vec3Perpendicular </td>
+          <td>(</td>
+          <td class="paramtype">D3DXVECTOR3 &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const D3DXVECTOR3 &amp;&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>求一个向量的“垂直”向量 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:10 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Button.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Button.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_button_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//按钮控件</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//从CComponent类中派生出来</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_c_button.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_button.html">CButton</a>:<span class="keyword">public</span> <a class="code" href="class_c_component.html">CComponent</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">//构造函数</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_c_button.html#aa83d990df1c958fb874b9f9440f9b98e">CButton</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_c_button.html#a3d99e84962ec5626f6d4863acf4f5dbb">~CButton</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#a98387b50d7e6ef196d0342856fede3f2">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a>* element);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//绘制组件</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#ac56426e19a7a23b9decf5c3b2bad2d23">Draw</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//处理键盘的事件响应</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#ab12f29d23f98fe34cd6d64573cec355f">ProcessKeyEvent</a>(<span class="keywordtype">char</span> key);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//处理鼠标移动的事件响应</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#a1bb61acb5229da68440682b2e05b2edd">ProcessMouseMove</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//处理鼠标左键按下的事件响应</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#adc7b6f682a4aeec579f0bb4e4a4cc019">ProcessMouseLBDown</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//处理鼠标左键弹起的事件响应</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#a698d36f2d7385427659f351cf190e109">ProcessMouseLBUp</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//void ProcessMouseRBDown(long x,long y);</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//void ProcessMouseRBUp(long x,long y);</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//void ProcessMouseWheel();</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//执行按钮所对应的具体的事件</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#a2431adf06342795f9ee2f88b0c20774c">DoEvent</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//设置快捷键</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#a033861d0d2fff0c621c2ac41b9c37f93">SetHotKey</a>(<span class="keywordtype">char</span> CHotKey);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//设置按钮所对应的具体的事件(LUA函数),传入的参数是LUA脚本中的函数名</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#aa8bc2b34b7bbc70c0f1f7eece80b4c34">SetEvent</a>(<span class="keywordtype">string</span> FunctionName);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//分别加载3个状态下的图片资源</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#af0b1a98b88e580bacabde695fe170722">SetTextureDefault</a>(<span class="keywordtype">string</span> TexDefault);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#adb68af01c9627e342da45d7abed379af">SetTextureMoveto</a>(<span class="keywordtype">string</span> TexMoveto);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_button.html#af412f31e13a5bdb24861139cf82b06ed">SetTextureDown</a>(<span class="keywordtype">string</span> TexDown);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//普通状态下的按钮图片</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_button.html#a93ad1e7a880cc87a0d1577b9e86841e2">   62</a></span>&#160;    IDirect3DTexture9* <a class="code" href="class_c_button.html#a93ad1e7a880cc87a0d1577b9e86841e2">m_pTexDefault</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//当鼠标移动到按钮上时对应的按钮图片</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_c_button.html#af98126ae00c568e46d447f1a5e4ea826">   65</a></span>&#160;    IDirect3DTexture9* <a class="code" href="class_c_button.html#af98126ae00c568e46d447f1a5e4ea826">m_pTexMoveto</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//当鼠标按下去时对应的按钮图片</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_c_button.html#a5c9ea772dbca461b9959e8a8b2d1e5e5">   68</a></span>&#160;    IDirect3DTexture9* <a class="code" href="class_c_button.html#a5c9ea772dbca461b9959e8a8b2d1e5e5">m_pTexDown</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//当前状态下的按钮图片(渲染的图片)</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_c_button.html#acf86cf8299c8bb9bf1f2ae5dc40483a7">   71</a></span>&#160;    IDirect3DTexture9* <a class="code" href="class_c_button.html#acf86cf8299c8bb9bf1f2ae5dc40483a7">m_pTexNow</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//快捷键</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_c_button.html#a44ba7dade864017d8a4286e695da8edc">   74</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="class_c_button.html#a44ba7dade864017d8a4286e695da8edc">m_cHotKey</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//按钮所对应的具体的事件的函数名</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_c_button.html#a5086d653157d176ac841d507e2f3c445">   77</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_button.html#a5086d653157d176ac841d507e2f3c445">m_strFunctionName</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="ttc" id="class_c_button_html_acf86cf8299c8bb9bf1f2ae5dc40483a7"><div class="ttname"><a href="class_c_button.html#acf86cf8299c8bb9bf1f2ae5dc40483a7">CButton::m_pTexNow</a></div><div class="ttdeci">IDirect3DTexture9 * m_pTexNow</div><div class="ttdef"><b>Definition:</b> Button.h:71</div></div>
+<div class="ttc" id="class_c_button_html_af98126ae00c568e46d447f1a5e4ea826"><div class="ttname"><a href="class_c_button.html#af98126ae00c568e46d447f1a5e4ea826">CButton::m_pTexMoveto</a></div><div class="ttdeci">IDirect3DTexture9 * m_pTexMoveto</div><div class="ttdef"><b>Definition:</b> Button.h:65</div></div>
+<div class="ttc" id="class_c_button_html_adc7b6f682a4aeec579f0bb4e4a4cc019"><div class="ttname"><a href="class_c_button.html#adc7b6f682a4aeec579f0bb4e4a4cc019">CButton::ProcessMouseLBDown</a></div><div class="ttdeci">void ProcessMouseLBDown(long x, long y)</div><div class="ttdef"><b>Definition:</b> Button.cpp:121</div></div>
+<div class="ttc" id="class_c_button_html_a033861d0d2fff0c621c2ac41b9c37f93"><div class="ttname"><a href="class_c_button.html#a033861d0d2fff0c621c2ac41b9c37f93">CButton::SetHotKey</a></div><div class="ttdeci">void SetHotKey(char CHotKey)</div><div class="ttdef"><b>Definition:</b> Button.cpp:191</div></div>
+<div class="ttc" id="class_c_button_html_a1bb61acb5229da68440682b2e05b2edd"><div class="ttname"><a href="class_c_button.html#a1bb61acb5229da68440682b2e05b2edd">CButton::ProcessMouseMove</a></div><div class="ttdeci">void ProcessMouseMove(long x, long y)</div><div class="ttdef"><b>Definition:</b> Button.cpp:96</div></div>
+<div class="ttc" id="class_c_button_html_a93ad1e7a880cc87a0d1577b9e86841e2"><div class="ttname"><a href="class_c_button.html#a93ad1e7a880cc87a0d1577b9e86841e2">CButton::m_pTexDefault</a></div><div class="ttdeci">IDirect3DTexture9 * m_pTexDefault</div><div class="ttdef"><b>Definition:</b> Button.h:62</div></div>
+<div class="ttc" id="class_c_button_html_a5086d653157d176ac841d507e2f3c445"><div class="ttname"><a href="class_c_button.html#a5086d653157d176ac841d507e2f3c445">CButton::m_strFunctionName</a></div><div class="ttdeci">string m_strFunctionName</div><div class="ttdef"><b>Definition:</b> Button.h:77</div></div>
+<div class="ttc" id="class_c_button_html_aa83d990df1c958fb874b9f9440f9b98e"><div class="ttname"><a href="class_c_button.html#aa83d990df1c958fb874b9f9440f9b98e">CButton::CButton</a></div><div class="ttdeci">CButton()</div><div class="ttdef"><b>Definition:</b> Button.cpp:6</div></div>
+<div class="ttc" id="class_c_button_html_af0b1a98b88e580bacabde695fe170722"><div class="ttname"><a href="class_c_button.html#af0b1a98b88e580bacabde695fe170722">CButton::SetTextureDefault</a></div><div class="ttdeci">void SetTextureDefault(string TexDefault)</div><div class="ttdef"><b>Definition:</b> Button.cpp:218</div></div>
+<div class="ttc" id="class_c_button_html_a5c9ea772dbca461b9959e8a8b2d1e5e5"><div class="ttname"><a href="class_c_button.html#a5c9ea772dbca461b9959e8a8b2d1e5e5">CButton::m_pTexDown</a></div><div class="ttdeci">IDirect3DTexture9 * m_pTexDown</div><div class="ttdef"><b>Definition:</b> Button.h:68</div></div>
+<div class="ttc" id="class_c_button_html_adb68af01c9627e342da45d7abed379af"><div class="ttname"><a href="class_c_button.html#adb68af01c9627e342da45d7abed379af">CButton::SetTextureMoveto</a></div><div class="ttdeci">void SetTextureMoveto(string TexMoveto)</div><div class="ttdef"><b>Definition:</b> Button.cpp:233</div></div>
+<div class="ttc" id="class_c_button_html_a44ba7dade864017d8a4286e695da8edc"><div class="ttname"><a href="class_c_button.html#a44ba7dade864017d8a4286e695da8edc">CButton::m_cHotKey</a></div><div class="ttdeci">char m_cHotKey</div><div class="ttdef"><b>Definition:</b> Button.h:74</div></div>
+<div class="ttc" id="class_c_button_html_a2431adf06342795f9ee2f88b0c20774c"><div class="ttname"><a href="class_c_button.html#a2431adf06342795f9ee2f88b0c20774c">CButton::DoEvent</a></div><div class="ttdeci">void DoEvent()</div><div class="ttdef"><b>Definition:</b> Button.cpp:197</div></div>
+<div class="ttc" id="class_c_button_html_a698d36f2d7385427659f351cf190e109"><div class="ttname"><a href="class_c_button.html#a698d36f2d7385427659f351cf190e109">CButton::ProcessMouseLBUp</a></div><div class="ttdeci">void ProcessMouseLBUp(long x, long y)</div><div class="ttdef"><b>Definition:</b> Button.cpp:138</div></div>
+<div class="ttc" id="class_c_button_html_af412f31e13a5bdb24861139cf82b06ed"><div class="ttname"><a href="class_c_button.html#af412f31e13a5bdb24861139cf82b06ed">CButton::SetTextureDown</a></div><div class="ttdeci">void SetTextureDown(string TexDown)</div><div class="ttdef"><b>Definition:</b> Button.cpp:248</div></div>
+<div class="ttc" id="class_c_button_html_a3d99e84962ec5626f6d4863acf4f5dbb"><div class="ttname"><a href="class_c_button.html#a3d99e84962ec5626f6d4863acf4f5dbb">CButton::~CButton</a></div><div class="ttdeci">~CButton()</div><div class="ttdef"><b>Definition:</b> Button.cpp:28</div></div>
+<div class="ttc" id="_component_8h_html"><div class="ttname"><a href="_component_8h.html">Component.h</a></div></div>
+<div class="ttc" id="class_c_button_html_a98387b50d7e6ef196d0342856fede3f2"><div class="ttname"><a href="class_c_button.html#a98387b50d7e6ef196d0342856fede3f2">CButton::Init</a></div><div class="ttdeci">void Init(TiXmlElement *element)</div><div class="ttdef"><b>Definition:</b> Button.cpp:18</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_button_html_ac56426e19a7a23b9decf5c3b2bad2d23"><div class="ttname"><a href="class_c_button.html#ac56426e19a7a23b9decf5c3b2bad2d23">CButton::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Button.cpp:37</div></div>
+<div class="ttc" id="class_c_button_html_aa8bc2b34b7bbc70c0f1f7eece80b4c34"><div class="ttname"><a href="class_c_button.html#aa8bc2b34b7bbc70c0f1f7eece80b4c34">CButton::SetEvent</a></div><div class="ttdeci">void SetEvent(string FunctionName)</div><div class="ttdef"><b>Definition:</b> Button.cpp:211</div></div>
+<div class="ttc" id="class_c_component_html"><div class="ttname"><a href="class_c_component.html">CComponent</a></div><div class="ttdef"><b>Definition:</b> Component.h:7</div></div>
+<div class="ttc" id="class_c_button_html"><div class="ttname"><a href="class_c_button.html">CButton</a></div><div class="ttdef"><b>Definition:</b> Button.h:8</div></div>
+<div class="ttc" id="class_c_button_html_ab12f29d23f98fe34cd6d64573cec355f"><div class="ttname"><a href="class_c_button.html#ab12f29d23f98fe34cd6d64573cec355f">CButton::ProcessKeyEvent</a></div><div class="ttdeci">void ProcessKeyEvent(char key)</div><div class="ttdef"><b>Definition:</b> Button.cpp:85</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

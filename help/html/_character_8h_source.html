@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Character.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Character.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_character_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_object_8h.html">RenderObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_multi_anim_8h.html">MultiAnim.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaac14a51be8bcc8e9dbce0e43fb859b005">    5</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abda">enMotionType</a> { <a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaac33aa85d801090167b0139db7fc6631b">MT_STAY</a>, <a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaac14a51be8bcc8e9dbce0e43fb859b005">MT_WALK</a>, <a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaa8248e5dead597af2c6b5a23dc879b933">MT_ATTACK</a>, <a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaa13c05c338a027d578d17920ca4d2aef7">MT_BEHIT</a>, <a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaa798a5e038de7b0a51cd091cf7d93ccb3">MT_DIEING</a>, <a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaab403e61ea6d2b8acdafb55e7e0e8a8b5">MT_DEAD</a> };</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_character_8h.html#a20732cdeb6d8c4499da82ed45438f340">    6</a></span>&#160;<span class="preprocessor">#define MOVE_TRANSITION_TIME 0.25       //平滑变换时间</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_c_character.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_character.html">CCharacter</a>:<span class="keyword">public</span> <a class="code" href="class_c_render_object.html">CRenderObject</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_c_character.html#a0a45163210c01ba76eff3d79b2ec6e10">CCharacter</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_c_character.html#a6176ffa71d744eed17566ab6d61e37bf">~CCharacter</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    BOOL <a class="code" href="class_c_character.html#a32af6c37d2fcdbd693e262f5a6725ba9">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a>* element);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#adacc871278619f57b62c68672ca1c72b">Draw</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#a6bb8e2c1dead02a518be4476a5d61ce3">Update</a>(<span class="keywordtype">float</span> fElapsedTime);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// 切换动作类型</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#ab35071ce05138a6281c4648c2b811876">ChangeMotionType</a>(<a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abda">enMotionType</a> enType);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// AABB</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_character.html#aa315b099c00aa5809092915d1eb474f8">   21</a></span>&#160;    D3DXVECTOR3     <a class="code" href="class_c_character.html#aa315b099c00aa5809092915d1eb474f8">m_vMax</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_character.html#a12ba4680137c6ebd9080b53727e8c942">   22</a></span>&#160;    D3DXVECTOR3     <a class="code" href="class_c_character.html#a12ba4680137c6ebd9080b53727e8c942">m_vMin</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// 用于碰撞检测后恢复为碰撞状态位置</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_character.html#afaba3033c41ecb00a8334800f168719f">   25</a></span>&#160;    D3DXVECTOR3     <a class="code" href="class_c_character.html#afaba3033c41ecb00a8334800f168719f">m_vOldPos</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_character.html#af9ff71df4e7fac7dda8e9200b9a86809">   26</a></span>&#160;    <a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abda">enMotionType</a>    <a class="code" href="class_c_character.html#af9ff71df4e7fac7dda8e9200b9a86809">m_enMotionType</a>; <span class="comment">// 动作类型</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_character.html#a5fd1f5a99365e731e98e198a4b095d65">   30</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_c_multi_anim.html">CMultiAnim</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code" href="class_c_character.html#aa42de4261b2843f85401ac613b4a0f09">UpdateFrames</a>(LPD3DXFRAME pFrame, D3DXMATRIX* pmxBase);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code" href="class_c_character.html#a8c65b2c4003cfb73d3817cb5612b56c9">DrawFrames</a>(LPD3DXFRAME pFrame);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code" href="class_c_character.html#aa3d7173f6330d330cfd32416981e9088">DrawMeshFrame</a>(LPD3DXFRAME pFrame);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    DWORD <a class="code" href="class_c_character.html#a18d686a8a27a0644c881f716b058a732">CCharacter::GetPlayTime</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//CMultiAnim*       GetMultiAnim();</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//void            GetAnimController(LPD3DXANIMATIONCONTROLLER* ppAC);</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span>            <a class="code" href="class_c_character.html#aa28bd937c4d424f93568e34663dd7cf0">SetAnimationByName</a>(<span class="keywordtype">string</span> name, DWORD dwControlPlayTime = 0, <span class="keywordtype">bool</span> bSmooth = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="class_c_character.html#a3ad227e257c827695cc6a2ff5c02eac9">AdvanceTime</a>(DOUBLE dTimeDelta, ID3DXAnimationCallbackHandler* pCH, D3DXMATRIX mat);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_character.html#afae498236d38de8b01d32d7a02c2e003">   50</a></span>&#160;    <span class="keywordtype">float</span>           <a class="code" href="class_c_character.html#afae498236d38de8b01d32d7a02c2e003">m_fMoveSpeed</a>;       <span class="comment">// 移动速度</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_c_character.html#a0bf7f1a31a6dfd28524f15addd37fcf1">   51</a></span>&#160;    <a class="code" href="class_c_multi_anim.html">CMultiAnim</a>* <a class="code" href="class_c_character.html#a0bf7f1a31a6dfd28524f15addd37fcf1">m_pMultiAnim</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_character.html#a41fa67e9e7fc2a64754491627e749cb1">   52</a></span>&#160;    LPD3DXANIMATIONCONTROLLER <a class="code" href="class_c_character.html#a41fa67e9e7fc2a64754491627e749cb1">m_pAC</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_character.html#ad9743603ee7cf41d75d35d3bb16b6e6a">   53</a></span>&#160;    DWORD <a class="code" href="class_c_character.html#ad9743603ee7cf41d75d35d3bb16b6e6a">m_dwCurrentTrack</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_character.html#a24291c0d0d7ad751d811bade8a8819e2">   54</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_character.html#a24291c0d0d7ad751d811bade8a8819e2">m_strNowAnimationName</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_c_character.html#a1d8ab4aeaba079c0aa4f993ea547e1c6">   57</a></span>&#160;    DWORD                   <a class="code" href="class_c_character.html#a1d8ab4aeaba079c0aa4f993ea547e1c6">m_dwControlPlayTime</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_c_character.html#a38764252a9163e17a199a322ab4c1985">   59</a></span>&#160;    <span class="keywordtype">float</span>                   <a class="code" href="class_c_character.html#a38764252a9163e17a199a322ab4c1985">m_fTimeCurrent</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_c_character.html#aa68e5000d4d3ab5b085e367e32a0f148">   61</a></span>&#160;    DWORD                   <a class="code" href="class_c_character.html#aa68e5000d4d3ab5b085e367e32a0f148">m_dwPlayTime</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_c_character.html#ab24a84033ad5d94adca336b3c1471f36">   63</a></span>&#160;    <span class="keywordtype">float</span>                   <a class="code" href="class_c_character.html#ab24a84033ad5d94adca336b3c1471f36">m_fFrameTime</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_c_character.html#a7d30e354a18a5c9ab76c3fd04fcb0805">   65</a></span>&#160;    <span class="keywordtype">double</span>                  <a class="code" href="class_c_character.html#a7d30e354a18a5c9ab76c3fd04fcb0805">m_lfTotalFrameTime</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_c_character.html#a2b2a1480ac3d2378e8ec912e62a5d20a">   66</a></span>&#160;    <span class="keywordtype">string</span>                  <a class="code" href="class_c_character.html#a2b2a1480ac3d2378e8ec912e62a5d20a">Modedata</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_c_character.html#a87e2572efb712e618497d97e043060fd">   68</a></span>&#160;    <span class="keywordtype">float</span>                   <a class="code" href="class_c_character.html#a52aa20cfd276306fbf7b0416b2875892">RoteX</a>, <a class="code" href="class_c_character.html#a9e2bd2ce189b4ea16365b0eb3224a771">RoteY</a>, <a class="code" href="class_c_character.html#a87e2572efb712e618497d97e043060fd">RoteZ</a>, <a class="code" href="class_c_character.html#a5e20a5de46cf348618caf534685c0611">Roate</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="ttc" id="class_c_character_html_a5e20a5de46cf348618caf534685c0611"><div class="ttname"><a href="class_c_character.html#a5e20a5de46cf348618caf534685c0611">CCharacter::Roate</a></div><div class="ttdeci">float Roate</div><div class="ttdef"><b>Definition:</b> Character.h:68</div></div>
+<div class="ttc" id="class_c_character_html_a38764252a9163e17a199a322ab4c1985"><div class="ttname"><a href="class_c_character.html#a38764252a9163e17a199a322ab4c1985">CCharacter::m_fTimeCurrent</a></div><div class="ttdeci">float m_fTimeCurrent</div><div class="ttdoc">当前时间 </div><div class="ttdef"><b>Definition:</b> Character.h:59</div></div>
+<div class="ttc" id="_multi_anim_8h_html"><div class="ttname"><a href="_multi_anim_8h.html">MultiAnim.h</a></div></div>
+<div class="ttc" id="class_c_character_html_a0a45163210c01ba76eff3d79b2ec6e10"><div class="ttname"><a href="class_c_character.html#a0a45163210c01ba76eff3d79b2ec6e10">CCharacter::CCharacter</a></div><div class="ttdeci">CCharacter(void)</div><div class="ttdef"><b>Definition:</b> Character.cpp:4</div></div>
+<div class="ttc" id="class_c_character_html_a3ad227e257c827695cc6a2ff5c02eac9"><div class="ttname"><a href="class_c_character.html#a3ad227e257c827695cc6a2ff5c02eac9">CCharacter::AdvanceTime</a></div><div class="ttdeci">virtual HRESULT AdvanceTime(DOUBLE dTimeDelta, ID3DXAnimationCallbackHandler *pCH, D3DXMATRIX mat)</div><div class="ttdef"><b>Definition:</b> Character.cpp:309</div></div>
+<div class="ttc" id="_render_object_8h_html"><div class="ttname"><a href="_render_object_8h.html">RenderObject.h</a></div></div>
+<div class="ttc" id="class_c_character_html_a41fa67e9e7fc2a64754491627e749cb1"><div class="ttname"><a href="class_c_character.html#a41fa67e9e7fc2a64754491627e749cb1">CCharacter::m_pAC</a></div><div class="ttdeci">LPD3DXANIMATIONCONTROLLER m_pAC</div><div class="ttdef"><b>Definition:</b> Character.h:52</div></div>
+<div class="ttc" id="class_c_character_html_adacc871278619f57b62c68672ca1c72b"><div class="ttname"><a href="class_c_character.html#adacc871278619f57b62c68672ca1c72b">CCharacter::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Character.cpp:88</div></div>
+<div class="ttc" id="class_c_character_html_a6bb8e2c1dead02a518be4476a5d61ce3"><div class="ttname"><a href="class_c_character.html#a6bb8e2c1dead02a518be4476a5d61ce3">CCharacter::Update</a></div><div class="ttdeci">void Update(float fElapsedTime)</div><div class="ttdef"><b>Definition:</b> Character.cpp:73</div></div>
+<div class="ttc" id="class_c_character_html_a1d8ab4aeaba079c0aa4f993ea547e1c6"><div class="ttname"><a href="class_c_character.html#a1d8ab4aeaba079c0aa4f993ea547e1c6">CCharacter::m_dwControlPlayTime</a></div><div class="ttdeci">DWORD m_dwControlPlayTime</div><div class="ttdoc">当前动作设定播放次数(0为重复播放) </div><div class="ttdef"><b>Definition:</b> Character.h:57</div></div>
+<div class="ttc" id="class_c_render_object_html"><div class="ttname"><a href="class_c_render_object.html">CRenderObject</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:27</div></div>
+<div class="ttc" id="class_c_character_html_ad9743603ee7cf41d75d35d3bb16b6e6a"><div class="ttname"><a href="class_c_character.html#ad9743603ee7cf41d75d35d3bb16b6e6a">CCharacter::m_dwCurrentTrack</a></div><div class="ttdeci">DWORD m_dwCurrentTrack</div><div class="ttdef"><b>Definition:</b> Character.h:53</div></div>
+<div class="ttc" id="_character_8h_html_a8626c24cc20d8c4c53581240caa5abdaab403e61ea6d2b8acdafb55e7e0e8a8b5"><div class="ttname"><a href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaab403e61ea6d2b8acdafb55e7e0e8a8b5">MT_DEAD</a></div><div class="ttdef"><b>Definition:</b> Character.h:5</div></div>
+<div class="ttc" id="class_c_character_html_a12ba4680137c6ebd9080b53727e8c942"><div class="ttname"><a href="class_c_character.html#a12ba4680137c6ebd9080b53727e8c942">CCharacter::m_vMin</a></div><div class="ttdeci">D3DXVECTOR3 m_vMin</div><div class="ttdef"><b>Definition:</b> Character.h:22</div></div>
+<div class="ttc" id="class_c_character_html_a2b2a1480ac3d2378e8ec912e62a5d20a"><div class="ttname"><a href="class_c_character.html#a2b2a1480ac3d2378e8ec912e62a5d20a">CCharacter::Modedata</a></div><div class="ttdeci">string Modedata</div><div class="ttdef"><b>Definition:</b> Character.h:66</div></div>
+<div class="ttc" id="class_c_character_html"><div class="ttname"><a href="class_c_character.html">CCharacter</a></div><div class="ttdef"><b>Definition:</b> Character.h:7</div></div>
+<div class="ttc" id="class_c_character_html_ab35071ce05138a6281c4648c2b811876"><div class="ttname"><a href="class_c_character.html#ab35071ce05138a6281c4648c2b811876">CCharacter::ChangeMotionType</a></div><div class="ttdeci">void ChangeMotionType(enMotionType enType)</div><div class="ttdef"><b>Definition:</b> Character.cpp:98</div></div>
+<div class="ttc" id="_character_8h_html_a8626c24cc20d8c4c53581240caa5abdaac33aa85d801090167b0139db7fc6631b"><div class="ttname"><a href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaac33aa85d801090167b0139db7fc6631b">MT_STAY</a></div><div class="ttdef"><b>Definition:</b> Character.h:5</div></div>
+<div class="ttc" id="_character_8h_html_a8626c24cc20d8c4c53581240caa5abdaa8248e5dead597af2c6b5a23dc879b933"><div class="ttname"><a href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaa8248e5dead597af2c6b5a23dc879b933">MT_ATTACK</a></div><div class="ttdef"><b>Definition:</b> Character.h:5</div></div>
+<div class="ttc" id="class_c_character_html_a24291c0d0d7ad751d811bade8a8819e2"><div class="ttname"><a href="class_c_character.html#a24291c0d0d7ad751d811bade8a8819e2">CCharacter::m_strNowAnimationName</a></div><div class="ttdeci">string m_strNowAnimationName</div><div class="ttdef"><b>Definition:</b> Character.h:54</div></div>
+<div class="ttc" id="class_c_character_html_aa68e5000d4d3ab5b085e367e32a0f148"><div class="ttname"><a href="class_c_character.html#aa68e5000d4d3ab5b085e367e32a0f148">CCharacter::m_dwPlayTime</a></div><div class="ttdeci">DWORD m_dwPlayTime</div><div class="ttdoc">当前动作播放次数 </div><div class="ttdef"><b>Definition:</b> Character.h:61</div></div>
+<div class="ttc" id="class_c_character_html_afae498236d38de8b01d32d7a02c2e003"><div class="ttname"><a href="class_c_character.html#afae498236d38de8b01d32d7a02c2e003">CCharacter::m_fMoveSpeed</a></div><div class="ttdeci">float m_fMoveSpeed</div><div class="ttdef"><b>Definition:</b> Character.h:50</div></div>
+<div class="ttc" id="_character_8h_html_a8626c24cc20d8c4c53581240caa5abdaa13c05c338a027d578d17920ca4d2aef7"><div class="ttname"><a href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaa13c05c338a027d578d17920ca4d2aef7">MT_BEHIT</a></div><div class="ttdef"><b>Definition:</b> Character.h:5</div></div>
+<div class="ttc" id="class_c_character_html_a87e2572efb712e618497d97e043060fd"><div class="ttname"><a href="class_c_character.html#a87e2572efb712e618497d97e043060fd">CCharacter::RoteZ</a></div><div class="ttdeci">float RoteZ</div><div class="ttdef"><b>Definition:</b> Character.h:68</div></div>
+<div class="ttc" id="_character_8h_html_a8626c24cc20d8c4c53581240caa5abda"><div class="ttname"><a href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abda">enMotionType</a></div><div class="ttdeci">enMotionType</div><div class="ttdef"><b>Definition:</b> Character.h:5</div></div>
+<div class="ttc" id="class_c_character_html_afaba3033c41ecb00a8334800f168719f"><div class="ttname"><a href="class_c_character.html#afaba3033c41ecb00a8334800f168719f">CCharacter::m_vOldPos</a></div><div class="ttdeci">D3DXVECTOR3 m_vOldPos</div><div class="ttdef"><b>Definition:</b> Character.h:25</div></div>
+<div class="ttc" id="class_c_character_html_a0bf7f1a31a6dfd28524f15addd37fcf1"><div class="ttname"><a href="class_c_character.html#a0bf7f1a31a6dfd28524f15addd37fcf1">CCharacter::m_pMultiAnim</a></div><div class="ttdeci">CMultiAnim * m_pMultiAnim</div><div class="ttdef"><b>Definition:</b> Character.h:51</div></div>
+<div class="ttc" id="class_c_character_html_af9ff71df4e7fac7dda8e9200b9a86809"><div class="ttname"><a href="class_c_character.html#af9ff71df4e7fac7dda8e9200b9a86809">CCharacter::m_enMotionType</a></div><div class="ttdeci">enMotionType m_enMotionType</div><div class="ttdef"><b>Definition:</b> Character.h:26</div></div>
+<div class="ttc" id="class_c_character_html_a7d30e354a18a5c9ab76c3fd04fcb0805"><div class="ttname"><a href="class_c_character.html#a7d30e354a18a5c9ab76c3fd04fcb0805">CCharacter::m_lfTotalFrameTime</a></div><div class="ttdeci">double m_lfTotalFrameTime</div><div class="ttdoc">当前动画总播放时间 </div><div class="ttdef"><b>Definition:</b> Character.h:65</div></div>
+<div class="ttc" id="class_c_character_html_a32af6c37d2fcdbd693e262f5a6725ba9"><div class="ttname"><a href="class_c_character.html#a32af6c37d2fcdbd693e262f5a6725ba9">CCharacter::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *element)</div><div class="ttdef"><b>Definition:</b> Character.cpp:19</div></div>
+<div class="ttc" id="class_c_character_html_ab24a84033ad5d94adca336b3c1471f36"><div class="ttname"><a href="class_c_character.html#ab24a84033ad5d94adca336b3c1471f36">CCharacter::m_fFrameTime</a></div><div class="ttdeci">float m_fFrameTime</div><div class="ttdoc">当前动画播放时间 </div><div class="ttdef"><b>Definition:</b> Character.h:63</div></div>
+<div class="ttc" id="class_c_character_html_a6176ffa71d744eed17566ab6d61e37bf"><div class="ttname"><a href="class_c_character.html#a6176ffa71d744eed17566ab6d61e37bf">CCharacter::~CCharacter</a></div><div class="ttdeci">~CCharacter(void)</div><div class="ttdef"><b>Definition:</b> Character.cpp:15</div></div>
+<div class="ttc" id="class_c_character_html_aa28bd937c4d424f93568e34663dd7cf0"><div class="ttname"><a href="class_c_character.html#aa28bd937c4d424f93568e34663dd7cf0">CCharacter::SetAnimationByName</a></div><div class="ttdeci">void SetAnimationByName(string name, DWORD dwControlPlayTime=0, bool bSmooth=true)</div><div class="ttdef"><b>Definition:</b> Character.cpp:129</div></div>
+<div class="ttc" id="class_c_character_html_a8c65b2c4003cfb73d3817cb5612b56c9"><div class="ttname"><a href="class_c_character.html#a8c65b2c4003cfb73d3817cb5612b56c9">CCharacter::DrawFrames</a></div><div class="ttdeci">virtual void DrawFrames(LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition:</b> Character.cpp:203</div></div>
+<div class="ttc" id="class_c_character_html_aa3d7173f6330d330cfd32416981e9088"><div class="ttname"><a href="class_c_character.html#aa3d7173f6330d330cfd32416981e9088">CCharacter::DrawMeshFrame</a></div><div class="ttdeci">virtual void DrawMeshFrame(LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition:</b> Character.cpp:224</div></div>
+<div class="ttc" id="class_c_character_html_a9e2bd2ce189b4ea16365b0eb3224a771"><div class="ttname"><a href="class_c_character.html#a9e2bd2ce189b4ea16365b0eb3224a771">CCharacter::RoteY</a></div><div class="ttdeci">float RoteY</div><div class="ttdef"><b>Definition:</b> Character.h:68</div></div>
+<div class="ttc" id="class_c_multi_anim_html"><div class="ttname"><a href="class_c_multi_anim.html">CMultiAnim</a></div><div class="ttdef"><b>Definition:</b> MultiAnim.h:86</div></div>
+<div class="ttc" id="class_c_character_html_a18d686a8a27a0644c881f716b058a732"><div class="ttname"><a href="class_c_character.html#a18d686a8a27a0644c881f716b058a732">CCharacter::GetPlayTime</a></div><div class="ttdeci">DWORD GetPlayTime()</div><div class="ttdef"><b>Definition:</b> Character.cpp:163</div></div>
+<div class="ttc" id="_character_8h_html_a8626c24cc20d8c4c53581240caa5abdaac14a51be8bcc8e9dbce0e43fb859b005"><div class="ttname"><a href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaac14a51be8bcc8e9dbce0e43fb859b005">MT_WALK</a></div><div class="ttdef"><b>Definition:</b> Character.h:5</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="_character_8h_html_a8626c24cc20d8c4c53581240caa5abdaa798a5e038de7b0a51cd091cf7d93ccb3"><div class="ttname"><a href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abdaa798a5e038de7b0a51cd091cf7d93ccb3">MT_DIEING</a></div><div class="ttdef"><b>Definition:</b> Character.h:5</div></div>
+<div class="ttc" id="class_c_character_html_a52aa20cfd276306fbf7b0416b2875892"><div class="ttname"><a href="class_c_character.html#a52aa20cfd276306fbf7b0416b2875892">CCharacter::RoteX</a></div><div class="ttdeci">float RoteX</div><div class="ttdef"><b>Definition:</b> Character.h:68</div></div>
+<div class="ttc" id="class_c_character_html_aa42de4261b2843f85401ac613b4a0f09"><div class="ttname"><a href="class_c_character.html#aa42de4261b2843f85401ac613b4a0f09">CCharacter::UpdateFrames</a></div><div class="ttdeci">virtual void UpdateFrames(LPD3DXFRAME pFrame, D3DXMATRIX *pmxBase)</div><div class="ttdef"><b>Definition:</b> Character.cpp:178</div></div>
+<div class="ttc" id="class_c_character_html_aa315b099c00aa5809092915d1eb474f8"><div class="ttname"><a href="class_c_character.html#aa315b099c00aa5809092915d1eb474f8">CCharacter::m_vMax</a></div><div class="ttdeci">D3DXVECTOR3 m_vMax</div><div class="ttdef"><b>Definition:</b> Character.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

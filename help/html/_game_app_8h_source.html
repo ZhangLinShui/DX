@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/GameApp.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GameApp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_app_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_scene_manager_8h.html">SceneManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_g_u_i_manager_8h.html">GUIManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graph_system_8h.html">GraphSystem.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_input_system_8h.html">InputSystem.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_c_game_app.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_game_app.html">CGameApp</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">//全局唯一的CGameApp对象实例的指针</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_game_app.html">CGameApp</a>* <a class="code" href="class_c_game_app.html#abeb6cec0815b7329821e635220b8b4a8">GetInstance</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">//游戏启动,完成所有的初始化工作,并进入游戏循环</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_game_app.html#a84e6231340dd8b7ba653ae71294826a3">Go</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//获得图形系统对象指针</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_game_app.html#aaef848012845f8ab61962e61eaf38895">   17</a></span>&#160;    <a class="code" href="class_c_graph_system.html">CGraphSystem</a>* <a class="code" href="class_c_game_app.html#aaef848012845f8ab61962e61eaf38895">GetGraph</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_game_app.html#abd9446b8642da2b6d36b38b7888c22d8">m_GraphSys</a>; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//获得输入系统对象指针</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_game_app.html#ae0aa052c0e12841519abac6850b456b1">   20</a></span>&#160;    <a class="code" href="class_c_input_system.html">CInputSystem</a>* <a class="code" href="class_c_game_app.html#ae0aa052c0e12841519abac6850b456b1">GetInput</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_game_app.html#a4110a26163df746c92bf1ebe4b01a8a7">m_InputSys</a>; }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//获得D3D设备对象</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a5aa653125dba97dad2f3d49f06c8c708">   23</a></span>&#160;    IDirect3DDevice9* <a class="code" href="class_c_game_app.html#a5aa653125dba97dad2f3d49f06c8c708">GetDevice</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_game_app.html#a8ac05bd0a1d580b8a0a688186bebc930">m_pDevice</a>; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//游戏初始化相关接口</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//创建游戏主窗口</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_game_app.html#ac33f4560a087d0bad801352c90b3c7c4">CreateGameWindow</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//初始化D3D程序</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_game_app.html#ac1715f5501aea75712051a122fc51035">InitD3D</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//初始化管理器</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_game_app.html#a1e6d403a963a2d1985962891b06d0d5d">InitManager</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//初始化各个系统</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_game_app.html#a0385f67e2b6e7e08d195d779359214dc">InitSystem</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_game_app.html#a148c6a9a1da401a5f16e1529a15d70d1">InitPlatform</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_game_app.html#a8e876df98f26ed45f288920b33c574f9">Update</a>(<span class="keywordtype">float</span> fcote);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//全局的一些成员</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//全局的应用程序实例句柄</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a6a3316d0070d0f7789dce7569b27dbee">   50</a></span>&#160;    HINSTANCE <a class="code" href="class_c_game_app.html#a6a3316d0070d0f7789dce7569b27dbee">m_hInstance</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//全局的应用程序窗口句柄</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_game_app.html#ac526354d15728a3cde12dc4cd8b00db2">   53</a></span>&#160;    HWND <a class="code" href="class_c_game_app.html#ac526354d15728a3cde12dc4cd8b00db2">m_hWnd</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//全局的消息结构体</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_c_game_app.html#ae3a7b6d21e38501397f724af5eadca5b">   56</a></span>&#160;    MSG <a class="code" href="class_c_game_app.html#ae3a7b6d21e38501397f724af5eadca5b">m_msg</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//全局的光标句柄</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a3fbc2fc655d18040485b9980760e32a6">   59</a></span>&#160;    HCURSOR <a class="code" href="class_c_game_app.html#a3fbc2fc655d18040485b9980760e32a6">m_hCursorNormal</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a802f4849fc65e70ec986e17a70045655">   60</a></span>&#160;    HCURSOR <a class="code" href="class_c_game_app.html#a802f4849fc65e70ec986e17a70045655">m_hCursorAtk</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_c_game_app.html#ab78507b76ee9a9fa8ba65a7901ff6fbd">   61</a></span>&#160;    HCURSOR <a class="code" href="class_c_game_app.html#ab78507b76ee9a9fa8ba65a7901ff6fbd">m_hCursorPick</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a84acd091dde9712759b7d4084f99afdc">   62</a></span>&#160;    HCURSOR <a class="code" href="class_c_game_app.html#a84acd091dde9712759b7d4084f99afdc">m_hCursorNPCTalk</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//D3D对象</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a85c0bd4d22d24de2333df42e065cca5d">   65</a></span>&#160;    IDirect3D9* <a class="code" href="class_c_game_app.html#a85c0bd4d22d24de2333df42e065cca5d">m_pD3D</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//D3D设备对象</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a8ac05bd0a1d580b8a0a688186bebc930">   68</a></span>&#160;    IDirect3DDevice9* <a class="code" href="class_c_game_app.html#a8ac05bd0a1d580b8a0a688186bebc930">m_pDevice</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//D3D设备对象的参数</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a68419c68ac5a47a99e6d822ae74c5049">   71</a></span>&#160;    D3DPRESENT_PARAMETERS <a class="code" href="class_c_game_app.html#a68419c68ac5a47a99e6d822ae74c5049">m_d3dpp</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a150a54884bedc47414796ad3fdfbfb1d">   73</a></span>&#160;    ID3DXSprite*        <a class="code" href="class_c_game_app.html#a150a54884bedc47414796ad3fdfbfb1d">m_pSprite</a> = NULL;   <span class="comment">//精灵接口指针</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a47720a922a3a30209d42b573c119f480">   74</a></span>&#160;    ID3DXFont*          <a class="code" href="class_c_game_app.html#a47720a922a3a30209d42b573c119f480">m_pFont</a> = NULL; <span class="comment">//字体接口</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_c_game_app.html#ad845491ce1e39cd7a6b49b06f833d13e">   75</a></span>&#160;    ID3DXLine*          <a class="code" href="class_c_game_app.html#ad845491ce1e39cd7a6b49b06f833d13e">m_pLine</a> = NULL;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//图形系统的对象指针</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_c_game_app.html#abd9446b8642da2b6d36b38b7888c22d8">   79</a></span>&#160;    <a class="code" href="class_c_graph_system.html">CGraphSystem</a>* <a class="code" href="class_c_game_app.html#abd9446b8642da2b6d36b38b7888c22d8">m_GraphSys</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//输入系统的对象指针</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a4110a26163df746c92bf1ebe4b01a8a7">   82</a></span>&#160;    <a class="code" href="class_c_input_system.html">CInputSystem</a>* <a class="code" href="class_c_game_app.html#a4110a26163df746c92bf1ebe4b01a8a7">m_InputSys</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//窗口宽高</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_c_game_app.html#ae1c4e198629d58256cda9d9eefb08405">   85</a></span>&#160;    DWORD <a class="code" href="class_c_game_app.html#ae1c4e198629d58256cda9d9eefb08405">m_dwWinWidth</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a1896706e4fd2217713048cfba7c47595">   86</a></span>&#160;    DWORD <a class="code" href="class_c_game_app.html#a1896706e4fd2217713048cfba7c47595">m_dwWinHeight</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_c_game_app.html#ad0f174a84916c6d839882f500e585f63">   89</a></span>&#160;    <a class="code" href="_engine_def_8h.html#afbf740a540158765d36fd21402f13637">EnvMgrState</a> <a class="code" href="class_c_game_app.html#ad0f174a84916c6d839882f500e585f63">m_emEnvState</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_c_game_app.html#a13aec5a83b11a0be20b6239ffae1cfc2">~CGameApp</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_c_game_app.html#a5c874a5fe5ddc3dc3aad3f242d27d2dc">CGameApp</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//全局唯一的CGameApp对象实例的指针</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_c_game_app.html#a996d610bb64c29aae4299278ec3c391e">   95</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_game_app.html">CGameApp</a>* <a class="code" href="class_c_game_app.html#a996d610bb64c29aae4299278ec3c391e">m_Instance</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="ttc" id="class_c_game_app_html_a996d610bb64c29aae4299278ec3c391e"><div class="ttname"><a href="class_c_game_app.html#a996d610bb64c29aae4299278ec3c391e">CGameApp::m_Instance</a></div><div class="ttdeci">static CGameApp * m_Instance</div><div class="ttdef"><b>Definition:</b> GameApp.h:95</div></div>
+<div class="ttc" id="class_c_game_app_html_ad845491ce1e39cd7a6b49b06f833d13e"><div class="ttname"><a href="class_c_game_app.html#ad845491ce1e39cd7a6b49b06f833d13e">CGameApp::m_pLine</a></div><div class="ttdeci">ID3DXLine * m_pLine</div><div class="ttdef"><b>Definition:</b> GameApp.h:75</div></div>
+<div class="ttc" id="class_c_game_app_html_a148c6a9a1da401a5f16e1529a15d70d1"><div class="ttname"><a href="class_c_game_app.html#a148c6a9a1da401a5f16e1529a15d70d1">CGameApp::InitPlatform</a></div><div class="ttdeci">bool InitPlatform()</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:126</div></div>
+<div class="ttc" id="class_c_game_app_html_ad0f174a84916c6d839882f500e585f63"><div class="ttname"><a href="class_c_game_app.html#ad0f174a84916c6d839882f500e585f63">CGameApp::m_emEnvState</a></div><div class="ttdeci">EnvMgrState m_emEnvState</div><div class="ttdef"><b>Definition:</b> GameApp.h:89</div></div>
+<div class="ttc" id="class_c_game_app_html"><div class="ttname"><a href="class_c_game_app.html">CGameApp</a></div><div class="ttdef"><b>Definition:</b> GameApp.h:7</div></div>
+<div class="ttc" id="class_c_game_app_html_a84acd091dde9712759b7d4084f99afdc"><div class="ttname"><a href="class_c_game_app.html#a84acd091dde9712759b7d4084f99afdc">CGameApp::m_hCursorNPCTalk</a></div><div class="ttdeci">HCURSOR m_hCursorNPCTalk</div><div class="ttdef"><b>Definition:</b> GameApp.h:62</div></div>
+<div class="ttc" id="class_c_game_app_html_ac33f4560a087d0bad801352c90b3c7c4"><div class="ttname"><a href="class_c_game_app.html#ac33f4560a087d0bad801352c90b3c7c4">CGameApp::CreateGameWindow</a></div><div class="ttdeci">bool CreateGameWindow(void)</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:61</div></div>
+<div class="ttc" id="class_c_game_app_html_ab78507b76ee9a9fa8ba65a7901ff6fbd"><div class="ttname"><a href="class_c_game_app.html#ab78507b76ee9a9fa8ba65a7901ff6fbd">CGameApp::m_hCursorPick</a></div><div class="ttdeci">HCURSOR m_hCursorPick</div><div class="ttdef"><b>Definition:</b> GameApp.h:61</div></div>
+<div class="ttc" id="class_c_game_app_html_a4110a26163df746c92bf1ebe4b01a8a7"><div class="ttname"><a href="class_c_game_app.html#a4110a26163df746c92bf1ebe4b01a8a7">CGameApp::m_InputSys</a></div><div class="ttdeci">CInputSystem * m_InputSys</div><div class="ttdef"><b>Definition:</b> GameApp.h:82</div></div>
+<div class="ttc" id="class_c_game_app_html_a150a54884bedc47414796ad3fdfbfb1d"><div class="ttname"><a href="class_c_game_app.html#a150a54884bedc47414796ad3fdfbfb1d">CGameApp::m_pSprite</a></div><div class="ttdeci">ID3DXSprite * m_pSprite</div><div class="ttdef"><b>Definition:</b> GameApp.h:73</div></div>
+<div class="ttc" id="class_c_game_app_html_a8e876df98f26ed45f288920b33c574f9"><div class="ttname"><a href="class_c_game_app.html#a8e876df98f26ed45f288920b33c574f9">CGameApp::Update</a></div><div class="ttdeci">void Update(float fcote)</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:144</div></div>
+<div class="ttc" id="class_c_game_app_html_ac526354d15728a3cde12dc4cd8b00db2"><div class="ttname"><a href="class_c_game_app.html#ac526354d15728a3cde12dc4cd8b00db2">CGameApp::m_hWnd</a></div><div class="ttdeci">HWND m_hWnd</div><div class="ttdef"><b>Definition:</b> GameApp.h:53</div></div>
+<div class="ttc" id="class_c_input_system_html"><div class="ttname"><a href="class_c_input_system.html">CInputSystem</a></div><div class="ttdef"><b>Definition:</b> InputSystem.h:26</div></div>
+<div class="ttc" id="class_c_game_app_html_a0385f67e2b6e7e08d195d779359214dc"><div class="ttname"><a href="class_c_game_app.html#a0385f67e2b6e7e08d195d779359214dc">CGameApp::InitSystem</a></div><div class="ttdeci">bool InitSystem(void)</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:164</div></div>
+<div class="ttc" id="_input_system_8h_html"><div class="ttname"><a href="_input_system_8h.html">InputSystem.h</a></div></div>
+<div class="ttc" id="class_c_game_app_html_ae0aa052c0e12841519abac6850b456b1"><div class="ttname"><a href="class_c_game_app.html#ae0aa052c0e12841519abac6850b456b1">CGameApp::GetInput</a></div><div class="ttdeci">CInputSystem * GetInput()</div><div class="ttdef"><b>Definition:</b> GameApp.h:20</div></div>
+<div class="ttc" id="class_c_game_app_html_ae3a7b6d21e38501397f724af5eadca5b"><div class="ttname"><a href="class_c_game_app.html#ae3a7b6d21e38501397f724af5eadca5b">CGameApp::m_msg</a></div><div class="ttdeci">MSG m_msg</div><div class="ttdef"><b>Definition:</b> GameApp.h:56</div></div>
+<div class="ttc" id="class_c_game_app_html_abd9446b8642da2b6d36b38b7888c22d8"><div class="ttname"><a href="class_c_game_app.html#abd9446b8642da2b6d36b38b7888c22d8">CGameApp::m_GraphSys</a></div><div class="ttdeci">CGraphSystem * m_GraphSys</div><div class="ttdef"><b>Definition:</b> GameApp.h:79</div></div>
+<div class="ttc" id="class_c_game_app_html_a47720a922a3a30209d42b573c119f480"><div class="ttname"><a href="class_c_game_app.html#a47720a922a3a30209d42b573c119f480">CGameApp::m_pFont</a></div><div class="ttdeci">ID3DXFont * m_pFont</div><div class="ttdef"><b>Definition:</b> GameApp.h:74</div></div>
+<div class="ttc" id="_engine_def_8h_html_afbf740a540158765d36fd21402f13637"><div class="ttname"><a href="_engine_def_8h.html#afbf740a540158765d36fd21402f13637">EnvMgrState</a></div><div class="ttdeci">EnvMgrState</div><div class="ttdef"><b>Definition:</b> EngineDef.h:81</div></div>
+<div class="ttc" id="_g_u_i_manager_8h_html"><div class="ttname"><a href="_g_u_i_manager_8h.html">GUIManager.h</a></div></div>
+<div class="ttc" id="class_c_game_app_html_a8ac05bd0a1d580b8a0a688186bebc930"><div class="ttname"><a href="class_c_game_app.html#a8ac05bd0a1d580b8a0a688186bebc930">CGameApp::m_pDevice</a></div><div class="ttdeci">IDirect3DDevice9 * m_pDevice</div><div class="ttdef"><b>Definition:</b> GameApp.h:68</div></div>
+<div class="ttc" id="class_c_game_app_html_a13aec5a83b11a0be20b6239ffae1cfc2"><div class="ttname"><a href="class_c_game_app.html#a13aec5a83b11a0be20b6239ffae1cfc2">CGameApp::~CGameApp</a></div><div class="ttdeci">~CGameApp()</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:267</div></div>
+<div class="ttc" id="class_c_game_app_html_a3fbc2fc655d18040485b9980760e32a6"><div class="ttname"><a href="class_c_game_app.html#a3fbc2fc655d18040485b9980760e32a6">CGameApp::m_hCursorNormal</a></div><div class="ttdeci">HCURSOR m_hCursorNormal</div><div class="ttdef"><b>Definition:</b> GameApp.h:59</div></div>
+<div class="ttc" id="class_c_game_app_html_a1896706e4fd2217713048cfba7c47595"><div class="ttname"><a href="class_c_game_app.html#a1896706e4fd2217713048cfba7c47595">CGameApp::m_dwWinHeight</a></div><div class="ttdeci">DWORD m_dwWinHeight</div><div class="ttdef"><b>Definition:</b> GameApp.h:86</div></div>
+<div class="ttc" id="class_c_game_app_html_a68419c68ac5a47a99e6d822ae74c5049"><div class="ttname"><a href="class_c_game_app.html#a68419c68ac5a47a99e6d822ae74c5049">CGameApp::m_d3dpp</a></div><div class="ttdeci">D3DPRESENT_PARAMETERS m_d3dpp</div><div class="ttdef"><b>Definition:</b> GameApp.h:71</div></div>
+<div class="ttc" id="class_c_game_app_html_a85c0bd4d22d24de2333df42e065cca5d"><div class="ttname"><a href="class_c_game_app.html#a85c0bd4d22d24de2333df42e065cca5d">CGameApp::m_pD3D</a></div><div class="ttdeci">IDirect3D9 * m_pD3D</div><div class="ttdef"><b>Definition:</b> GameApp.h:65</div></div>
+<div class="ttc" id="class_c_game_app_html_ac1715f5501aea75712051a122fc51035"><div class="ttname"><a href="class_c_game_app.html#ac1715f5501aea75712051a122fc51035">CGameApp::InitD3D</a></div><div class="ttdeci">bool InitD3D(void)</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:97</div></div>
+<div class="ttc" id="class_c_game_app_html_a1e6d403a963a2d1985962891b06d0d5d"><div class="ttname"><a href="class_c_game_app.html#a1e6d403a963a2d1985962891b06d0d5d">CGameApp::InitManager</a></div><div class="ttdeci">bool InitManager(void)</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:149</div></div>
+<div class="ttc" id="class_c_game_app_html_aaef848012845f8ab61962e61eaf38895"><div class="ttname"><a href="class_c_game_app.html#aaef848012845f8ab61962e61eaf38895">CGameApp::GetGraph</a></div><div class="ttdeci">CGraphSystem * GetGraph()</div><div class="ttdef"><b>Definition:</b> GameApp.h:17</div></div>
+<div class="ttc" id="class_c_graph_system_html"><div class="ttname"><a href="class_c_graph_system.html">CGraphSystem</a></div><div class="ttdef"><b>Definition:</b> GraphSystem.h:13</div></div>
+<div class="ttc" id="class_c_game_app_html_a5aa653125dba97dad2f3d49f06c8c708"><div class="ttname"><a href="class_c_game_app.html#a5aa653125dba97dad2f3d49f06c8c708">CGameApp::GetDevice</a></div><div class="ttdeci">IDirect3DDevice9 * GetDevice()</div><div class="ttdef"><b>Definition:</b> GameApp.h:23</div></div>
+<div class="ttc" id="_scene_manager_8h_html"><div class="ttname"><a href="_scene_manager_8h.html">SceneManager.h</a></div></div>
+<div class="ttc" id="_graph_system_8h_html"><div class="ttname"><a href="_graph_system_8h.html">GraphSystem.h</a></div></div>
+<div class="ttc" id="class_c_game_app_html_a802f4849fc65e70ec986e17a70045655"><div class="ttname"><a href="class_c_game_app.html#a802f4849fc65e70ec986e17a70045655">CGameApp::m_hCursorAtk</a></div><div class="ttdeci">HCURSOR m_hCursorAtk</div><div class="ttdef"><b>Definition:</b> GameApp.h:60</div></div>
+<div class="ttc" id="class_c_game_app_html_a6a3316d0070d0f7789dce7569b27dbee"><div class="ttname"><a href="class_c_game_app.html#a6a3316d0070d0f7789dce7569b27dbee">CGameApp::m_hInstance</a></div><div class="ttdeci">HINSTANCE m_hInstance</div><div class="ttdef"><b>Definition:</b> GameApp.h:50</div></div>
+<div class="ttc" id="class_c_game_app_html_a84e6231340dd8b7ba653ae71294826a3"><div class="ttname"><a href="class_c_game_app.html#a84e6231340dd8b7ba653ae71294826a3">CGameApp::Go</a></div><div class="ttdeci">bool Go()</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:185</div></div>
+<div class="ttc" id="class_c_game_app_html_a5c874a5fe5ddc3dc3aad3f242d27d2dc"><div class="ttname"><a href="class_c_game_app.html#a5c874a5fe5ddc3dc3aad3f242d27d2dc">CGameApp::CGameApp</a></div><div class="ttdeci">CGameApp()</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:245</div></div>
+<div class="ttc" id="class_c_game_app_html_ae1c4e198629d58256cda9d9eefb08405"><div class="ttname"><a href="class_c_game_app.html#ae1c4e198629d58256cda9d9eefb08405">CGameApp::m_dwWinWidth</a></div><div class="ttdeci">DWORD m_dwWinWidth</div><div class="ttdef"><b>Definition:</b> GameApp.h:85</div></div>
+<div class="ttc" id="class_c_game_app_html_abeb6cec0815b7329821e635220b8b4a8"><div class="ttname"><a href="class_c_game_app.html#abeb6cec0815b7329821e635220b8b4a8">CGameApp::GetInstance</a></div><div class="ttdeci">static CGameApp * GetInstance()</div><div class="ttdef"><b>Definition:</b> GameApp.cpp:176</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

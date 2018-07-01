@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: IObserver类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_i_observer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">IObserver类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_observer_8h_source.html">Observer.h</a>&gt;</code></p>
+<div class="dynheader">
+类 IObserver 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_i_observer.png" usemap="#IObserver_map" alt=""/>
+  <map id="IObserver_map" name="IObserver_map">
+<area href="class_c_graph_system.html" alt="CGraphSystem" shape="rect" coords="0,56,96,80"/>
+<area href="class_c_input_system.html" alt="CInputSystem" shape="rect" coords="106,56,202,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a313f8c53221a68ea111a447dbf855325"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_observer.html#a313f8c53221a68ea111a447dbf855325">Notify</a> (<a class="el" href="class_i_observable.html">IObservable</a> *pObservable, <a class="el" href="class_i_object.html">IObject</a> *Arg)=0</td></tr>
+<tr class="separator:a313f8c53221a68ea111a447dbf855325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681d8a78876b9d6eec1a8b1644af2647"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_observer.html#a681d8a78876b9d6eec1a8b1644af2647">Update</a> (<a class="el" href="class_i_observable.html">IObservable</a> *pObservable, <a class="el" href="class_i_object.html">IObject</a> *Arg)=0</td></tr>
+<tr class="separator:a681d8a78876b9d6eec1a8b1644af2647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a313f8c53221a68ea111a447dbf855325"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IObserver::Notify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_observable.html">IObservable</a> *&#160;</td>
+          <td class="paramname"><em>pObservable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_object.html">IObject</a> *&#160;</td>
+          <td class="paramname"><em>Arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_c_input_system.html#a9362c927596de3750361d230a63c1eb7">CInputSystem</a> , 以及 <a class="el" href="class_c_graph_system.html#a273710dbf87280aeb1cc30241f7ead17">CGraphSystem</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a681d8a78876b9d6eec1a8b1644af2647"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IObserver::Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_observable.html">IObservable</a> *&#160;</td>
+          <td class="paramname"><em>pObservable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_object.html">IObject</a> *&#160;</td>
+          <td class="paramname"><em>Arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_c_input_system.html#a1148a6f2c4b5ce2a67ade11cfdbabd68">CInputSystem</a> , 以及 <a class="el" href="class_c_graph_system.html#aa4b46e12ab18f4a3e3d46e9830989f4a">CGraphSystem</a> 内被实现.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/<a class="el" href="_observer_8h_source.html">Observer.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:10 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

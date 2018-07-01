@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Hourse.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Hourse.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_hourse_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_object_8h.html">RenderObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_c_hourse.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_hourse.html">CHourse</a> :</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_c_render_object.html">CRenderObject</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_c_hourse.html#a1f91c35e8bf116b01c1da36d79362342">CHourse</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_c_hourse.html#a5717791db98ea1937ffff841ba08c199">~CHourse</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    BOOL <a class="code" href="class_c_hourse.html#a3f9ff7bdf4d569eae4493e336e956aba">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a> *node);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_hourse.html#a095274eaec044de5899d7e08fb30781d">Draw</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    D3DXMATRIX <a class="code" href="class_c_hourse.html#a88747da7f6184c3744f789bac2a725de">GetMatInverse</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    LPD3DXMESH <a class="code" href="class_c_hourse.html#aeb3367e69b55662192c9b29b0350f007">GetMesh</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_hourse.html#a78e17d464c1fac900fad60f4b72494fc">   14</a></span>&#160;    LPD3DXMESH <a class="code" href="class_c_hourse.html#a78e17d464c1fac900fad60f4b72494fc">m_Mesh</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_hourse.html#a986953097a0e4c81be4e64b1580f6431">   15</a></span>&#160;    DWORD <a class="code" href="class_c_hourse.html#a986953097a0e4c81be4e64b1580f6431">m_dwNumMaterail</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_hourse.html#ac88b39e697c7ae1f958cc3eb004477c8">   16</a></span>&#160;    vector&lt;LPDIRECT3DTEXTURE9&gt; <a class="code" href="class_c_hourse.html#ac88b39e697c7ae1f958cc3eb004477c8">m_vecTex</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_hourse.html#abbdc80db8caa91c76d48445fb19ca60f">   17</a></span>&#160;    vector&lt;D3DMATERIAL9&gt;        <a class="code" href="class_c_hourse.html#abbdc80db8caa91c76d48445fb19ca60f">m_vecMatera</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_hourse.html#afaac6b25f541b71360f1bb1cd5e4f80a">   18</a></span>&#160;    D3DXMATRIX                 <a class="code" href="class_c_hourse.html#afaac6b25f541b71360f1bb1cd5e4f80a">m_matInverse</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_hourse.html#a329796ae713ec78913ee028570db3d9d">   19</a></span>&#160;    D3DMATERIAL9 <a class="code" href="class_c_hourse.html#a329796ae713ec78913ee028570db3d9d">g_Material</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="ttc" id="_render_object_8h_html"><div class="ttname"><a href="_render_object_8h.html">RenderObject.h</a></div></div>
+<div class="ttc" id="class_c_hourse_html_a329796ae713ec78913ee028570db3d9d"><div class="ttname"><a href="class_c_hourse.html#a329796ae713ec78913ee028570db3d9d">CHourse::g_Material</a></div><div class="ttdeci">D3DMATERIAL9 g_Material</div><div class="ttdef"><b>Definition:</b> Hourse.h:19</div></div>
+<div class="ttc" id="class_c_hourse_html_a3f9ff7bdf4d569eae4493e336e956aba"><div class="ttname"><a href="class_c_hourse.html#a3f9ff7bdf4d569eae4493e336e956aba">CHourse::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *node)</div><div class="ttdef"><b>Definition:</b> Hourse.cpp:15</div></div>
+<div class="ttc" id="class_c_render_object_html"><div class="ttname"><a href="class_c_render_object.html">CRenderObject</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:27</div></div>
+<div class="ttc" id="class_c_hourse_html_a095274eaec044de5899d7e08fb30781d"><div class="ttname"><a href="class_c_hourse.html#a095274eaec044de5899d7e08fb30781d">CHourse::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Hourse.cpp:50</div></div>
+<div class="ttc" id="class_c_hourse_html_a1f91c35e8bf116b01c1da36d79362342"><div class="ttname"><a href="class_c_hourse.html#a1f91c35e8bf116b01c1da36d79362342">CHourse::CHourse</a></div><div class="ttdeci">CHourse()</div><div class="ttdef"><b>Definition:</b> Hourse.cpp:5</div></div>
+<div class="ttc" id="class_c_hourse_html"><div class="ttname"><a href="class_c_hourse.html">CHourse</a></div><div class="ttdef"><b>Definition:</b> Hourse.h:3</div></div>
+<div class="ttc" id="class_c_hourse_html_ac88b39e697c7ae1f958cc3eb004477c8"><div class="ttname"><a href="class_c_hourse.html#ac88b39e697c7ae1f958cc3eb004477c8">CHourse::m_vecTex</a></div><div class="ttdeci">vector&lt; LPDIRECT3DTEXTURE9 &gt; m_vecTex</div><div class="ttdef"><b>Definition:</b> Hourse.h:16</div></div>
+<div class="ttc" id="class_c_hourse_html_a78e17d464c1fac900fad60f4b72494fc"><div class="ttname"><a href="class_c_hourse.html#a78e17d464c1fac900fad60f4b72494fc">CHourse::m_Mesh</a></div><div class="ttdeci">LPD3DXMESH m_Mesh</div><div class="ttdef"><b>Definition:</b> Hourse.h:14</div></div>
+<div class="ttc" id="class_c_hourse_html_a5717791db98ea1937ffff841ba08c199"><div class="ttname"><a href="class_c_hourse.html#a5717791db98ea1937ffff841ba08c199">CHourse::~CHourse</a></div><div class="ttdeci">~CHourse()</div><div class="ttdef"><b>Definition:</b> Hourse.cpp:11</div></div>
+<div class="ttc" id="class_c_hourse_html_abbdc80db8caa91c76d48445fb19ca60f"><div class="ttname"><a href="class_c_hourse.html#abbdc80db8caa91c76d48445fb19ca60f">CHourse::m_vecMatera</a></div><div class="ttdeci">vector&lt; D3DMATERIAL9 &gt; m_vecMatera</div><div class="ttdef"><b>Definition:</b> Hourse.h:17</div></div>
+<div class="ttc" id="class_c_hourse_html_a986953097a0e4c81be4e64b1580f6431"><div class="ttname"><a href="class_c_hourse.html#a986953097a0e4c81be4e64b1580f6431">CHourse::m_dwNumMaterail</a></div><div class="ttdeci">DWORD m_dwNumMaterail</div><div class="ttdef"><b>Definition:</b> Hourse.h:15</div></div>
+<div class="ttc" id="class_c_hourse_html_afaac6b25f541b71360f1bb1cd5e4f80a"><div class="ttname"><a href="class_c_hourse.html#afaac6b25f541b71360f1bb1cd5e4f80a">CHourse::m_matInverse</a></div><div class="ttdeci">D3DXMATRIX m_matInverse</div><div class="ttdef"><b>Definition:</b> Hourse.h:18</div></div>
+<div class="ttc" id="class_c_hourse_html_a88747da7f6184c3744f789bac2a725de"><div class="ttname"><a href="class_c_hourse.html#a88747da7f6184c3744f789bac2a725de">CHourse::GetMatInverse</a></div><div class="ttdeci">D3DXMATRIX GetMatInverse()</div><div class="ttdef"><b>Definition:</b> Hourse.cpp:73</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_hourse_html_aeb3367e69b55662192c9b29b0350f007"><div class="ttname"><a href="class_c_hourse.html#aeb3367e69b55662192c9b29b0350f007">CHourse::GetMesh</a></div><div class="ttdeci">LPD3DXMESH GetMesh()</div><div class="ttdef"><b>Definition:</b> Hourse.cpp:78</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

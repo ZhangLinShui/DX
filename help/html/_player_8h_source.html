@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Player.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Player.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_player_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_object_8h.html">RenderObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_character_8h.html">.\character.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_c_player.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_player.html">CPlayer</a> :<span class="keyword">public</span> <a class="code" href="class_c_render_object.html">CRenderObject</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_player.html#abc07826000d532992651c1b4f3db5f6e">   10</a></span>&#160;    <a class="code" href="_engine_def_8h.html#a9cc5fe8fcbcf47144f00c658da0d4a0c">MyEnum</a> <a class="code" href="class_c_player.html#abc07826000d532992651c1b4f3db5f6e">player_stage</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_c_player.html#a931a59adf2ada5376122e30b33ae2c4c">CPlayer</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_c_player.html#ad02df04887bccfe3b82298895da24af6">~CPlayer</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    BOOL <a class="code" href="class_c_player.html#a24680f82f67fd2ab827dda23c635c5a9">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a>* node);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#a62e8fe5debd9c53dec362c2121fd2706">Draw</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_player.html#aa266ff0eefc1cc78760f1142a9082af2">   15</a></span>&#160;    <span class="keywordtype">void</span>                        <a class="code" href="class_c_player.html#aa266ff0eefc1cc78760f1142a9082af2">SetAnimation</a>(<a class="code" href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abda">enMotionType</a> perAni) { <a class="code" href="class_c_player.html#af3e323cedff338bcb843f82966751c0e">m_pMeshDate</a>-&gt;<a class="code" href="class_c_character.html#ab35071ce05138a6281c4648c2b811876">ChangeMotionType</a>(perAni); }</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_player.html#a5e8532eceef9f3cdc592a24c38f5dade">   16</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_player.html#a5e8532eceef9f3cdc592a24c38f5dade">GetMatInverse</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_player.html#a5144e6ccbba6df37ce92924bc82a3d18">m_matInverse</a>; }</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_player.html#ad5432121a215e9392224a841fcdc2a33">   17</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_player.html#ad5432121a215e9392224a841fcdc2a33">GetMin</a>() </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_c_player.html#ab1ff6806a8a495a1c433ca689d261e64">D3DXMin</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_player.html#a7dbab9a699fd2441e01b1b4fea93513f">   21</a></span>&#160;    <a class="code" href="struct_c_u_s_t_o_m_v_e_r_t_e_x_l_i_n_e.html">CUSTOMVERTEXLINE</a>&amp;<a class="code" href="class_c_player.html#a7dbab9a699fd2441e01b1b4fea93513f">Getstart</a>(<span class="keywordtype">int</span> i) </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    { </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_c_player.html#a3264a66c0dab757d8bd08b0379b5fe64">start</a>[i]; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_player.html#a5f1a4cdc59c8189e7a67006e557ac7a6">   25</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_player.html#a5f1a4cdc59c8189e7a67006e557ac7a6">m_TextruePath</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_player.html#a227311a751267b1a3e0125faaf6c4aee">   26</a></span>&#160;    LPD3DXMESH <a class="code" href="class_c_player.html#a227311a751267b1a3e0125faaf6c4aee">m_Mesh</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_player.html#a725c153276f3102faf9c6d7a72c19724">   27</a></span>&#160;    DWORD <a class="code" href="class_c_player.html#a725c153276f3102faf9c6d7a72c19724">g_dwNumMaterail</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_player.html#aa4aabdfc2a945e45cbf94d71870713d9">   28</a></span>&#160;    vector&lt;LPDIRECT3DTEXTURE9&gt; <a class="code" href="class_c_player.html#aa4aabdfc2a945e45cbf94d71870713d9">g_vecTex</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_player.html#a5dfc01cad91cfff474d18a7b78880763">   29</a></span>&#160;    D3DMATERIAL9 <a class="code" href="class_c_player.html#a5dfc01cad91cfff474d18a7b78880763">g_Material</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_player.html#a67e52bd0b20a3fbd20c11aa6a0b2307d">   30</a></span>&#160;    LPD3DXMESH <a class="code" href="class_c_player.html#a67e52bd0b20a3fbd20c11aa6a0b2307d">m_pSphereMesh</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_player.html#a456141fad1e8c99932b069cd5bc8afce">   31</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_player.html#a456141fad1e8c99932b069cd5bc8afce">pCenter</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_player.html#a5144e6ccbba6df37ce92924bc82a3d18">   32</a></span>&#160;    D3DXMATRIX              <a class="code" href="class_c_player.html#a5144e6ccbba6df37ce92924bc82a3d18">m_matInverse</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_c_player.html#af3e323cedff338bcb843f82966751c0e">   34</a></span>&#160;    <a class="code" href="class_c_character.html">CCharacter</a> *<a class="code" href="class_c_player.html#af3e323cedff338bcb843f82966751c0e">m_pMeshDate</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_player.html#ae5ee8c2a99ea9408afd88da0b6f32cfc">   36</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_player.html#ae5ee8c2a99ea9408afd88da0b6f32cfc">r</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_c_player.html#ab1ce4772c3210c245633249ea1fba574">   37</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_player.html#ab1ce4772c3210c245633249ea1fba574">m_fMoveSpeed</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_player.html#aa09676bdd2c6afa01f8675a4b27e95c3">   38</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_player.html#a4a7b5891987efe55def3fbb290df0707">Roate</a>, <a class="code" href="class_c_player.html#a26a21bae08d6d8919f7b7dce7f18feec">Scalex</a>, <a class="code" href="class_c_player.html#a69048066b2c6be0a4a675adb538d5aa0">Scaley</a>, <a class="code" href="class_c_player.html#aa09676bdd2c6afa01f8675a4b27e95c3">Scalez</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_player.html#a58aade49c962e0a1520f34183d96c68a">   39</a></span>&#160;    <span class="keywordtype">float</span>                   <a class="code" href="class_c_player.html#a75c5bb8a21e5a4a3c6ba23e91ae64515">RoteX</a>, <a class="code" href="class_c_player.html#a7d1c047af146784d18efc89c3b85d273">RoteY</a>, <a class="code" href="class_c_player.html#a58aade49c962e0a1520f34183d96c68a">RoteZ</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">/******************************画线**********************************/</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_player.html#a930b6fe71150aab916b70ff999a6a4ce">   42</a></span>&#160;    <a class="code" href="struct_c_u_s_t_o_m_v_e_r_t_e_x_l_i_n_e.html">CUSTOMVERTEXLINE</a> <a class="code" href="class_c_player.html#a930b6fe71150aab916b70ff999a6a4ce">line</a>[8];</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_c_player.html#a3264a66c0dab757d8bd08b0379b5fe64">   43</a></span>&#160;    <a class="code" href="struct_c_u_s_t_o_m_v_e_r_t_e_x_l_i_n_e.html">CUSTOMVERTEXLINE</a> <a class="code" href="class_c_player.html#a3264a66c0dab757d8bd08b0379b5fe64">start</a>[6];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">/******************************画线**********************************/</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">/****************************包围盒********************/</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_player.html#ab66cefa7249cb8d0511fc3dd0f208aa5">   47</a></span>&#160;    LPD3DXMESH                  <a class="code" href="class_c_player.html#ab66cefa7249cb8d0511fc3dd0f208aa5">m_BoxMesh</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_player.html#a5749618884d94308ad8a762bd9d5c1f7">   48</a></span>&#160;    WORD                        *<a class="code" href="class_c_player.html#a5749618884d94308ad8a762bd9d5c1f7">m_BoxIndex</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_player.html#a0896b14ec806c4a074639008297e49eb">   49</a></span>&#160;    <a class="code" href="struct_c_u_s_t_o_m_v_e_r_t_e_x1.html">CUSTOMVERTEX1</a>               *<a class="code" href="class_c_player.html#a0896b14ec806c4a074639008297e49eb">m_CustomBoxVer</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_player.html#af3798c2fa5e2ed778330c13f688932f8">   50</a></span>&#160;    DWORD                       <a class="code" href="class_c_player.html#af3798c2fa5e2ed778330c13f688932f8">NumFaces</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_c_player.html#a1bdb0199a24c70550022d7dc0541a2bd">   51</a></span>&#160;    DWORD                       <a class="code" href="class_c_player.html#a1bdb0199a24c70550022d7dc0541a2bd">NumVertices</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_player.html#ab1ff6806a8a495a1c433ca689d261e64">   52</a></span>&#160;    D3DXVECTOR3                 <a class="code" href="class_c_player.html#ab1ff6806a8a495a1c433ca689d261e64">D3DXMin</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_player.html#a3fca2c6b8e553dca246defaa7176c99b">   53</a></span>&#160;    D3DXVECTOR3                 <a class="code" href="class_c_player.html#a3fca2c6b8e553dca246defaa7176c99b">D3DXMax</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">/****************************包围盒********************/</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="ttc" id="class_c_player_html_af3798c2fa5e2ed778330c13f688932f8"><div class="ttname"><a href="class_c_player.html#af3798c2fa5e2ed778330c13f688932f8">CPlayer::NumFaces</a></div><div class="ttdeci">DWORD NumFaces</div><div class="ttdef"><b>Definition:</b> Player.h:50</div></div>
+<div class="ttc" id="class_c_player_html_af3e323cedff338bcb843f82966751c0e"><div class="ttname"><a href="class_c_player.html#af3e323cedff338bcb843f82966751c0e">CPlayer::m_pMeshDate</a></div><div class="ttdeci">CCharacter * m_pMeshDate</div><div class="ttdef"><b>Definition:</b> Player.h:34</div></div>
+<div class="ttc" id="class_c_player_html_a3fca2c6b8e553dca246defaa7176c99b"><div class="ttname"><a href="class_c_player.html#a3fca2c6b8e553dca246defaa7176c99b">CPlayer::D3DXMax</a></div><div class="ttdeci">D3DXVECTOR3 D3DXMax</div><div class="ttdef"><b>Definition:</b> Player.h:53</div></div>
+<div class="ttc" id="class_c_player_html"><div class="ttname"><a href="class_c_player.html">CPlayer</a></div><div class="ttdef"><b>Definition:</b> Player.h:7</div></div>
+<div class="ttc" id="class_c_player_html_a456141fad1e8c99932b069cd5bc8afce"><div class="ttname"><a href="class_c_player.html#a456141fad1e8c99932b069cd5bc8afce">CPlayer::pCenter</a></div><div class="ttdeci">D3DXVECTOR3 pCenter</div><div class="ttdef"><b>Definition:</b> Player.h:31</div></div>
+<div class="ttc" id="_render_object_8h_html"><div class="ttname"><a href="_render_object_8h.html">RenderObject.h</a></div></div>
+<div class="ttc" id="_character_8h_html"><div class="ttname"><a href="_character_8h.html">Character.h</a></div></div>
+<div class="ttc" id="class_c_player_html_ad5432121a215e9392224a841fcdc2a33"><div class="ttname"><a href="class_c_player.html#ad5432121a215e9392224a841fcdc2a33">CPlayer::GetMin</a></div><div class="ttdeci">D3DXVECTOR3 GetMin()</div><div class="ttdef"><b>Definition:</b> Player.h:17</div></div>
+<div class="ttc" id="class_c_player_html_aa09676bdd2c6afa01f8675a4b27e95c3"><div class="ttname"><a href="class_c_player.html#aa09676bdd2c6afa01f8675a4b27e95c3">CPlayer::Scalez</a></div><div class="ttdeci">float Scalez</div><div class="ttdef"><b>Definition:</b> Player.h:38</div></div>
+<div class="ttc" id="class_c_player_html_a69048066b2c6be0a4a675adb538d5aa0"><div class="ttname"><a href="class_c_player.html#a69048066b2c6be0a4a675adb538d5aa0">CPlayer::Scaley</a></div><div class="ttdeci">float Scaley</div><div class="ttdef"><b>Definition:</b> Player.h:38</div></div>
+<div class="ttc" id="class_c_render_object_html"><div class="ttname"><a href="class_c_render_object.html">CRenderObject</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:27</div></div>
+<div class="ttc" id="class_c_player_html_a725c153276f3102faf9c6d7a72c19724"><div class="ttname"><a href="class_c_player.html#a725c153276f3102faf9c6d7a72c19724">CPlayer::g_dwNumMaterail</a></div><div class="ttdeci">DWORD g_dwNumMaterail</div><div class="ttdef"><b>Definition:</b> Player.h:27</div></div>
+<div class="ttc" id="class_c_player_html_a3264a66c0dab757d8bd08b0379b5fe64"><div class="ttname"><a href="class_c_player.html#a3264a66c0dab757d8bd08b0379b5fe64">CPlayer::start</a></div><div class="ttdeci">CUSTOMVERTEXLINE start[6]</div><div class="ttdef"><b>Definition:</b> Player.h:43</div></div>
+<div class="ttc" id="class_c_player_html_ab1ce4772c3210c245633249ea1fba574"><div class="ttname"><a href="class_c_player.html#ab1ce4772c3210c245633249ea1fba574">CPlayer::m_fMoveSpeed</a></div><div class="ttdeci">float m_fMoveSpeed</div><div class="ttdef"><b>Definition:</b> Player.h:37</div></div>
+<div class="ttc" id="class_c_character_html"><div class="ttname"><a href="class_c_character.html">CCharacter</a></div><div class="ttdef"><b>Definition:</b> Character.h:7</div></div>
+<div class="ttc" id="struct_c_u_s_t_o_m_v_e_r_t_e_x1_html"><div class="ttname"><a href="struct_c_u_s_t_o_m_v_e_r_t_e_x1.html">CUSTOMVERTEX1</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:3</div></div>
+<div class="ttc" id="class_c_character_html_ab35071ce05138a6281c4648c2b811876"><div class="ttname"><a href="class_c_character.html#ab35071ce05138a6281c4648c2b811876">CCharacter::ChangeMotionType</a></div><div class="ttdeci">void ChangeMotionType(enMotionType enType)</div><div class="ttdef"><b>Definition:</b> Character.cpp:98</div></div>
+<div class="ttc" id="class_c_player_html_a67e52bd0b20a3fbd20c11aa6a0b2307d"><div class="ttname"><a href="class_c_player.html#a67e52bd0b20a3fbd20c11aa6a0b2307d">CPlayer::m_pSphereMesh</a></div><div class="ttdeci">LPD3DXMESH m_pSphereMesh</div><div class="ttdef"><b>Definition:</b> Player.h:30</div></div>
+<div class="ttc" id="class_c_player_html_ab66cefa7249cb8d0511fc3dd0f208aa5"><div class="ttname"><a href="class_c_player.html#ab66cefa7249cb8d0511fc3dd0f208aa5">CPlayer::m_BoxMesh</a></div><div class="ttdeci">LPD3DXMESH m_BoxMesh</div><div class="ttdef"><b>Definition:</b> Player.h:47</div></div>
+<div class="ttc" id="_engine_def_8h_html_a9cc5fe8fcbcf47144f00c658da0d4a0c"><div class="ttname"><a href="_engine_def_8h.html#a9cc5fe8fcbcf47144f00c658da0d4a0c">MyEnum</a></div><div class="ttdeci">MyEnum</div><div class="ttdef"><b>Definition:</b> EngineDef.h:22</div></div>
+<div class="ttc" id="class_c_player_html_ae5ee8c2a99ea9408afd88da0b6f32cfc"><div class="ttname"><a href="class_c_player.html#ae5ee8c2a99ea9408afd88da0b6f32cfc">CPlayer::r</a></div><div class="ttdeci">float r</div><div class="ttdef"><b>Definition:</b> Player.h:36</div></div>
+<div class="ttc" id="class_c_player_html_a227311a751267b1a3e0125faaf6c4aee"><div class="ttname"><a href="class_c_player.html#a227311a751267b1a3e0125faaf6c4aee">CPlayer::m_Mesh</a></div><div class="ttdeci">LPD3DXMESH m_Mesh</div><div class="ttdef"><b>Definition:</b> Player.h:26</div></div>
+<div class="ttc" id="class_c_player_html_aa4aabdfc2a945e45cbf94d71870713d9"><div class="ttname"><a href="class_c_player.html#aa4aabdfc2a945e45cbf94d71870713d9">CPlayer::g_vecTex</a></div><div class="ttdeci">vector&lt; LPDIRECT3DTEXTURE9 &gt; g_vecTex</div><div class="ttdef"><b>Definition:</b> Player.h:28</div></div>
+<div class="ttc" id="class_c_player_html_a62e8fe5debd9c53dec362c2121fd2706"><div class="ttname"><a href="class_c_player.html#a62e8fe5debd9c53dec362c2121fd2706">CPlayer::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Player.cpp:133</div></div>
+<div class="ttc" id="class_c_player_html_a5e8532eceef9f3cdc592a24c38f5dade"><div class="ttname"><a href="class_c_player.html#a5e8532eceef9f3cdc592a24c38f5dade">CPlayer::GetMatInverse</a></div><div class="ttdeci">D3DXMATRIX GetMatInverse()</div><div class="ttdef"><b>Definition:</b> Player.h:16</div></div>
+<div class="ttc" id="class_c_player_html_a7dbab9a699fd2441e01b1b4fea93513f"><div class="ttname"><a href="class_c_player.html#a7dbab9a699fd2441e01b1b4fea93513f">CPlayer::Getstart</a></div><div class="ttdeci">CUSTOMVERTEXLINE &amp; Getstart(int i)</div><div class="ttdef"><b>Definition:</b> Player.h:21</div></div>
+<div class="ttc" id="class_c_player_html_a58aade49c962e0a1520f34183d96c68a"><div class="ttname"><a href="class_c_player.html#a58aade49c962e0a1520f34183d96c68a">CPlayer::RoteZ</a></div><div class="ttdeci">float RoteZ</div><div class="ttdef"><b>Definition:</b> Player.h:39</div></div>
+<div class="ttc" id="class_c_player_html_abc07826000d532992651c1b4f3db5f6e"><div class="ttname"><a href="class_c_player.html#abc07826000d532992651c1b4f3db5f6e">CPlayer::player_stage</a></div><div class="ttdeci">MyEnum player_stage</div><div class="ttdef"><b>Definition:</b> Player.h:10</div></div>
+<div class="ttc" id="class_c_player_html_ab1ff6806a8a495a1c433ca689d261e64"><div class="ttname"><a href="class_c_player.html#ab1ff6806a8a495a1c433ca689d261e64">CPlayer::D3DXMin</a></div><div class="ttdeci">D3DXVECTOR3 D3DXMin</div><div class="ttdef"><b>Definition:</b> Player.h:52</div></div>
+<div class="ttc" id="class_c_player_html_a24680f82f67fd2ab827dda23c635c5a9"><div class="ttname"><a href="class_c_player.html#a24680f82f67fd2ab827dda23c635c5a9">CPlayer::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *node)</div><div class="ttdef"><b>Definition:</b> Player.cpp:11</div></div>
+<div class="ttc" id="_character_8h_html_a8626c24cc20d8c4c53581240caa5abda"><div class="ttname"><a href="_character_8h.html#a8626c24cc20d8c4c53581240caa5abda">enMotionType</a></div><div class="ttdeci">enMotionType</div><div class="ttdef"><b>Definition:</b> Character.h:5</div></div>
+<div class="ttc" id="class_c_player_html_aa266ff0eefc1cc78760f1142a9082af2"><div class="ttname"><a href="class_c_player.html#aa266ff0eefc1cc78760f1142a9082af2">CPlayer::SetAnimation</a></div><div class="ttdeci">void SetAnimation(enMotionType perAni)</div><div class="ttdef"><b>Definition:</b> Player.h:15</div></div>
+<div class="ttc" id="class_c_player_html_a5144e6ccbba6df37ce92924bc82a3d18"><div class="ttname"><a href="class_c_player.html#a5144e6ccbba6df37ce92924bc82a3d18">CPlayer::m_matInverse</a></div><div class="ttdeci">D3DXMATRIX m_matInverse</div><div class="ttdef"><b>Definition:</b> Player.h:32</div></div>
+<div class="ttc" id="class_c_player_html_a5749618884d94308ad8a762bd9d5c1f7"><div class="ttname"><a href="class_c_player.html#a5749618884d94308ad8a762bd9d5c1f7">CPlayer::m_BoxIndex</a></div><div class="ttdeci">WORD * m_BoxIndex</div><div class="ttdef"><b>Definition:</b> Player.h:48</div></div>
+<div class="ttc" id="class_c_player_html_ad02df04887bccfe3b82298895da24af6"><div class="ttname"><a href="class_c_player.html#ad02df04887bccfe3b82298895da24af6">CPlayer::~CPlayer</a></div><div class="ttdeci">~CPlayer()</div><div class="ttdef"><b>Definition:</b> Player.cpp:8</div></div>
+<div class="ttc" id="class_c_player_html_a931a59adf2ada5376122e30b33ae2c4c"><div class="ttname"><a href="class_c_player.html#a931a59adf2ada5376122e30b33ae2c4c">CPlayer::CPlayer</a></div><div class="ttdeci">CPlayer()</div><div class="ttdef"><b>Definition:</b> Player.cpp:4</div></div>
+<div class="ttc" id="class_c_player_html_a0896b14ec806c4a074639008297e49eb"><div class="ttname"><a href="class_c_player.html#a0896b14ec806c4a074639008297e49eb">CPlayer::m_CustomBoxVer</a></div><div class="ttdeci">CUSTOMVERTEX1 * m_CustomBoxVer</div><div class="ttdef"><b>Definition:</b> Player.h:49</div></div>
+<div class="ttc" id="class_c_player_html_a7d1c047af146784d18efc89c3b85d273"><div class="ttname"><a href="class_c_player.html#a7d1c047af146784d18efc89c3b85d273">CPlayer::RoteY</a></div><div class="ttdeci">float RoteY</div><div class="ttdef"><b>Definition:</b> Player.h:39</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_player_html_a5dfc01cad91cfff474d18a7b78880763"><div class="ttname"><a href="class_c_player.html#a5dfc01cad91cfff474d18a7b78880763">CPlayer::g_Material</a></div><div class="ttdeci">D3DMATERIAL9 g_Material</div><div class="ttdef"><b>Definition:</b> Player.h:29</div></div>
+<div class="ttc" id="class_c_player_html_a4a7b5891987efe55def3fbb290df0707"><div class="ttname"><a href="class_c_player.html#a4a7b5891987efe55def3fbb290df0707">CPlayer::Roate</a></div><div class="ttdeci">float Roate</div><div class="ttdef"><b>Definition:</b> Player.h:38</div></div>
+<div class="ttc" id="class_c_player_html_a5f1a4cdc59c8189e7a67006e557ac7a6"><div class="ttname"><a href="class_c_player.html#a5f1a4cdc59c8189e7a67006e557ac7a6">CPlayer::m_TextruePath</a></div><div class="ttdeci">string m_TextruePath</div><div class="ttdef"><b>Definition:</b> Player.h:25</div></div>
+<div class="ttc" id="class_c_player_html_a75c5bb8a21e5a4a3c6ba23e91ae64515"><div class="ttname"><a href="class_c_player.html#a75c5bb8a21e5a4a3c6ba23e91ae64515">CPlayer::RoteX</a></div><div class="ttdeci">float RoteX</div><div class="ttdef"><b>Definition:</b> Player.h:39</div></div>
+<div class="ttc" id="class_c_player_html_a1bdb0199a24c70550022d7dc0541a2bd"><div class="ttname"><a href="class_c_player.html#a1bdb0199a24c70550022d7dc0541a2bd">CPlayer::NumVertices</a></div><div class="ttdeci">DWORD NumVertices</div><div class="ttdef"><b>Definition:</b> Player.h:51</div></div>
+<div class="ttc" id="class_c_player_html_a930b6fe71150aab916b70ff999a6a4ce"><div class="ttname"><a href="class_c_player.html#a930b6fe71150aab916b70ff999a6a4ce">CPlayer::line</a></div><div class="ttdeci">CUSTOMVERTEXLINE line[8]</div><div class="ttdef"><b>Definition:</b> Player.h:42</div></div>
+<div class="ttc" id="struct_c_u_s_t_o_m_v_e_r_t_e_x_l_i_n_e_html"><div class="ttname"><a href="struct_c_u_s_t_o_m_v_e_r_t_e_x_l_i_n_e.html">CUSTOMVERTEXLINE</a></div><div class="ttdef"><b>Definition:</b> EngineDef.h:17</div></div>
+<div class="ttc" id="class_c_player_html_a26a21bae08d6d8919f7b7dce7f18feec"><div class="ttname"><a href="class_c_player.html#a26a21bae08d6d8919f7b7dce7f18feec">CPlayer::Scalex</a></div><div class="ttdeci">float Scalex</div><div class="ttdef"><b>Definition:</b> Player.h:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

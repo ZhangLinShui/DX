@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/EditBox.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EditBox.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_edit_box_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Name:EditBox.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//文本输入框控件</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_edit_box.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_edit_box.html">CEditBox</a> : <span class="keyword">public</span> <a class="code" href="class_c_component.html">CComponent</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//构造函数</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_c_edit_box.html#a9243724e0e41b9be0275b0d59ace8362">CEditBox</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_c_edit_box.html#a46b7a12d6d319b51e5019eb6442e36c7">~CEditBox</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//绘制组件</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a9165f62c77719ac697a14a01d9003ef0">Draw</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//处理鼠标移动的事件响应</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a9c39d3b08b4c76494820b3203b334f03">ProcessMouseMove</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//处理鼠标左键按下的事件响应</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a86de680a53cfd3b57a91569700364867">ProcessMouseLBDown</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//在用户输入字符后响应</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_edit_box.html#a514366f0ad7b1f6e8cf82a60564833d0">HandlePutIn</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//往当前的保存的字符串后面添加一个字符</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a2ff9bea57811e6e8fc9b1fd4448b12cd">AddChar</a>(<span class="keywordtype">char</span> cChar);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//往当前的保存的字符串后面添加一串字符串</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a2159b96c6e341818ae6e8d108c2b72ac">AddString</a>(<span class="keywordtype">string</span> str);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//在渲染的过程中根据文本框输入的字数的多少来设定游标的位置</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#afb28ff6a6159f538f824a9089f3cc09a">SetCursorPos</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//定时器的回调函数,用于控制游标的闪烁</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#ade53c1d376026feabb14ffdd77463906">   42</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> CALLBACK <a class="code" href="class_c_edit_box.html#ade53c1d376026feabb14ffdd77463906">TimerProc</a>(HWND hWnd,UINT nMsg,UINT nTimerid,DWORD dwTime)  {<a class="code" href="class_c_edit_box.html#a8a205832c945de4050677bdfa2d1a07f">m_bShowCursor</a> = !<a class="code" href="class_c_edit_box.html#a8a205832c945de4050677bdfa2d1a07f">m_bShowCursor</a>;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//返回m_nowPutIn里的数据(字符串),输出到PAGE里</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a31e966235e5a78d4cfc158ccff3d23b7">   45</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_edit_box.html#a31e966235e5a78d4cfc158ccff3d23b7">GetInputString</a>(<span class="keywordtype">void</span>)        {<span class="keywordflow">return</span> <a class="code" href="class_c_edit_box.html#a918d1941f24810e74aea468606b7bb82">m_nowPutIn</a>.c_str();}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//设置字符的宽度</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#aa2ed776f3dce70f074c1c752db78171d">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#aa2ed776f3dce70f074c1c752db78171d">SetCharWidth</a>(<span class="keywordtype">long</span> lWidth)      {<a class="code" href="class_c_edit_box.html#aecb7fdda0cd1426dd56b9f9a3da1bc0e">m_lCharWidth</a> = lWidth;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//设置字符的高度</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a1f310fdfc8be073fdec351fbfe7c444e">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a1f310fdfc8be073fdec351fbfe7c444e">SetCharHeight</a>(<span class="keywordtype">long</span> lHeight)    {<a class="code" href="class_c_edit_box.html#a3f8ac16b68dff1cc6f1179025489cb1e">m_lCharHeight</a> = lHeight;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//设置编辑框是否被激活</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#aad0ea7588344fe882ebf890addb443f0">SetActive</a>(<span class="keywordtype">bool</span> bActive);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//设置游标的左上角的坐标</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#aaa6cd5bf7f3c2d72ee2839b6cc6ac336">SetCursorLeftUpPos</a>(D3DXVECTOR2 vPos);  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//设置允许输入的最大的字符串个数</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a6435bf281d6cac8b5451a1d3b25c36dc">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a6435bf281d6cac8b5451a1d3b25c36dc">SetMaxInput</a>(<span class="keywordtype">long</span> lMaxInput)            {<a class="code" href="class_c_edit_box.html#a5c46d357fd35278057843b224457b7fb">m_lMaxInput</a> = lMaxInput;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//标示该编辑框是不是用来输入密码的</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a6cebf9bda53732220bd2368908fec8a3">   63</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a6cebf9bda53732220bd2368908fec8a3">SetBePasswordType</a>(<span class="keywordtype">bool</span> bPasswordType)  {<a class="code" href="class_c_edit_box.html#a664c0918aa9fc04c7c4439b3b0afb4a3">m_bPasswordType</a> = bPasswordType;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//加载游标的纹理</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_edit_box.html#ac81ab305d4b4ff52ceb981e20411dd45">SetCursorTex</a>(<span class="keywordtype">string</span> texFileName);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//创建字体,用于显示文字</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_edit_box.html#a59eb985d529a1827e9b0ce34c996a967">SetFont</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//清空EditBox的内容</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a7f28b93433cd6b0f97adcb3c143066e2">   72</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a7f28b93433cd6b0f97adcb3c143066e2">Clear</a>(<span class="keywordtype">void</span>)        {<a class="code" href="class_c_edit_box.html#a918d1941f24810e74aea468606b7bb82">m_nowPutIn</a>.clear();}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//设置编辑框响应ENTER键的LUA函数名</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#a297d71c838c5f211cd7512453f3506cc">SetResponseKeyEnter</a>(<span class="keywordtype">string</span> strKey);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//响应ENTER键的事件</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_edit_box.html#aa3b56d37e041aa78e8cdc8f35c53d89c">DoResponseKeyEnter</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//判断输入框有没有被激活</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a088e80b07b26081b213d17eb6170cb1c">   81</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_edit_box.html#a088e80b07b26081b213d17eb6170cb1c">GetBeActive</a>(<span class="keywordtype">void</span>)      {<span class="keywordflow">return</span> <a class="code" href="class_c_edit_box.html#ad091006fff9825dd523b1c3462c9b7f6">m_bActive</a>;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//判断输入框是否被激活,激活了才可以输入</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#ad091006fff9825dd523b1c3462c9b7f6">   86</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_edit_box.html#ad091006fff9825dd523b1c3462c9b7f6">m_bActive</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//D3DFont接口指针,用于输出字符</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a2142c88105a2fab01274a96743f980fd">   89</a></span>&#160;    ID3DXFont* <a class="code" href="class_c_edit_box.html#a2142c88105a2fab01274a96743f980fd">m_pFont</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//保存输入的文字</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a918d1941f24810e74aea468606b7bb82">   92</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_edit_box.html#a918d1941f24810e74aea468606b7bb82">m_nowPutIn</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//用于将字符串转换成&quot;*&quot;,用来做密码的输出,但实际的对应值还是保存在m_nowPutIn里</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a7c111bd59805cdc9ed778016c65d6bbd">   95</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_edit_box.html#a7c111bd59805cdc9ed778016c65d6bbd">m_Password</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//用于文字输出的矩形区域</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a1c60fd0d97e0a9d5165e35be9a2d1ab4">   98</a></span>&#160;    RECT <a class="code" href="class_c_edit_box.html#a1c60fd0d97e0a9d5165e35be9a2d1ab4">m_PutInRect</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//鼠标的位置</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a23e10a603dde8be2d4ef7ad73b41f5b1">  101</a></span>&#160;    POINT <a class="code" href="class_c_edit_box.html#a23e10a603dde8be2d4ef7ad73b41f5b1">m_MousePt</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">//游标的纹理</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a747a50d76cecbf61a0fed2cc34e26bcc">  104</a></span>&#160;    IDirect3DTexture9* <a class="code" href="class_c_edit_box.html#a747a50d76cecbf61a0fed2cc34e26bcc">m_pTextureCursor</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//游标的左上角坐标</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a78d3774a8c6687363d51cd9089e71963">  107</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_edit_box.html#a78d3774a8c6687363d51cd9089e71963">m_vCursorLeftUpPos</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">//游标的显示的缩放比例</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a59096e19cf20c19786f7d28e90b8770c">  110</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_edit_box.html#a59096e19cf20c19786f7d28e90b8770c">m_vCursorScale</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//游标的切换</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a8a205832c945de4050677bdfa2d1a07f">  113</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_edit_box.html#a8a205832c945de4050677bdfa2d1a07f">m_bShowCursor</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">//游标的位置</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#af582f1d3b0e1475e651b46cb05003804">  116</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_edit_box.html#af582f1d3b0e1475e651b46cb05003804">m_lCursorPos</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">//字符的高度</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a3f8ac16b68dff1cc6f1179025489cb1e">  119</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_edit_box.html#a3f8ac16b68dff1cc6f1179025489cb1e">m_lCharHeight</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//字符的宽度</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#aecb7fdda0cd1426dd56b9f9a3da1bc0e">  122</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_edit_box.html#aecb7fdda0cd1426dd56b9f9a3da1bc0e">m_lCharWidth</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">//字符的最大输入的数量</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a5c46d357fd35278057843b224457b7fb">  125</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_edit_box.html#a5c46d357fd35278057843b224457b7fb">m_lMaxInput</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">//EditBox的点击区域</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a4b3f139eb9cf74c6d8516cb8d66b4f66">  128</a></span>&#160;    RECT <a class="code" href="class_c_edit_box.html#a4b3f139eb9cf74c6d8516cb8d66b4f66">m_ClickedRegion</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">//表示了该EditBox控件是不是用来输入密码的</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a664c0918aa9fc04c7c4439b3b0afb4a3">  131</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_edit_box.html#a664c0918aa9fc04c7c4439b3b0afb4a3">m_bPasswordType</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//响应ENTER键的LUA函数名</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="class_c_edit_box.html#a9dca198908591865e42243de711f8d90">  134</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_edit_box.html#a9dca198908591865e42243de711f8d90">m_strResponseEnterEvent</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="ttc" id="class_c_edit_box_html_ade53c1d376026feabb14ffdd77463906"><div class="ttname"><a href="class_c_edit_box.html#ade53c1d376026feabb14ffdd77463906">CEditBox::TimerProc</a></div><div class="ttdeci">static void CALLBACK TimerProc(HWND hWnd, UINT nMsg, UINT nTimerid, DWORD dwTime)</div><div class="ttdef"><b>Definition:</b> EditBox.h:42</div></div>
+<div class="ttc" id="class_c_edit_box_html_a2159b96c6e341818ae6e8d108c2b72ac"><div class="ttname"><a href="class_c_edit_box.html#a2159b96c6e341818ae6e8d108c2b72ac">CEditBox::AddString</a></div><div class="ttdeci">void AddString(string str)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:243</div></div>
+<div class="ttc" id="class_c_edit_box_html_a2ff9bea57811e6e8fc9b1fd4448b12cd"><div class="ttname"><a href="class_c_edit_box.html#a2ff9bea57811e6e8fc9b1fd4448b12cd">CEditBox::AddChar</a></div><div class="ttdeci">void AddChar(char cChar)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:175</div></div>
+<div class="ttc" id="class_c_edit_box_html_a8a205832c945de4050677bdfa2d1a07f"><div class="ttname"><a href="class_c_edit_box.html#a8a205832c945de4050677bdfa2d1a07f">CEditBox::m_bShowCursor</a></div><div class="ttdeci">static bool m_bShowCursor</div><div class="ttdef"><b>Definition:</b> EditBox.h:113</div></div>
+<div class="ttc" id="class_c_edit_box_html_a9243724e0e41b9be0275b0d59ace8362"><div class="ttname"><a href="class_c_edit_box.html#a9243724e0e41b9be0275b0d59ace8362">CEditBox::CEditBox</a></div><div class="ttdeci">CEditBox()</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:7</div></div>
+<div class="ttc" id="class_c_edit_box_html_a4b3f139eb9cf74c6d8516cb8d66b4f66"><div class="ttname"><a href="class_c_edit_box.html#a4b3f139eb9cf74c6d8516cb8d66b4f66">CEditBox::m_ClickedRegion</a></div><div class="ttdeci">RECT m_ClickedRegion</div><div class="ttdef"><b>Definition:</b> EditBox.h:128</div></div>
+<div class="ttc" id="class_c_edit_box_html_afb28ff6a6159f538f824a9089f3cc09a"><div class="ttname"><a href="class_c_edit_box.html#afb28ff6a6159f538f824a9089f3cc09a">CEditBox::SetCursorPos</a></div><div class="ttdeci">void SetCursorPos(void)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:660</div></div>
+<div class="ttc" id="class_c_edit_box_html_ad091006fff9825dd523b1c3462c9b7f6"><div class="ttname"><a href="class_c_edit_box.html#ad091006fff9825dd523b1c3462c9b7f6">CEditBox::m_bActive</a></div><div class="ttdeci">bool m_bActive</div><div class="ttdef"><b>Definition:</b> EditBox.h:86</div></div>
+<div class="ttc" id="class_c_edit_box_html_a86de680a53cfd3b57a91569700364867"><div class="ttname"><a href="class_c_edit_box.html#a86de680a53cfd3b57a91569700364867">CEditBox::ProcessMouseLBDown</a></div><div class="ttdeci">void ProcessMouseLBDown(long x, long y)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:160</div></div>
+<div class="ttc" id="class_c_edit_box_html_aa2ed776f3dce70f074c1c752db78171d"><div class="ttname"><a href="class_c_edit_box.html#aa2ed776f3dce70f074c1c752db78171d">CEditBox::SetCharWidth</a></div><div class="ttdeci">void SetCharWidth(long lWidth)</div><div class="ttdef"><b>Definition:</b> EditBox.h:48</div></div>
+<div class="ttc" id="class_c_edit_box_html_a59096e19cf20c19786f7d28e90b8770c"><div class="ttname"><a href="class_c_edit_box.html#a59096e19cf20c19786f7d28e90b8770c">CEditBox::m_vCursorScale</a></div><div class="ttdeci">D3DXVECTOR2 m_vCursorScale</div><div class="ttdef"><b>Definition:</b> EditBox.h:110</div></div>
+<div class="ttc" id="class_c_edit_box_html_aecb7fdda0cd1426dd56b9f9a3da1bc0e"><div class="ttname"><a href="class_c_edit_box.html#aecb7fdda0cd1426dd56b9f9a3da1bc0e">CEditBox::m_lCharWidth</a></div><div class="ttdeci">long m_lCharWidth</div><div class="ttdef"><b>Definition:</b> EditBox.h:122</div></div>
+<div class="ttc" id="class_c_edit_box_html_a297d71c838c5f211cd7512453f3506cc"><div class="ttname"><a href="class_c_edit_box.html#a297d71c838c5f211cd7512453f3506cc">CEditBox::SetResponseKeyEnter</a></div><div class="ttdeci">void SetResponseKeyEnter(string strKey)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:675</div></div>
+<div class="ttc" id="class_c_edit_box_html_a514366f0ad7b1f6e8cf82a60564833d0"><div class="ttname"><a href="class_c_edit_box.html#a514366f0ad7b1f6e8cf82a60564833d0">CEditBox::HandlePutIn</a></div><div class="ttdeci">string HandlePutIn(void)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:249</div></div>
+<div class="ttc" id="class_c_edit_box_html_a5c46d357fd35278057843b224457b7fb"><div class="ttname"><a href="class_c_edit_box.html#a5c46d357fd35278057843b224457b7fb">CEditBox::m_lMaxInput</a></div><div class="ttdeci">long m_lMaxInput</div><div class="ttdef"><b>Definition:</b> EditBox.h:125</div></div>
+<div class="ttc" id="class_c_edit_box_html_aa3b56d37e041aa78e8cdc8f35c53d89c"><div class="ttname"><a href="class_c_edit_box.html#aa3b56d37e041aa78e8cdc8f35c53d89c">CEditBox::DoResponseKeyEnter</a></div><div class="ttdeci">void DoResponseKeyEnter()</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:681</div></div>
+<div class="ttc" id="class_c_edit_box_html_af582f1d3b0e1475e651b46cb05003804"><div class="ttname"><a href="class_c_edit_box.html#af582f1d3b0e1475e651b46cb05003804">CEditBox::m_lCursorPos</a></div><div class="ttdeci">long m_lCursorPos</div><div class="ttdef"><b>Definition:</b> EditBox.h:116</div></div>
+<div class="ttc" id="class_c_edit_box_html_a9dca198908591865e42243de711f8d90"><div class="ttname"><a href="class_c_edit_box.html#a9dca198908591865e42243de711f8d90">CEditBox::m_strResponseEnterEvent</a></div><div class="ttdeci">string m_strResponseEnterEvent</div><div class="ttdef"><b>Definition:</b> EditBox.h:134</div></div>
+<div class="ttc" id="class_c_edit_box_html_a088e80b07b26081b213d17eb6170cb1c"><div class="ttname"><a href="class_c_edit_box.html#a088e80b07b26081b213d17eb6170cb1c">CEditBox::GetBeActive</a></div><div class="ttdeci">bool GetBeActive(void)</div><div class="ttdef"><b>Definition:</b> EditBox.h:81</div></div>
+<div class="ttc" id="class_c_edit_box_html_aaa6cd5bf7f3c2d72ee2839b6cc6ac336"><div class="ttname"><a href="class_c_edit_box.html#aaa6cd5bf7f3c2d72ee2839b6cc6ac336">CEditBox::SetCursorLeftUpPos</a></div><div class="ttdeci">void SetCursorLeftUpPos(D3DXVECTOR2 vPos)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:666</div></div>
+<div class="ttc" id="class_c_edit_box_html_a2142c88105a2fab01274a96743f980fd"><div class="ttname"><a href="class_c_edit_box.html#a2142c88105a2fab01274a96743f980fd">CEditBox::m_pFont</a></div><div class="ttdeci">ID3DXFont * m_pFont</div><div class="ttdef"><b>Definition:</b> EditBox.h:89</div></div>
+<div class="ttc" id="class_c_edit_box_html"><div class="ttname"><a href="class_c_edit_box.html">CEditBox</a></div><div class="ttdef"><b>Definition:</b> EditBox.h:10</div></div>
+<div class="ttc" id="class_c_edit_box_html_ac81ab305d4b4ff52ceb981e20411dd45"><div class="ttname"><a href="class_c_edit_box.html#ac81ab305d4b4ff52ceb981e20411dd45">CEditBox::SetCursorTex</a></div><div class="ttdeci">bool SetCursorTex(string texFileName)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:54</div></div>
+<div class="ttc" id="_component_8h_html"><div class="ttname"><a href="_component_8h.html">Component.h</a></div></div>
+<div class="ttc" id="class_c_edit_box_html_a918d1941f24810e74aea468606b7bb82"><div class="ttname"><a href="class_c_edit_box.html#a918d1941f24810e74aea468606b7bb82">CEditBox::m_nowPutIn</a></div><div class="ttdeci">string m_nowPutIn</div><div class="ttdef"><b>Definition:</b> EditBox.h:92</div></div>
+<div class="ttc" id="class_c_edit_box_html_a1c60fd0d97e0a9d5165e35be9a2d1ab4"><div class="ttname"><a href="class_c_edit_box.html#a1c60fd0d97e0a9d5165e35be9a2d1ab4">CEditBox::m_PutInRect</a></div><div class="ttdeci">RECT m_PutInRect</div><div class="ttdef"><b>Definition:</b> EditBox.h:98</div></div>
+<div class="ttc" id="class_c_edit_box_html_a7c111bd59805cdc9ed778016c65d6bbd"><div class="ttname"><a href="class_c_edit_box.html#a7c111bd59805cdc9ed778016c65d6bbd">CEditBox::m_Password</a></div><div class="ttdeci">string m_Password</div><div class="ttdef"><b>Definition:</b> EditBox.h:95</div></div>
+<div class="ttc" id="class_c_edit_box_html_a1f310fdfc8be073fdec351fbfe7c444e"><div class="ttname"><a href="class_c_edit_box.html#a1f310fdfc8be073fdec351fbfe7c444e">CEditBox::SetCharHeight</a></div><div class="ttdeci">void SetCharHeight(long lHeight)</div><div class="ttdef"><b>Definition:</b> EditBox.h:51</div></div>
+<div class="ttc" id="class_c_edit_box_html_a59eb985d529a1827e9b0ce34c996a967"><div class="ttname"><a href="class_c_edit_box.html#a59eb985d529a1827e9b0ce34c996a967">CEditBox::SetFont</a></div><div class="ttdeci">bool SetFont(void)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:39</div></div>
+<div class="ttc" id="class_c_edit_box_html_a664c0918aa9fc04c7c4439b3b0afb4a3"><div class="ttname"><a href="class_c_edit_box.html#a664c0918aa9fc04c7c4439b3b0afb4a3">CEditBox::m_bPasswordType</a></div><div class="ttdeci">bool m_bPasswordType</div><div class="ttdef"><b>Definition:</b> EditBox.h:131</div></div>
+<div class="ttc" id="class_c_edit_box_html_a46b7a12d6d319b51e5019eb6442e36c7"><div class="ttname"><a href="class_c_edit_box.html#a46b7a12d6d319b51e5019eb6442e36c7">CEditBox::~CEditBox</a></div><div class="ttdeci">~CEditBox()</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:67</div></div>
+<div class="ttc" id="class_c_edit_box_html_a31e966235e5a78d4cfc158ccff3d23b7"><div class="ttname"><a href="class_c_edit_box.html#a31e966235e5a78d4cfc158ccff3d23b7">CEditBox::GetInputString</a></div><div class="ttdeci">const char * GetInputString(void)</div><div class="ttdef"><b>Definition:</b> EditBox.h:45</div></div>
+<div class="ttc" id="class_c_edit_box_html_a9165f62c77719ac697a14a01d9003ef0"><div class="ttname"><a href="class_c_edit_box.html#a9165f62c77719ac697a14a01d9003ef0">CEditBox::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:73</div></div>
+<div class="ttc" id="class_c_edit_box_html_a23e10a603dde8be2d4ef7ad73b41f5b1"><div class="ttname"><a href="class_c_edit_box.html#a23e10a603dde8be2d4ef7ad73b41f5b1">CEditBox::m_MousePt</a></div><div class="ttdeci">POINT m_MousePt</div><div class="ttdef"><b>Definition:</b> EditBox.h:101</div></div>
+<div class="ttc" id="class_c_component_html"><div class="ttname"><a href="class_c_component.html">CComponent</a></div><div class="ttdef"><b>Definition:</b> Component.h:7</div></div>
+<div class="ttc" id="class_c_edit_box_html_a78d3774a8c6687363d51cd9089e71963"><div class="ttname"><a href="class_c_edit_box.html#a78d3774a8c6687363d51cd9089e71963">CEditBox::m_vCursorLeftUpPos</a></div><div class="ttdeci">D3DXVECTOR2 m_vCursorLeftUpPos</div><div class="ttdef"><b>Definition:</b> EditBox.h:107</div></div>
+<div class="ttc" id="class_c_edit_box_html_a6435bf281d6cac8b5451a1d3b25c36dc"><div class="ttname"><a href="class_c_edit_box.html#a6435bf281d6cac8b5451a1d3b25c36dc">CEditBox::SetMaxInput</a></div><div class="ttdeci">void SetMaxInput(long lMaxInput)</div><div class="ttdef"><b>Definition:</b> EditBox.h:60</div></div>
+<div class="ttc" id="class_c_edit_box_html_a7f28b93433cd6b0f97adcb3c143066e2"><div class="ttname"><a href="class_c_edit_box.html#a7f28b93433cd6b0f97adcb3c143066e2">CEditBox::Clear</a></div><div class="ttdeci">void Clear(void)</div><div class="ttdef"><b>Definition:</b> EditBox.h:72</div></div>
+<div class="ttc" id="class_c_edit_box_html_a3f8ac16b68dff1cc6f1179025489cb1e"><div class="ttname"><a href="class_c_edit_box.html#a3f8ac16b68dff1cc6f1179025489cb1e">CEditBox::m_lCharHeight</a></div><div class="ttdeci">long m_lCharHeight</div><div class="ttdef"><b>Definition:</b> EditBox.h:119</div></div>
+<div class="ttc" id="class_c_edit_box_html_aad0ea7588344fe882ebf890addb443f0"><div class="ttname"><a href="class_c_edit_box.html#aad0ea7588344fe882ebf890addb443f0">CEditBox::SetActive</a></div><div class="ttdeci">void SetActive(bool bActive)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:694</div></div>
+<div class="ttc" id="class_c_edit_box_html_a747a50d76cecbf61a0fed2cc34e26bcc"><div class="ttname"><a href="class_c_edit_box.html#a747a50d76cecbf61a0fed2cc34e26bcc">CEditBox::m_pTextureCursor</a></div><div class="ttdeci">IDirect3DTexture9 * m_pTextureCursor</div><div class="ttdef"><b>Definition:</b> EditBox.h:104</div></div>
+<div class="ttc" id="class_c_edit_box_html_a9c39d3b08b4c76494820b3203b334f03"><div class="ttname"><a href="class_c_edit_box.html#a9c39d3b08b4c76494820b3203b334f03">CEditBox::ProcessMouseMove</a></div><div class="ttdeci">void ProcessMouseMove(long x, long y)</div><div class="ttdef"><b>Definition:</b> EditBox.cpp:151</div></div>
+<div class="ttc" id="class_c_edit_box_html_a6cebf9bda53732220bd2368908fec8a3"><div class="ttname"><a href="class_c_edit_box.html#a6cebf9bda53732220bd2368908fec8a3">CEditBox::SetBePasswordType</a></div><div class="ttdeci">void SetBePasswordType(bool bPasswordType)</div><div class="ttdef"><b>Definition:</b> EditBox.h:63</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

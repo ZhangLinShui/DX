@@ -1,0 +1,1619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: ParticleGroup类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_particle_group-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ParticleGroup类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_particle_system_8h_source.html">ParticleSystem.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group_1_1_particle_vertex.html">ParticleVertex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">粒子顶点  <a href="class_particle_group_1_1_particle_vertex.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ab2f10c45cf9af650c2615b3ef66d6996"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_particle.html">Particle</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ab2f10c45cf9af650c2615b3ef66d6996">ParticlePool</a></td></tr>
+<tr class="separator:ab2f10c45cf9af650c2615b3ef66d6996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19644eb1527f9c484c1ca362a4243c6"><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; <a class="el" href="class_particle.html">Particle</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#af19644eb1527f9c484c1ca362a4243c6">ParticleActiveList</a></td></tr>
+<tr class="separator:af19644eb1527f9c484c1ca362a4243c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea64a17fa33ac9f39099b7277a4c473f"><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; <a class="el" href="class_particle.html">Particle</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aea64a17fa33ac9f39099b7277a4c473f">ParticleFreeList</a></td></tr>
+<tr class="separator:aea64a17fa33ac9f39099b7277a4c473f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1444b6488ecc7aa6359c22db87f36e08"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_particle_emitter.html">ParticleEmitter</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a1444b6488ecc7aa6359c22db87f36e08">ParticleEmitterVector</a></td></tr>
+<tr class="separator:a1444b6488ecc7aa6359c22db87f36e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2fa06b7229e8391367f0854fe0416d"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_particle_affector.html">ParticleAffector</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a1b2fa06b7229e8391367f0854fe0416d">ParticleAffectorVector</a></td></tr>
+<tr class="separator:a1b2fa06b7229e8391367f0854fe0416d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab19acece380178aaf9f1627a105e613c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ab19acece380178aaf9f1627a105e613c">ParticleGroup</a> ()</td></tr>
+<tr class="separator:ab19acece380178aaf9f1627a105e613c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f63becbd37ecf68ff4a547a0eaf52c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aa2f63becbd37ecf68ff4a547a0eaf52c">~ParticleGroup</a> ()</td></tr>
+<tr class="separator:aa2f63becbd37ecf68ff4a547a0eaf52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74252c1332c4ee7035d4ecd943e9be3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a74252c1332c4ee7035d4ecd943e9be3a">SetPoolSize</a> (unsigned int uiPoolSize)</td></tr>
+<tr class="separator:a74252c1332c4ee7035d4ecd943e9be3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9327031ddccb9e90b1fb61b0fcb820c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_particle.html">Particle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a9327031ddccb9e90b1fb61b0fcb820c5">CreateParticle</a> ()</td></tr>
+<tr class="separator:a9327031ddccb9e90b1fb61b0fcb820c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeafb719a3bf57bf6bf17d5da57394fae"><td class="memItemLeft" align="right" valign="top">ParticleActiveList::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aeafb719a3bf57bf6bf17d5da57394fae">DeleteParticle</a> (ParticleActiveList::iterator &amp;i)</td></tr>
+<tr class="separator:aeafb719a3bf57bf6bf17d5da57394fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50430b6b5144e3329ff2df2fcecd0c55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a50430b6b5144e3329ff2df2fcecd0c55">ClearParticle</a> ()</td></tr>
+<tr class="separator:a50430b6b5144e3329ff2df2fcecd0c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14051c2d56fdfd9ff4d7108de6e3c78"><td class="memItemLeft" align="right" valign="top">UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aa14051c2d56fdfd9ff4d7108de6e3c78">GetNumParticles</a> ()</td></tr>
+<tr class="separator:aa14051c2d56fdfd9ff4d7108de6e3c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93623b5bf0919a36655f01caaab08267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_particle_emitter.html">ParticleEmitter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a93623b5bf0919a36655f01caaab08267">CreateEmitter</a> (string &amp;name)</td></tr>
+<tr class="memdesc:a93623b5bf0919a36655f01caaab08267"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个发射器  <a href="#a93623b5bf0919a36655f01caaab08267">更多...</a><br /></td></tr>
+<tr class="separator:a93623b5bf0919a36655f01caaab08267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17477e8879eddf4f86e392f59ebe1da1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a17477e8879eddf4f86e392f59ebe1da1">AddEmitter</a> (<a class="el" href="class_particle_emitter.html">ParticleEmitter</a> *pe)</td></tr>
+<tr class="memdesc:a17477e8879eddf4f86e392f59ebe1da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">增加一个发射器  <a href="#a17477e8879eddf4f86e392f59ebe1da1">更多...</a><br /></td></tr>
+<tr class="separator:a17477e8879eddf4f86e392f59ebe1da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933c50d6b661e90256941e8bb75ea82e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_particle_affector.html">ParticleAffector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a933c50d6b661e90256941e8bb75ea82e">CreateAffector</a> (string &amp;name)</td></tr>
+<tr class="memdesc:a933c50d6b661e90256941e8bb75ea82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个效果器  <a href="#a933c50d6b661e90256941e8bb75ea82e">更多...</a><br /></td></tr>
+<tr class="separator:a933c50d6b661e90256941e8bb75ea82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c5f744703d66b082404c7c1873ee07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a64c5f744703d66b082404c7c1873ee07">AddAffector</a> (<a class="el" href="class_particle_affector.html">ParticleAffector</a> *pa)</td></tr>
+<tr class="memdesc:a64c5f744703d66b082404c7c1873ee07"><td class="mdescLeft">&#160;</td><td class="mdescRight">增加一个效果器  <a href="#a64c5f744703d66b082404c7c1873ee07">更多...</a><br /></td></tr>
+<tr class="separator:a64c5f744703d66b082404c7c1873ee07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5833f6d21c3de094fa6cb67d56afc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a8a5833f6d21c3de094fa6cb67d56afc5">SetTexAnimDuration</a> (float fDuration)</td></tr>
+<tr class="separator:a8a5833f6d21c3de094fa6cb67d56afc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2f75f1101ae189f07e2b00123b6831"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a0d2f75f1101ae189f07e2b00123b6831">SetSceneBlendType</a> (<a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689">SceneBlendType</a> sbt)</td></tr>
+<tr class="memdesc:a0d2f75f1101ae189f07e2b00123b6831"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置粒子颜色与场景颜色的混合方式  <a href="#a0d2f75f1101ae189f07e2b00123b6831">更多...</a><br /></td></tr>
+<tr class="separator:a0d2f75f1101ae189f07e2b00123b6831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacda03dd2c7cf79e99373694e353602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#acacda03dd2c7cf79e99373694e353602">SetEnable</a> (bool bEnable)</td></tr>
+<tr class="separator:acacda03dd2c7cf79e99373694e353602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d585b802a104654f882316f4edacaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a82d585b802a104654f882316f4edacaa">GetEnable</a> ()</td></tr>
+<tr class="separator:a82d585b802a104654f882316f4edacaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebad3405ed7d2ff558cc1a3e9f92e020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aebad3405ed7d2ff558cc1a3e9f92e020">SetTexture</a> (LPSTR pName)</td></tr>
+<tr class="separator:aebad3405ed7d2ff558cc1a3e9f92e020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8afa79329cf4fa96732a1814624d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aaa8afa79329cf4fa96732a1814624d4d">Init</a> (LPDIRECT3DDEVICE9 pDevice)</td></tr>
+<tr class="separator:aaa8afa79329cf4fa96732a1814624d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f65495cc27d756d1541e88238d462f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a96f65495cc27d756d1541e88238d462f">Update</a> (float fElapsedTime, <a class="el" href="class_c_camera.html">CCamera</a> &amp;cam)</td></tr>
+<tr class="memdesc:a96f65495cc27d756d1541e88238d462f"><td class="mdescLeft">&#160;</td><td class="mdescRight">　根据时间差、摄像机计算粒子属性，同时更新VertexBuffer、IndexBuffer  <a href="#a96f65495cc27d756d1541e88238d462f">更多...</a><br /></td></tr>
+<tr class="separator:a96f65495cc27d756d1541e88238d462f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d28258414cd25112cb283efca5a447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aa0d28258414cd25112cb283efca5a447">Render</a> ()</td></tr>
+<tr class="memdesc:aa0d28258414cd25112cb283efca5a447"><td class="mdescLeft">&#160;</td><td class="mdescRight">　设置合适的渲染状态，渲染粒子  <a href="#aa0d28258414cd25112cb283efca5a447">更多...</a><br /></td></tr>
+<tr class="separator:aa0d28258414cd25112cb283efca5a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2087f2681d3bbf732dff90f46a62fbd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a2087f2681d3bbf732dff90f46a62fbd9">Clone</a> (<a class="el" href="class_particle_group.html">ParticleGroup</a> *p)</td></tr>
+<tr class="separator:a2087f2681d3bbf732dff90f46a62fbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615a5cfe0e589e95b5eec108b669d282"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a615a5cfe0e589e95b5eec108b669d282">Load</a> (LPCSTR pName)</td></tr>
+<tr class="memdesc:a615a5cfe0e589e95b5eec108b669d282"><td class="mdescLeft">&#160;</td><td class="mdescRight">　读取粒子文件  <a href="#a615a5cfe0e589e95b5eec108b669d282">更多...</a><br /></td></tr>
+<tr class="separator:a615a5cfe0e589e95b5eec108b669d282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83a0e5855eb8f757c5f617433335faf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ad83a0e5855eb8f757c5f617433335faf">Save</a> (LPSTR pName)</td></tr>
+<tr class="separator:ad83a0e5855eb8f757c5f617433335faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed480162cd8c35be80ab4441b845d2e"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a3ed480162cd8c35be80ab4441b845d2e">InvalidateDeviceObjects</a> (void)</td></tr>
+<tr class="separator:a3ed480162cd8c35be80ab4441b845d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff2a3d72f3bd4d59d77bba7e39a3ac7"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#acff2a3d72f3bd4d59d77bba7e39a3ac7">RestoreDeviceObjects</a> (void)</td></tr>
+<tr class="separator:acff2a3d72f3bd4d59d77bba7e39a3ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aa1f53e6fbcad39e23dd4e12b8225c62d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_particle_group.html#ab2f10c45cf9af650c2615b3ef66d6996">ParticlePool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aa1f53e6fbcad39e23dd4e12b8225c62d">m_ParticlePool</a></td></tr>
+<tr class="separator:aa1f53e6fbcad39e23dd4e12b8225c62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926f2771a35784b37442c53f6f1b3136"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_particle_group.html#af19644eb1527f9c484c1ca362a4243c6">ParticleActiveList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a926f2771a35784b37442c53f6f1b3136">m_ActiveParticles</a></td></tr>
+<tr class="memdesc:a926f2771a35784b37442c53f6f1b3136"><td class="mdescLeft">&#160;</td><td class="mdescRight">　粒子池中已被使用的粒子对象  <a href="#a926f2771a35784b37442c53f6f1b3136">更多...</a><br /></td></tr>
+<tr class="separator:a926f2771a35784b37442c53f6f1b3136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19db9a231cfbbc71425f2c466dc56cf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_particle_group.html#aea64a17fa33ac9f39099b7277a4c473f">ParticleFreeList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a19db9a231cfbbc71425f2c466dc56cf3">m_FreeParticles</a></td></tr>
+<tr class="memdesc:a19db9a231cfbbc71425f2c466dc56cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">　粒子池中未被使用的粒子对象  <a href="#a19db9a231cfbbc71425f2c466dc56cf3">更多...</a><br /></td></tr>
+<tr class="separator:a19db9a231cfbbc71425f2c466dc56cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0469b4e3a23ccf32d16d874f6660c7a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#af0469b4e3a23ccf32d16d874f6660c7a">m_uiPoolSize</a></td></tr>
+<tr class="memdesc:af0469b4e3a23ccf32d16d874f6660c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">　粒子池大小，此粒子团最大可同时存在的粒子数目  <a href="#af0469b4e3a23ccf32d16d874f6660c7a">更多...</a><br /></td></tr>
+<tr class="separator:af0469b4e3a23ccf32d16d874f6660c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b5eb3b5d77e0c7e89c249c066e953b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ac2b5eb3b5d77e0c7e89c249c066e953b">m_uiMaxNumVertices</a></td></tr>
+<tr class="memdesc:ac2b5eb3b5d77e0c7e89c249c066e953b"><td class="mdescLeft">&#160;</td><td class="mdescRight">　最大的顶点数目，如果粒子是Billboard，则此值为m_uiPoolSize*4  <a href="#ac2b5eb3b5d77e0c7e89c249c066e953b">更多...</a><br /></td></tr>
+<tr class="separator:ac2b5eb3b5d77e0c7e89c249c066e953b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d7f7be44a93309cfb76f10c9f658b2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a95d7f7be44a93309cfb76f10c9f658b2">m_uiMaxNumIndices</a></td></tr>
+<tr class="memdesc:a95d7f7be44a93309cfb76f10c9f658b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">　最大的索引数目，如果粒子是Billboard，则此值为m_uiPoolSize*2  <a href="#a95d7f7be44a93309cfb76f10c9f658b2">更多...</a><br /></td></tr>
+<tr class="separator:a95d7f7be44a93309cfb76f10c9f658b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d28073b34e26ae414ded95dc075228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_particle_group.html#a1444b6488ecc7aa6359c22db87f36e08">ParticleEmitterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a82d28073b34e26ae414ded95dc075228">m_Emitters</a></td></tr>
+<tr class="memdesc:a82d28073b34e26ae414ded95dc075228"><td class="mdescLeft">&#160;</td><td class="mdescRight">发射器数组  <a href="#a82d28073b34e26ae414ded95dc075228">更多...</a><br /></td></tr>
+<tr class="separator:a82d28073b34e26ae414ded95dc075228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc714602eacb7e6294f04507b294f4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_particle_group.html#a1b2fa06b7229e8391367f0854fe0416d">ParticleAffectorVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a1dc714602eacb7e6294f04507b294f4c">m_Affectors</a></td></tr>
+<tr class="memdesc:a1dc714602eacb7e6294f04507b294f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">效果器数组  <a href="#a1dc714602eacb7e6294f04507b294f4c">更多...</a><br /></td></tr>
+<tr class="separator:a1dc714602eacb7e6294f04507b294f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f942c8eeaf1de33958d9fd006155fc"><td class="memItemLeft" align="right" valign="top">LPDIRECT3DVERTEXBUFFER9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a66f942c8eeaf1de33958d9fd006155fc">m_pVB</a></td></tr>
+<tr class="memdesc:a66f942c8eeaf1de33958d9fd006155fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex Buffer.  <a href="#a66f942c8eeaf1de33958d9fd006155fc">更多...</a><br /></td></tr>
+<tr class="separator:a66f942c8eeaf1de33958d9fd006155fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79eec4dd500a3f6199ca3d98e72b4840"><td class="memItemLeft" align="right" valign="top">LPDIRECT3DINDEXBUFFER9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a79eec4dd500a3f6199ca3d98e72b4840">m_pIB</a></td></tr>
+<tr class="memdesc:a79eec4dd500a3f6199ca3d98e72b4840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index Buffer.  <a href="#a79eec4dd500a3f6199ca3d98e72b4840">更多...</a><br /></td></tr>
+<tr class="separator:a79eec4dd500a3f6199ca3d98e72b4840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901d8a20615afe141abec35e4a6d076a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a901d8a20615afe141abec35e4a6d076a">m_fDefaultWidth</a></td></tr>
+<tr class="memdesc:a901d8a20615afe141abec35e4a6d076a"><td class="mdescLeft">&#160;</td><td class="mdescRight">粒子的默认宽度  <a href="#a901d8a20615afe141abec35e4a6d076a">更多...</a><br /></td></tr>
+<tr class="separator:a901d8a20615afe141abec35e4a6d076a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033cbec0128d86aa3ecb78a98e6941ee"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a033cbec0128d86aa3ecb78a98e6941ee">m_fDefaultHeight</a></td></tr>
+<tr class="memdesc:a033cbec0128d86aa3ecb78a98e6941ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">　粒子的默认高度  <a href="#a033cbec0128d86aa3ecb78a98e6941ee">更多...</a><br /></td></tr>
+<tr class="separator:a033cbec0128d86aa3ecb78a98e6941ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91fe9638457b9ab6fa11dfe0f16f44b6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a91fe9638457b9ab6fa11dfe0f16f44b6">m_TextureName</a></td></tr>
+<tr class="memdesc:a91fe9638457b9ab6fa11dfe0f16f44b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">纹理名  <a href="#a91fe9638457b9ab6fa11dfe0f16f44b6">更多...</a><br /></td></tr>
+<tr class="separator:a91fe9638457b9ab6fa11dfe0f16f44b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe84abf912910ac2a4dd60455a280d70"><td class="memItemLeft" align="right" valign="top">LPDIRECT3DTEXTURE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#afe84abf912910ac2a4dd60455a280d70">m_pTexture</a></td></tr>
+<tr class="separator:afe84abf912910ac2a4dd60455a280d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6690539cbfe9b04d037523a30e3ab8b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689">SceneBlendType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a6690539cbfe9b04d037523a30e3ab8b8">m_SceneBlendType</a></td></tr>
+<tr class="memdesc:a6690539cbfe9b04d037523a30e3ab8b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">粒子与场景的混合方式  <a href="#a6690539cbfe9b04d037523a30e3ab8b8">更多...</a><br /></td></tr>
+<tr class="separator:a6690539cbfe9b04d037523a30e3ab8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24784148df1f4dc2d20913c129804291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a24784148df1f4dc2d20913c129804291">m_iSide</a></td></tr>
+<tr class="memdesc:a24784148df1f4dc2d20913c129804291"><td class="mdescLeft">&#160;</td><td class="mdescRight">纹理动画参数  <a href="#a24784148df1f4dc2d20913c129804291">更多...</a><br /></td></tr>
+<tr class="separator:a24784148df1f4dc2d20913c129804291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647709758dc9dc99aebcf23f7644245d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a647709758dc9dc99aebcf23f7644245d">m_iNumFrame</a></td></tr>
+<tr class="separator:a647709758dc9dc99aebcf23f7644245d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e526e2b5d1f1fe386686952d6112da9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a8e526e2b5d1f1fe386686952d6112da9">m_fTexDelta</a></td></tr>
+<tr class="separator:a8e526e2b5d1f1fe386686952d6112da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd41e3bc8658f23fdf47a38ddbcb15c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a6cd41e3bc8658f23fdf47a38ddbcb15c">m_fTexAnimDuration</a></td></tr>
+<tr class="separator:a6cd41e3bc8658f23fdf47a38ddbcb15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4c34efa802dd56a87c70d8b85eb7e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ada4c34efa802dd56a87c70d8b85eb7e1">m_bAnimationTexture</a></td></tr>
+<tr class="separator:ada4c34efa802dd56a87c70d8b85eb7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff49a3a2c2109dbd0e7e6a4c7974797"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a4ff49a3a2c2109dbd0e7e6a4c7974797">m_bRotationTexture</a></td></tr>
+<tr class="separator:a4ff49a3a2c2109dbd0e7e6a4c7974797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38f0a38bc4ee164ca30ee04a06f5f34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ae38f0a38bc4ee164ca30ee04a06f5f34">m_bEnable</a></td></tr>
+<tr class="separator:ae38f0a38bc4ee164ca30ee04a06f5f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2168678f4f617be05e09cdcf8f3501b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_particle_system_8h.html#aab6fae4ef433698f35a07e5647d6be32">BillboardType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ae2168678f4f617be05e09cdcf8f3501b">m_BillboardType</a></td></tr>
+<tr class="memdesc:ae2168678f4f617be05e09cdcf8f3501b"><td class="mdescLeft">&#160;</td><td class="mdescRight">公告板面向摄像机的方式  <a href="#ae2168678f4f617be05e09cdcf8f3501b">更多...</a><br /></td></tr>
+<tr class="separator:ae2168678f4f617be05e09cdcf8f3501b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7100978ddf3ac2d18042d6ad88c00cbe"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a7100978ddf3ac2d18042d6ad88c00cbe">m_CommonDirection</a></td></tr>
+<tr class="memdesc:a7100978ddf3ac2d18042d6ad88c00cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">当m_BillboardType为BT_ORIENT_COMMON_DIRECTION时，此向量为粒子指向的方向。  <a href="#a7100978ddf3ac2d18042d6ad88c00cbe">更多...</a><br /></td></tr>
+<tr class="separator:a7100978ddf3ac2d18042d6ad88c00cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0ffcb2d296ca4a3435812ef80ae21d"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a0b0ffcb2d296ca4a3435812ef80ae21d">m_CommonUp</a></td></tr>
+<tr class="memdesc:a0b0ffcb2d296ca4a3435812ef80ae21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">当m_BillboardType为BT_PERPENDICULAR_COMMON_DIRECTION时，此向量和m_CommonDirection决定粒子的x, y轴  <a href="#a0b0ffcb2d296ca4a3435812ef80ae21d">更多...</a><br /></td></tr>
+<tr class="separator:a0b0ffcb2d296ca4a3435812ef80ae21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae39356c838ae6658d2677a654d13621"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_particle_system_8h.html#a3da1acafd9530d01764dafc7716a17d5">ParticleCoordinateSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aae39356c838ae6658d2677a654d13621">m_CoordinateSystem</a></td></tr>
+<tr class="memdesc:aae39356c838ae6658d2677a654d13621"><td class="mdescLeft">&#160;</td><td class="mdescRight">进行粒子运算的相对坐标系  <a href="#aae39356c838ae6658d2677a654d13621">更多...</a><br /></td></tr>
+<tr class="separator:aae39356c838ae6658d2677a654d13621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71958768f0ae26e44c3dc3eda2621d7b"><td class="memItemLeft" align="right" valign="top">LPDIRECT3DDEVICE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a71958768f0ae26e44c3dc3eda2621d7b">m_pDevice</a></td></tr>
+<tr class="separator:a71958768f0ae26e44c3dc3eda2621d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d628c4e0d7cf804b534381d1cea0007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_camera.html">CCamera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a0d628c4e0d7cf804b534381d1cea0007">m_pCamera</a></td></tr>
+<tr class="memdesc:a0d628c4e0d7cf804b534381d1cea0007"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前摄像机的指针  <a href="#a0d628c4e0d7cf804b534381d1cea0007">更多...</a><br /></td></tr>
+<tr class="separator:a0d628c4e0d7cf804b534381d1cea0007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa254ec8f9b3ee617e995fedc2f373775"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aa254ec8f9b3ee617e995fedc2f373775">m_vCamDir</a></td></tr>
+<tr class="separator:aa254ec8f9b3ee617e995fedc2f373775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dba99948e06525b97e9d697b946114"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a88dba99948e06525b97e9d697b946114">m_vCamRight</a></td></tr>
+<tr class="separator:a88dba99948e06525b97e9d697b946114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56008d9a4572fbd7936c073643042dc"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ab56008d9a4572fbd7936c073643042dc">m_vCamUp</a></td></tr>
+<tr class="separator:ab56008d9a4572fbd7936c073643042dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290a036a4640bd4101fed2bf040f75f4"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a290a036a4640bd4101fed2bf040f75f4">m_vBillboardX</a></td></tr>
+<tr class="memdesc:a290a036a4640bd4101fed2bf040f75f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">公告板本地坐标系的x轴，在世界坐标系中的方向  <a href="#a290a036a4640bd4101fed2bf040f75f4">更多...</a><br /></td></tr>
+<tr class="separator:a290a036a4640bd4101fed2bf040f75f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b19e981a97037d4cd163bf329a5577b"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a4b19e981a97037d4cd163bf329a5577b">m_vBillboardY</a></td></tr>
+<tr class="memdesc:a4b19e981a97037d4cd163bf329a5577b"><td class="mdescLeft">&#160;</td><td class="mdescRight">公告板本地坐标系的y轴，在世界坐标系中的方向  <a href="#a4b19e981a97037d4cd163bf329a5577b">更多...</a><br /></td></tr>
+<tr class="separator:a4b19e981a97037d4cd163bf329a5577b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0f532e77e40ee6d4e1d0d4b1859647"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#abf0f532e77e40ee6d4e1d0d4b1859647">m_vLeftOff</a></td></tr>
+<tr class="memdesc:abf0f532e77e40ee6d4e1d0d4b1859647"><td class="mdescLeft">&#160;</td><td class="mdescRight">公告板四个边中点的坐标，相对于将世界坐标系原点移到公告板原点的坐标系  <a href="#abf0f532e77e40ee6d4e1d0d4b1859647">更多...</a><br /></td></tr>
+<tr class="separator:abf0f532e77e40ee6d4e1d0d4b1859647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e40b8e860b253ff2abd5f4514bf19d8"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a2e40b8e860b253ff2abd5f4514bf19d8">m_vRightOff</a></td></tr>
+<tr class="separator:a2e40b8e860b253ff2abd5f4514bf19d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c12a007fa60d0e5df10ef10b35d9626"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a2c12a007fa60d0e5df10ef10b35d9626">m_vTopOff</a></td></tr>
+<tr class="separator:a2c12a007fa60d0e5df10ef10b35d9626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f45aef7cf7ba3b7208b57b2c4f1d361"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a6f45aef7cf7ba3b7208b57b2c4f1d361">m_vBottomOff</a></td></tr>
+<tr class="separator:a6f45aef7cf7ba3b7208b57b2c4f1d361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e52d918a3a075096147358166b4d33"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aa5e52d918a3a075096147358166b4d33">m_fLeft</a></td></tr>
+<tr class="separator:aa5e52d918a3a075096147358166b4d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b172c8d31009373b64533a9fcd6610"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ad2b172c8d31009373b64533a9fcd6610">m_fRight</a></td></tr>
+<tr class="separator:ad2b172c8d31009373b64533a9fcd6610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad8cba80819b4a82606f7bc91fb4104"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a2ad8cba80819b4a82606f7bc91fb4104">m_fTop</a></td></tr>
+<tr class="separator:a2ad8cba80819b4a82606f7bc91fb4104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe560771de4d56ff21735d669ad19cf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a8fe560771de4d56ff21735d669ad19cf">m_fBottom</a></td></tr>
+<tr class="separator:a8fe560771de4d56ff21735d669ad19cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270e8d3ec6ca14f9c635301b43cd3738"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a270e8d3ec6ca14f9c635301b43cd3738">m_vOffset</a> [4]</td></tr>
+<tr class="separator:a270e8d3ec6ca14f9c635301b43cd3738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b0a0635bbe9221b246f46e9a65c4aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ab4b0a0635bbe9221b246f46e9a65c4aa">m_b2DParticle</a></td></tr>
+<tr class="memdesc:ab4b0a0635bbe9221b246f46e9a65c4aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否是2D粒子  <a href="#ab4b0a0635bbe9221b246f46e9a65c4aa">更多...</a><br /></td></tr>
+<tr class="separator:ab4b0a0635bbe9221b246f46e9a65c4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d3a0e11b4dd143f67a94e14efff415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_camera.html">CCamera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#af0d3a0e11b4dd143f67a94e14efff415">m_2DCamera</a></td></tr>
+<tr class="memdesc:af0d3a0e11b4dd143f67a94e14efff415"><td class="mdescLeft">&#160;</td><td class="mdescRight">用来计算2D粒子属性的摄像机，上摄像机使用平等投影矩阵  <a href="#af0d3a0e11b4dd143f67a94e14efff415">更多...</a><br /></td></tr>
+<tr class="separator:af0d3a0e11b4dd143f67a94e14efff415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986bdde9ddf81e4aca250a13f28cf145"><td class="memItemLeft" align="right" valign="top">D3DXMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a986bdde9ddf81e4aca250a13f28cf145">matOldView</a></td></tr>
+<tr class="separator:a986bdde9ddf81e4aca250a13f28cf145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970051499d3a0512cf458cddbeef3754"><td class="memItemLeft" align="right" valign="top">D3DXMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a970051499d3a0512cf458cddbeef3754">matOldProj</a></td></tr>
+<tr class="separator:a970051499d3a0512cf458cddbeef3754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a45e9027edd8c35b8f409334a99b3f"><td class="memItemLeft" align="right" valign="top">D3DXMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a83a45e9027edd8c35b8f409334a99b3f">m_2DTransform</a></td></tr>
+<tr class="memdesc:a83a45e9027edd8c35b8f409334a99b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">当粒子为2D粒子时，需要用户设置此矩阵来控制粒子团方位  <a href="#a83a45e9027edd8c35b8f409334a99b3f">更多...</a><br /></td></tr>
+<tr class="separator:a83a45e9027edd8c35b8f409334a99b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ac122825d2bd6c6144cae852e977b9453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ac122825d2bd6c6144cae852e977b9453">_CreateBuffers</a> ()</td></tr>
+<tr class="separator:ac122825d2bd6c6144cae852e977b9453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3beb7454696d4ed08bdf70c41ab0253a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a3beb7454696d4ed08bdf70c41ab0253a">_LiveOrDead</a> (float fElapsedTime)</td></tr>
+<tr class="separator:a3beb7454696d4ed08bdf70c41ab0253a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86bc8631adb73e56262a069ef7e633b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#ab86bc8631adb73e56262a069ef7e633b">_TriggerAffectors</a> (float fElapsedTime)</td></tr>
+<tr class="separator:ab86bc8631adb73e56262a069ef7e633b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ff465c84a8888d38a402a92252be1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a89ff465c84a8888d38a402a92252be1e">_ApplyMotion</a> (float fElapsedTime)</td></tr>
+<tr class="separator:a89ff465c84a8888d38a402a92252be1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825d1551802ea081099cdbc83135bd95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#a825d1551802ea081099cdbc83135bd95">_TriggerEmitters</a> (float fElapsedTime)</td></tr>
+<tr class="separator:a825d1551802ea081099cdbc83135bd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa748055482ca85850b4b730acf981aaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aa748055482ca85850b4b730acf981aaa">_GenBillboardAxis</a> (<a class="el" href="class_particle.html">Particle</a> *p=NULL)</td></tr>
+<tr class="separator:aa748055482ca85850b4b730acf981aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7133eabe3c95eb78777a86d5ab139fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#aa7133eabe3c95eb78777a86d5ab139fc">_GenVertexOffset</a> (float fWidth, float fHeight)</td></tr>
+<tr class="separator:aa7133eabe3c95eb78777a86d5ab139fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb78127d5f83362c6bf197b54a2de59c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle_group.html#adb78127d5f83362c6bf197b54a2de59c">_FillBuffers</a> ()</td></tr>
+<tr class="separator:adb78127d5f83362c6bf197b54a2de59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>粒子团类，指一团具有相同纹理、相同渲染状态的粒子 </p><dl class="section remark"><dt>备注</dt><dd>将使用同一张纹理的粒子一次性提交给D3D，可以最大限度的减少渲染状态 切换，提高渲染效率。 </dd></dl>
+<dl class="section user"><dt></dt><dd>同一团粒子可以统一分配内存，以减少动态分配大量粒子造成的效率损失和 内存碎片。 </dd></dl>
+<dl class="section user"><dt></dt><dd>此类包括了如下知识点：粒子系统，VertexBuffer、IndexBuffer使用，基本 物理知识，向量运算，STL中list、vector容器的使用、Alpha Blending的应用。 </dd></dl>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a class="anchor" id="af19644eb1527f9c484c1ca362a4243c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt;<a class="el" href="class_particle.html">Particle</a>*&gt; <a class="el" href="class_particle_group.html#af19644eb1527f9c484c1ca362a4243c6">ParticleGroup::ParticleActiveList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b2fa06b7229e8391367f0854fe0416d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_particle_affector.html">ParticleAffector</a>*&gt; <a class="el" href="class_particle_group.html#a1b2fa06b7229e8391367f0854fe0416d">ParticleGroup::ParticleAffectorVector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1444b6488ecc7aa6359c22db87f36e08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_particle_emitter.html">ParticleEmitter</a>*&gt; <a class="el" href="class_particle_group.html#a1444b6488ecc7aa6359c22db87f36e08">ParticleGroup::ParticleEmitterVector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea64a17fa33ac9f39099b7277a4c473f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt;<a class="el" href="class_particle.html">Particle</a>*&gt; <a class="el" href="class_particle_group.html#aea64a17fa33ac9f39099b7277a4c473f">ParticleGroup::ParticleFreeList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab2f10c45cf9af650c2615b3ef66d6996"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_particle.html">Particle</a>*&gt; <a class="el" href="class_particle_group.html#ab2f10c45cf9af650c2615b3ef66d6996">ParticleGroup::ParticlePool</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ab19acece380178aaf9f1627a105e613c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParticleGroup::ParticleGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2f63becbd37ecf68ff4a547a0eaf52c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParticleGroup::~ParticleGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a89ff465c84a8888d38a402a92252be1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::_ApplyMotion </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fElapsedTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>　计算粒子的位置 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac122825d2bd6c6144cae852e977b9453"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::_CreateBuffers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>　根据粒子池大小创建VB、IB，如果粒子是公告板的话，此值为m_uiPoolSize*4 </p>
+
+</div>
+</div>
+<a class="anchor" id="adb78127d5f83362c6bf197b54a2de59c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::_FillBuffers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>填充VB、IB </p>
+
+</div>
+</div>
+<a class="anchor" id="aa748055482ca85850b4b730acf981aaa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::_GenBillboardAxis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_particle.html">Particle</a> *&#160;</td>
+          <td class="paramname"><em>p</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>计算粒子的x,y轴在世界坐标系下的方向 </p><dl class="section remark"><dt>备注</dt><dd>根据粒子面向摄像机的方式m_BillboardType不同，计算m_vBillboardX、 m_vBillboardY。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa7133eabe3c95eb78777a86d5ab139fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::_GenVertexOffset </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3beb7454696d4ed08bdf70c41ab0253a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::_LiveOrDead </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fElapsedTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>根据时间差处理粒子的生死 </p><dl class="section remark"><dt>备注</dt><dd>如果粒子死亡，则将粒子指针从m_ActiveParticles删除，同时加入到 m_FreeParticles里。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab86bc8631adb73e56262a069ef7e633b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::_TriggerAffectors </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fElapsedTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>　触发所有的效果器，更新粒子的属性 </p>
+
+</div>
+</div>
+<a class="anchor" id="a825d1551802ea081099cdbc83135bd95"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::_TriggerEmitters </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fElapsedTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>　触发所有的发射器，创建新的粒子 </p>
+
+</div>
+</div>
+<a class="anchor" id="a64c5f744703d66b082404c7c1873ee07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::AddAffector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_particle_affector.html">ParticleAffector</a> *&#160;</td>
+          <td class="paramname"><em>pa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>增加一个效果器 </p>
+
+</div>
+</div>
+<a class="anchor" id="a17477e8879eddf4f86e392f59ebe1da1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::AddEmitter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_particle_emitter.html">ParticleEmitter</a> *&#160;</td>
+          <td class="paramname"><em>pe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>增加一个发射器 </p>
+
+</div>
+</div>
+<a class="anchor" id="a50430b6b5144e3329ff2df2fcecd0c55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::ClearParticle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2087f2681d3bbf732dff90f46a62fbd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::Clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_particle_group.html">ParticleGroup</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clone新的实例 </p><dl class="section remark"><dt>备注</dt><dd>为了避免每次都加载资源，解析xml文件。此处选择预先加载所有的粒子xml文件， 做为模板。每次创建粒子时会使用Clone函数根据模板做出实例。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>需要Clone出的实例 </td></tr>
+    <tr><td class="paramname">bDeepCopyTexture</td><td>是否深拷贝纹理，默认为false，代表直接copy纹理指针 和纹理相关属性，true为重新加载纹理并重新计算纹理相关属性。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a933c50d6b661e90256941e8bb75ea82e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_particle_affector.html">ParticleAffector</a> * ParticleGroup::CreateAffector </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建一个效果器 </p>
+
+</div>
+</div>
+<a class="anchor" id="a93623b5bf0919a36655f01caaab08267"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_particle_emitter.html">ParticleEmitter</a> * ParticleGroup::CreateEmitter </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建一个发射器 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9327031ddccb9e90b1fb61b0fcb820c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_particle.html">Particle</a> * ParticleGroup::CreateParticle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>从粒子池中取出一个未使用的粒子指针。 </p><dl class="section return"><dt>返回</dt><dd>如果成功，则返回一个合法的粒子指针。 </dd></dl>
+<dl class="section user"><dt></dt><dd>如果失败，则返回NULL。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeafb719a3bf57bf6bf17d5da57394fae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParticleGroup::ParticleActiveList::iterator ParticleGroup::DeleteParticle </td>
+          <td>(</td>
+          <td class="paramtype">ParticleActiveList::iterator &amp;&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a82d585b802a104654f882316f4edacaa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParticleGroup::GetEnable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa14051c2d56fdfd9ff4d7108de6e3c78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UINT ParticleGroup::GetNumParticles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa8afa79329cf4fa96732a1814624d4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::Init </td>
+          <td>(</td>
+          <td class="paramtype">LPDIRECT3DDEVICE9&#160;</td>
+          <td class="paramname"><em>pDevice</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3ed480162cd8c35be80ab4441b845d2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT ParticleGroup::InvalidateDeviceObjects </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a615a5cfe0e589e95b5eec108b669d282"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParticleGroup::Load </td>
+          <td>(</td>
+          <td class="paramtype">LPCSTR&#160;</td>
+          <td class="paramname"><em>pName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>　读取粒子文件 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa0d28258414cd25112cb283efca5a447"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::Render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>　设置合适的渲染状态，渲染粒子 </p>
+
+</div>
+</div>
+<a class="anchor" id="acff2a3d72f3bd4d59d77bba7e39a3ac7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT ParticleGroup::RestoreDeviceObjects </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad83a0e5855eb8f757c5f617433335faf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParticleGroup::Save </td>
+          <td>(</td>
+          <td class="paramtype">LPSTR&#160;</td>
+          <td class="paramname"><em>pName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acacda03dd2c7cf79e99373694e353602"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::SetEnable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74252c1332c4ee7035d4ecd943e9be3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::SetPoolSize </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>uiPoolSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置粒子池大小 </p><dl class="section remark"><dt>备注</dt><dd>为了避免频繁小内存分配，使用粒子池预先分配粒子对象。在每次创建粒子时， 不需要动态分配内存（调用new），只需要从粒子池中取出一个没有使用过的 粒子指针。 </dd></dl>
+<dl class="section user"><dt></dt><dd>根据粒子池的大小创建VertexBuffer、IndexBuffer，这里应该着重讲解创建 D3D资源的参数选择。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uiPoolSize</td><td>粒子池大小。同一时刻，该粒子团对象同时存在的粒子不会超过 此数值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0d2f75f1101ae189f07e2b00123b6831"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::SetSceneBlendType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689">SceneBlendType</a>&#160;</td>
+          <td class="paramname"><em>sbt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置粒子颜色与场景颜色的混合方式 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8a5833f6d21c3de094fa6cb67d56afc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::SetTexAnimDuration </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fDuration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aebad3405ed7d2ff558cc1a3e9f92e020"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::SetTexture </td>
+          <td>(</td>
+          <td class="paramtype">LPSTR&#160;</td>
+          <td class="paramname"><em>pName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96f65495cc27d756d1541e88238d462f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParticleGroup::Update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fElapsedTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_camera.html">CCamera</a> &amp;&#160;</td>
+          <td class="paramname"><em>cam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>　根据时间差、摄像机计算粒子属性，同时更新VertexBuffer、IndexBuffer </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="af0d3a0e11b4dd143f67a94e14efff415"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_camera.html">CCamera</a> ParticleGroup::m_2DCamera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用来计算2D粒子属性的摄像机，上摄像机使用平等投影矩阵 </p>
+
+</div>
+</div>
+<a class="anchor" id="a83a45e9027edd8c35b8f409334a99b3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXMATRIX ParticleGroup::m_2DTransform</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当粒子为2D粒子时，需要用户设置此矩阵来控制粒子团方位 </p>
+
+</div>
+</div>
+<a class="anchor" id="a926f2771a35784b37442c53f6f1b3136"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_particle_group.html#af19644eb1527f9c484c1ca362a4243c6">ParticleActiveList</a> ParticleGroup::m_ActiveParticles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>　粒子池中已被使用的粒子对象 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1dc714602eacb7e6294f04507b294f4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_particle_group.html#a1b2fa06b7229e8391367f0854fe0416d">ParticleAffectorVector</a> ParticleGroup::m_Affectors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>效果器数组 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4b0a0635bbe9221b246f46e9a65c4aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParticleGroup::m_b2DParticle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否是2D粒子 </p>
+
+</div>
+</div>
+<a class="anchor" id="ada4c34efa802dd56a87c70d8b85eb7e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParticleGroup::m_bAnimationTexture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae38f0a38bc4ee164ca30ee04a06f5f34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParticleGroup::m_bEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2168678f4f617be05e09cdcf8f3501b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_particle_system_8h.html#aab6fae4ef433698f35a07e5647d6be32">BillboardType</a> ParticleGroup::m_BillboardType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>公告板面向摄像机的方式 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ff49a3a2c2109dbd0e7e6a4c7974797"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParticleGroup::m_bRotationTexture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7100978ddf3ac2d18042d6ad88c00cbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_CommonDirection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当m_BillboardType为BT_ORIENT_COMMON_DIRECTION时，此向量为粒子指向的方向。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b0ffcb2d296ca4a3435812ef80ae21d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_CommonUp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当m_BillboardType为BT_PERPENDICULAR_COMMON_DIRECTION时，此向量和m_CommonDirection决定粒子的x, y轴 </p>
+
+</div>
+</div>
+<a class="anchor" id="aae39356c838ae6658d2677a654d13621"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_particle_system_8h.html#a3da1acafd9530d01764dafc7716a17d5">ParticleCoordinateSystem</a> ParticleGroup::m_CoordinateSystem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>进行粒子运算的相对坐标系 </p>
+
+</div>
+</div>
+<a class="anchor" id="a82d28073b34e26ae414ded95dc075228"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_particle_group.html#a1444b6488ecc7aa6359c22db87f36e08">ParticleEmitterVector</a> ParticleGroup::m_Emitters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发射器数组 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8fe560771de4d56ff21735d669ad19cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ParticleGroup::m_fBottom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a033cbec0128d86aa3ecb78a98e6941ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ParticleGroup::m_fDefaultHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>　粒子的默认高度 </p>
+
+</div>
+</div>
+<a class="anchor" id="a901d8a20615afe141abec35e4a6d076a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ParticleGroup::m_fDefaultWidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>粒子的默认宽度 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa5e52d918a3a075096147358166b4d33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ParticleGroup::m_fLeft</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a19db9a231cfbbc71425f2c466dc56cf3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_particle_group.html#aea64a17fa33ac9f39099b7277a4c473f">ParticleFreeList</a> ParticleGroup::m_FreeParticles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>　粒子池中未被使用的粒子对象 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2b172c8d31009373b64533a9fcd6610"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ParticleGroup::m_fRight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6cd41e3bc8658f23fdf47a38ddbcb15c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ParticleGroup::m_fTexAnimDuration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e526e2b5d1f1fe386686952d6112da9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ParticleGroup::m_fTexDelta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ad8cba80819b4a82606f7bc91fb4104"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ParticleGroup::m_fTop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a647709758dc9dc99aebcf23f7644245d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ParticleGroup::m_iNumFrame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a24784148df1f4dc2d20913c129804291"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ParticleGroup::m_iSide</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>纹理动画参数 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa1f53e6fbcad39e23dd4e12b8225c62d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_particle_group.html#ab2f10c45cf9af650c2615b3ef66d6996">ParticlePool</a> ParticleGroup::m_ParticlePool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>粒子池 </p><dl class="section remark"><dt>备注</dt><dd>预先分配m_uiPoolSize个粒子，在每次创建粒子时，不需要动态分配内存 （调用new），只需要从粒子池中取出一个没有使用过的粒子指针。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0d628c4e0d7cf804b534381d1cea0007"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_camera.html">CCamera</a>* ParticleGroup::m_pCamera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前摄像机的指针 </p>
+
+</div>
+</div>
+<a class="anchor" id="a71958768f0ae26e44c3dc3eda2621d7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DDEVICE9 ParticleGroup::m_pDevice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a79eec4dd500a3f6199ca3d98e72b4840"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DINDEXBUFFER9 ParticleGroup::m_pIB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Index Buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="afe84abf912910ac2a4dd60455a280d70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DTEXTURE9 ParticleGroup::m_pTexture</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a66f942c8eeaf1de33958d9fd006155fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DVERTEXBUFFER9 ParticleGroup::m_pVB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vertex Buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6690539cbfe9b04d037523a30e3ab8b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689">SceneBlendType</a> ParticleGroup::m_SceneBlendType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>粒子与场景的混合方式 </p>
+
+</div>
+</div>
+<a class="anchor" id="a91fe9638457b9ab6fa11dfe0f16f44b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ParticleGroup::m_TextureName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>纹理名 </p>
+
+</div>
+</div>
+<a class="anchor" id="a95d7f7be44a93309cfb76f10c9f658b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ParticleGroup::m_uiMaxNumIndices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>　最大的索引数目，如果粒子是Billboard，则此值为m_uiPoolSize*2 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac2b5eb3b5d77e0c7e89c249c066e953b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ParticleGroup::m_uiMaxNumVertices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>　最大的顶点数目，如果粒子是Billboard，则此值为m_uiPoolSize*4 </p>
+
+</div>
+</div>
+<a class="anchor" id="af0469b4e3a23ccf32d16d874f6660c7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ParticleGroup::m_uiPoolSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>　粒子池大小，此粒子团最大可同时存在的粒子数目 </p>
+
+</div>
+</div>
+<a class="anchor" id="a290a036a4640bd4101fed2bf040f75f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vBillboardX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>公告板本地坐标系的x轴，在世界坐标系中的方向 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b19e981a97037d4cd163bf329a5577b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vBillboardY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>公告板本地坐标系的y轴，在世界坐标系中的方向 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6f45aef7cf7ba3b7208b57b2c4f1d361"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vBottomOff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa254ec8f9b3ee617e995fedc2f373775"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vCamDir</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88dba99948e06525b97e9d697b946114"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vCamRight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab56008d9a4572fbd7936c073643042dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vCamUp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf0f532e77e40ee6d4e1d0d4b1859647"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vLeftOff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>公告板四个边中点的坐标，相对于将世界坐标系原点移到公告板原点的坐标系 </p>
+
+</div>
+</div>
+<a class="anchor" id="a270e8d3ec6ca14f9c635301b43cd3738"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vOffset[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e40b8e860b253ff2abd5f4514bf19d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vRightOff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c12a007fa60d0e5df10ef10b35d9626"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 ParticleGroup::m_vTopOff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a970051499d3a0512cf458cddbeef3754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXMATRIX ParticleGroup::matOldProj</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a986bdde9ddf81e4aca250a13f28cf145"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXMATRIX ParticleGroup::matOldView</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/<a class="el" href="_particle_system_8h_source.html">ParticleSystem.h</a></li>
+<li>M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/<a class="el" href="_particle_system_8cpp.html">ParticleSystem.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:10 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

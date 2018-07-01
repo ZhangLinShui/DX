@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/CheckBox.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CheckBox.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_check_box_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Name:CheckBox.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//Desc:</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//选择框控件</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_check_box.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_check_box.html">CCheckBox</a> : <span class="keyword">public</span> <a class="code" href="class_c_component.html">CComponent</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//构造函数</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_c_check_box.html#ae4ff02f8007433bdf27553a850b52a24">CCheckBox</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_c_check_box.html#ac4fdbd75eb1d520151a6ad3af37371d0">~CCheckBox</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//加载&quot;打钩&quot;纹理</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_check_box.html#a6a0728e2b58ec8ec6ce8f7ceef414323">SetCheckCursorPic</a>(<span class="keywordtype">string</span> filename);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//绘制组件</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_check_box.html#a0b9c98bf200c06fcd91a915dfdc8fdd5">Draw</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//处理鼠标移动的事件响应</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_check_box.html#a33ccf3f598b6a261f10ee1b111bc589d">ProcessMouseMove</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//处理鼠标左键按下的事件响应</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_check_box.html#aeba9a44b3e0396047f94caf2817c85ba">ProcessMouseLBDown</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//处理鼠标左键弹起的事件响应</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_check_box.html#a164307543250ac3c343b3625be271f79">ProcessMouseLBUp</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//设置按钮所对应的具体的事件(LUA函数),传入的参数是LUA脚本中的函数名</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_check_box.html#a5ce0c3ac2eb7f3aefa05f57e3a4282f1">SetEvent</a>(<span class="keywordtype">string</span> FunctionName);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//执行按钮所对应的具体的事件</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_check_box.html#ac5b593c9af8e65317817938a2c80e88c">DoEvent</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//设置游标的左上角的坐标</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_check_box.html#a8f4aec83c6b51ac261f832dd3b550bdc">SetCursorLeftUpPos</a>(D3DXVECTOR2 vPos);  </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//获得当前选择框是否已经勾选</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_c_check_box.html#ae40b00a302d2f53e5a6963d592ebdf22">   45</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_check_box.html#ae40b00a302d2f53e5a6963d592ebdf22">GetBeChecked</a>(<span class="keywordtype">void</span>)                         {<span class="keywordflow">return</span> <a class="code" href="class_c_check_box.html#ace9ade840fcc848cb31d4c18328516c2">m_bShowCheckCursor</a>;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//设置当前选择框是否勾选</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_check_box.html#a4044453099175dc5a9679582db9eb3d6">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_check_box.html#a4044453099175dc5a9679582db9eb3d6">SetBeChecked</a>(<span class="keywordtype">bool</span> bChecked)                {<a class="code" href="class_c_check_box.html#ace9ade840fcc848cb31d4c18328516c2">m_bShowCheckCursor</a> = bChecked;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//&quot;打钩&quot;纹理</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_check_box.html#a90ea53ff777fbca690961652d53743ba">   53</a></span>&#160;    IDirect3DTexture9* <a class="code" href="class_c_check_box.html#a90ea53ff777fbca690961652d53743ba">m_pCheckCursorTex</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//是否显示&quot;打钩&quot;纹理</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_c_check_box.html#ace9ade840fcc848cb31d4c18328516c2">   56</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_check_box.html#ace9ade840fcc848cb31d4c18328516c2">m_bShowCheckCursor</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//按钮所对应的具体的事件的函数名</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_c_check_box.html#afdfdc7387faf3473566885809a521b99">   59</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_check_box.html#afdfdc7387faf3473566885809a521b99">m_strFunctionName</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//游标的左上角坐标</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_check_box.html#aded2573a9a4579e057d56cbf1e8a23a7">   62</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_check_box.html#aded2573a9a4579e057d56cbf1e8a23a7">m_vCursorLeftUpPos</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//游标的显示的缩放比例</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_c_check_box.html#a97468205d0c9a530f684e3aa63e376e6">   65</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_check_box.html#a97468205d0c9a530f684e3aa63e376e6">m_vCursorScale</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="ttc" id="class_c_check_box_html"><div class="ttname"><a href="class_c_check_box.html">CCheckBox</a></div><div class="ttdef"><b>Definition:</b> CheckBox.h:10</div></div>
+<div class="ttc" id="class_c_check_box_html_ac5b593c9af8e65317817938a2c80e88c"><div class="ttname"><a href="class_c_check_box.html#ac5b593c9af8e65317817938a2c80e88c">CCheckBox::DoEvent</a></div><div class="ttdeci">void DoEvent()</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:148</div></div>
+<div class="ttc" id="class_c_check_box_html_aded2573a9a4579e057d56cbf1e8a23a7"><div class="ttname"><a href="class_c_check_box.html#aded2573a9a4579e057d56cbf1e8a23a7">CCheckBox::m_vCursorLeftUpPos</a></div><div class="ttdeci">D3DXVECTOR2 m_vCursorLeftUpPos</div><div class="ttdef"><b>Definition:</b> CheckBox.h:62</div></div>
+<div class="ttc" id="class_c_check_box_html_ae40b00a302d2f53e5a6963d592ebdf22"><div class="ttname"><a href="class_c_check_box.html#ae40b00a302d2f53e5a6963d592ebdf22">CCheckBox::GetBeChecked</a></div><div class="ttdeci">bool GetBeChecked(void)</div><div class="ttdef"><b>Definition:</b> CheckBox.h:45</div></div>
+<div class="ttc" id="class_c_check_box_html_a8f4aec83c6b51ac261f832dd3b550bdc"><div class="ttname"><a href="class_c_check_box.html#a8f4aec83c6b51ac261f832dd3b550bdc">CCheckBox::SetCursorLeftUpPos</a></div><div class="ttdeci">void SetCursorLeftUpPos(D3DXVECTOR2 vPos)</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:162</div></div>
+<div class="ttc" id="class_c_check_box_html_a90ea53ff777fbca690961652d53743ba"><div class="ttname"><a href="class_c_check_box.html#a90ea53ff777fbca690961652d53743ba">CCheckBox::m_pCheckCursorTex</a></div><div class="ttdeci">IDirect3DTexture9 * m_pCheckCursorTex</div><div class="ttdef"><b>Definition:</b> CheckBox.h:53</div></div>
+<div class="ttc" id="class_c_check_box_html_a164307543250ac3c343b3625be271f79"><div class="ttname"><a href="class_c_check_box.html#a164307543250ac3c343b3625be271f79">CCheckBox::ProcessMouseLBUp</a></div><div class="ttdeci">void ProcessMouseLBUp(long x, long y)</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:120</div></div>
+<div class="ttc" id="class_c_check_box_html_ae4ff02f8007433bdf27553a850b52a24"><div class="ttname"><a href="class_c_check_box.html#ae4ff02f8007433bdf27553a850b52a24">CCheckBox::CCheckBox</a></div><div class="ttdeci">CCheckBox()</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:5</div></div>
+<div class="ttc" id="class_c_check_box_html_afdfdc7387faf3473566885809a521b99"><div class="ttname"><a href="class_c_check_box.html#afdfdc7387faf3473566885809a521b99">CCheckBox::m_strFunctionName</a></div><div class="ttdeci">string m_strFunctionName</div><div class="ttdef"><b>Definition:</b> CheckBox.h:59</div></div>
+<div class="ttc" id="class_c_check_box_html_aeba9a44b3e0396047f94caf2817c85ba"><div class="ttname"><a href="class_c_check_box.html#aeba9a44b3e0396047f94caf2817c85ba">CCheckBox::ProcessMouseLBDown</a></div><div class="ttdeci">void ProcessMouseLBDown(long x, long y)</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:104</div></div>
+<div class="ttc" id="class_c_check_box_html_a6a0728e2b58ec8ec6ce8f7ceef414323"><div class="ttname"><a href="class_c_check_box.html#a6a0728e2b58ec8ec6ce8f7ceef414323">CCheckBox::SetCheckCursorPic</a></div><div class="ttdeci">bool SetCheckCursorPic(string filename)</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:25</div></div>
+<div class="ttc" id="_component_8h_html"><div class="ttname"><a href="_component_8h.html">Component.h</a></div></div>
+<div class="ttc" id="class_c_check_box_html_ace9ade840fcc848cb31d4c18328516c2"><div class="ttname"><a href="class_c_check_box.html#ace9ade840fcc848cb31d4c18328516c2">CCheckBox::m_bShowCheckCursor</a></div><div class="ttdeci">bool m_bShowCheckCursor</div><div class="ttdef"><b>Definition:</b> CheckBox.h:56</div></div>
+<div class="ttc" id="class_c_check_box_html_a97468205d0c9a530f684e3aa63e376e6"><div class="ttname"><a href="class_c_check_box.html#a97468205d0c9a530f684e3aa63e376e6">CCheckBox::m_vCursorScale</a></div><div class="ttdeci">D3DXVECTOR2 m_vCursorScale</div><div class="ttdef"><b>Definition:</b> CheckBox.h:65</div></div>
+<div class="ttc" id="class_c_check_box_html_a4044453099175dc5a9679582db9eb3d6"><div class="ttname"><a href="class_c_check_box.html#a4044453099175dc5a9679582db9eb3d6">CCheckBox::SetBeChecked</a></div><div class="ttdeci">void SetBeChecked(bool bChecked)</div><div class="ttdef"><b>Definition:</b> CheckBox.h:48</div></div>
+<div class="ttc" id="class_c_check_box_html_a33ccf3f598b6a261f10ee1b111bc589d"><div class="ttname"><a href="class_c_check_box.html#a33ccf3f598b6a261f10ee1b111bc589d">CCheckBox::ProcessMouseMove</a></div><div class="ttdeci">void ProcessMouseMove(long x, long y)</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:86</div></div>
+<div class="ttc" id="class_c_check_box_html_a0b9c98bf200c06fcd91a915dfdc8fdd5"><div class="ttname"><a href="class_c_check_box.html#a0b9c98bf200c06fcd91a915dfdc8fdd5">CCheckBox::Draw</a></div><div class="ttdeci">void Draw(void)</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:38</div></div>
+<div class="ttc" id="class_c_component_html"><div class="ttname"><a href="class_c_component.html">CComponent</a></div><div class="ttdef"><b>Definition:</b> Component.h:7</div></div>
+<div class="ttc" id="class_c_check_box_html_ac4fdbd75eb1d520151a6ad3af37371d0"><div class="ttname"><a href="class_c_check_box.html#ac4fdbd75eb1d520151a6ad3af37371d0">CCheckBox::~CCheckBox</a></div><div class="ttdeci">~CCheckBox()</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:19</div></div>
+<div class="ttc" id="class_c_check_box_html_a5ce0c3ac2eb7f3aefa05f57e3a4282f1"><div class="ttname"><a href="class_c_check_box.html#a5ce0c3ac2eb7f3aefa05f57e3a4282f1">CCheckBox::SetEvent</a></div><div class="ttdeci">void SetEvent(string FunctionName)</div><div class="ttdef"><b>Definition:</b> CheckBox.cpp:142</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

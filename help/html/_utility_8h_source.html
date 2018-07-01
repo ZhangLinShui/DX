@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Utility.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Utility.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_utility_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/********************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    created:    2007/03/14</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">    created:    14:3:2007   15:03</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    filename:   Utility.h</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    author:     任晓宇</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    purpose:    辅助工具</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    changelog:  2007/05/09  为了优化将大部分纹理压缩为dds格式，此处加入</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">                            将文件后缀名转为dds的辅助函数。</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*********************************************************************/</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef SAFE_DELETE</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_utility_8h.html#a9bbcd82e77c41df827c09759def05c9a">   16</a></span>&#160;<span class="preprocessor">#define SAFE_DELETE(p)       { if(p) { delete (p);     (p)=NULL; } }</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif    </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef SAFE_DELETE_ARRAY</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_utility_8h.html#a506b3685b3eb05aac751f9e14cbed93b">   19</a></span>&#160;<span class="preprocessor">#define SAFE_DELETE_ARRAY(p) { if(p) { delete[] (p);   (p)=NULL; } }</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif    </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef SAFE_RELEASE</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_utility_8h.html#a6038f7bdb274c2e159988a57dedbf93d">   22</a></span>&#160;<span class="preprocessor">#define SAFE_RELEASE(p)      { if(p) { (p)-&gt;Release(); (p)=NULL; } }</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef V</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_utility_8h.html#a5d2e64c561275bcf703c30edd5494288">   26</a></span>&#160;<span class="preprocessor">#define V(x)           { hr = x; }</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef V_RETURN</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_utility_8h.html#af2b382cafebcd802f68fbdee2fba77fa">   29</a></span>&#160;<span class="preprocessor">#define V_RETURN(x)    { hr = x; if( FAILED(hr) ) { return hr; } }</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_utility_8h.html#a3a4bb11e23457a736ce25340a8a0956c">   33</a></span>&#160;<span class="preprocessor">#define COLOR_GETAVALUE( argb ) ( (BYTE)( ( argb ) &gt;&gt; 24 ) )</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_utility_8h.html#a81135d7cc7b17846395bd841125c59b5">   34</a></span>&#160;<span class="preprocessor">#define COLOR_GETRVALUE( argb ) ( (BYTE)( ( argb ) &gt;&gt; 16 ) )</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_utility_8h.html#a7670e30cee61a27663a195b598b884c9">   35</a></span>&#160;<span class="preprocessor">#define COLOR_GETGVALUE( argb ) ( (BYTE)( ( argb ) &gt;&gt; 8 ) )</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_utility_8h.html#aa3d7e4949e605faf0e9108efb952ed14">   36</a></span>&#160;<span class="preprocessor">#define COLOR_GETBVALUE( argb ) ( (BYTE)( argb ) )</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689">   40</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689">SceneBlendType</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a2f4c1aa4905a9deba369c495a06b3817">   43</a></span>&#160;    <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a2f4c1aa4905a9deba369c495a06b3817">SBT_OPAQUE</a> = 0,</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a8ac92678016fd66279eb129a566f5f6e">   45</a></span>&#160;    <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a8ac92678016fd66279eb129a566f5f6e">SBT_TRANSPARENT_ALPHA</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689aba9e23244b1c784996c717e411200d11">   47</a></span>&#160;    <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689aba9e23244b1c784996c717e411200d11">SBT_TRANSPARENT_COLOR</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a6088cabcc7a22f8e24dbdf61421ac542">   49</a></span>&#160;    <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a6088cabcc7a22f8e24dbdf61421ac542">SBT_ADD_COLOR</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a041ca70fbdfc5a8cbfe77cabcef98aec">   51</a></span>&#160;    <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a041ca70fbdfc5a8cbfe77cabcef98aec">SBT_ADD_ALPHA</a>,</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a039282bca309bca4b7a5f3e08340734d">   53</a></span>&#160;    <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a039282bca309bca4b7a5f3e08340734d">SBT_MODULATE</a>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689ac32e16d9a361bc6b06a273e14ab766fc">   55</a></span>&#160;    <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689ac32e16d9a361bc6b06a273e14ab766fc">SBT_MODULATE2</a>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a053f1be0b13d4eb891b045ad4e13e9c1">   57</a></span>&#160;    <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a053f1be0b13d4eb891b045ad4e13e9c1">SBT_TRANSPARENT_DIFFUSE</a>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a1d0084f9d06ebce565073b1e66084aeb">   58</a></span>&#160;    <a class="code" href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a1d0084f9d06ebce565073b1e66084aeb">SBT_MAX_NUMBER</a>,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="_utility_8h.html#a1f17d0bb5e93aae139133321d845782e">   65</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="_utility_8h.html#a1f17d0bb5e93aae139133321d845782e">GetRealFileName</a>( std::string &amp;name )</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">size_t</span> pos = name.find_last_of( <span class="charliteral">&#39;/&#39;</span> );</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span>( pos != std::string::npos )</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        name = name.substr( pos+1, name.size()-pos-1 );</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    pos = name.find_last_of( <span class="charliteral">&#39;\\&#39;</span> );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span>( pos != std::string::npos )</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        name = name.substr( pos+1, name.size()-pos-1 );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;D3DXVECTOR3 <a class="code" href="_utility_8h.html#abd4f051b5c55f6a69432683d9bccca57">Vec3Mutiply</a>( <span class="keyword">const</span> D3DXVECTOR3 &amp;v1, <span class="keyword">const</span> D3DXVECTOR3 &amp;v2 );</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_utility_8h.html#a0fdabd0beb44a7b2c364177bb9821d6a">Vec3Perpendicular</a>( D3DXVECTOR3 &amp;out, <span class="keyword">const</span> D3DXVECTOR3 &amp;src );</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_utility_8h.html#a1cc6a4b6b03e91d140dcfb765a7c2533">RandomDeviant</a>( D3DXVECTOR3 &amp;result, <span class="keyword">const</span> D3DXVECTOR3 &amp;dir, <span class="keywordtype">float</span> fAngle );</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">float</span> <a class="code" href="_utility_8h.html#a8222f6aabf6852a2ba89366555d849ca">UnitRandom</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">float</span> <a class="code" href="_utility_8h.html#a5e5a32131b529a419ed731bffcb50d97">RangeRandom</a>(<span class="keywordtype">float</span> fLow, <span class="keywordtype">float</span> fHigh);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">float</span> <a class="code" href="_utility_8h.html#afaa18e13379c2cfc10093b2cde5e4342">SymmetricRandom</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_utility_8h.html#a711aca21b00164c4824b0bf58792aba7">ChangeFileNameToDDS</a>( <span class="keywordtype">string</span> &amp;name );</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="_utility_8h.html#a86fc247b8fa6ddd5b7780314e165bd72">  116</a></span>&#160;<span class="keyword">inline</span> DWORD <a class="code" href="_utility_8h.html#a86fc247b8fa6ddd5b7780314e165bd72">F2DW</a>( FLOAT f )</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> *((DWORD*)&amp;f); </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="_utility_8h.html#a771449eba878ed4cd53f39d21c1ff675">  120</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="_utility_8h.html#a771449eba878ed4cd53f39d21c1ff675">DW2F</a>( DWORD dw )</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> *((FLOAT*)&amp;dw); </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="ttc" id="_utility_8h_html_a8222f6aabf6852a2ba89366555d849ca"><div class="ttname"><a href="_utility_8h.html#a8222f6aabf6852a2ba89366555d849ca">UnitRandom</a></div><div class="ttdeci">float UnitRandom()</div><div class="ttdef"><b>Definition:</b> Utility.cpp:97</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689a2f4c1aa4905a9deba369c495a06b3817"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a2f4c1aa4905a9deba369c495a06b3817">SBT_OPAQUE</a></div><div class="ttdoc">不透明 </div><div class="ttdef"><b>Definition:</b> Utility.h:43</div></div>
+<div class="ttc" id="_utility_8h_html_a1f17d0bb5e93aae139133321d845782e"><div class="ttname"><a href="_utility_8h.html#a1f17d0bb5e93aae139133321d845782e">GetRealFileName</a></div><div class="ttdeci">void GetRealFileName(std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> Utility.h:65</div></div>
+<div class="ttc" id="_utility_8h_html_afaa18e13379c2cfc10093b2cde5e4342"><div class="ttname"><a href="_utility_8h.html#afaa18e13379c2cfc10093b2cde5e4342">SymmetricRandom</a></div><div class="ttdeci">float SymmetricRandom()</div><div class="ttdef"><b>Definition:</b> Utility.cpp:107</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689a053f1be0b13d4eb891b045ad4e13e9c1"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a053f1be0b13d4eb891b045ad4e13e9c1">SBT_TRANSPARENT_DIFFUSE</a></div><div class="ttdoc">使用顶点色的Alpha通道，实现半透明 </div><div class="ttdef"><b>Definition:</b> Utility.h:57</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689a041ca70fbdfc5a8cbfe77cabcef98aec"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a041ca70fbdfc5a8cbfe77cabcef98aec">SBT_ADD_ALPHA</a></div><div class="ttdoc">与场景颜色相加,通常用来增加原场景的细节 </div><div class="ttdef"><b>Definition:</b> Utility.h:51</div></div>
+<div class="ttc" id="_utility_8h_html_a86fc247b8fa6ddd5b7780314e165bd72"><div class="ttname"><a href="_utility_8h.html#a86fc247b8fa6ddd5b7780314e165bd72">F2DW</a></div><div class="ttdeci">DWORD F2DW(FLOAT f)</div><div class="ttdef"><b>Definition:</b> Utility.h:116</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689ac32e16d9a361bc6b06a273e14ab766fc"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689ac32e16d9a361bc6b06a273e14ab766fc">SBT_MODULATE2</a></div><div class="ttdoc">与场景颜色相乘的2倍 </div><div class="ttdef"><b>Definition:</b> Utility.h:55</div></div>
+<div class="ttc" id="_utility_8h_html_a0fdabd0beb44a7b2c364177bb9821d6a"><div class="ttname"><a href="_utility_8h.html#a0fdabd0beb44a7b2c364177bb9821d6a">Vec3Perpendicular</a></div><div class="ttdeci">void Vec3Perpendicular(D3DXVECTOR3 &amp;out, const D3DXVECTOR3 &amp;src)</div><div class="ttdef"><b>Definition:</b> Utility.cpp:17</div></div>
+<div class="ttc" id="_utility_8h_html_a1cc6a4b6b03e91d140dcfb765a7c2533"><div class="ttname"><a href="_utility_8h.html#a1cc6a4b6b03e91d140dcfb765a7c2533">RandomDeviant</a></div><div class="ttdeci">void RandomDeviant(D3DXVECTOR3 &amp;result, const D3DXVECTOR3 &amp;dir, float fAngle)</div><div class="ttdef"><b>Definition:</b> Utility.cpp:39</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689">SceneBlendType</a></div><div class="ttdeci">SceneBlendType</div><div class="ttdef"><b>Definition:</b> Utility.h:40</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689a8ac92678016fd66279eb129a566f5f6e"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a8ac92678016fd66279eb129a566f5f6e">SBT_TRANSPARENT_ALPHA</a></div><div class="ttdoc">Alpha半透明 </div><div class="ttdef"><b>Definition:</b> Utility.h:45</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689a039282bca309bca4b7a5f3e08340734d"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a039282bca309bca4b7a5f3e08340734d">SBT_MODULATE</a></div><div class="ttdoc">与场景颜色相乘 </div><div class="ttdef"><b>Definition:</b> Utility.h:53</div></div>
+<div class="ttc" id="_utility_8h_html_a5e5a32131b529a419ed731bffcb50d97"><div class="ttname"><a href="_utility_8h.html#a5e5a32131b529a419ed731bffcb50d97">RangeRandom</a></div><div class="ttdeci">float RangeRandom(float fLow, float fHigh)</div><div class="ttdef"><b>Definition:</b> Utility.cpp:102</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689aba9e23244b1c784996c717e411200d11"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689aba9e23244b1c784996c717e411200d11">SBT_TRANSPARENT_COLOR</a></div><div class="ttdoc">使用源颜色做Alpha因子，实现半透明 </div><div class="ttdef"><b>Definition:</b> Utility.h:47</div></div>
+<div class="ttc" id="_utility_8h_html_a771449eba878ed4cd53f39d21c1ff675"><div class="ttname"><a href="_utility_8h.html#a771449eba878ed4cd53f39d21c1ff675">DW2F</a></div><div class="ttdeci">float DW2F(DWORD dw)</div><div class="ttdef"><b>Definition:</b> Utility.h:120</div></div>
+<div class="ttc" id="_utility_8h_html_abd4f051b5c55f6a69432683d9bccca57"><div class="ttname"><a href="_utility_8h.html#abd4f051b5c55f6a69432683d9bccca57">Vec3Mutiply</a></div><div class="ttdeci">D3DXVECTOR3 Vec3Mutiply(const D3DXVECTOR3 &amp;v1, const D3DXVECTOR3 &amp;v2)</div><div class="ttdef"><b>Definition:</b> Utility.cpp:7</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689a1d0084f9d06ebce565073b1e66084aeb"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a1d0084f9d06ebce565073b1e66084aeb">SBT_MAX_NUMBER</a></div><div class="ttdef"><b>Definition:</b> Utility.h:58</div></div>
+<div class="ttc" id="_utility_8h_html_a03d4311aef65ec9ec9d9eb009dca4689a6088cabcc7a22f8e24dbdf61421ac542"><div class="ttname"><a href="_utility_8h.html#a03d4311aef65ec9ec9d9eb009dca4689a6088cabcc7a22f8e24dbdf61421ac542">SBT_ADD_COLOR</a></div><div class="ttdoc">与场景颜色相加，通常用来加亮 </div><div class="ttdef"><b>Definition:</b> Utility.h:49</div></div>
+<div class="ttc" id="_utility_8h_html_a711aca21b00164c4824b0bf58792aba7"><div class="ttname"><a href="_utility_8h.html#a711aca21b00164c4824b0bf58792aba7">ChangeFileNameToDDS</a></div><div class="ttdeci">void ChangeFileNameToDDS(string &amp;name)</div><div class="ttdef"><b>Definition:</b> Utility.cpp:112</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

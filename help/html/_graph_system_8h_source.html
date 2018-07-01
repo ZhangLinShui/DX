@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/GraphSystem.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GraphSystem.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_graph_system_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Name:GraphSystem.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//游戏中的图形渲染系统</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//所有的引擎中的对象都在这个类中协同工作</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//所有的图形渲染逻辑都在这个类中定义</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_g_u_i_manager_8h.html">GUIManager.h</a>&quot;</span> </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_scene_manager_8h.html">SceneManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_graph_system.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_graph_system.html">CGraphSystem</a>:<span class="keyword">public</span> <a class="code" href="class_i_observer.html">IObserver</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//构造函数</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_c_graph_system.html#abadbb8a8bd38d45197bc8c5e39ce5906">CGraphSystem</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_c_graph_system.html#a4cfddf2acf4a8cf3e947ab0849529091">~CGraphSystem</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//初始化图形系统</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_graph_system.html#a56a2ffaeb727ba13dd0f1e7c6f574775">Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//发送状态接口</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_graph_system.html#a273710dbf87280aeb1cc30241f7ead17">Notify</a>(<a class="code" href="class_i_observable.html">IObservable</a>* pObservable,<a class="code" href="class_i_object.html">IObject</a>* Arg);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//接收状态接口</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_graph_system.html#aa4b46e12ab18f4a3e3d46e9830989f4a">Update</a>(<a class="code" href="class_i_observable.html">IObservable</a>* pObservable,<a class="code" href="class_i_object.html">IObject</a>* Arg);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//渲染当前帧</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_graph_system.html#a3c41900e971e965ce61de4e46adc9011">Render</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//向场景管理器里注册Object,只在图形系统内部使用</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//void RegisterObjectToSceneMgr();</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//在图形系统中已经绑定了的场景上的对象</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a2e021ff33b8e14cb65cd156cf90dd762">   41</a></span>&#160;    map&lt;string,CObject*&gt;    <a class="code" href="class_c_graph_system.html#a2e021ff33b8e14cb65cd156cf90dd762">m_mapAttachedObject</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a8001b7de2373dac16979312b64a5cd37">   42</a></span>&#160;    vector&lt;CModelCopy*&gt;     <a class="code" href="class_c_graph_system.html#a8001b7de2373dac16979312b64a5cd37">m_vecStaticModel</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#afdfdb63309caadc75d1f612dc146159c">   43</a></span>&#160;    vector&lt;CCharacter*&gt;     <a class="code" href="class_c_graph_system.html#afdfdb63309caadc75d1f612dc146159c">m_vecMoster</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a70a8bd9b31a285fffda38021c06455b2">   44</a></span>&#160;    <a class="code" href="class_c_g_u_i_manager.html">CGUIManager</a>* <a class="code" href="class_c_graph_system.html#a70a8bd9b31a285fffda38021c06455b2">m_pObservableGUI</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//保存在系统里面的观察者模式控制器,一个系统可以有多个控制器,用于触发不同的事件</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a069f25d78947118971e84302a1a37ce4">   47</a></span>&#160;    <a class="code" href="class_c_scene_manager.html">CSceneManager</a>* <a class="code" href="class_c_graph_system.html#a069f25d78947118971e84302a1a37ce4">m_pObservableScene</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//渲染GUI对象</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_graph_system.html#ac55b0958aedabfee0e5622014b915a9d">RenderGUI</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//设置D3D设备对象</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#aaa7111657d3401bfbcf7002245085dc0">   55</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_graph_system.html#aaa7111657d3401bfbcf7002245085dc0">SetDevice</a>(IDirect3DDevice9* pDevice)       {<a class="code" href="class_c_graph_system.html#a51d1b5485263c8f6e4e0797be10816ba">m_pDevice</a> = pDevice;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//获得图形系统的光标标示,来设定新的光标</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a802deec1fa3e96e6ead0a1ac4c264290">   58</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_graph_system.html#a802deec1fa3e96e6ead0a1ac4c264290">GetCursor</a>(<span class="keywordtype">void</span>)                            {<span class="keywordflow">return</span> <a class="code" href="class_c_graph_system.html#a0e24d18aa57763c05daa8125c1a92c25">m_lCursor</a>;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//需要渲染的GUI组件</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a39cf297b495148a48080ac27b021e9a4">   63</a></span>&#160;    list&lt;CComponent*&gt; <a class="code" href="class_c_graph_system.html#a39cf297b495148a48080ac27b021e9a4">m_listGUIComponent</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a550e462ea758b03e239a18dce5476ec1">   64</a></span>&#160;    list&lt;CComponent*&gt;::iterator <a class="code" href="class_c_graph_system.html#a550e462ea758b03e239a18dce5476ec1">m_listGUIComponentIT</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//D3D设备对象</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a51d1b5485263c8f6e4e0797be10816ba">   69</a></span>&#160;    IDirect3DDevice9    *<a class="code" href="class_c_graph_system.html#a51d1b5485263c8f6e4e0797be10816ba">m_pDevice</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a1a70464e5ca434772a853e5179e6b4e7">   70</a></span>&#160;    ID3DXSprite         *<a class="code" href="class_c_graph_system.html#a1a70464e5ca434772a853e5179e6b4e7">m_pSprite</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//鼠标光标的类型</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a0e24d18aa57763c05daa8125c1a92c25">   72</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_graph_system.html#a0e24d18aa57763c05daa8125c1a92c25">m_lCursor</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a5b658b9e104b86634a2015b960b4476d">   73</a></span>&#160;    <a class="code" href="class_c_water.html">CWater</a>              *<a class="code" href="class_c_graph_system.html#a5b658b9e104b86634a2015b960b4476d">m_pWater</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#ae5d47733f947d8c0490db152a32b6d2c">   74</a></span>&#160;    <a class="code" href="class_c_c_map.html">CCMap</a>               *<a class="code" href="class_c_graph_system.html#ae5d47733f947d8c0490db152a32b6d2c">m_pMap</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a0a16eba1284f0c18774545988285a863">   75</a></span>&#160;    <a class="code" href="class_c_player.html">CPlayer</a>             *<a class="code" href="class_c_graph_system.html#a0a16eba1284f0c18774545988285a863">m_pPlayer</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#ad754f7b9e1ba715785c4b438a1999508">   76</a></span>&#160;    <a class="code" href="class_c_sky.html">CSky</a>                * <a class="code" href="class_c_graph_system.html#ad754f7b9e1ba715785c4b438a1999508">m_pSky</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a51b8624ddf2e6f2ec43aa29193c12401">   77</a></span>&#160;    <a class="code" href="class_c_hourse.html">CHourse</a>             * <a class="code" href="class_c_graph_system.html#a51b8624ddf2e6f2ec43aa29193c12401">m_pHourse</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#a624ed2cd8f4439ee1bd76a11e76aa3c7">   78</a></span>&#160;    <a class="code" href="class_c_bridge.html">CBridge</a>             * <a class="code" href="class_c_graph_system.html#a624ed2cd8f4439ee1bd76a11e76aa3c7">m_pBridge</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_c_graph_system.html#ab826c8aec61c254afdca2e38d19ccca4">   79</a></span>&#160;    <a class="code" href="class_c_model_copy.html">CModelCopy</a>          *<a class="code" href="class_c_graph_system.html#ab826c8aec61c254afdca2e38d19ccca4">m_pMeshManager</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="ttc" id="class_c_graph_system_html_a51d1b5485263c8f6e4e0797be10816ba"><div class="ttname"><a href="class_c_graph_system.html#a51d1b5485263c8f6e4e0797be10816ba">CGraphSystem::m_pDevice</a></div><div class="ttdeci">IDirect3DDevice9 * m_pDevice</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:69</div></div>
+<div class="ttc" id="class_c_graph_system_html_aaa7111657d3401bfbcf7002245085dc0"><div class="ttname"><a href="class_c_graph_system.html#aaa7111657d3401bfbcf7002245085dc0">CGraphSystem::SetDevice</a></div><div class="ttdeci">void SetDevice(IDirect3DDevice9 *pDevice)</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:55</div></div>
+<div class="ttc" id="class_c_graph_system_html_a4cfddf2acf4a8cf3e947ab0849529091"><div class="ttname"><a href="class_c_graph_system.html#a4cfddf2acf4a8cf3e947ab0849529091">CGraphSystem::~CGraphSystem</a></div><div class="ttdeci">~CGraphSystem()</div><div class="ttdef"><b>Definition:</b> GraphSystem.cpp:15</div></div>
+<div class="ttc" id="class_c_water_html"><div class="ttname"><a href="class_c_water.html">CWater</a></div><div class="ttdef"><b>Definition:</b> Water.h:3</div></div>
+<div class="ttc" id="class_c_player_html"><div class="ttname"><a href="class_c_player.html">CPlayer</a></div><div class="ttdef"><b>Definition:</b> Player.h:7</div></div>
+<div class="ttc" id="class_c_graph_system_html_a56a2ffaeb727ba13dd0f1e7c6f574775"><div class="ttname"><a href="class_c_graph_system.html#a56a2ffaeb727ba13dd0f1e7c6f574775">CGraphSystem::Init</a></div><div class="ttdeci">bool Init(void)</div><div class="ttdef"><b>Definition:</b> GraphSystem.cpp:86</div></div>
+<div class="ttc" id="class_c_graph_system_html_a51b8624ddf2e6f2ec43aa29193c12401"><div class="ttname"><a href="class_c_graph_system.html#a51b8624ddf2e6f2ec43aa29193c12401">CGraphSystem::m_pHourse</a></div><div class="ttdeci">CHourse * m_pHourse</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:77</div></div>
+<div class="ttc" id="class_c_graph_system_html_a39cf297b495148a48080ac27b021e9a4"><div class="ttname"><a href="class_c_graph_system.html#a39cf297b495148a48080ac27b021e9a4">CGraphSystem::m_listGUIComponent</a></div><div class="ttdeci">list&lt; CComponent * &gt; m_listGUIComponent</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:63</div></div>
+<div class="ttc" id="class_c_graph_system_html_ad754f7b9e1ba715785c4b438a1999508"><div class="ttname"><a href="class_c_graph_system.html#ad754f7b9e1ba715785c4b438a1999508">CGraphSystem::m_pSky</a></div><div class="ttdeci">CSky * m_pSky</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:76</div></div>
+<div class="ttc" id="class_c_g_u_i_manager_html"><div class="ttname"><a href="class_c_g_u_i_manager.html">CGUIManager</a></div><div class="ttdef"><b>Definition:</b> GUIManager.h:10</div></div>
+<div class="ttc" id="class_c_hourse_html"><div class="ttname"><a href="class_c_hourse.html">CHourse</a></div><div class="ttdef"><b>Definition:</b> Hourse.h:3</div></div>
+<div class="ttc" id="class_i_object_html"><div class="ttname"><a href="class_i_object.html">IObject</a></div><div class="ttdef"><b>Definition:</b> Observer.h:39</div></div>
+<div class="ttc" id="class_c_graph_system_html_abadbb8a8bd38d45197bc8c5e39ce5906"><div class="ttname"><a href="class_c_graph_system.html#abadbb8a8bd38d45197bc8c5e39ce5906">CGraphSystem::CGraphSystem</a></div><div class="ttdeci">CGraphSystem()</div><div class="ttdef"><b>Definition:</b> GraphSystem.cpp:6</div></div>
+<div class="ttc" id="class_c_c_map_html"><div class="ttname"><a href="class_c_c_map.html">CCMap</a></div><div class="ttdef"><b>Definition:</b> CMap.h:3</div></div>
+<div class="ttc" id="class_c_graph_system_html_a273710dbf87280aeb1cc30241f7ead17"><div class="ttname"><a href="class_c_graph_system.html#a273710dbf87280aeb1cc30241f7ead17">CGraphSystem::Notify</a></div><div class="ttdeci">void Notify(IObservable *pObservable, IObject *Arg)</div><div class="ttdef"><b>Definition:</b> GraphSystem.cpp:21</div></div>
+<div class="ttc" id="class_c_sky_html"><div class="ttname"><a href="class_c_sky.html">CSky</a></div><div class="ttdef"><b>Definition:</b> Sky.h:3</div></div>
+<div class="ttc" id="class_i_observable_html"><div class="ttname"><a href="class_i_observable.html">IObservable</a></div><div class="ttdef"><b>Definition:</b> Observer.h:60</div></div>
+<div class="ttc" id="class_c_graph_system_html_a70a8bd9b31a285fffda38021c06455b2"><div class="ttname"><a href="class_c_graph_system.html#a70a8bd9b31a285fffda38021c06455b2">CGraphSystem::m_pObservableGUI</a></div><div class="ttdeci">CGUIManager * m_pObservableGUI</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:44</div></div>
+<div class="ttc" id="class_c_graph_system_html_aa4b46e12ab18f4a3e3d46e9830989f4a"><div class="ttname"><a href="class_c_graph_system.html#aa4b46e12ab18f4a3e3d46e9830989f4a">CGraphSystem::Update</a></div><div class="ttdeci">void Update(IObservable *pObservable, IObject *Arg)</div><div class="ttdef"><b>Definition:</b> GraphSystem.cpp:27</div></div>
+<div class="ttc" id="class_c_graph_system_html_a550e462ea758b03e239a18dce5476ec1"><div class="ttname"><a href="class_c_graph_system.html#a550e462ea758b03e239a18dce5476ec1">CGraphSystem::m_listGUIComponentIT</a></div><div class="ttdeci">list&lt; CComponent * &gt;::iterator m_listGUIComponentIT</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:64</div></div>
+<div class="ttc" id="class_c_graph_system_html_ae5d47733f947d8c0490db152a32b6d2c"><div class="ttname"><a href="class_c_graph_system.html#ae5d47733f947d8c0490db152a32b6d2c">CGraphSystem::m_pMap</a></div><div class="ttdeci">CCMap * m_pMap</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:74</div></div>
+<div class="ttc" id="class_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdef"><b>Definition:</b> Observer.h:48</div></div>
+<div class="ttc" id="class_c_graph_system_html_ac55b0958aedabfee0e5622014b915a9d"><div class="ttname"><a href="class_c_graph_system.html#ac55b0958aedabfee0e5622014b915a9d">CGraphSystem::RenderGUI</a></div><div class="ttdeci">void RenderGUI(void)</div><div class="ttdef"><b>Definition:</b> GraphSystem.cpp:146</div></div>
+<div class="ttc" id="class_c_graph_system_html_a069f25d78947118971e84302a1a37ce4"><div class="ttname"><a href="class_c_graph_system.html#a069f25d78947118971e84302a1a37ce4">CGraphSystem::m_pObservableScene</a></div><div class="ttdeci">CSceneManager * m_pObservableScene</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:47</div></div>
+<div class="ttc" id="_g_u_i_manager_8h_html"><div class="ttname"><a href="_g_u_i_manager_8h.html">GUIManager.h</a></div></div>
+<div class="ttc" id="class_c_bridge_html"><div class="ttname"><a href="class_c_bridge.html">CBridge</a></div><div class="ttdef"><b>Definition:</b> Bridge.h:3</div></div>
+<div class="ttc" id="class_c_graph_system_html_a3c41900e971e965ce61de4e46adc9011"><div class="ttname"><a href="class_c_graph_system.html#a3c41900e971e965ce61de4e46adc9011">CGraphSystem::Render</a></div><div class="ttdeci">bool Render()</div><div class="ttdef"><b>Definition:</b> GraphSystem.cpp:101</div></div>
+<div class="ttc" id="class_c_graph_system_html_a0a16eba1284f0c18774545988285a863"><div class="ttname"><a href="class_c_graph_system.html#a0a16eba1284f0c18774545988285a863">CGraphSystem::m_pPlayer</a></div><div class="ttdeci">CPlayer * m_pPlayer</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:75</div></div>
+<div class="ttc" id="class_c_graph_system_html_a0e24d18aa57763c05daa8125c1a92c25"><div class="ttname"><a href="class_c_graph_system.html#a0e24d18aa57763c05daa8125c1a92c25">CGraphSystem::m_lCursor</a></div><div class="ttdeci">long m_lCursor</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:72</div></div>
+<div class="ttc" id="class_c_graph_system_html_ab826c8aec61c254afdca2e38d19ccca4"><div class="ttname"><a href="class_c_graph_system.html#ab826c8aec61c254afdca2e38d19ccca4">CGraphSystem::m_pMeshManager</a></div><div class="ttdeci">CModelCopy * m_pMeshManager</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:79</div></div>
+<div class="ttc" id="class_c_graph_system_html"><div class="ttname"><a href="class_c_graph_system.html">CGraphSystem</a></div><div class="ttdef"><b>Definition:</b> GraphSystem.h:13</div></div>
+<div class="ttc" id="class_c_graph_system_html_a2e021ff33b8e14cb65cd156cf90dd762"><div class="ttname"><a href="class_c_graph_system.html#a2e021ff33b8e14cb65cd156cf90dd762">CGraphSystem::m_mapAttachedObject</a></div><div class="ttdeci">map&lt; string, CObject * &gt; m_mapAttachedObject</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:41</div></div>
+<div class="ttc" id="class_c_graph_system_html_a5b658b9e104b86634a2015b960b4476d"><div class="ttname"><a href="class_c_graph_system.html#a5b658b9e104b86634a2015b960b4476d">CGraphSystem::m_pWater</a></div><div class="ttdeci">CWater * m_pWater</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:73</div></div>
+<div class="ttc" id="class_c_graph_system_html_a1a70464e5ca434772a853e5179e6b4e7"><div class="ttname"><a href="class_c_graph_system.html#a1a70464e5ca434772a853e5179e6b4e7">CGraphSystem::m_pSprite</a></div><div class="ttdeci">ID3DXSprite * m_pSprite</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:70</div></div>
+<div class="ttc" id="_scene_manager_8h_html"><div class="ttname"><a href="_scene_manager_8h.html">SceneManager.h</a></div></div>
+<div class="ttc" id="class_c_graph_system_html_afdfdb63309caadc75d1f612dc146159c"><div class="ttname"><a href="class_c_graph_system.html#afdfdb63309caadc75d1f612dc146159c">CGraphSystem::m_vecMoster</a></div><div class="ttdeci">vector&lt; CCharacter * &gt; m_vecMoster</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:43</div></div>
+<div class="ttc" id="class_c_model_copy_html"><div class="ttname"><a href="class_c_model_copy.html">CModelCopy</a></div><div class="ttdef"><b>Definition:</b> ModelCopy.h:5</div></div>
+<div class="ttc" id="class_c_scene_manager_html"><div class="ttname"><a href="class_c_scene_manager.html">CSceneManager</a></div><div class="ttdef"><b>Definition:</b> SceneManager.h:13</div></div>
+<div class="ttc" id="class_c_graph_system_html_a624ed2cd8f4439ee1bd76a11e76aa3c7"><div class="ttname"><a href="class_c_graph_system.html#a624ed2cd8f4439ee1bd76a11e76aa3c7">CGraphSystem::m_pBridge</a></div><div class="ttdeci">CBridge * m_pBridge</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:78</div></div>
+<div class="ttc" id="class_c_graph_system_html_a802deec1fa3e96e6ead0a1ac4c264290"><div class="ttname"><a href="class_c_graph_system.html#a802deec1fa3e96e6ead0a1ac4c264290">CGraphSystem::GetCursor</a></div><div class="ttdeci">long GetCursor(void)</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:58</div></div>
+<div class="ttc" id="class_c_graph_system_html_a8001b7de2373dac16979312b64a5cd37"><div class="ttname"><a href="class_c_graph_system.html#a8001b7de2373dac16979312b64a5cd37">CGraphSystem::m_vecStaticModel</a></div><div class="ttdeci">vector&lt; CModelCopy * &gt; m_vecStaticModel</div><div class="ttdef"><b>Definition:</b> GraphSystem.h:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

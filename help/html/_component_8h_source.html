@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Component.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Component.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//GUI的所有组件的基类</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//包括了BUTTON,EDITBOX,MENU,TAB等控件</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//还有PAGE等</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_c_component.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_component.html">CComponent</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">//组件的状态的枚举值</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fc">   12</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fc">ButtonState</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fca817de5f162c08473e1b75b6a5fe3ce14">   14</a></span>&#160;        <a class="code" href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fca817de5f162c08473e1b75b6a5fe3ce14">COMPONENT_STATE_NORMAL</a> = 0,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fca84b284f44c2e9d85e5c52b9928eeee21">   15</a></span>&#160;        <a class="code" href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fca84b284f44c2e9d85e5c52b9928eeee21">COMPONENT_STATE_MOVETO</a> = 1,</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fcaf051874620826fba2d67a07a29a42770">   16</a></span>&#160;        <a class="code" href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fcaf051874620826fba2d67a07a29a42770">COMPONENT_STATE_DOWN</a> = 2,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//构造函数</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_c_component.html#ab87a6940be69962c3f4f5a8552643245">CComponent</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_component.html#a29bac312efea3e13a92aaa7213081fa8">~CComponent</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//设置对象的设备对象</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_component.html#af3369fa0fac18a4500c15a6be1c8eeb0">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#af3369fa0fac18a4500c15a6be1c8eeb0">SetDevice</a>(IDirect3DDevice9* pDevice)                   {<a class="code" href="class_c_component.html#ab0ae399ab9eb9ed9307818dacf21a4f2">m_pDevice</a> = pDevice;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//加载脚本</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_component.html#a83eb10b76fe00a8482d71b96cbb2f295">   31</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a83eb10b76fe00a8482d71b96cbb2f295">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a>* element)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        this-&gt;<a class="code" href="class_c_component.html#aeef544521582297ba1406320a101ca33">SetVisible</a>(atoi(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;Visible&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#aa6dedd8a146acf3b1bc0903deb2d411a">GetText</a>()));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this-&gt;<a class="code" href="class_c_component.html#a8de9c26c8382dd35c1510bb6be75f82e">SetDrag</a>(atoi(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;DragEnable&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#aa6dedd8a146acf3b1bc0903deb2d411a">GetText</a>()));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        this-&gt;<a class="code" href="class_c_component.html#a9170c3e46f77f46f334e864a5910aacd">SetEventEnable</a>(atoi(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;EventEnable&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#aa6dedd8a146acf3b1bc0903deb2d411a">GetText</a>()));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        this-&gt;<a class="code" href="class_c_component.html#ab9ccdfb92d545b9591ec5218145c4ba8">SetName</a>(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;ElementName&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#aa6dedd8a146acf3b1bc0903deb2d411a">GetText</a>());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>.x = atoi(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;Pos&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#ac1e4691e9375ba4e665dce7e46a50a9c">Attribute</a>(<span class="stringliteral">&quot;x&quot;</span>));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>.y = atoi(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;Pos&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#ac1e4691e9375ba4e665dce7e46a50a9c">Attribute</a>(<span class="stringliteral">&quot;y&quot;</span>));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_c_component.html#a5715d1dad6668db34c90ddfee0506f50">m_lWidth</a> = atoi(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;Size&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#ac1e4691e9375ba4e665dce7e46a50a9c">Attribute</a>(<span class="stringliteral">&quot;width&quot;</span>));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_c_component.html#aa47e79163c23b1a564d77fc9a4be96bd">m_lHeight</a> = atoi(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;Size&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#ac1e4691e9375ba4e665dce7e46a50a9c">Attribute</a>(<span class="stringliteral">&quot;height&quot;</span>));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_c_component.html#a27032d3ba879a875eedf28c77d829313">m_Alpha</a> = atoi(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;Alpha&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#aa6dedd8a146acf3b1bc0903deb2d411a">GetText</a>());</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        this-&gt;<a class="code" href="class_c_component.html#a513df786014585de5c035dd4e0e6592b">SetScale</a>(D3DXVECTOR2(atof(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;Scale&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#ac1e4691e9375ba4e665dce7e46a50a9c">Attribute</a>(<span class="stringliteral">&quot;scalex&quot;</span>)), atof(element-&gt;<a class="code" href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">FirstChildElement</a>(<span class="stringliteral">&quot;Scale&quot;</span>)-&gt;<a class="code" href="class_ti_xml_element.html#ac1e4691e9375ba4e665dce7e46a50a9c">Attribute</a>(<span class="stringliteral">&quot;scaley&quot;</span>))));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_c_component.html#adb38cff399a95321225633bd9ccc697f">m_Rect</a>.left = <a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>.x;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_c_component.html#adb38cff399a95321225633bd9ccc697f">m_Rect</a>.top = <a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>.y;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_c_component.html#adb38cff399a95321225633bd9ccc697f">m_Rect</a>.right = <a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>.x + <a class="code" href="class_c_component.html#a5715d1dad6668db34c90ddfee0506f50">m_lWidth</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_c_component.html#adb38cff399a95321225633bd9ccc697f">m_Rect</a>.bottom = <a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>.y + <a class="code" href="class_c_component.html#aa47e79163c23b1a564d77fc9a4be96bd">m_lHeight</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//为组件添加子组件,参数一为组件对象,参数二为子组件在父组件中的索引序号</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a5410392dad7c791f9e5f228912e37d84">AddChild</a>(<a class="code" href="class_c_component.html">CComponent</a>* pChild,<span class="keywordtype">long</span> index);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//为组件添加鼠标监听器</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a4c166114c1894a47890b3b31d94cedbf">AddMouseListener</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//为组件添加键盘监听器</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a5126e015f1b59a4514120286d47d1f1d">AddKeyListener</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//绘制组件</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#aada8a9bc1266610c727325412f7add3b">Draw</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//获得子组件,有两种方法,通过获取子组件的名称,或者获取子组件的索引号</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_c_component.html">CComponent</a>* <a class="code" href="class_c_component.html#af46f69b00683107a6b446917f0394300">GetChild</a>(<span class="keywordtype">string</span> name);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_c_component.html">CComponent</a>* <a class="code" href="class_c_component.html#af46f69b00683107a6b446917f0394300">GetChild</a>(<span class="keywordtype">long</span> index);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//处理键盘的事件响应</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a446d1d822768010b71e0b051e7741b7d">ProcessKeyEvent</a>(<span class="keywordtype">char</span> key);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//处理鼠标移动的事件响应</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a3b2f2682fda1a089552c797903a2a571">ProcessMouseMove</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//处理鼠标左键按下的事件响应</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a6e1895a6437310584f48b8ec8d637643">ProcessMouseLBDown</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//处理鼠标左键弹起的事件响应</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a39eb87ed34910067b320fbf4fe4f639b">ProcessMouseLBUp</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//处理鼠标右键按下的事件响应</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a60126476a8b752dafa79675e46428393">ProcessMouseRBDown</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//处理鼠标右键弹起的事件响应</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#af9ab0d6f619e74da28d758c687911525">ProcessMouseRBUp</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//处理鼠标滚轮滚动的事件响应</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a4f61fbf875946023e0a1d61d0cb2c9c0">ProcessMouseWheel</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//设置组件的图片</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a5acf0255ef07f24f84b34d8230ebea19">SetPicture</a>(<span class="keywordtype">string</span> filename);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//获得组件的类型</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_c_component.html#a2e4d4d352f017150a87c7ebd2e7b63f5">   95</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_component.html#a2e4d4d352f017150a87c7ebd2e7b63f5">GetType</a>(<span class="keywordtype">void</span>)                          {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#a1c1f371e7ec4ebc092f67013a1c733c9">m_lType</a>;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_c_component.html#a8628121c16d75055070612b4249606b8">   96</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a8628121c16d75055070612b4249606b8">SetType</a>(<span class="keywordtype">long</span> type)                     { <a class="code" href="class_c_component.html#a1c1f371e7ec4ebc092f67013a1c733c9">m_lType</a> = type; }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//获得组件所在客户区域的矩形</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_c_component.html#aa7bcac14a2178e6b81e956f816d34856">   98</a></span>&#160;    RECT <a class="code" href="class_c_component.html#aa7bcac14a2178e6b81e956f816d34856">GetRect</a>()                              {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#adb38cff399a95321225633bd9ccc697f">m_Rect</a>;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//获得组件的宽度</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_c_component.html#ab52c5d3c05197f4abc21239d5088e32b">  101</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_component.html#ab52c5d3c05197f4abc21239d5088e32b">GetWidth</a>()                             {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#a5715d1dad6668db34c90ddfee0506f50">m_lWidth</a>;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">//获得组件的高度</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_c_component.html#a9b4852f5dafc36ba6d1a4df186ee3455">  104</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_component.html#a9b4852f5dafc36ba6d1a4df186ee3455">GetHeight</a>()                            {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#aa47e79163c23b1a564d77fc9a4be96bd">m_lHeight</a>;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//获得组件在客户区域的矩形的左上角坐标</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_c_component.html#a2b68101c9ec3f2106976d8c9c9199623">  107</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_component.html#a2b68101c9ec3f2106976d8c9c9199623">GetLeftTopPos</a>()                 {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">//获得组件的名称</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_c_component.html#a37dabac4104255a72bf18dbb2edbbd75">  110</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_component.html#a37dabac4104255a72bf18dbb2edbbd75">GetName</a>()                       {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#a523bb3b89877524a0731521102745c87">m_strName</a>.c_str();}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//获得父组件对象</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_c_component.html#adf11e251c2294f2e1a569d789ec14652">  113</a></span>&#160;    <a class="code" href="class_c_component.html">CComponent</a>* <a class="code" href="class_c_component.html#adf11e251c2294f2e1a569d789ec14652">GetParent</a>()                     {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#a4aae616e1a9ce53a0a0e9c74207a50e4">m_pParent</a>;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">//设置父组件对象</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_c_component.html#add8e0880c3f11cb6e46f310eb5ac0c25">  116</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#add8e0880c3f11cb6e46f310eb5ac0c25">SetParent</a>(<a class="code" href="class_c_component.html">CComponent</a>* component)       {<a class="code" href="class_c_component.html#a4aae616e1a9ce53a0a0e9c74207a50e4">m_pParent</a> = component;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">//判断组件是否可以相应事件</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_c_component.html#a4da688c8d86065bdb57df4d2d8cc0a53">  119</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_component.html#a4da688c8d86065bdb57df4d2d8cc0a53">BeEventEnable</a>()                        {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#a90a266469925fdbd9bac33348956fb64">m_bEventEnable</a>;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//判断组件是否可见</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_c_component.html#aa29a6172bc55b9206fbc5cc46515a36f">  122</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_component.html#aa29a6172bc55b9206fbc5cc46515a36f">IsVisible</a>()                            {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#a7792358f1deb0fa3e8e053630923986a">m_bVisible</a>;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">//设置组件是否可见</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#aeef544521582297ba1406320a101ca33">SetVisible</a>(<span class="keywordtype">bool</span> bVisible);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">//设置组件是否可以相应事件</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_c_component.html#a9170c3e46f77f46f334e864a5910aacd">  128</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a9170c3e46f77f46f334e864a5910aacd">SetEventEnable</a>(<span class="keywordtype">bool</span> bEventEnable)      {<a class="code" href="class_c_component.html#a90a266469925fdbd9bac33348956fb64">m_bEventEnable</a> = bEventEnable;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">//设置组件的名字</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="class_c_component.html#ab9ccdfb92d545b9591ec5218145c4ba8">  131</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#ab9ccdfb92d545b9591ec5218145c4ba8">SetName</a>(<span class="keywordtype">string</span> name)                   {<a class="code" href="class_c_component.html#a523bb3b89877524a0731521102745c87">m_strName</a> = name;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//设置组件的位置(左上角,通过绝对坐标)</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="class_c_component.html#a04c9a458af7f0036a2a26c38b3145757">  134</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a04c9a458af7f0036a2a26c38b3145757">SetPos</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y)                  {<a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>.x = (float)x;<a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>.y = (float)y;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">//设置组件的位置(左上角,通过相对坐标)</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a04c9a458af7f0036a2a26c38b3145757">SetPos</a>(<span class="keywordtype">float</span> OffsetX,<span class="keywordtype">float</span> OffsetY);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">//设置组件的尺寸</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a7140fceb609f25871e16750ba268ddd8">SetSize</a>(<span class="keywordtype">long</span> width,<span class="keywordtype">long</span> height);       </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">//设置是否可以拖曳</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_c_component.html#a8de9c26c8382dd35c1510bb6be75f82e">  143</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a8de9c26c8382dd35c1510bb6be75f82e">SetDrag</a>(<span class="keywordtype">bool</span> bDrag)                    {<a class="code" href="class_c_component.html#a12e1ded972d3a30f74160cb485965467">m_bDrag</a> = bDrag;}</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">//判断组件是否可以拖曳</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="class_c_component.html#a6f6df90f69ac257ba76d0894ece5ecab">  146</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_component.html#a6f6df90f69ac257ba76d0894ece5ecab">BeDrag</a>(<span class="keywordtype">void</span>)                           {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#a12e1ded972d3a30f74160cb485965467">m_bDrag</a>;}</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">//设置组件透明度</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="class_c_component.html#a406313fe2d3d516adc1be744ea249059">  149</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a406313fe2d3d516adc1be744ea249059">SetAlpha</a>(DWORD alpha)                  {<a class="code" href="class_c_component.html#a54535fef4487de9e4f82a51ebb116bff">m_bAlpha</a> = <span class="keyword">true</span>;<a class="code" href="class_c_component.html#a27032d3ba879a875eedf28c77d829313">m_Alpha</a> = alpha;}</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">//获得组件透明度</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_c_component.html#a9cd63bf47269068d185d7596df195ba9">  152</a></span>&#160;    DWORD <a class="code" href="class_c_component.html#a9cd63bf47269068d185d7596df195ba9">GetAlpha</a>(<span class="keywordtype">void</span>)                            {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#a27032d3ba879a875eedf28c77d829313">m_Alpha</a>;}</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">//设置组件的缩放比例</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="class_c_component.html#a513df786014585de5c035dd4e0e6592b">  155</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a513df786014585de5c035dd4e0e6592b">SetScale</a>(D3DXVECTOR2 scale)            {<a class="code" href="class_c_component.html#ad348c93d2adf1ee3b751f6f55d4bd871">m_vScale</a> = scale;}</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">//获取组件的缩放比例</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="class_c_component.html#a058f7fec6fff7dc9e453e4fb3911acbd">  158</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_component.html#a058f7fec6fff7dc9e453e4fb3911acbd">GetScale</a>(<span class="keywordtype">void</span>)                  {<span class="keywordflow">return</span> <a class="code" href="class_c_component.html#ad348c93d2adf1ee3b751f6f55d4bd871">m_vScale</a>;}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">//设置精灵对象(绘制图形时候用的ID3DXSprite接口)</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_component.html#a2c0e1e99dc2f7a74d6100f973f6da1e5">SetSprite</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//组件的状态</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="class_c_component.html#ae2b6192be2eed609972919b15839c93c">  167</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_component.html#ae2b6192be2eed609972919b15839c93c">m_lState</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="comment">//组件的类型</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="class_c_component.html#a1c1f371e7ec4ebc092f67013a1c733c9">  170</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_component.html#a1c1f371e7ec4ebc092f67013a1c733c9">m_lType</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">//组件的名字</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="class_c_component.html#a523bb3b89877524a0731521102745c87">  173</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_component.html#a523bb3b89877524a0731521102745c87">m_strName</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">//判断组件是否可见</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="class_c_component.html#a7792358f1deb0fa3e8e053630923986a">  176</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_component.html#a7792358f1deb0fa3e8e053630923986a">m_bVisible</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">//组件在客户区域的矩形区域</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="class_c_component.html#adb38cff399a95321225633bd9ccc697f">  179</a></span>&#160;    RECT <a class="code" href="class_c_component.html#adb38cff399a95321225633bd9ccc697f">m_Rect</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">//子组件的map容器,long是索引序列号</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="class_c_component.html#a962604636e44349ecb274c98ac3a8e1c">  182</a></span>&#160;    map&lt;long,CComponent*&gt; <a class="code" href="class_c_component.html#a962604636e44349ecb274c98ac3a8e1c">m_mapChildren</a>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="class_c_component.html#acca5385eeb28f9d3add355cd2616df95">  183</a></span>&#160;    map&lt;long,CComponent*&gt;::iterator <a class="code" href="class_c_component.html#acca5385eeb28f9d3add355cd2616df95">m_mapChildrenIT</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">//d3d精灵对象</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="class_c_component.html#a26da85cb125592170c4b8a2c3cbc47c1">  186</a></span>&#160;    ID3DXSprite* <a class="code" href="class_c_component.html#a26da85cb125592170c4b8a2c3cbc47c1">m_pSprite</a>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">//判断组件是否能响应事件</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="class_c_component.html#a90a266469925fdbd9bac33348956fb64">  189</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_component.html#a90a266469925fdbd9bac33348956fb64">m_bEventEnable</a>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">//d3d纹理对象,组件的图片</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="class_c_component.html#a4b602be7c492f5ec8f80487c58cbf9b8">  192</a></span>&#160;    IDirect3DTexture9* <a class="code" href="class_c_component.html#a4b602be7c492f5ec8f80487c58cbf9b8">m_pPic</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">//组件的宽度</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="class_c_component.html#a5715d1dad6668db34c90ddfee0506f50">  195</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_component.html#a5715d1dad6668db34c90ddfee0506f50">m_lWidth</a>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">//组件的高度</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="class_c_component.html#aa47e79163c23b1a564d77fc9a4be96bd">  198</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_component.html#aa47e79163c23b1a564d77fc9a4be96bd">m_lHeight</a>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">//组件的左上角的坐标</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">  201</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">m_ptPos</a>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">//组件的父组件</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_c_component.html#a4aae616e1a9ce53a0a0e9c74207a50e4">  204</a></span>&#160;    <a class="code" href="class_c_component.html">CComponent</a>* <a class="code" href="class_c_component.html#a4aae616e1a9ce53a0a0e9c74207a50e4">m_pParent</a>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">//组件能否拖曳</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="class_c_component.html#a12e1ded972d3a30f74160cb485965467">  207</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_component.html#a12e1ded972d3a30f74160cb485965467">m_bDrag</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">//组件是否允许ALPHA渲染</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="class_c_component.html#a54535fef4487de9e4f82a51ebb116bff">  210</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_component.html#a54535fef4487de9e4f82a51ebb116bff">m_bAlpha</a>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">//组件的ALPHA值</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="class_c_component.html#a27032d3ba879a875eedf28c77d829313">  213</a></span>&#160;    DWORD <a class="code" href="class_c_component.html#a27032d3ba879a875eedf28c77d829313">m_Alpha</a>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">//组件的缩放比例</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="class_c_component.html#ad348c93d2adf1ee3b751f6f55d4bd871">  216</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_component.html#ad348c93d2adf1ee3b751f6f55d4bd871">m_vScale</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="comment">//组件的位置矩阵</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="class_c_component.html#a1bdb525c00d5da759325e2b330faaba6">  219</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_component.html#a1bdb525c00d5da759325e2b330faaba6">m_matPos</a>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">//D3D设备对象</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="class_c_component.html#ab0ae399ab9eb9ed9307818dacf21a4f2">  222</a></span>&#160;    IDirect3DDevice9* <a class="code" href="class_c_component.html#ab0ae399ab9eb9ed9307818dacf21a4f2">m_pDevice</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">//鼠标移动到了哪个组件上</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="class_c_component.html#a7217887678a51271ac0df467c79cd32d">  227</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_component.html">CComponent</a>* <a class="code" href="class_c_component.html#a7217887678a51271ac0df467c79cd32d">m_BeingMovetoComponent</a>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="comment">//哪个组件被按下</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="class_c_component.html#a0890f92e4cc8df7764877591cd73284d">  230</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_component.html">CComponent</a>* <a class="code" href="class_c_component.html#a0890f92e4cc8df7764877591cd73284d">m_BeingDownComponent</a>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment">//哪个组件处于鼠标跟随状态(只有物品栏组件需要拖动)</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="class_c_component.html#a9939ad99486114f2712a5d15c3d6ab80">  233</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_component.html">CComponent</a>* <a class="code" href="class_c_component.html#a9939ad99486114f2712a5d15c3d6ab80">m_BeingWithMouseComponent</a>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="comment">//判断是否在操作GUI</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="class_c_component.html#ada22a2b3bc821ab8e5118b414bc47522">  236</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_component.html#ada22a2b3bc821ab8e5118b414bc47522">m_bProcessGUI</a>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;};</div>
+<div class="ttc" id="class_c_component_html_aa7bcac14a2178e6b81e956f816d34856"><div class="ttname"><a href="class_c_component.html#aa7bcac14a2178e6b81e956f816d34856">CComponent::GetRect</a></div><div class="ttdeci">RECT GetRect()</div><div class="ttdef"><b>Definition:</b> Component.h:98</div></div>
+<div class="ttc" id="class_c_component_html_adb38cff399a95321225633bd9ccc697f"><div class="ttname"><a href="class_c_component.html#adb38cff399a95321225633bd9ccc697f">CComponent::m_Rect</a></div><div class="ttdeci">RECT m_Rect</div><div class="ttdef"><b>Definition:</b> Component.h:179</div></div>
+<div class="ttc" id="class_c_component_html_ab52c5d3c05197f4abc21239d5088e32b"><div class="ttname"><a href="class_c_component.html#ab52c5d3c05197f4abc21239d5088e32b">CComponent::GetWidth</a></div><div class="ttdeci">long GetWidth()</div><div class="ttdef"><b>Definition:</b> Component.h:101</div></div>
+<div class="ttc" id="class_c_component_html_a962604636e44349ecb274c98ac3a8e1c"><div class="ttname"><a href="class_c_component.html#a962604636e44349ecb274c98ac3a8e1c">CComponent::m_mapChildren</a></div><div class="ttdeci">map&lt; long, CComponent * &gt; m_mapChildren</div><div class="ttdef"><b>Definition:</b> Component.h:182</div></div>
+<div class="ttc" id="class_c_component_html_aa29a6172bc55b9206fbc5cc46515a36f"><div class="ttname"><a href="class_c_component.html#aa29a6172bc55b9206fbc5cc46515a36f">CComponent::IsVisible</a></div><div class="ttdeci">bool IsVisible()</div><div class="ttdef"><b>Definition:</b> Component.h:122</div></div>
+<div class="ttc" id="class_c_component_html_a513df786014585de5c035dd4e0e6592b"><div class="ttname"><a href="class_c_component.html#a513df786014585de5c035dd4e0e6592b">CComponent::SetScale</a></div><div class="ttdeci">void SetScale(D3DXVECTOR2 scale)</div><div class="ttdef"><b>Definition:</b> Component.h:155</div></div>
+<div class="ttc" id="class_c_component_html_a9170c3e46f77f46f334e864a5910aacd"><div class="ttname"><a href="class_c_component.html#a9170c3e46f77f46f334e864a5910aacd">CComponent::SetEventEnable</a></div><div class="ttdeci">void SetEventEnable(bool bEventEnable)</div><div class="ttdef"><b>Definition:</b> Component.h:128</div></div>
+<div class="ttc" id="class_c_component_html_a4b602be7c492f5ec8f80487c58cbf9b8"><div class="ttname"><a href="class_c_component.html#a4b602be7c492f5ec8f80487c58cbf9b8">CComponent::m_pPic</a></div><div class="ttdeci">IDirect3DTexture9 * m_pPic</div><div class="ttdef"><b>Definition:</b> Component.h:192</div></div>
+<div class="ttc" id="class_c_component_html_aada8a9bc1266610c727325412f7add3b"><div class="ttname"><a href="class_c_component.html#aada8a9bc1266610c727325412f7add3b">CComponent::Draw</a></div><div class="ttdeci">virtual void Draw()</div><div class="ttdef"><b>Definition:</b> Component.cpp:103</div></div>
+<div class="ttc" id="class_c_component_html_ae2b6192be2eed609972919b15839c93c"><div class="ttname"><a href="class_c_component.html#ae2b6192be2eed609972919b15839c93c">CComponent::m_lState</a></div><div class="ttdeci">long m_lState</div><div class="ttdef"><b>Definition:</b> Component.h:167</div></div>
+<div class="ttc" id="class_c_component_html_a841e64c7ca20d5cc1c0924683e2b05fcaf051874620826fba2d67a07a29a42770"><div class="ttname"><a href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fcaf051874620826fba2d67a07a29a42770">CComponent::COMPONENT_STATE_DOWN</a></div><div class="ttdef"><b>Definition:</b> Component.h:16</div></div>
+<div class="ttc" id="class_c_component_html_a2b68101c9ec3f2106976d8c9c9199623"><div class="ttname"><a href="class_c_component.html#a2b68101c9ec3f2106976d8c9c9199623">CComponent::GetLeftTopPos</a></div><div class="ttdeci">D3DXVECTOR2 GetLeftTopPos()</div><div class="ttdef"><b>Definition:</b> Component.h:107</div></div>
+<div class="ttc" id="class_c_component_html_a9b4852f5dafc36ba6d1a4df186ee3455"><div class="ttname"><a href="class_c_component.html#a9b4852f5dafc36ba6d1a4df186ee3455">CComponent::GetHeight</a></div><div class="ttdeci">long GetHeight()</div><div class="ttdef"><b>Definition:</b> Component.h:104</div></div>
+<div class="ttc" id="class_c_component_html_a27032d3ba879a875eedf28c77d829313"><div class="ttname"><a href="class_c_component.html#a27032d3ba879a875eedf28c77d829313">CComponent::m_Alpha</a></div><div class="ttdeci">DWORD m_Alpha</div><div class="ttdef"><b>Definition:</b> Component.h:213</div></div>
+<div class="ttc" id="class_c_component_html_a39eb87ed34910067b320fbf4fe4f639b"><div class="ttname"><a href="class_c_component.html#a39eb87ed34910067b320fbf4fe4f639b">CComponent::ProcessMouseLBUp</a></div><div class="ttdeci">virtual void ProcessMouseLBUp(long x, long y)</div><div class="ttdef"><b>Definition:</b> Component.cpp:173</div></div>
+<div class="ttc" id="class_c_component_html_af3369fa0fac18a4500c15a6be1c8eeb0"><div class="ttname"><a href="class_c_component.html#af3369fa0fac18a4500c15a6be1c8eeb0">CComponent::SetDevice</a></div><div class="ttdeci">void SetDevice(IDirect3DDevice9 *pDevice)</div><div class="ttdef"><b>Definition:</b> Component.h:28</div></div>
+<div class="ttc" id="class_c_component_html_a523bb3b89877524a0731521102745c87"><div class="ttname"><a href="class_c_component.html#a523bb3b89877524a0731521102745c87">CComponent::m_strName</a></div><div class="ttdeci">string m_strName</div><div class="ttdef"><b>Definition:</b> Component.h:173</div></div>
+<div class="ttc" id="class_c_component_html_aeef544521582297ba1406320a101ca33"><div class="ttname"><a href="class_c_component.html#aeef544521582297ba1406320a101ca33">CComponent::SetVisible</a></div><div class="ttdeci">void SetVisible(bool bVisible)</div><div class="ttdef"><b>Definition:</b> Component.cpp:47</div></div>
+<div class="ttc" id="class_c_component_html_a5126e015f1b59a4514120286d47d1f1d"><div class="ttname"><a href="class_c_component.html#a5126e015f1b59a4514120286d47d1f1d">CComponent::AddKeyListener</a></div><div class="ttdeci">virtual void AddKeyListener()</div><div class="ttdef"><b>Definition:</b> Component.cpp:97</div></div>
+<div class="ttc" id="class_c_component_html_adf11e251c2294f2e1a569d789ec14652"><div class="ttname"><a href="class_c_component.html#adf11e251c2294f2e1a569d789ec14652">CComponent::GetParent</a></div><div class="ttdeci">CComponent * GetParent()</div><div class="ttdef"><b>Definition:</b> Component.h:113</div></div>
+<div class="ttc" id="class_c_component_html_af9ab0d6f619e74da28d758c687911525"><div class="ttname"><a href="class_c_component.html#af9ab0d6f619e74da28d758c687911525">CComponent::ProcessMouseRBUp</a></div><div class="ttdeci">virtual void ProcessMouseRBUp(long x, long y)</div><div class="ttdef"><b>Definition:</b> Component.cpp:185</div></div>
+<div class="ttc" id="class_c_component_html_a5410392dad7c791f9e5f228912e37d84"><div class="ttname"><a href="class_c_component.html#a5410392dad7c791f9e5f228912e37d84">CComponent::AddChild</a></div><div class="ttdeci">virtual void AddChild(CComponent *pChild, long index)</div><div class="ttdef"><b>Definition:</b> Component.cpp:37</div></div>
+<div class="ttc" id="class_c_component_html_a90a266469925fdbd9bac33348956fb64"><div class="ttname"><a href="class_c_component.html#a90a266469925fdbd9bac33348956fb64">CComponent::m_bEventEnable</a></div><div class="ttdeci">bool m_bEventEnable</div><div class="ttdef"><b>Definition:</b> Component.h:189</div></div>
+<div class="ttc" id="class_c_component_html_a37dabac4104255a72bf18dbb2edbbd75"><div class="ttname"><a href="class_c_component.html#a37dabac4104255a72bf18dbb2edbbd75">CComponent::GetName</a></div><div class="ttdeci">const char * GetName()</div><div class="ttdef"><b>Definition:</b> Component.h:110</div></div>
+<div class="ttc" id="class_c_component_html_a83eb10b76fe00a8482d71b96cbb2f295"><div class="ttname"><a href="class_c_component.html#a83eb10b76fe00a8482d71b96cbb2f295">CComponent::Init</a></div><div class="ttdeci">virtual void Init(TiXmlElement *element)</div><div class="ttdef"><b>Definition:</b> Component.h:31</div></div>
+<div class="ttc" id="class_c_component_html_a406313fe2d3d516adc1be744ea249059"><div class="ttname"><a href="class_c_component.html#a406313fe2d3d516adc1be744ea249059">CComponent::SetAlpha</a></div><div class="ttdeci">void SetAlpha(DWORD alpha)</div><div class="ttdef"><b>Definition:</b> Component.h:149</div></div>
+<div class="ttc" id="class_c_component_html_ab9ccdfb92d545b9591ec5218145c4ba8"><div class="ttname"><a href="class_c_component.html#ab9ccdfb92d545b9591ec5218145c4ba8">CComponent::SetName</a></div><div class="ttdeci">void SetName(string name)</div><div class="ttdef"><b>Definition:</b> Component.h:131</div></div>
+<div class="ttc" id="class_c_component_html_a9939ad99486114f2712a5d15c3d6ab80"><div class="ttname"><a href="class_c_component.html#a9939ad99486114f2712a5d15c3d6ab80">CComponent::m_BeingWithMouseComponent</a></div><div class="ttdeci">static CComponent * m_BeingWithMouseComponent</div><div class="ttdef"><b>Definition:</b> Component.h:233</div></div>
+<div class="ttc" id="class_c_component_html_a2e4d4d352f017150a87c7ebd2e7b63f5"><div class="ttname"><a href="class_c_component.html#a2e4d4d352f017150a87c7ebd2e7b63f5">CComponent::GetType</a></div><div class="ttdeci">long GetType(void)</div><div class="ttdef"><b>Definition:</b> Component.h:95</div></div>
+<div class="ttc" id="class_c_component_html_a841e64c7ca20d5cc1c0924683e2b05fca84b284f44c2e9d85e5c52b9928eeee21"><div class="ttname"><a href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fca84b284f44c2e9d85e5c52b9928eeee21">CComponent::COMPONENT_STATE_MOVETO</a></div><div class="ttdef"><b>Definition:</b> Component.h:15</div></div>
+<div class="ttc" id="class_c_component_html_a9cd63bf47269068d185d7596df195ba9"><div class="ttname"><a href="class_c_component.html#a9cd63bf47269068d185d7596df195ba9">CComponent::GetAlpha</a></div><div class="ttdeci">DWORD GetAlpha(void)</div><div class="ttdef"><b>Definition:</b> Component.h:152</div></div>
+<div class="ttc" id="class_c_component_html_ad348c93d2adf1ee3b751f6f55d4bd871"><div class="ttname"><a href="class_c_component.html#ad348c93d2adf1ee3b751f6f55d4bd871">CComponent::m_vScale</a></div><div class="ttdeci">D3DXVECTOR2 m_vScale</div><div class="ttdef"><b>Definition:</b> Component.h:216</div></div>
+<div class="ttc" id="class_c_component_html_a7792358f1deb0fa3e8e053630923986a"><div class="ttname"><a href="class_c_component.html#a7792358f1deb0fa3e8e053630923986a">CComponent::m_bVisible</a></div><div class="ttdeci">bool m_bVisible</div><div class="ttdef"><b>Definition:</b> Component.h:176</div></div>
+<div class="ttc" id="class_c_component_html_a446d1d822768010b71e0b051e7741b7d"><div class="ttname"><a href="class_c_component.html#a446d1d822768010b71e0b051e7741b7d">CComponent::ProcessKeyEvent</a></div><div class="ttdeci">virtual void ProcessKeyEvent(char key)</div><div class="ttdef"><b>Definition:</b> Component.cpp:155</div></div>
+<div class="ttc" id="class_c_component_html_a60126476a8b752dafa79675e46428393"><div class="ttname"><a href="class_c_component.html#a60126476a8b752dafa79675e46428393">CComponent::ProcessMouseRBDown</a></div><div class="ttdeci">virtual void ProcessMouseRBDown(long x, long y)</div><div class="ttdef"><b>Definition:</b> Component.cpp:179</div></div>
+<div class="ttc" id="class_c_component_html_a4f61fbf875946023e0a1d61d0cb2c9c0"><div class="ttname"><a href="class_c_component.html#a4f61fbf875946023e0a1d61d0cb2c9c0">CComponent::ProcessMouseWheel</a></div><div class="ttdeci">virtual void ProcessMouseWheel()</div><div class="ttdef"><b>Definition:</b> Component.cpp:191</div></div>
+<div class="ttc" id="class_c_component_html_acca5385eeb28f9d3add355cd2616df95"><div class="ttname"><a href="class_c_component.html#acca5385eeb28f9d3add355cd2616df95">CComponent::m_mapChildrenIT</a></div><div class="ttdeci">map&lt; long, CComponent * &gt;::iterator m_mapChildrenIT</div><div class="ttdef"><b>Definition:</b> Component.h:183</div></div>
+<div class="ttc" id="class_c_component_html_ab87a6940be69962c3f4f5a8552643245"><div class="ttname"><a href="class_c_component.html#ab87a6940be69962c3f4f5a8552643245">CComponent::CComponent</a></div><div class="ttdeci">CComponent()</div><div class="ttdef"><b>Definition:</b> Component.cpp:10</div></div>
+<div class="ttc" id="class_c_component_html_a5acf0255ef07f24f84b34d8230ebea19"><div class="ttname"><a href="class_c_component.html#a5acf0255ef07f24f84b34d8230ebea19">CComponent::SetPicture</a></div><div class="ttdeci">void SetPicture(string filename)</div><div class="ttdef"><b>Definition:</b> Component.cpp:197</div></div>
+<div class="ttc" id="class_c_component_html_ada22a2b3bc821ab8e5118b414bc47522"><div class="ttname"><a href="class_c_component.html#ada22a2b3bc821ab8e5118b414bc47522">CComponent::m_bProcessGUI</a></div><div class="ttdeci">static bool m_bProcessGUI</div><div class="ttdef"><b>Definition:</b> Component.h:236</div></div>
+<div class="ttc" id="class_c_component_html_a38f35a61b78f4b920e3c37e7ac45073f"><div class="ttname"><a href="class_c_component.html#a38f35a61b78f4b920e3c37e7ac45073f">CComponent::m_ptPos</a></div><div class="ttdeci">D3DXVECTOR2 m_ptPos</div><div class="ttdef"><b>Definition:</b> Component.h:201</div></div>
+<div class="ttc" id="class_c_component_html_a29bac312efea3e13a92aaa7213081fa8"><div class="ttname"><a href="class_c_component.html#a29bac312efea3e13a92aaa7213081fa8">CComponent::~CComponent</a></div><div class="ttdeci">virtual ~CComponent()</div><div class="ttdef"><b>Definition:</b> Component.cpp:29</div></div>
+<div class="ttc" id="class_c_component_html_a5715d1dad6668db34c90ddfee0506f50"><div class="ttname"><a href="class_c_component.html#a5715d1dad6668db34c90ddfee0506f50">CComponent::m_lWidth</a></div><div class="ttdeci">long m_lWidth</div><div class="ttdef"><b>Definition:</b> Component.h:195</div></div>
+<div class="ttc" id="class_c_component_html_a1bdb525c00d5da759325e2b330faaba6"><div class="ttname"><a href="class_c_component.html#a1bdb525c00d5da759325e2b330faaba6">CComponent::m_matPos</a></div><div class="ttdeci">D3DXMATRIX m_matPos</div><div class="ttdef"><b>Definition:</b> Component.h:219</div></div>
+<div class="ttc" id="class_c_component_html_a058f7fec6fff7dc9e453e4fb3911acbd"><div class="ttname"><a href="class_c_component.html#a058f7fec6fff7dc9e453e4fb3911acbd">CComponent::GetScale</a></div><div class="ttdeci">D3DXVECTOR2 GetScale(void)</div><div class="ttdef"><b>Definition:</b> Component.h:158</div></div>
+<div class="ttc" id="class_c_component_html_a3b2f2682fda1a089552c797903a2a571"><div class="ttname"><a href="class_c_component.html#a3b2f2682fda1a089552c797903a2a571">CComponent::ProcessMouseMove</a></div><div class="ttdeci">virtual void ProcessMouseMove(long x, long y)</div><div class="ttdef"><b>Definition:</b> Component.cpp:161</div></div>
+<div class="ttc" id="class_c_component_html_aa47e79163c23b1a564d77fc9a4be96bd"><div class="ttname"><a href="class_c_component.html#aa47e79163c23b1a564d77fc9a4be96bd">CComponent::m_lHeight</a></div><div class="ttdeci">long m_lHeight</div><div class="ttdef"><b>Definition:</b> Component.h:198</div></div>
+<div class="ttc" id="class_ti_xml_element_html_ac1e4691e9375ba4e665dce7e46a50a9c"><div class="ttname"><a href="class_ti_xml_element.html#ac1e4691e9375ba4e665dce7e46a50a9c">TiXmlElement::Attribute</a></div><div class="ttdeci">const char * Attribute(const char *name) const </div><div class="ttdef"><b>Definition:</b> tinyxml.cpp:541</div></div>
+<div class="ttc" id="class_c_component_html_af46f69b00683107a6b446917f0394300"><div class="ttname"><a href="class_c_component.html#af46f69b00683107a6b446917f0394300">CComponent::GetChild</a></div><div class="ttdeci">CComponent * GetChild(string name)</div><div class="ttdef"><b>Definition:</b> Component.cpp:137</div></div>
+<div class="ttc" id="class_c_component_html_a7140fceb609f25871e16750ba268ddd8"><div class="ttname"><a href="class_c_component.html#a7140fceb609f25871e16750ba268ddd8">CComponent::SetSize</a></div><div class="ttdeci">void SetSize(long width, long height)</div><div class="ttdef"><b>Definition:</b> Component.cpp:80</div></div>
+<div class="ttc" id="class_c_component_html_a6e1895a6437310584f48b8ec8d637643"><div class="ttname"><a href="class_c_component.html#a6e1895a6437310584f48b8ec8d637643">CComponent::ProcessMouseLBDown</a></div><div class="ttdeci">virtual void ProcessMouseLBDown(long x, long y)</div><div class="ttdef"><b>Definition:</b> Component.cpp:167</div></div>
+<div class="ttc" id="class_c_component_html_a12e1ded972d3a30f74160cb485965467"><div class="ttname"><a href="class_c_component.html#a12e1ded972d3a30f74160cb485965467">CComponent::m_bDrag</a></div><div class="ttdeci">bool m_bDrag</div><div class="ttdef"><b>Definition:</b> Component.h:207</div></div>
+<div class="ttc" id="class_c_component_html_a6f6df90f69ac257ba76d0894ece5ecab"><div class="ttname"><a href="class_c_component.html#a6f6df90f69ac257ba76d0894ece5ecab">CComponent::BeDrag</a></div><div class="ttdeci">bool BeDrag(void)</div><div class="ttdef"><b>Definition:</b> Component.h:146</div></div>
+<div class="ttc" id="class_c_component_html_a4aae616e1a9ce53a0a0e9c74207a50e4"><div class="ttname"><a href="class_c_component.html#a4aae616e1a9ce53a0a0e9c74207a50e4">CComponent::m_pParent</a></div><div class="ttdeci">CComponent * m_pParent</div><div class="ttdef"><b>Definition:</b> Component.h:204</div></div>
+<div class="ttc" id="class_ti_xml_element_html_aa6dedd8a146acf3b1bc0903deb2d411a"><div class="ttname"><a href="class_ti_xml_element.html#aa6dedd8a146acf3b1bc0903deb2d411a">TiXmlElement::GetText</a></div><div class="ttdeci">const char * GetText() const </div><div class="ttdef"><b>Definition:</b> tinyxml.cpp:857</div></div>
+<div class="ttc" id="class_c_component_html_a2c0e1e99dc2f7a74d6100f973f6da1e5"><div class="ttname"><a href="class_c_component.html#a2c0e1e99dc2f7a74d6100f973f6da1e5">CComponent::SetSprite</a></div><div class="ttdeci">void SetSprite()</div><div class="ttdef"><b>Definition:</b> Component.cpp:214</div></div>
+<div class="ttc" id="class_c_component_html_a7217887678a51271ac0df467c79cd32d"><div class="ttname"><a href="class_c_component.html#a7217887678a51271ac0df467c79cd32d">CComponent::m_BeingMovetoComponent</a></div><div class="ttdeci">static CComponent * m_BeingMovetoComponent</div><div class="ttdef"><b>Definition:</b> Component.h:227</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_component_html_a0890f92e4cc8df7764877591cd73284d"><div class="ttname"><a href="class_c_component.html#a0890f92e4cc8df7764877591cd73284d">CComponent::m_BeingDownComponent</a></div><div class="ttdeci">static CComponent * m_BeingDownComponent</div><div class="ttdef"><b>Definition:</b> Component.h:230</div></div>
+<div class="ttc" id="class_c_component_html_add8e0880c3f11cb6e46f310eb5ac0c25"><div class="ttname"><a href="class_c_component.html#add8e0880c3f11cb6e46f310eb5ac0c25">CComponent::SetParent</a></div><div class="ttdeci">void SetParent(CComponent *component)</div><div class="ttdef"><b>Definition:</b> Component.h:116</div></div>
+<div class="ttc" id="class_c_component_html_ab0ae399ab9eb9ed9307818dacf21a4f2"><div class="ttname"><a href="class_c_component.html#ab0ae399ab9eb9ed9307818dacf21a4f2">CComponent::m_pDevice</a></div><div class="ttdeci">IDirect3DDevice9 * m_pDevice</div><div class="ttdef"><b>Definition:</b> Component.h:222</div></div>
+<div class="ttc" id="class_c_component_html"><div class="ttname"><a href="class_c_component.html">CComponent</a></div><div class="ttdef"><b>Definition:</b> Component.h:7</div></div>
+<div class="ttc" id="class_c_component_html_a04c9a458af7f0036a2a26c38b3145757"><div class="ttname"><a href="class_c_component.html#a04c9a458af7f0036a2a26c38b3145757">CComponent::SetPos</a></div><div class="ttdeci">void SetPos(long x, long y)</div><div class="ttdef"><b>Definition:</b> Component.h:134</div></div>
+<div class="ttc" id="class_c_component_html_a841e64c7ca20d5cc1c0924683e2b05fca817de5f162c08473e1b75b6a5fe3ce14"><div class="ttname"><a href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fca817de5f162c08473e1b75b6a5fe3ce14">CComponent::COMPONENT_STATE_NORMAL</a></div><div class="ttdef"><b>Definition:</b> Component.h:14</div></div>
+<div class="ttc" id="class_c_component_html_a841e64c7ca20d5cc1c0924683e2b05fc"><div class="ttname"><a href="class_c_component.html#a841e64c7ca20d5cc1c0924683e2b05fc">CComponent::ButtonState</a></div><div class="ttdeci">ButtonState</div><div class="ttdef"><b>Definition:</b> Component.h:12</div></div>
+<div class="ttc" id="class_c_component_html_a26da85cb125592170c4b8a2c3cbc47c1"><div class="ttname"><a href="class_c_component.html#a26da85cb125592170c4b8a2c3cbc47c1">CComponent::m_pSprite</a></div><div class="ttdeci">ID3DXSprite * m_pSprite</div><div class="ttdef"><b>Definition:</b> Component.h:186</div></div>
+<div class="ttc" id="class_c_component_html_a4c166114c1894a47890b3b31d94cedbf"><div class="ttname"><a href="class_c_component.html#a4c166114c1894a47890b3b31d94cedbf">CComponent::AddMouseListener</a></div><div class="ttdeci">virtual void AddMouseListener()</div><div class="ttdef"><b>Definition:</b> Component.cpp:91</div></div>
+<div class="ttc" id="class_c_component_html_a54535fef4487de9e4f82a51ebb116bff"><div class="ttname"><a href="class_c_component.html#a54535fef4487de9e4f82a51ebb116bff">CComponent::m_bAlpha</a></div><div class="ttdeci">bool m_bAlpha</div><div class="ttdef"><b>Definition:</b> Component.h:210</div></div>
+<div class="ttc" id="class_c_component_html_a4da688c8d86065bdb57df4d2d8cc0a53"><div class="ttname"><a href="class_c_component.html#a4da688c8d86065bdb57df4d2d8cc0a53">CComponent::BeEventEnable</a></div><div class="ttdeci">bool BeEventEnable()</div><div class="ttdef"><b>Definition:</b> Component.h:119</div></div>
+<div class="ttc" id="class_c_component_html_a8628121c16d75055070612b4249606b8"><div class="ttname"><a href="class_c_component.html#a8628121c16d75055070612b4249606b8">CComponent::SetType</a></div><div class="ttdeci">void SetType(long type)</div><div class="ttdef"><b>Definition:</b> Component.h:96</div></div>
+<div class="ttc" id="class_ti_xml_node_html_ab1f8d8e70d88aea4c5efedfe00862d55"><div class="ttname"><a href="class_ti_xml_node.html#ab1f8d8e70d88aea4c5efedfe00862d55">TiXmlNode::FirstChildElement</a></div><div class="ttdeci">const TiXmlElement * FirstChildElement() const </div><div class="ttdoc">Convenience function to get through elements. </div><div class="ttdef"><b>Definition:</b> tinyxml.cpp:417</div></div>
+<div class="ttc" id="class_c_component_html_a1c1f371e7ec4ebc092f67013a1c733c9"><div class="ttname"><a href="class_c_component.html#a1c1f371e7ec4ebc092f67013a1c733c9">CComponent::m_lType</a></div><div class="ttdeci">long m_lType</div><div class="ttdef"><b>Definition:</b> Component.h:170</div></div>
+<div class="ttc" id="class_c_component_html_a8de9c26c8382dd35c1510bb6be75f82e"><div class="ttname"><a href="class_c_component.html#a8de9c26c8382dd35c1510bb6be75f82e">CComponent::SetDrag</a></div><div class="ttdeci">void SetDrag(bool bDrag)</div><div class="ttdef"><b>Definition:</b> Component.h:143</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

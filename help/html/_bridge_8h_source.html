@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Bridge.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Bridge.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_bridge_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_object_8h.html">RenderObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_c_bridge.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_bridge.html">CBridge</a> :</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_c_render_object.html">CRenderObject</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_c_bridge.html#a0401c090ffdf3cf6e5091eb30ff32c59">CBridge</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_c_bridge.html#a489be1b000c2eb23ca6f63a6fcda5f7b">~CBridge</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    BOOL <a class="code" href="class_c_bridge.html#a33ba191161865a2da68677fd4c456c5c">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a> *node);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bridge.html#af8668c21155edc5fb13dc49698dd4abb">Draw</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    D3DXMATRIX <a class="code" href="class_c_bridge.html#ad26f8550912eefdd0973ff9889c21fcb">GetMatInverse</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    LPD3DXMESH <a class="code" href="class_c_bridge.html#adbf3c4c29d44c1b18b80cb827f65f672">GetMesh</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_bridge.html#a0e16e2bfdb09874e90b04d0d59264a8a">CreatBox</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_bridge.html#a2d36b7370f531b6c396c29d13e57fd75">   15</a></span>&#160;    LPD3DXMESH                  <a class="code" href="class_c_bridge.html#a2d36b7370f531b6c396c29d13e57fd75">m_Mesh</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_bridge.html#af4c4670cd59cf9e47df9940919a012d4">   16</a></span>&#160;    DWORD                       <a class="code" href="class_c_bridge.html#af4c4670cd59cf9e47df9940919a012d4">m_dwNumMaterail</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_bridge.html#a787245426fd3231aeb5d7db3fe92e63e">   17</a></span>&#160;    vector&lt;LPDIRECT3DTEXTURE9&gt;  <a class="code" href="class_c_bridge.html#a787245426fd3231aeb5d7db3fe92e63e">m_vecTex</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_bridge.html#a7f7ec1765bd54f58e163943c78730766">   18</a></span>&#160;    vector&lt;D3DMATERIAL9&gt;        <a class="code" href="class_c_bridge.html#a7f7ec1765bd54f58e163943c78730766">m_vecMatera</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_bridge.html#acc57e1f84204af1468aab65b20ec0096">   19</a></span>&#160;    D3DXMATRIX                  <a class="code" href="class_c_bridge.html#acc57e1f84204af1468aab65b20ec0096">m_matInverse</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_bridge.html#ae6f34e0d99061e6b70873fa9e84e546c">   20</a></span>&#160;    D3DMATERIAL9                <a class="code" href="class_c_bridge.html#ae6f34e0d99061e6b70873fa9e84e546c">g_Material</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">/****************************包围盒********************/</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_bridge.html#a6e83576cd77c559dcc5638c5a7bc4285">   22</a></span>&#160;    LPD3DXMESH                  <a class="code" href="class_c_bridge.html#a6e83576cd77c559dcc5638c5a7bc4285">m_BoxMesh</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_bridge.html#a986e215143639d6e3debe07511df9959">   23</a></span>&#160;    WORD                        *<a class="code" href="class_c_bridge.html#a986e215143639d6e3debe07511df9959">m_BoxIndex</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_bridge.html#aff2fb27a5142e7b2dccd9506e46bfeb1">   24</a></span>&#160;    <a class="code" href="struct_c_u_s_t_o_m_v_e_r_t_e_x1.html">CUSTOMVERTEX1</a>               *<a class="code" href="class_c_bridge.html#aff2fb27a5142e7b2dccd9506e46bfeb1">m_CustomBoxVer</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_bridge.html#af2e0bca46055fa566afc3dc9001414b9">   25</a></span>&#160;    DWORD                       <a class="code" href="class_c_bridge.html#af2e0bca46055fa566afc3dc9001414b9">NumFaces</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_bridge.html#a802c3d57c052dd810da3eb789ddcb821">   26</a></span>&#160;    DWORD                       <a class="code" href="class_c_bridge.html#a802c3d57c052dd810da3eb789ddcb821">NumVertices</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_bridge.html#ac9b98087d629df53ef5a2fc948de5075">   27</a></span>&#160;    D3DXVECTOR3                 <a class="code" href="class_c_bridge.html#ac9b98087d629df53ef5a2fc948de5075">D3DXMin</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_bridge.html#ad6ddfa61d43cf75898946c53d9ebc404">   28</a></span>&#160;    D3DXVECTOR3                 <a class="code" href="class_c_bridge.html#ad6ddfa61d43cf75898946c53d9ebc404">D3DXMax</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">/****************************包围盒********************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="ttc" id="class_c_bridge_html_acc57e1f84204af1468aab65b20ec0096"><div class="ttname"><a href="class_c_bridge.html#acc57e1f84204af1468aab65b20ec0096">CBridge::m_matInverse</a></div><div class="ttdeci">D3DXMATRIX m_matInverse</div><div class="ttdef"><b>Definition:</b> Bridge.h:19</div></div>
+<div class="ttc" id="class_c_bridge_html_a6e83576cd77c559dcc5638c5a7bc4285"><div class="ttname"><a href="class_c_bridge.html#a6e83576cd77c559dcc5638c5a7bc4285">CBridge::m_BoxMesh</a></div><div class="ttdeci">LPD3DXMESH m_BoxMesh</div><div class="ttdef"><b>Definition:</b> Bridge.h:22</div></div>
+<div class="ttc" id="class_c_bridge_html_a7f7ec1765bd54f58e163943c78730766"><div class="ttname"><a href="class_c_bridge.html#a7f7ec1765bd54f58e163943c78730766">CBridge::m_vecMatera</a></div><div class="ttdeci">vector&lt; D3DMATERIAL9 &gt; m_vecMatera</div><div class="ttdef"><b>Definition:</b> Bridge.h:18</div></div>
+<div class="ttc" id="_render_object_8h_html"><div class="ttname"><a href="_render_object_8h.html">RenderObject.h</a></div></div>
+<div class="ttc" id="class_c_bridge_html_adbf3c4c29d44c1b18b80cb827f65f672"><div class="ttname"><a href="class_c_bridge.html#adbf3c4c29d44c1b18b80cb827f65f672">CBridge::GetMesh</a></div><div class="ttdeci">LPD3DXMESH GetMesh()</div><div class="ttdef"><b>Definition:</b> Bridge.cpp:89</div></div>
+<div class="ttc" id="class_c_bridge_html_aff2fb27a5142e7b2dccd9506e46bfeb1"><div class="ttname"><a href="class_c_bridge.html#aff2fb27a5142e7b2dccd9506e46bfeb1">CBridge::m_CustomBoxVer</a></div><div class="ttdeci">CUSTOMVERTEX1 * m_CustomBoxVer</div><div class="ttdef"><b>Definition:</b> Bridge.h:24</div></div>
+<div class="ttc" id="class_c_bridge_html_a787245426fd3231aeb5d7db3fe92e63e"><div class="ttname"><a href="class_c_bridge.html#a787245426fd3231aeb5d7db3fe92e63e">CBridge::m_vecTex</a></div><div class="ttdeci">vector&lt; LPDIRECT3DTEXTURE9 &gt; m_vecTex</div><div class="ttdef"><b>Definition:</b> Bridge.h:17</div></div>
+<div class="ttc" id="class_c_bridge_html_af4c4670cd59cf9e47df9940919a012d4"><div class="ttname"><a href="class_c_bridge.html#af4c4670cd59cf9e47df9940919a012d4">CBridge::m_dwNumMaterail</a></div><div class="ttdeci">DWORD m_dwNumMaterail</div><div class="ttdef"><b>Definition:</b> Bridge.h:16</div></div>
+<div class="ttc" id="class_c_render_object_html"><div class="ttname"><a href="class_c_render_object.html">CRenderObject</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:27</div></div>
+<div class="ttc" id="class_c_bridge_html_a0401c090ffdf3cf6e5091eb30ff32c59"><div class="ttname"><a href="class_c_bridge.html#a0401c090ffdf3cf6e5091eb30ff32c59">CBridge::CBridge</a></div><div class="ttdeci">CBridge()</div><div class="ttdef"><b>Definition:</b> Bridge.cpp:5</div></div>
+<div class="ttc" id="class_c_bridge_html_af8668c21155edc5fb13dc49698dd4abb"><div class="ttname"><a href="class_c_bridge.html#af8668c21155edc5fb13dc49698dd4abb">CBridge::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Bridge.cpp:54</div></div>
+<div class="ttc" id="struct_c_u_s_t_o_m_v_e_r_t_e_x1_html"><div class="ttname"><a href="struct_c_u_s_t_o_m_v_e_r_t_e_x1.html">CUSTOMVERTEX1</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:3</div></div>
+<div class="ttc" id="class_c_bridge_html_a0e16e2bfdb09874e90b04d0d59264a8a"><div class="ttname"><a href="class_c_bridge.html#a0e16e2bfdb09874e90b04d0d59264a8a">CBridge::CreatBox</a></div><div class="ttdeci">void CreatBox()</div><div class="ttdef"><b>Definition:</b> Bridge.cpp:94</div></div>
+<div class="ttc" id="class_c_bridge_html_ac9b98087d629df53ef5a2fc948de5075"><div class="ttname"><a href="class_c_bridge.html#ac9b98087d629df53ef5a2fc948de5075">CBridge::D3DXMin</a></div><div class="ttdeci">D3DXVECTOR3 D3DXMin</div><div class="ttdef"><b>Definition:</b> Bridge.h:27</div></div>
+<div class="ttc" id="class_c_bridge_html_a2d36b7370f531b6c396c29d13e57fd75"><div class="ttname"><a href="class_c_bridge.html#a2d36b7370f531b6c396c29d13e57fd75">CBridge::m_Mesh</a></div><div class="ttdeci">LPD3DXMESH m_Mesh</div><div class="ttdef"><b>Definition:</b> Bridge.h:15</div></div>
+<div class="ttc" id="class_c_bridge_html"><div class="ttname"><a href="class_c_bridge.html">CBridge</a></div><div class="ttdef"><b>Definition:</b> Bridge.h:3</div></div>
+<div class="ttc" id="class_c_bridge_html_af2e0bca46055fa566afc3dc9001414b9"><div class="ttname"><a href="class_c_bridge.html#af2e0bca46055fa566afc3dc9001414b9">CBridge::NumFaces</a></div><div class="ttdeci">DWORD NumFaces</div><div class="ttdef"><b>Definition:</b> Bridge.h:25</div></div>
+<div class="ttc" id="class_c_bridge_html_ad26f8550912eefdd0973ff9889c21fcb"><div class="ttname"><a href="class_c_bridge.html#ad26f8550912eefdd0973ff9889c21fcb">CBridge::GetMatInverse</a></div><div class="ttdeci">D3DXMATRIX GetMatInverse()</div><div class="ttdef"><b>Definition:</b> Bridge.cpp:84</div></div>
+<div class="ttc" id="class_c_bridge_html_a802c3d57c052dd810da3eb789ddcb821"><div class="ttname"><a href="class_c_bridge.html#a802c3d57c052dd810da3eb789ddcb821">CBridge::NumVertices</a></div><div class="ttdeci">DWORD NumVertices</div><div class="ttdef"><b>Definition:</b> Bridge.h:26</div></div>
+<div class="ttc" id="class_c_bridge_html_a986e215143639d6e3debe07511df9959"><div class="ttname"><a href="class_c_bridge.html#a986e215143639d6e3debe07511df9959">CBridge::m_BoxIndex</a></div><div class="ttdeci">WORD * m_BoxIndex</div><div class="ttdef"><b>Definition:</b> Bridge.h:23</div></div>
+<div class="ttc" id="class_c_bridge_html_ad6ddfa61d43cf75898946c53d9ebc404"><div class="ttname"><a href="class_c_bridge.html#ad6ddfa61d43cf75898946c53d9ebc404">CBridge::D3DXMax</a></div><div class="ttdeci">D3DXVECTOR3 D3DXMax</div><div class="ttdef"><b>Definition:</b> Bridge.h:28</div></div>
+<div class="ttc" id="class_c_bridge_html_a489be1b000c2eb23ca6f63a6fcda5f7b"><div class="ttname"><a href="class_c_bridge.html#a489be1b000c2eb23ca6f63a6fcda5f7b">CBridge::~CBridge</a></div><div class="ttdeci">~CBridge()</div><div class="ttdef"><b>Definition:</b> Bridge.cpp:11</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_bridge_html_ae6f34e0d99061e6b70873fa9e84e546c"><div class="ttname"><a href="class_c_bridge.html#ae6f34e0d99061e6b70873fa9e84e546c">CBridge::g_Material</a></div><div class="ttdeci">D3DMATERIAL9 g_Material</div><div class="ttdef"><b>Definition:</b> Bridge.h:20</div></div>
+<div class="ttc" id="class_c_bridge_html_a33ba191161865a2da68677fd4c456c5c"><div class="ttname"><a href="class_c_bridge.html#a33ba191161865a2da68677fd4c456c5c">CBridge::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *node)</div><div class="ttdef"><b>Definition:</b> Bridge.cpp:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

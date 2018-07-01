@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Picture.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Picture.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_picture_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma  once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_object_8h.html">Object.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_c_picture.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_picture.html">CPicture</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="class_c_picture.html#af1002147891e75f69aa204e1bb256340">CPicture</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_c_picture.html#af6af3d71cd96cfb66faebffa94607735">~CPicture</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">//初始化</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    VOID <a class="code" href="class_c_picture.html#a3c64e51038bec1814cef5d60c31ca70e">Init</a>(<span class="keywordtype">string</span> name);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">//绘制函数</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    VOID <a class="code" href="class_c_picture.html#a0b87f9509e8208bad216cd5edc7a56eb">Draw</a>(POINT destPos, POINT srcPos, WORD w, WORD h, POINT destPos1);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">//返回图片的长宽</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_picture.html#afb88faa661a8960add8622012b38a298">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_picture.html#afb88faa661a8960add8622012b38a298">GetWidth</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_picture.html#af46ee41410a0e91ddb806718e2526d40">m_wWidth</a>; }</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_picture.html#a1ea17ceff3cb48bd86e7fa6fc4c7613d">   15</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_picture.html#a1ea17ceff3cb48bd86e7fa6fc4c7613d">GetHeight</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_picture.html#add6de6c9b845b1198359491a1b4eeaab">m_wHeight</a>; }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_picture.html#a43a37b3c23e4bda9cc61705b9e5a9adf">   17</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_picture.html#a43a37b3c23e4bda9cc61705b9e5a9adf">SetRot</a>(<span class="keywordtype">float</span> rot) { <a class="code" href="class_c_picture.html#aa20543129297818fe783a18ed2258d7d">m_fRot</a> = rot; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_picture.html#a6c8a5f5fffe9037a3521b96f59202093">   18</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_picture.html#a6c8a5f5fffe9037a3521b96f59202093">SetAlphaColor</a>(DWORD color) { <a class="code" href="class_c_picture.html#aa91a9f2e8e64e39caa933160127ca3e0">m_dwAlphaColor</a> = color; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_picture.html#ac940a7861bfc82dd01380aac1904f6b0">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_picture.html#ac940a7861bfc82dd01380aac1904f6b0">SetAlphaBlend</a>(DWORD color) { <a class="code" href="class_c_picture.html#a1bbfa7641d916748bb1f196705f420d4">m_dwAlphaBlend</a> = color; }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_picture.html#a9f13814aefb41a5fb2b1eaf99af27198">GetPictureColor</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    DWORD <a class="code" href="class_c_picture.html#a936cdf7342984b59b4fc22a70236ffb4">GetColor</a>(POINT pos);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_picture.html#a7d069b670243b43d5ca4d2761756ae3f">   24</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_picture.html#a7d069b670243b43d5ca4d2761756ae3f">SetCenterPoint</a>(D3DXVECTOR3 cp) { <a class="code" href="class_c_picture.html#abe4ba4f4b4a52ad5592495807f11b3b0">m_vCenterPoint</a> = cp; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_picture.html#a7ff6e2a2f59d44072dad693a30ddca7b">   26</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_picture.html#a7ff6e2a2f59d44072dad693a30ddca7b">SetBlock</a>(<span class="keywordtype">float</span> scaleX, <span class="keywordtype">float</span> scaleY, <span class="keywordtype">float</span> scaleZ)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_c_picture.html#ae9969a9562241a62cc72b96d198ca67e">ScaleX</a> = scaleX;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="class_c_picture.html#a5ec18e17506405c249c2cbdfcc1f28b1">ScaleY</a> = scaleY;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="class_c_picture.html#a65f38821777ef11f5c5cb8746b963e42">ScaleZ</a> = scaleZ;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_picture.html#ae858134e7cc73f7e3bf11b7f31985e36">   32</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_picture.html#ae858134e7cc73f7e3bf11b7f31985e36">SetDepth</a>(<span class="keywordtype">float</span> z) { <a class="code" href="class_c_picture.html#a796c1cb9035e0600546ec9ee795f3161">depth</a> = z; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_c_picture.html#a790586f3739ee5a9ab3040ed4b3b3aeb">   35</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_picture.html#a790586f3739ee5a9ab3040ed4b3b3aeb">GetmatWotld</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_picture.html#a9076c6d84b7fb1f126fbbc9df0edee15">matWorld</a>; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_picture.html#a742f1437ae7a8a34ab756d70d36f3d0f">   36</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_picture.html#a742f1437ae7a8a34ab756d70d36f3d0f">GetmatWotld1</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_picture.html#a09f9f42a524b0acc17057eae5410e7f7">matWorld1</a>; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_picture.html#a099b85f8c48bf15355b1927f0c914bd6">   38</a></span>&#160;    LPDIRECT3DDEVICE9   <a class="code" href="class_c_picture.html#a099b85f8c48bf15355b1927f0c914bd6">m_pDevice</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_picture.html#acacb403045e80e82f3560b0260f57cd6">   39</a></span>&#160;    LPDIRECT3DTEXTURE9 <a class="code" href="class_c_picture.html#acacb403045e80e82f3560b0260f57cd6">m_pTex</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_picture.html#a323711b9a152976114a4b4c30203254e">   40</a></span>&#160;    LPD3DXSPRITE        <a class="code" href="class_c_picture.html#a323711b9a152976114a4b4c30203254e">m_pSprite</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_picture.html#a1bbfa7641d916748bb1f196705f420d4">   41</a></span>&#160;    DWORD <a class="code" href="class_c_picture.html#a1bbfa7641d916748bb1f196705f420d4">m_dwAlphaBlend</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_picture.html#aa91a9f2e8e64e39caa933160127ca3e0">   42</a></span>&#160;    DWORD <a class="code" href="class_c_picture.html#aa91a9f2e8e64e39caa933160127ca3e0">m_dwAlphaColor</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_picture.html#af46ee41410a0e91ddb806718e2526d40">   44</a></span>&#160;    WORD    <a class="code" href="class_c_picture.html#af46ee41410a0e91ddb806718e2526d40">m_wWidth</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_c_picture.html#add6de6c9b845b1198359491a1b4eeaab">   45</a></span>&#160;    WORD    <a class="code" href="class_c_picture.html#add6de6c9b845b1198359491a1b4eeaab">m_wHeight</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_picture.html#aa20543129297818fe783a18ed2258d7d">   47</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_picture.html#aa20543129297818fe783a18ed2258d7d">m_fRot</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_picture.html#abe4ba4f4b4a52ad5592495807f11b3b0">   48</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_picture.html#abe4ba4f4b4a52ad5592495807f11b3b0">m_vCenterPoint</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_picture.html#a9d61a38859e85e0c2643d99cdba05b9e">   49</a></span>&#160;    DWORD * <a class="code" href="class_c_picture.html#a9d61a38859e85e0c2643d99cdba05b9e">m_pColorData</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_picture.html#a880243ce124934bbd855946ca4f07008">   50</a></span>&#160;    DWORD <a class="code" href="class_c_picture.html#a880243ce124934bbd855946ca4f07008">m_dwPitch</a>;        <span class="comment">//一行的字节数</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_picture.html#ae9969a9562241a62cc72b96d198ca67e">   53</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_picture.html#ae9969a9562241a62cc72b96d198ca67e">ScaleX</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_picture.html#a5ec18e17506405c249c2cbdfcc1f28b1">   54</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_picture.html#a5ec18e17506405c249c2cbdfcc1f28b1">ScaleY</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_picture.html#a65f38821777ef11f5c5cb8746b963e42">   55</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_picture.html#a65f38821777ef11f5c5cb8746b963e42">ScaleZ</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_c_picture.html#a796c1cb9035e0600546ec9ee795f3161">   56</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_picture.html#a796c1cb9035e0600546ec9ee795f3161">depth</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_c_picture.html#afdd964cfaedcffa01afb75924f3ff600">   58</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_picture.html#a9076c6d84b7fb1f126fbbc9df0edee15">matWorld</a>, <a class="code" href="class_c_picture.html#a7ca97486bd16a1de18c2803fcc711046">matRot</a>, <a class="code" href="class_c_picture.html#aaf6a92cb4c9e7af7c92a0e0f06e78ba0">matT</a>, <a class="code" href="class_c_picture.html#afdd964cfaedcffa01afb75924f3ff600">sclMat</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_c_picture.html#a9f845458cb1ad0f35f8b6ed1945d0bf1">   59</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_picture.html#a09f9f42a524b0acc17057eae5410e7f7">matWorld1</a>, <a class="code" href="class_c_picture.html#a006365014edeb2b554c65572798aecdd">matRot1</a>, <a class="code" href="class_c_picture.html#a5bae22292edaeb2fb2c2dc36fa2d0fad">matT1</a>, <a class="code" href="class_c_picture.html#a9f845458cb1ad0f35f8b6ed1945d0bf1">sclMat1</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="ttc" id="class_c_picture_html_afdd964cfaedcffa01afb75924f3ff600"><div class="ttname"><a href="class_c_picture.html#afdd964cfaedcffa01afb75924f3ff600">CPicture::sclMat</a></div><div class="ttdeci">D3DXMATRIX sclMat</div><div class="ttdef"><b>Definition:</b> Picture.h:58</div></div>
+<div class="ttc" id="class_c_picture_html_add6de6c9b845b1198359491a1b4eeaab"><div class="ttname"><a href="class_c_picture.html#add6de6c9b845b1198359491a1b4eeaab">CPicture::m_wHeight</a></div><div class="ttdeci">WORD m_wHeight</div><div class="ttdef"><b>Definition:</b> Picture.h:45</div></div>
+<div class="ttc" id="class_c_picture_html_a43a37b3c23e4bda9cc61705b9e5a9adf"><div class="ttname"><a href="class_c_picture.html#a43a37b3c23e4bda9cc61705b9e5a9adf">CPicture::SetRot</a></div><div class="ttdeci">void SetRot(float rot)</div><div class="ttdef"><b>Definition:</b> Picture.h:17</div></div>
+<div class="ttc" id="class_c_picture_html_a09f9f42a524b0acc17057eae5410e7f7"><div class="ttname"><a href="class_c_picture.html#a09f9f42a524b0acc17057eae5410e7f7">CPicture::matWorld1</a></div><div class="ttdeci">D3DXMATRIX matWorld1</div><div class="ttdef"><b>Definition:</b> Picture.h:59</div></div>
+<div class="ttc" id="class_c_picture_html_a9f845458cb1ad0f35f8b6ed1945d0bf1"><div class="ttname"><a href="class_c_picture.html#a9f845458cb1ad0f35f8b6ed1945d0bf1">CPicture::sclMat1</a></div><div class="ttdeci">D3DXMATRIX sclMat1</div><div class="ttdef"><b>Definition:</b> Picture.h:59</div></div>
+<div class="ttc" id="class_c_picture_html_abe4ba4f4b4a52ad5592495807f11b3b0"><div class="ttname"><a href="class_c_picture.html#abe4ba4f4b4a52ad5592495807f11b3b0">CPicture::m_vCenterPoint</a></div><div class="ttdeci">D3DXVECTOR3 m_vCenterPoint</div><div class="ttdef"><b>Definition:</b> Picture.h:48</div></div>
+<div class="ttc" id="class_c_picture_html_a9076c6d84b7fb1f126fbbc9df0edee15"><div class="ttname"><a href="class_c_picture.html#a9076c6d84b7fb1f126fbbc9df0edee15">CPicture::matWorld</a></div><div class="ttdeci">D3DXMATRIX matWorld</div><div class="ttdef"><b>Definition:</b> Picture.h:58</div></div>
+<div class="ttc" id="class_c_picture_html_ac940a7861bfc82dd01380aac1904f6b0"><div class="ttname"><a href="class_c_picture.html#ac940a7861bfc82dd01380aac1904f6b0">CPicture::SetAlphaBlend</a></div><div class="ttdeci">void SetAlphaBlend(DWORD color)</div><div class="ttdef"><b>Definition:</b> Picture.h:19</div></div>
+<div class="ttc" id="class_c_picture_html_a65f38821777ef11f5c5cb8746b963e42"><div class="ttname"><a href="class_c_picture.html#a65f38821777ef11f5c5cb8746b963e42">CPicture::ScaleZ</a></div><div class="ttdeci">float ScaleZ</div><div class="ttdef"><b>Definition:</b> Picture.h:55</div></div>
+<div class="ttc" id="class_c_picture_html_a9d61a38859e85e0c2643d99cdba05b9e"><div class="ttname"><a href="class_c_picture.html#a9d61a38859e85e0c2643d99cdba05b9e">CPicture::m_pColorData</a></div><div class="ttdeci">DWORD * m_pColorData</div><div class="ttdef"><b>Definition:</b> Picture.h:49</div></div>
+<div class="ttc" id="class_c_picture_html_a7ff6e2a2f59d44072dad693a30ddca7b"><div class="ttname"><a href="class_c_picture.html#a7ff6e2a2f59d44072dad693a30ddca7b">CPicture::SetBlock</a></div><div class="ttdeci">void SetBlock(float scaleX, float scaleY, float scaleZ)</div><div class="ttdef"><b>Definition:</b> Picture.h:26</div></div>
+<div class="ttc" id="class_c_picture_html_a742f1437ae7a8a34ab756d70d36f3d0f"><div class="ttname"><a href="class_c_picture.html#a742f1437ae7a8a34ab756d70d36f3d0f">CPicture::GetmatWotld1</a></div><div class="ttdeci">D3DXMATRIX GetmatWotld1()</div><div class="ttdef"><b>Definition:</b> Picture.h:36</div></div>
+<div class="ttc" id="class_c_picture_html_a790586f3739ee5a9ab3040ed4b3b3aeb"><div class="ttname"><a href="class_c_picture.html#a790586f3739ee5a9ab3040ed4b3b3aeb">CPicture::GetmatWotld</a></div><div class="ttdeci">D3DXMATRIX GetmatWotld()</div><div class="ttdef"><b>Definition:</b> Picture.h:35</div></div>
+<div class="ttc" id="class_c_picture_html_a880243ce124934bbd855946ca4f07008"><div class="ttname"><a href="class_c_picture.html#a880243ce124934bbd855946ca4f07008">CPicture::m_dwPitch</a></div><div class="ttdeci">DWORD m_dwPitch</div><div class="ttdef"><b>Definition:</b> Picture.h:50</div></div>
+<div class="ttc" id="class_c_picture_html_a5bae22292edaeb2fb2c2dc36fa2d0fad"><div class="ttname"><a href="class_c_picture.html#a5bae22292edaeb2fb2c2dc36fa2d0fad">CPicture::matT1</a></div><div class="ttdeci">D3DXMATRIX matT1</div><div class="ttdef"><b>Definition:</b> Picture.h:59</div></div>
+<div class="ttc" id="class_c_picture_html_aa20543129297818fe783a18ed2258d7d"><div class="ttname"><a href="class_c_picture.html#aa20543129297818fe783a18ed2258d7d">CPicture::m_fRot</a></div><div class="ttdeci">float m_fRot</div><div class="ttdef"><b>Definition:</b> Picture.h:47</div></div>
+<div class="ttc" id="class_c_picture_html_a006365014edeb2b554c65572798aecdd"><div class="ttname"><a href="class_c_picture.html#a006365014edeb2b554c65572798aecdd">CPicture::matRot1</a></div><div class="ttdeci">D3DXMATRIX matRot1</div><div class="ttdef"><b>Definition:</b> Picture.h:59</div></div>
+<div class="ttc" id="class_c_picture_html_a1bbfa7641d916748bb1f196705f420d4"><div class="ttname"><a href="class_c_picture.html#a1bbfa7641d916748bb1f196705f420d4">CPicture::m_dwAlphaBlend</a></div><div class="ttdeci">DWORD m_dwAlphaBlend</div><div class="ttdef"><b>Definition:</b> Picture.h:41</div></div>
+<div class="ttc" id="class_c_picture_html"><div class="ttname"><a href="class_c_picture.html">CPicture</a></div><div class="ttdef"><b>Definition:</b> Picture.h:3</div></div>
+<div class="ttc" id="class_c_picture_html_a9f13814aefb41a5fb2b1eaf99af27198"><div class="ttname"><a href="class_c_picture.html#a9f13814aefb41a5fb2b1eaf99af27198">CPicture::GetPictureColor</a></div><div class="ttdeci">void GetPictureColor()</div><div class="ttdef"><b>Definition:</b> Picture.cpp:64</div></div>
+<div class="ttc" id="class_c_picture_html_a323711b9a152976114a4b4c30203254e"><div class="ttname"><a href="class_c_picture.html#a323711b9a152976114a4b4c30203254e">CPicture::m_pSprite</a></div><div class="ttdeci">LPD3DXSPRITE m_pSprite</div><div class="ttdef"><b>Definition:</b> Picture.h:40</div></div>
+<div class="ttc" id="class_c_picture_html_a0b87f9509e8208bad216cd5edc7a56eb"><div class="ttname"><a href="class_c_picture.html#a0b87f9509e8208bad216cd5edc7a56eb">CPicture::Draw</a></div><div class="ttdeci">VOID Draw(POINT destPos, POINT srcPos, WORD w, WORD h, POINT destPos1)</div><div class="ttdef"><b>Definition:</b> Picture.cpp:36</div></div>
+<div class="ttc" id="class_c_picture_html_aa91a9f2e8e64e39caa933160127ca3e0"><div class="ttname"><a href="class_c_picture.html#aa91a9f2e8e64e39caa933160127ca3e0">CPicture::m_dwAlphaColor</a></div><div class="ttdeci">DWORD m_dwAlphaColor</div><div class="ttdef"><b>Definition:</b> Picture.h:42</div></div>
+<div class="ttc" id="class_c_picture_html_a1ea17ceff3cb48bd86e7fa6fc4c7613d"><div class="ttname"><a href="class_c_picture.html#a1ea17ceff3cb48bd86e7fa6fc4c7613d">CPicture::GetHeight</a></div><div class="ttdeci">int GetHeight()</div><div class="ttdef"><b>Definition:</b> Picture.h:15</div></div>
+<div class="ttc" id="class_c_picture_html_af46ee41410a0e91ddb806718e2526d40"><div class="ttname"><a href="class_c_picture.html#af46ee41410a0e91ddb806718e2526d40">CPicture::m_wWidth</a></div><div class="ttdeci">WORD m_wWidth</div><div class="ttdef"><b>Definition:</b> Picture.h:44</div></div>
+<div class="ttc" id="_object_8h_html"><div class="ttname"><a href="_object_8h.html">Object.h</a></div></div>
+<div class="ttc" id="class_c_picture_html_aaf6a92cb4c9e7af7c92a0e0f06e78ba0"><div class="ttname"><a href="class_c_picture.html#aaf6a92cb4c9e7af7c92a0e0f06e78ba0">CPicture::matT</a></div><div class="ttdeci">D3DXMATRIX matT</div><div class="ttdef"><b>Definition:</b> Picture.h:58</div></div>
+<div class="ttc" id="class_c_picture_html_a796c1cb9035e0600546ec9ee795f3161"><div class="ttname"><a href="class_c_picture.html#a796c1cb9035e0600546ec9ee795f3161">CPicture::depth</a></div><div class="ttdeci">float depth</div><div class="ttdef"><b>Definition:</b> Picture.h:56</div></div>
+<div class="ttc" id="class_c_picture_html_acacb403045e80e82f3560b0260f57cd6"><div class="ttname"><a href="class_c_picture.html#acacb403045e80e82f3560b0260f57cd6">CPicture::m_pTex</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 m_pTex</div><div class="ttdef"><b>Definition:</b> Picture.h:39</div></div>
+<div class="ttc" id="class_c_picture_html_a936cdf7342984b59b4fc22a70236ffb4"><div class="ttname"><a href="class_c_picture.html#a936cdf7342984b59b4fc22a70236ffb4">CPicture::GetColor</a></div><div class="ttdeci">DWORD GetColor(POINT pos)</div><div class="ttdef"><b>Definition:</b> Picture.cpp:79</div></div>
+<div class="ttc" id="class_c_picture_html_a7ca97486bd16a1de18c2803fcc711046"><div class="ttname"><a href="class_c_picture.html#a7ca97486bd16a1de18c2803fcc711046">CPicture::matRot</a></div><div class="ttdeci">D3DXMATRIX matRot</div><div class="ttdef"><b>Definition:</b> Picture.h:58</div></div>
+<div class="ttc" id="class_c_picture_html_af6af3d71cd96cfb66faebffa94607735"><div class="ttname"><a href="class_c_picture.html#af6af3d71cd96cfb66faebffa94607735">CPicture::~CPicture</a></div><div class="ttdeci">~CPicture(void)</div><div class="ttdef"><b>Definition:</b> Picture.cpp:16</div></div>
+<div class="ttc" id="class_c_picture_html_a099b85f8c48bf15355b1927f0c914bd6"><div class="ttname"><a href="class_c_picture.html#a099b85f8c48bf15355b1927f0c914bd6">CPicture::m_pDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 m_pDevice</div><div class="ttdef"><b>Definition:</b> Picture.h:38</div></div>
+<div class="ttc" id="class_c_picture_html_ae9969a9562241a62cc72b96d198ca67e"><div class="ttname"><a href="class_c_picture.html#ae9969a9562241a62cc72b96d198ca67e">CPicture::ScaleX</a></div><div class="ttdeci">float ScaleX</div><div class="ttdef"><b>Definition:</b> Picture.h:53</div></div>
+<div class="ttc" id="class_c_picture_html_afb88faa661a8960add8622012b38a298"><div class="ttname"><a href="class_c_picture.html#afb88faa661a8960add8622012b38a298">CPicture::GetWidth</a></div><div class="ttdeci">int GetWidth()</div><div class="ttdef"><b>Definition:</b> Picture.h:14</div></div>
+<div class="ttc" id="class_c_picture_html_ae858134e7cc73f7e3bf11b7f31985e36"><div class="ttname"><a href="class_c_picture.html#ae858134e7cc73f7e3bf11b7f31985e36">CPicture::SetDepth</a></div><div class="ttdeci">void SetDepth(float z)</div><div class="ttdef"><b>Definition:</b> Picture.h:32</div></div>
+<div class="ttc" id="class_c_picture_html_af1002147891e75f69aa204e1bb256340"><div class="ttname"><a href="class_c_picture.html#af1002147891e75f69aa204e1bb256340">CPicture::CPicture</a></div><div class="ttdeci">CPicture(void)</div><div class="ttdef"><b>Definition:</b> Picture.cpp:4</div></div>
+<div class="ttc" id="class_c_picture_html_a7d069b670243b43d5ca4d2761756ae3f"><div class="ttname"><a href="class_c_picture.html#a7d069b670243b43d5ca4d2761756ae3f">CPicture::SetCenterPoint</a></div><div class="ttdeci">void SetCenterPoint(D3DXVECTOR3 cp)</div><div class="ttdef"><b>Definition:</b> Picture.h:24</div></div>
+<div class="ttc" id="class_c_picture_html_a6c8a5f5fffe9037a3521b96f59202093"><div class="ttname"><a href="class_c_picture.html#a6c8a5f5fffe9037a3521b96f59202093">CPicture::SetAlphaColor</a></div><div class="ttdeci">void SetAlphaColor(DWORD color)</div><div class="ttdef"><b>Definition:</b> Picture.h:18</div></div>
+<div class="ttc" id="class_c_picture_html_a5ec18e17506405c249c2cbdfcc1f28b1"><div class="ttname"><a href="class_c_picture.html#a5ec18e17506405c249c2cbdfcc1f28b1">CPicture::ScaleY</a></div><div class="ttdeci">float ScaleY</div><div class="ttdef"><b>Definition:</b> Picture.h:54</div></div>
+<div class="ttc" id="class_c_picture_html_a3c64e51038bec1814cef5d60c31ca70e"><div class="ttname"><a href="class_c_picture.html#a3c64e51038bec1814cef5d60c31ca70e">CPicture::Init</a></div><div class="ttdeci">VOID Init(string name)</div><div class="ttdef"><b>Definition:</b> Picture.cpp:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Model.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Model.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_model_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_object_8h.html">RenderObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_c_model.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_model.html">CModel</a> :</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_c_render_object.html">CRenderObject</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_c_model.html#a1ea1e9d8dab5ad230fb3698ae3c7d742">CModel</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_c_model.html#a10d40f6d5be633108b1f12e01878491f">~CModel</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    BOOL <a class="code" href="class_c_model.html#a6667469716bd1a0e75fb27797604dea7">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a>* element);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_model.html#a0771b89a35cb5a80d79b628c1541f94e">Draw</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    LPD3DXMESH <a class="code" href="class_c_model.html#a6215df13d9a10f0fb06ea90422501f64">GetMesh</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    LPD3DXMESH <a class="code" href="class_c_model.html#a4346801a242006c38e13613645b51072">GetBoxMesh</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//CubePoints&amp; GetVertexBuffers() { return VertexBuffer; }</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_model.html#a3994659043aad8223ed90c33f3bb9dae">CreatBox</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_model.html#a33bec7c60439e77ff6b3e86e95578bae">GetVertex</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_model.html#a061913e614841dbfa522f224bfea0986">   18</a></span>&#160;    LPDIRECT3DVERTEXBUFFER9             <a class="code" href="class_c_model.html#a061913e614841dbfa522f224bfea0986">m_pVB</a>;          <span class="comment">//顶点缓冲接口指针</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_model.html#aa070dce2975cb26bb879ef187aa44587">   19</a></span>&#160;    LPDIRECT3DINDEXBUFFER9              <a class="code" href="class_c_model.html#aa070dce2975cb26bb879ef187aa44587">m_pIB</a>;          <span class="comment">//索引缓冲接口指针</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_model.html#aaf83c8de3e02b20463b6fc147ea31296">   20</a></span>&#160;    vector&lt;LPDIRECT3DTEXTURE9&gt;          <a class="code" href="class_c_model.html#aaf83c8de3e02b20463b6fc147ea31296">g_vecTex</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_model.html#a68ff937056173a6a45a1aa3bee049793">   21</a></span>&#160;    vector&lt;D3DMATERIAL9&gt;                <a class="code" href="class_c_model.html#a68ff937056173a6a45a1aa3bee049793">g_vecMaterail</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_model.html#ab58d3437867b40d01034a9d0905f9f86">   22</a></span>&#160;    DWORD                               <a class="code" href="class_c_model.html#ab58d3437867b40d01034a9d0905f9f86">g_dNumMaterail</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_model.html#a3ab0aadb7ccdec736f6144018e82b5eb">   23</a></span>&#160;    LPD3DXMESH                          <a class="code" href="class_c_model.html#a3ab0aadb7ccdec736f6144018e82b5eb">m_Mesh</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//D3DXVECTOR3                           D3DXMin;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//D3DXVECTOR3                           D3DXMax;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//CubePoints                            VertexBuffer;//包围盒和顶点</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">/****************************包围盒********************/</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_model.html#a230b1d9f341f25e07c3ed056081f160e">   28</a></span>&#160;    LPD3DXMESH                          <a class="code" href="class_c_model.html#a230b1d9f341f25e07c3ed056081f160e">m_BoxMesh</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_model.html#a632d03f9046710df8ad1e95f95e29250">   29</a></span>&#160;    WORD                                *<a class="code" href="class_c_model.html#a632d03f9046710df8ad1e95f95e29250">m_BoxIndex</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_model.html#a904abdab03106c6dfc372546875884fb">   30</a></span>&#160;    <a class="code" href="struct_c_u_s_t_o_m_v_e_r_t_e_x1.html">CUSTOMVERTEX1</a>                       *<a class="code" href="class_c_model.html#a904abdab03106c6dfc372546875884fb">m_CustomBoxVer</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_model.html#a37102c1990c36a8ee480eed5a2d5a9c3">   31</a></span>&#160;    DWORD                               <a class="code" href="class_c_model.html#a37102c1990c36a8ee480eed5a2d5a9c3">NumFaces</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_model.html#a893121be7901b9c705704bf79b3e0ab9">   32</a></span>&#160;    DWORD                               <a class="code" href="class_c_model.html#a893121be7901b9c705704bf79b3e0ab9">NumVertices</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_model.html#a68febb0549e0816ff3c34b4429d17484">   33</a></span>&#160;    D3DXVECTOR3                         <a class="code" href="class_c_model.html#a68febb0549e0816ff3c34b4429d17484">D3DXMin</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_c_model.html#a764fe8aa9e132f2383e04dfa33fed75b">   34</a></span>&#160;    D3DXVECTOR3                         <a class="code" href="class_c_model.html#a764fe8aa9e132f2383e04dfa33fed75b">D3DXMax</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">/****************************包围盒********************/</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="ttc" id="class_c_model_html_a6215df13d9a10f0fb06ea90422501f64"><div class="ttname"><a href="class_c_model.html#a6215df13d9a10f0fb06ea90422501f64">CModel::GetMesh</a></div><div class="ttdeci">LPD3DXMESH GetMesh()</div><div class="ttdef"><b>Definition:</b> Model.cpp:79</div></div>
+<div class="ttc" id="_render_object_8h_html"><div class="ttname"><a href="_render_object_8h.html">RenderObject.h</a></div></div>
+<div class="ttc" id="class_c_model_html_a68ff937056173a6a45a1aa3bee049793"><div class="ttname"><a href="class_c_model.html#a68ff937056173a6a45a1aa3bee049793">CModel::g_vecMaterail</a></div><div class="ttdeci">vector&lt; D3DMATERIAL9 &gt; g_vecMaterail</div><div class="ttdef"><b>Definition:</b> Model.h:21</div></div>
+<div class="ttc" id="class_c_render_object_html"><div class="ttname"><a href="class_c_render_object.html">CRenderObject</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:27</div></div>
+<div class="ttc" id="class_c_model_html_a904abdab03106c6dfc372546875884fb"><div class="ttname"><a href="class_c_model.html#a904abdab03106c6dfc372546875884fb">CModel::m_CustomBoxVer</a></div><div class="ttdeci">CUSTOMVERTEX1 * m_CustomBoxVer</div><div class="ttdef"><b>Definition:</b> Model.h:30</div></div>
+<div class="ttc" id="class_c_model_html_a230b1d9f341f25e07c3ed056081f160e"><div class="ttname"><a href="class_c_model.html#a230b1d9f341f25e07c3ed056081f160e">CModel::m_BoxMesh</a></div><div class="ttdeci">LPD3DXMESH m_BoxMesh</div><div class="ttdef"><b>Definition:</b> Model.h:28</div></div>
+<div class="ttc" id="class_c_model_html_a10d40f6d5be633108b1f12e01878491f"><div class="ttname"><a href="class_c_model.html#a10d40f6d5be633108b1f12e01878491f">CModel::~CModel</a></div><div class="ttdeci">~CModel()</div><div class="ttdef"><b>Definition:</b> Model.cpp:11</div></div>
+<div class="ttc" id="struct_c_u_s_t_o_m_v_e_r_t_e_x1_html"><div class="ttname"><a href="struct_c_u_s_t_o_m_v_e_r_t_e_x1.html">CUSTOMVERTEX1</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:3</div></div>
+<div class="ttc" id="class_c_model_html_a632d03f9046710df8ad1e95f95e29250"><div class="ttname"><a href="class_c_model.html#a632d03f9046710df8ad1e95f95e29250">CModel::m_BoxIndex</a></div><div class="ttdeci">WORD * m_BoxIndex</div><div class="ttdef"><b>Definition:</b> Model.h:29</div></div>
+<div class="ttc" id="class_c_model_html_aa070dce2975cb26bb879ef187aa44587"><div class="ttname"><a href="class_c_model.html#aa070dce2975cb26bb879ef187aa44587">CModel::m_pIB</a></div><div class="ttdeci">LPDIRECT3DINDEXBUFFER9 m_pIB</div><div class="ttdef"><b>Definition:</b> Model.h:19</div></div>
+<div class="ttc" id="class_c_model_html_a37102c1990c36a8ee480eed5a2d5a9c3"><div class="ttname"><a href="class_c_model.html#a37102c1990c36a8ee480eed5a2d5a9c3">CModel::NumFaces</a></div><div class="ttdeci">DWORD NumFaces</div><div class="ttdef"><b>Definition:</b> Model.h:31</div></div>
+<div class="ttc" id="class_c_model_html_a33bec7c60439e77ff6b3e86e95578bae"><div class="ttname"><a href="class_c_model.html#a33bec7c60439e77ff6b3e86e95578bae">CModel::GetVertex</a></div><div class="ttdeci">D3DXVECTOR3 GetVertex(int i)</div><div class="ttdef"><b>Definition:</b> Model.cpp:59</div></div>
+<div class="ttc" id="class_c_model_html_aaf83c8de3e02b20463b6fc147ea31296"><div class="ttname"><a href="class_c_model.html#aaf83c8de3e02b20463b6fc147ea31296">CModel::g_vecTex</a></div><div class="ttdeci">vector&lt; LPDIRECT3DTEXTURE9 &gt; g_vecTex</div><div class="ttdef"><b>Definition:</b> Model.h:20</div></div>
+<div class="ttc" id="class_c_model_html_a3ab0aadb7ccdec736f6144018e82b5eb"><div class="ttname"><a href="class_c_model.html#a3ab0aadb7ccdec736f6144018e82b5eb">CModel::m_Mesh</a></div><div class="ttdeci">LPD3DXMESH m_Mesh</div><div class="ttdef"><b>Definition:</b> Model.h:23</div></div>
+<div class="ttc" id="class_c_model_html_a893121be7901b9c705704bf79b3e0ab9"><div class="ttname"><a href="class_c_model.html#a893121be7901b9c705704bf79b3e0ab9">CModel::NumVertices</a></div><div class="ttdeci">DWORD NumVertices</div><div class="ttdef"><b>Definition:</b> Model.h:32</div></div>
+<div class="ttc" id="class_c_model_html_a1ea1e9d8dab5ad230fb3698ae3c7d742"><div class="ttname"><a href="class_c_model.html#a1ea1e9d8dab5ad230fb3698ae3c7d742">CModel::CModel</a></div><div class="ttdeci">CModel()</div><div class="ttdef"><b>Definition:</b> Model.cpp:5</div></div>
+<div class="ttc" id="class_c_model_html_a764fe8aa9e132f2383e04dfa33fed75b"><div class="ttname"><a href="class_c_model.html#a764fe8aa9e132f2383e04dfa33fed75b">CModel::D3DXMax</a></div><div class="ttdeci">D3DXVECTOR3 D3DXMax</div><div class="ttdef"><b>Definition:</b> Model.h:34</div></div>
+<div class="ttc" id="class_c_model_html_a0771b89a35cb5a80d79b628c1541f94e"><div class="ttname"><a href="class_c_model.html#a0771b89a35cb5a80d79b628c1541f94e">CModel::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Model.cpp:63</div></div>
+<div class="ttc" id="class_c_model_html_a68febb0549e0816ff3c34b4429d17484"><div class="ttname"><a href="class_c_model.html#a68febb0549e0816ff3c34b4429d17484">CModel::D3DXMin</a></div><div class="ttdeci">D3DXVECTOR3 D3DXMin</div><div class="ttdef"><b>Definition:</b> Model.h:33</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_model_html"><div class="ttname"><a href="class_c_model.html">CModel</a></div><div class="ttdef"><b>Definition:</b> Model.h:3</div></div>
+<div class="ttc" id="class_c_model_html_a3994659043aad8223ed90c33f3bb9dae"><div class="ttname"><a href="class_c_model.html#a3994659043aad8223ed90c33f3bb9dae">CModel::CreatBox</a></div><div class="ttdeci">void CreatBox()</div><div class="ttdef"><b>Definition:</b> Model.cpp:89</div></div>
+<div class="ttc" id="class_c_model_html_a4346801a242006c38e13613645b51072"><div class="ttname"><a href="class_c_model.html#a4346801a242006c38e13613645b51072">CModel::GetBoxMesh</a></div><div class="ttdeci">LPD3DXMESH GetBoxMesh()</div><div class="ttdef"><b>Definition:</b> Model.cpp:84</div></div>
+<div class="ttc" id="class_c_model_html_a6667469716bd1a0e75fb27797604dea7"><div class="ttname"><a href="class_c_model.html#a6667469716bd1a0e75fb27797604dea7">CModel::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *element)</div><div class="ttdef"><b>Definition:</b> Model.cpp:15</div></div>
+<div class="ttc" id="class_c_model_html_ab58d3437867b40d01034a9d0905f9f86"><div class="ttname"><a href="class_c_model.html#ab58d3437867b40d01034a9d0905f9f86">CModel::g_dNumMaterail</a></div><div class="ttdeci">DWORD g_dNumMaterail</div><div class="ttdef"><b>Definition:</b> Model.h:22</div></div>
+<div class="ttc" id="class_c_model_html_a061913e614841dbfa522f224bfea0986"><div class="ttname"><a href="class_c_model.html#a061913e614841dbfa522f224bfea0986">CModel::m_pVB</a></div><div class="ttdeci">LPDIRECT3DVERTEXBUFFER9 m_pVB</div><div class="ttdef"><b>Definition:</b> Model.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

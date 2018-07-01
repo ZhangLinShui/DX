@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/ListBox.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ListBox.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_list_box_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Name:ListBox.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//游戏界面中的列表框对象</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//比如用于游戏中的聊天框</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_button_8h.html">Button.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_c_list_box.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_list_box.html">CListBox</a> : <span class="keyword">public</span> <a class="code" href="class_c_component.html">CComponent</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">//构造函数</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_c_list_box.html#ad9e6d84ece46519afd30f512d438a28a">CListBox</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_c_list_box.html#a5b89df3ed2270df8059649e20d305b94">~CListBox</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//绘制组件</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#af5e0bf3cc77869e2460617f2c625885b">Draw</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//处理鼠标移动的事件响应</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#a169f92d436d350358cc0daf1af91f5c1">ProcessMouseMove</a>(<span class="keywordtype">long</span> x,<span class="keywordtype">long</span> y);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//void ProcessMouseLBDown(long x,long y);</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//设置ListBox所对应的滚动条本体的Button</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#ae2d6f864e590a5fa8102f3fb99523df5">SetListBoxScrollButton</a>(<a class="code" href="class_c_button.html">CButton</a>* pScroll);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//设置ListBox所对应的滚动条的向上的Button</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#a9a1c2d65b0c78af568dd1f0244614235">SetListBoxUpButton</a>(<a class="code" href="class_c_button.html">CButton</a>* pUp);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//设置ListBox所对应的滚动条的向下的Button</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#af5e620f4676b43c55382e8ce2bc6d9cf">SetListBoxDownButton</a>(<a class="code" href="class_c_button.html">CButton</a>* pDown);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//设置每一行可容纳的最大字节数</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//用整个控件图片的宽度除以字符的宽度</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#a9a5acd97aa4011615a26d31e38503e67">SetMaxByteInRaw</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//设置最大行数</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//用整个控件图片的高度除以字符的高度</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#a5b9648cefc433df7c362ff9fc38c6492">SetMaxRaw</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//往ListBox里添加一条字符串</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#ac03d73125d100f45acc92d0cbc7fa780">AppendString</a>(<span class="keywordtype">string</span> strNew);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//设置ListBox的字体</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#a0c6ac4da546f5710f873157322768773">SetFont</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//设置字体绘制的格式(对齐方式)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#af0b2f770794dd63fa6e0c63959321af8">SetDrawingFontType</a>(<span class="keywordtype">long</span> lType);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//获取字体绘制的格式(对齐方式)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_list_box.html#a2266e7e49d96f0177d84a5684306a44b">GetDrawingFontType</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//从m_stackFront中弹出若干条字符串到m_strAllText</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#aa674aca1d4878c77a85e591c4f8b8cc2">PopStringFromStackFront</a>(<span class="keywordtype">long</span> n);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//从m_stackBack中弹出若干条字符串到m_strAllText</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#ab104271c6da1e719a4e1253a10195151">PopStringFromStackBack</a>(<span class="keywordtype">long</span> n);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//清空ListBox</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_list_box.html#ae09137d72c75a6300ccc55efe2e4bfe0">Clear</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//滚动条本体的Button</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_c_list_box.html#a07719f443435b335535d2d56e72cfe4b">   69</a></span>&#160;    <a class="code" href="class_c_button.html">CButton</a>* <a class="code" href="class_c_list_box.html#a07719f443435b335535d2d56e72cfe4b">m_pScroll</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//滚动条向上的Button</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_c_list_box.html#a36f1491c11d456fa713a802cfad8bb7b">   72</a></span>&#160;    <a class="code" href="class_c_button.html">CButton</a>* <a class="code" href="class_c_list_box.html#a36f1491c11d456fa713a802cfad8bb7b">m_pUp</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//滚动条向下的Button</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_c_list_box.html#a131490053fd26a5050857a59331a6e2b">   75</a></span>&#160;    <a class="code" href="class_c_button.html">CButton</a>* <a class="code" href="class_c_list_box.html#a131490053fd26a5050857a59331a6e2b">m_pDown</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//ListBox中所有文本的字符串集合</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_c_list_box.html#af85c8d60a26f5b3bdd83fd9f89eed475">   78</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_list_box.html#af85c8d60a26f5b3bdd83fd9f89eed475">m_strAllText</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//D3D字体对象指针</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_c_list_box.html#ac2aa21176229553f22298fb6a2f8d775">   81</a></span>&#160;    ID3DXFont* <a class="code" href="class_c_list_box.html#ac2aa21176229553f22298fb6a2f8d775">m_pFont</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//ListBox的每一行可容纳的最大字节数</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_c_list_box.html#a232c693486d3d54e22f185c96c47dab1">   84</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_list_box.html#a232c693486d3d54e22f185c96c47dab1">m_lMaxByteInRaw</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//ListBox的最大行数</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_c_list_box.html#aaa106b26fd12b9b64aa1f7eb2826e508">   87</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_list_box.html#aaa106b26fd12b9b64aa1f7eb2826e508">m_lMaxRaw</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//当前字符串所占的行数</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_c_list_box.html#abe04a9bd49822073d1c159499e06965f">   90</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_list_box.html#abe04a9bd49822073d1c159499e06965f">m_lRawNow</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//绘制文字的对齐方式</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_c_list_box.html#a075069f8fd1a2f4b5f0f5836dfcc247b">   93</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_list_box.html#a075069f8fd1a2f4b5f0f5836dfcc247b">m_lFontType</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//当LISTBOX中实际的行数大于ListBox中显示的最大行数后</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//上面超出的数据就被存放在m_stackFront栈中</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_c_list_box.html#a06e1b4571d010db40aa49f28d0094e4d">   97</a></span>&#160;    stack&lt;string&gt; <a class="code" href="class_c_list_box.html#a06e1b4571d010db40aa49f28d0094e4d">m_stackFront</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_c_list_box.html#a6267b08263e38aff0a1361c4b0537896">   99</a></span>&#160;    stack&lt;string&gt; <a class="code" href="class_c_list_box.html#a6267b08263e38aff0a1361c4b0537896">m_stackBack</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="ttc" id="class_c_list_box_html_af5e0bf3cc77869e2460617f2c625885b"><div class="ttname"><a href="class_c_list_box.html#af5e0bf3cc77869e2460617f2c625885b">CListBox::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:28</div></div>
+<div class="ttc" id="class_c_list_box_html_aa674aca1d4878c77a85e591c4f8b8cc2"><div class="ttname"><a href="class_c_list_box.html#aa674aca1d4878c77a85e591c4f8b8cc2">CListBox::PopStringFromStackFront</a></div><div class="ttdeci">void PopStringFromStackFront(long n)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:170</div></div>
+<div class="ttc" id="class_c_list_box_html_ab104271c6da1e719a4e1253a10195151"><div class="ttname"><a href="class_c_list_box.html#ab104271c6da1e719a4e1253a10195151">CListBox::PopStringFromStackBack</a></div><div class="ttdeci">void PopStringFromStackBack(long n)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:192</div></div>
+<div class="ttc" id="class_c_list_box_html_a36f1491c11d456fa713a802cfad8bb7b"><div class="ttname"><a href="class_c_list_box.html#a36f1491c11d456fa713a802cfad8bb7b">CListBox::m_pUp</a></div><div class="ttdeci">CButton * m_pUp</div><div class="ttdef"><b>Definition:</b> ListBox.h:72</div></div>
+<div class="ttc" id="class_c_list_box_html_a232c693486d3d54e22f185c96c47dab1"><div class="ttname"><a href="class_c_list_box.html#a232c693486d3d54e22f185c96c47dab1">CListBox::m_lMaxByteInRaw</a></div><div class="ttdeci">long m_lMaxByteInRaw</div><div class="ttdef"><b>Definition:</b> ListBox.h:84</div></div>
+<div class="ttc" id="_button_8h_html"><div class="ttname"><a href="_button_8h.html">Button.h</a></div></div>
+<div class="ttc" id="class_c_list_box_html_af85c8d60a26f5b3bdd83fd9f89eed475"><div class="ttname"><a href="class_c_list_box.html#af85c8d60a26f5b3bdd83fd9f89eed475">CListBox::m_strAllText</a></div><div class="ttdeci">string m_strAllText</div><div class="ttdef"><b>Definition:</b> ListBox.h:78</div></div>
+<div class="ttc" id="class_c_list_box_html_ac2aa21176229553f22298fb6a2f8d775"><div class="ttname"><a href="class_c_list_box.html#ac2aa21176229553f22298fb6a2f8d775">CListBox::m_pFont</a></div><div class="ttdeci">ID3DXFont * m_pFont</div><div class="ttdef"><b>Definition:</b> ListBox.h:81</div></div>
+<div class="ttc" id="class_c_list_box_html_ad9e6d84ece46519afd30f512d438a28a"><div class="ttname"><a href="class_c_list_box.html#ad9e6d84ece46519afd30f512d438a28a">CListBox::CListBox</a></div><div class="ttdeci">CListBox()</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:5</div></div>
+<div class="ttc" id="class_c_list_box_html_a131490053fd26a5050857a59331a6e2b"><div class="ttname"><a href="class_c_list_box.html#a131490053fd26a5050857a59331a6e2b">CListBox::m_pDown</a></div><div class="ttdeci">CButton * m_pDown</div><div class="ttdef"><b>Definition:</b> ListBox.h:75</div></div>
+<div class="ttc" id="class_c_list_box_html_a0c6ac4da546f5710f873157322768773"><div class="ttname"><a href="class_c_list_box.html#a0c6ac4da546f5710f873157322768773">CListBox::SetFont</a></div><div class="ttdeci">void SetFont()</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:145</div></div>
+<div class="ttc" id="class_c_list_box_html_af5e620f4676b43c55382e8ce2bc6d9cf"><div class="ttname"><a href="class_c_list_box.html#af5e620f4676b43c55382e8ce2bc6d9cf">CListBox::SetListBoxDownButton</a></div><div class="ttdeci">void SetListBoxDownButton(CButton *pDown)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:85</div></div>
+<div class="ttc" id="class_c_list_box_html_a5b89df3ed2270df8059649e20d305b94"><div class="ttname"><a href="class_c_list_box.html#a5b89df3ed2270df8059649e20d305b94">CListBox::~CListBox</a></div><div class="ttdeci">~CListBox()</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:22</div></div>
+<div class="ttc" id="class_c_list_box_html_aaa106b26fd12b9b64aa1f7eb2826e508"><div class="ttname"><a href="class_c_list_box.html#aaa106b26fd12b9b64aa1f7eb2826e508">CListBox::m_lMaxRaw</a></div><div class="ttdeci">long m_lMaxRaw</div><div class="ttdef"><b>Definition:</b> ListBox.h:87</div></div>
+<div class="ttc" id="class_c_list_box_html_a075069f8fd1a2f4b5f0f5836dfcc247b"><div class="ttname"><a href="class_c_list_box.html#a075069f8fd1a2f4b5f0f5836dfcc247b">CListBox::m_lFontType</a></div><div class="ttdeci">long m_lFontType</div><div class="ttdef"><b>Definition:</b> ListBox.h:93</div></div>
+<div class="ttc" id="class_c_list_box_html_af0b2f770794dd63fa6e0c63959321af8"><div class="ttname"><a href="class_c_list_box.html#af0b2f770794dd63fa6e0c63959321af8">CListBox::SetDrawingFontType</a></div><div class="ttdeci">void SetDrawingFontType(long lType)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:158</div></div>
+<div class="ttc" id="class_c_list_box_html_ae09137d72c75a6300ccc55efe2e4bfe0"><div class="ttname"><a href="class_c_list_box.html#ae09137d72c75a6300ccc55efe2e4bfe0">CListBox::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:211</div></div>
+<div class="ttc" id="class_c_list_box_html_a169f92d436d350358cc0daf1af91f5c1"><div class="ttname"><a href="class_c_list_box.html#a169f92d436d350358cc0daf1af91f5c1">CListBox::ProcessMouseMove</a></div><div class="ttdeci">void ProcessMouseMove(long x, long y)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:59</div></div>
+<div class="ttc" id="class_c_list_box_html_a9a1c2d65b0c78af568dd1f0244614235"><div class="ttname"><a href="class_c_list_box.html#a9a1c2d65b0c78af568dd1f0244614235">CListBox::SetListBoxUpButton</a></div><div class="ttdeci">void SetListBoxUpButton(CButton *pUp)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:78</div></div>
+<div class="ttc" id="class_c_list_box_html_a5b9648cefc433df7c362ff9fc38c6492"><div class="ttname"><a href="class_c_list_box.html#a5b9648cefc433df7c362ff9fc38c6492">CListBox::SetMaxRaw</a></div><div class="ttdeci">void SetMaxRaw(void)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:98</div></div>
+<div class="ttc" id="class_c_list_box_html_abe04a9bd49822073d1c159499e06965f"><div class="ttname"><a href="class_c_list_box.html#abe04a9bd49822073d1c159499e06965f">CListBox::m_lRawNow</a></div><div class="ttdeci">long m_lRawNow</div><div class="ttdef"><b>Definition:</b> ListBox.h:90</div></div>
+<div class="ttc" id="class_c_list_box_html_a9a5acd97aa4011615a26d31e38503e67"><div class="ttname"><a href="class_c_list_box.html#a9a5acd97aa4011615a26d31e38503e67">CListBox::SetMaxByteInRaw</a></div><div class="ttdeci">void SetMaxByteInRaw(void)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:92</div></div>
+<div class="ttc" id="class_c_list_box_html"><div class="ttname"><a href="class_c_list_box.html">CListBox</a></div><div class="ttdef"><b>Definition:</b> ListBox.h:9</div></div>
+<div class="ttc" id="class_c_list_box_html_ac03d73125d100f45acc92d0cbc7fa780"><div class="ttname"><a href="class_c_list_box.html#ac03d73125d100f45acc92d0cbc7fa780">CListBox::AppendString</a></div><div class="ttdeci">void AppendString(string strNew)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:104</div></div>
+<div class="ttc" id="class_c_list_box_html_a06e1b4571d010db40aa49f28d0094e4d"><div class="ttname"><a href="class_c_list_box.html#a06e1b4571d010db40aa49f28d0094e4d">CListBox::m_stackFront</a></div><div class="ttdeci">stack&lt; string &gt; m_stackFront</div><div class="ttdef"><b>Definition:</b> ListBox.h:97</div></div>
+<div class="ttc" id="class_c_list_box_html_a07719f443435b335535d2d56e72cfe4b"><div class="ttname"><a href="class_c_list_box.html#a07719f443435b335535d2d56e72cfe4b">CListBox::m_pScroll</a></div><div class="ttdeci">CButton * m_pScroll</div><div class="ttdef"><b>Definition:</b> ListBox.h:69</div></div>
+<div class="ttc" id="class_c_component_html"><div class="ttname"><a href="class_c_component.html">CComponent</a></div><div class="ttdef"><b>Definition:</b> Component.h:7</div></div>
+<div class="ttc" id="class_c_button_html"><div class="ttname"><a href="class_c_button.html">CButton</a></div><div class="ttdef"><b>Definition:</b> Button.h:8</div></div>
+<div class="ttc" id="class_c_list_box_html_a6267b08263e38aff0a1361c4b0537896"><div class="ttname"><a href="class_c_list_box.html#a6267b08263e38aff0a1361c4b0537896">CListBox::m_stackBack</a></div><div class="ttdeci">stack&lt; string &gt; m_stackBack</div><div class="ttdef"><b>Definition:</b> ListBox.h:99</div></div>
+<div class="ttc" id="class_c_list_box_html_ae2d6f864e590a5fa8102f3fb99523df5"><div class="ttname"><a href="class_c_list_box.html#ae2d6f864e590a5fa8102f3fb99523df5">CListBox::SetListBoxScrollButton</a></div><div class="ttdeci">void SetListBoxScrollButton(CButton *pScroll)</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:71</div></div>
+<div class="ttc" id="class_c_list_box_html_a2266e7e49d96f0177d84a5684306a44b"><div class="ttname"><a href="class_c_list_box.html#a2266e7e49d96f0177d84a5684306a44b">CListBox::GetDrawingFontType</a></div><div class="ttdeci">long GetDrawingFontType()</div><div class="ttdef"><b>Definition:</b> ListBox.cpp:164</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

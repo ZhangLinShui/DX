@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/CMap.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CMap.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_map_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_object_8h.html">RenderObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_c_c_map.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_c_map.html">CCMap</a> :</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_c_render_object.html">CRenderObject</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_c_c_map.html#a1b954b62abefbded486cc3df2e3635f6">CCMap</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_c_c_map.html#abd249da972c682ddbf6d417adb0c93c5">~CCMap</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_c_map.html#ab5f236d9a60a20d48df339a9a22f6d41">CreateMap</a>(DWORD row, DWORD col, DWORD <a class="code" href="class_c_c_map.html#a83c4c27f4aa4713f8c84313463abb7bc">width</a>, DWORD <a class="code" href="class_c_c_map.html#a6757b84d0aeeb06f7eea4b6e5001d316">height</a>, D3DXVECTOR3 pos, DWORD color);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    BOOL <a class="code" href="class_c_c_map.html#a6da6b7dc293043289ba1d57f408dfadc">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a> *name);</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a12f55e6df4afe24a22dec12be28a8b34">   11</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_c_map.html#a12f55e6df4afe24a22dec12be28a8b34">SetMapColor</a>(DWORD color)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="class_c_c_map.html#acad90382b03e2a2d1cc1b855e556d7c7">colorTerrain</a> = color;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_c_map.html#a4fa901466671fe24baa67732b3401655">Draw</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    DWORD <a class="code" href="class_c_c_map.html#a32d0f896724837a1c9a23b2f7ed7e6b7">GetWidth</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    DWORD <a class="code" href="class_c_c_map.html#a47e0e0bf3c05b8ddc003f7089924ff3b">GetHeight</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_c_map.html#a19478b9d35eb5aa038fa67f50aaa1ff1">GetPosY</a>(D3DXVECTOR3 pos);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    D3DXMATRIX <a class="code" href="class_c_c_map.html#a28c688813e68dd9e803a5d68125d009e">GetMatInverse</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    LPD3DXMESH <a class="code" href="class_c_c_map.html#a8ccce618f53a99455c78b5763271220d">GetMesh</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a8343fd02b90ec351cbfcdbd69106b117">   22</a></span>&#160;    LPD3DXMESH <a class="code" href="class_c_c_map.html#a8343fd02b90ec351cbfcdbd69106b117">m_Mesh</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_c_map.html#adc8dd63b8d4b46bd12d79b34482a49ec">   23</a></span>&#160;    <a class="code" href="struct_c_u_s_t_o_m_v_e_r_t_e_x2.html">CUSTOMVERTEX2</a> *<a class="code" href="class_c_c_map.html#adc8dd63b8d4b46bd12d79b34482a49ec">m_CustomVer</a>;<span class="comment">//顶点数组</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_c_map.html#aa1d858e09373254fe311a7443051eaed">   24</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="class_c_c_map.html#aa1d858e09373254fe311a7443051eaed">aa</a> ;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a5dd5497302ab5afc36fd9d716ae674f4">   25</a></span>&#160;    DWORD  *<a class="code" href="class_c_c_map.html#a5dd5497302ab5afc36fd9d716ae674f4">m_Index</a>;<span class="comment">//顶点索引数组</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_c_map.html#acad90382b03e2a2d1cc1b855e556d7c7">   26</a></span>&#160;    DWORD <a class="code" href="class_c_c_map.html#acad90382b03e2a2d1cc1b855e556d7c7">colorTerrain</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a0e3ba8e23d7b3ee3d9cf8f07ef81ac5b">   27</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_c_map.html#a0e3ba8e23d7b3ee3d9cf8f07ef81ac5b">VertexNum</a>;<span class="comment">//顶点数组的个数 </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a5e9acb43a589e7cc0667676e696d35ac">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_c_map.html#a5e9acb43a589e7cc0667676e696d35ac">IndexNum</a>;<span class="comment">//矩形的个数*6顶点索引的个数</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_c_map.html#af686a64484405762e38a7748a05a54b4">   29</a></span>&#160;    <a class="code" href="class_c_picture.html">CPicture</a> *<a class="code" href="class_c_c_map.html#af686a64484405762e38a7748a05a54b4">MapHighImage</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a791d1be9b19f1ba212783a548030ed7a">   30</a></span>&#160;    LPDIRECT3DTEXTURE9 <a class="code" href="class_c_c_map.html#a791d1be9b19f1ba212783a548030ed7a">m_pText</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_c_map.html#ac5ad0b4715cde7ef4d4799b167ffd935">   31</a></span>&#160;    LPDIRECT3DTEXTURE9 <a class="code" href="class_c_c_map.html#ac5ad0b4715cde7ef4d4799b167ffd935">m_pText2</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a8dc106fa8de4547185901a9eb7ce0561">   32</a></span>&#160;    LPDIRECT3DVERTEXBUFFER9 <a class="code" href="class_c_c_map.html#a8dc106fa8de4547185901a9eb7ce0561">m_pVerBuff</a>;<span class="comment">//顶点缓冲接口指针</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_c_map.html#aba8d7b3c734c682b87ab77562e9729bf">   33</a></span>&#160;    LPDIRECT3DINDEXBUFFER9 <a class="code" href="class_c_c_map.html#aba8d7b3c734c682b87ab77562e9729bf">m_pIndexBuff</a>;<span class="comment">//索引缓冲接口指针</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a83c4c27f4aa4713f8c84313463abb7bc">   34</a></span>&#160;    DWORD <a class="code" href="class_c_c_map.html#a83c4c27f4aa4713f8c84313463abb7bc">width</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a6757b84d0aeeb06f7eea4b6e5001d316">   35</a></span>&#160;    DWORD <a class="code" href="class_c_c_map.html#a6757b84d0aeeb06f7eea4b6e5001d316">height</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_c_map.html#aa08a4acb1eedd71fe66780a76252863c">   36</a></span>&#160;    DWORD <a class="code" href="class_c_c_map.html#aa08a4acb1eedd71fe66780a76252863c">Width</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a7284f21e8a6505c313754cc039f83fc6">   37</a></span>&#160;    DWORD <a class="code" href="class_c_c_map.html#a7284f21e8a6505c313754cc039f83fc6">Height</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_c_map.html#a9a3a60e64ea5d0bf91f070012b7adf25">   38</a></span>&#160;    D3DMATERIAL9 <a class="code" href="class_c_c_map.html#a9a3a60e64ea5d0bf91f070012b7adf25">g_Material</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_c_map.html#abaa1a915fdd58834591ada5074de1c15">   39</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_c_map.html#abaa1a915fdd58834591ada5074de1c15">m_matInverse</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="ttc" id="class_c_c_map_html_aba8d7b3c734c682b87ab77562e9729bf"><div class="ttname"><a href="class_c_c_map.html#aba8d7b3c734c682b87ab77562e9729bf">CCMap::m_pIndexBuff</a></div><div class="ttdeci">LPDIRECT3DINDEXBUFFER9 m_pIndexBuff</div><div class="ttdef"><b>Definition:</b> CMap.h:33</div></div>
+<div class="ttc" id="class_c_c_map_html_a12f55e6df4afe24a22dec12be28a8b34"><div class="ttname"><a href="class_c_c_map.html#a12f55e6df4afe24a22dec12be28a8b34">CCMap::SetMapColor</a></div><div class="ttdeci">void SetMapColor(DWORD color)</div><div class="ttdef"><b>Definition:</b> CMap.h:11</div></div>
+<div class="ttc" id="class_c_c_map_html_af686a64484405762e38a7748a05a54b4"><div class="ttname"><a href="class_c_c_map.html#af686a64484405762e38a7748a05a54b4">CCMap::MapHighImage</a></div><div class="ttdeci">CPicture * MapHighImage</div><div class="ttdef"><b>Definition:</b> CMap.h:29</div></div>
+<div class="ttc" id="class_c_c_map_html_a9a3a60e64ea5d0bf91f070012b7adf25"><div class="ttname"><a href="class_c_c_map.html#a9a3a60e64ea5d0bf91f070012b7adf25">CCMap::g_Material</a></div><div class="ttdeci">D3DMATERIAL9 g_Material</div><div class="ttdef"><b>Definition:</b> CMap.h:38</div></div>
+<div class="ttc" id="_render_object_8h_html"><div class="ttname"><a href="_render_object_8h.html">RenderObject.h</a></div></div>
+<div class="ttc" id="struct_c_u_s_t_o_m_v_e_r_t_e_x2_html"><div class="ttname"><a href="struct_c_u_s_t_o_m_v_e_r_t_e_x2.html">CUSTOMVERTEX2</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:15</div></div>
+<div class="ttc" id="class_c_render_object_html"><div class="ttname"><a href="class_c_render_object.html">CRenderObject</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:27</div></div>
+<div class="ttc" id="class_c_c_map_html_a8ccce618f53a99455c78b5763271220d"><div class="ttname"><a href="class_c_c_map.html#a8ccce618f53a99455c78b5763271220d">CCMap::GetMesh</a></div><div class="ttdeci">LPD3DXMESH GetMesh()</div><div class="ttdef"><b>Definition:</b> CMap.cpp:310</div></div>
+<div class="ttc" id="class_c_c_map_html_a47e0e0bf3c05b8ddc003f7089924ff3b"><div class="ttname"><a href="class_c_c_map.html#a47e0e0bf3c05b8ddc003f7089924ff3b">CCMap::GetHeight</a></div><div class="ttdeci">DWORD GetHeight()</div><div class="ttdef"><b>Definition:</b> CMap.cpp:274</div></div>
+<div class="ttc" id="class_c_c_map_html"><div class="ttname"><a href="class_c_c_map.html">CCMap</a></div><div class="ttdef"><b>Definition:</b> CMap.h:3</div></div>
+<div class="ttc" id="class_c_c_map_html_a8dc106fa8de4547185901a9eb7ce0561"><div class="ttname"><a href="class_c_c_map.html#a8dc106fa8de4547185901a9eb7ce0561">CCMap::m_pVerBuff</a></div><div class="ttdeci">LPDIRECT3DVERTEXBUFFER9 m_pVerBuff</div><div class="ttdef"><b>Definition:</b> CMap.h:32</div></div>
+<div class="ttc" id="class_c_c_map_html_a4fa901466671fe24baa67732b3401655"><div class="ttname"><a href="class_c_c_map.html#a4fa901466671fe24baa67732b3401655">CCMap::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> CMap.cpp:216</div></div>
+<div class="ttc" id="class_c_c_map_html_a791d1be9b19f1ba212783a548030ed7a"><div class="ttname"><a href="class_c_c_map.html#a791d1be9b19f1ba212783a548030ed7a">CCMap::m_pText</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 m_pText</div><div class="ttdef"><b>Definition:</b> CMap.h:30</div></div>
+<div class="ttc" id="class_c_c_map_html_a32d0f896724837a1c9a23b2f7ed7e6b7"><div class="ttname"><a href="class_c_c_map.html#a32d0f896724837a1c9a23b2f7ed7e6b7">CCMap::GetWidth</a></div><div class="ttdeci">DWORD GetWidth()</div><div class="ttdef"><b>Definition:</b> CMap.cpp:269</div></div>
+<div class="ttc" id="class_c_c_map_html_a28c688813e68dd9e803a5d68125d009e"><div class="ttname"><a href="class_c_c_map.html#a28c688813e68dd9e803a5d68125d009e">CCMap::GetMatInverse</a></div><div class="ttdeci">D3DXMATRIX GetMatInverse()</div><div class="ttdef"><b>Definition:</b> CMap.cpp:305</div></div>
+<div class="ttc" id="class_c_c_map_html_a19478b9d35eb5aa038fa67f50aaa1ff1"><div class="ttname"><a href="class_c_c_map.html#a19478b9d35eb5aa038fa67f50aaa1ff1">CCMap::GetPosY</a></div><div class="ttdeci">D3DXVECTOR3 GetPosY(D3DXVECTOR3 pos)</div><div class="ttdef"><b>Definition:</b> CMap.cpp:279</div></div>
+<div class="ttc" id="class_c_c_map_html_abaa1a915fdd58834591ada5074de1c15"><div class="ttname"><a href="class_c_c_map.html#abaa1a915fdd58834591ada5074de1c15">CCMap::m_matInverse</a></div><div class="ttdeci">D3DXMATRIX m_matInverse</div><div class="ttdef"><b>Definition:</b> CMap.h:39</div></div>
+<div class="ttc" id="class_c_c_map_html_a8343fd02b90ec351cbfcdbd69106b117"><div class="ttname"><a href="class_c_c_map.html#a8343fd02b90ec351cbfcdbd69106b117">CCMap::m_Mesh</a></div><div class="ttdeci">LPD3DXMESH m_Mesh</div><div class="ttdef"><b>Definition:</b> CMap.h:22</div></div>
+<div class="ttc" id="class_c_picture_html"><div class="ttname"><a href="class_c_picture.html">CPicture</a></div><div class="ttdef"><b>Definition:</b> Picture.h:3</div></div>
+<div class="ttc" id="class_c_c_map_html_a6757b84d0aeeb06f7eea4b6e5001d316"><div class="ttname"><a href="class_c_c_map.html#a6757b84d0aeeb06f7eea4b6e5001d316">CCMap::height</a></div><div class="ttdeci">DWORD height</div><div class="ttdef"><b>Definition:</b> CMap.h:35</div></div>
+<div class="ttc" id="class_c_c_map_html_a5dd5497302ab5afc36fd9d716ae674f4"><div class="ttname"><a href="class_c_c_map.html#a5dd5497302ab5afc36fd9d716ae674f4">CCMap::m_Index</a></div><div class="ttdeci">DWORD * m_Index</div><div class="ttdef"><b>Definition:</b> CMap.h:25</div></div>
+<div class="ttc" id="class_c_c_map_html_a7284f21e8a6505c313754cc039f83fc6"><div class="ttname"><a href="class_c_c_map.html#a7284f21e8a6505c313754cc039f83fc6">CCMap::Height</a></div><div class="ttdeci">DWORD Height</div><div class="ttdef"><b>Definition:</b> CMap.h:37</div></div>
+<div class="ttc" id="class_c_c_map_html_aa08a4acb1eedd71fe66780a76252863c"><div class="ttname"><a href="class_c_c_map.html#aa08a4acb1eedd71fe66780a76252863c">CCMap::Width</a></div><div class="ttdeci">DWORD Width</div><div class="ttdef"><b>Definition:</b> CMap.h:36</div></div>
+<div class="ttc" id="class_c_c_map_html_a83c4c27f4aa4713f8c84313463abb7bc"><div class="ttname"><a href="class_c_c_map.html#a83c4c27f4aa4713f8c84313463abb7bc">CCMap::width</a></div><div class="ttdeci">DWORD width</div><div class="ttdef"><b>Definition:</b> CMap.h:34</div></div>
+<div class="ttc" id="class_c_c_map_html_acad90382b03e2a2d1cc1b855e556d7c7"><div class="ttname"><a href="class_c_c_map.html#acad90382b03e2a2d1cc1b855e556d7c7">CCMap::colorTerrain</a></div><div class="ttdeci">DWORD colorTerrain</div><div class="ttdef"><b>Definition:</b> CMap.h:26</div></div>
+<div class="ttc" id="class_c_c_map_html_a0e3ba8e23d7b3ee3d9cf8f07ef81ac5b"><div class="ttname"><a href="class_c_c_map.html#a0e3ba8e23d7b3ee3d9cf8f07ef81ac5b">CCMap::VertexNum</a></div><div class="ttdeci">int VertexNum</div><div class="ttdef"><b>Definition:</b> CMap.h:27</div></div>
+<div class="ttc" id="class_c_c_map_html_ab5f236d9a60a20d48df339a9a22f6d41"><div class="ttname"><a href="class_c_c_map.html#ab5f236d9a60a20d48df339a9a22f6d41">CCMap::CreateMap</a></div><div class="ttdeci">void CreateMap(DWORD row, DWORD col, DWORD width, DWORD height, D3DXVECTOR3 pos, DWORD color)</div><div class="ttdef"><b>Definition:</b> CMap.cpp:18</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_c_map_html_a6da6b7dc293043289ba1d57f408dfadc"><div class="ttname"><a href="class_c_c_map.html#a6da6b7dc293043289ba1d57f408dfadc">CCMap::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *name)</div><div class="ttdef"><b>Definition:</b> CMap.cpp:189</div></div>
+<div class="ttc" id="class_c_c_map_html_a5e9acb43a589e7cc0667676e696d35ac"><div class="ttname"><a href="class_c_c_map.html#a5e9acb43a589e7cc0667676e696d35ac">CCMap::IndexNum</a></div><div class="ttdeci">int IndexNum</div><div class="ttdef"><b>Definition:</b> CMap.h:28</div></div>
+<div class="ttc" id="class_c_c_map_html_ac5ad0b4715cde7ef4d4799b167ffd935"><div class="ttname"><a href="class_c_c_map.html#ac5ad0b4715cde7ef4d4799b167ffd935">CCMap::m_pText2</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 m_pText2</div><div class="ttdef"><b>Definition:</b> CMap.h:31</div></div>
+<div class="ttc" id="class_c_c_map_html_abd249da972c682ddbf6d417adb0c93c5"><div class="ttname"><a href="class_c_c_map.html#abd249da972c682ddbf6d417adb0c93c5">CCMap::~CCMap</a></div><div class="ttdeci">~CCMap()</div><div class="ttdef"><b>Definition:</b> CMap.cpp:11</div></div>
+<div class="ttc" id="class_c_c_map_html_aa1d858e09373254fe311a7443051eaed"><div class="ttname"><a href="class_c_c_map.html#aa1d858e09373254fe311a7443051eaed">CCMap::aa</a></div><div class="ttdeci">unsigned short aa</div><div class="ttdef"><b>Definition:</b> CMap.h:24</div></div>
+<div class="ttc" id="class_c_c_map_html_adc8dd63b8d4b46bd12d79b34482a49ec"><div class="ttname"><a href="class_c_c_map.html#adc8dd63b8d4b46bd12d79b34482a49ec">CCMap::m_CustomVer</a></div><div class="ttdeci">CUSTOMVERTEX2 * m_CustomVer</div><div class="ttdef"><b>Definition:</b> CMap.h:23</div></div>
+<div class="ttc" id="class_c_c_map_html_a1b954b62abefbded486cc3df2e3635f6"><div class="ttname"><a href="class_c_c_map.html#a1b954b62abefbded486cc3df2e3635f6">CCMap::CCMap</a></div><div class="ttdeci">CCMap()</div><div class="ttdef"><b>Definition:</b> CMap.cpp:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/Sky.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sky.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sky_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_render_object_8h.html">RenderObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_c_sky.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_sky.html">CSky</a> :</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_c_render_object.html">CRenderObject</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_c_sky.html#afd0a527770de2f75fa5ee83a3b473533">CSky</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_c_sky.html#ad2013816a90330d505f755a996d36893">~CSky</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    BOOL <a class="code" href="class_c_sky.html#a83cab20073b871a0340fed34dc3bb29d">Init</a>(<a class="code" href="class_ti_xml_element.html">TiXmlElement</a> *node);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sky.html#a80728e63258606c5ff8141390799c30c">Draw</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sky.html#a79c8ee1bda8c39907a32da5478b68008">ChangePos</a>(D3DXVECTOR3 pos);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_sky.html#aa55e6679d0ff336b4bef47f6fad4055b">   13</a></span>&#160;    <a class="code" href="struct_c_u_s_t_o_m_v_e_r_t_e_x.html">CUSTOMVERTEX</a> *<a class="code" href="class_c_sky.html#aa55e6679d0ff336b4bef47f6fad4055b">m_CustomVer</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_sky.html#a5375c472a2bf4c37d059331c9cd68fda">   14</a></span>&#160;    WORD  *<a class="code" href="class_c_sky.html#a5375c472a2bf4c37d059331c9cd68fda">m_Index</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_sky.html#a6ba1e84c528ea593614e8204a451f722">   15</a></span>&#160;    <a class="code" href="class_c_picture.html">CPicture</a> *<a class="code" href="class_c_sky.html#a6ba1e84c528ea593614e8204a451f722">SkyImage</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_sky.html#a1fd3cc19f7d051107a8bf068e4ce0157">   16</a></span>&#160;    LPDIRECT3DTEXTURE9* <a class="code" href="class_c_sky.html#a1fd3cc19f7d051107a8bf068e4ce0157">g_pTex</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_sky.html#aa7b247649141066d0e1f6539e1171e03">   17</a></span>&#160;    LPDIRECT3DVERTEXBUFFER9 <a class="code" href="class_c_sky.html#aa7b247649141066d0e1f6539e1171e03">m_pVerBuff</a>;<span class="comment">//顶点缓冲接口指针</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_sky.html#aaf6d97c0ac0efb25905f7bb93096ccd2">   18</a></span>&#160;    LPDIRECT3DINDEXBUFFER9 <a class="code" href="class_c_sky.html#aaf6d97c0ac0efb25905f7bb93096ccd2">m_pIndexBuff</a>;<span class="comment">//索引缓冲接口指针</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_sky.html#affebddc672e898afd8730c1e310d45b8">   19</a></span>&#160;    <span class="keywordtype">void</span>*  <a class="code" href="class_c_sky.html#affebddc672e898afd8730c1e310d45b8">pVBData</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_sky.html#ac377241a5fc08d0646db3d42193a0d17">   20</a></span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="class_c_sky.html#ac377241a5fc08d0646db3d42193a0d17">pIBData</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_sky.html#a68b75f47c168b5de86306e70376a1662">   21</a></span>&#160;    D3DMATERIAL9 <a class="code" href="class_c_sky.html#a68b75f47c168b5de86306e70376a1662">g_Material</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="ttc" id="_render_object_8h_html"><div class="ttname"><a href="_render_object_8h.html">RenderObject.h</a></div></div>
+<div class="ttc" id="class_c_sky_html_a6ba1e84c528ea593614e8204a451f722"><div class="ttname"><a href="class_c_sky.html#a6ba1e84c528ea593614e8204a451f722">CSky::SkyImage</a></div><div class="ttdeci">CPicture * SkyImage</div><div class="ttdef"><b>Definition:</b> Sky.h:15</div></div>
+<div class="ttc" id="class_c_render_object_html"><div class="ttname"><a href="class_c_render_object.html">CRenderObject</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:27</div></div>
+<div class="ttc" id="class_c_sky_html_aaf6d97c0ac0efb25905f7bb93096ccd2"><div class="ttname"><a href="class_c_sky.html#aaf6d97c0ac0efb25905f7bb93096ccd2">CSky::m_pIndexBuff</a></div><div class="ttdeci">LPDIRECT3DINDEXBUFFER9 m_pIndexBuff</div><div class="ttdef"><b>Definition:</b> Sky.h:18</div></div>
+<div class="ttc" id="class_c_sky_html_aa7b247649141066d0e1f6539e1171e03"><div class="ttname"><a href="class_c_sky.html#aa7b247649141066d0e1f6539e1171e03">CSky::m_pVerBuff</a></div><div class="ttdeci">LPDIRECT3DVERTEXBUFFER9 m_pVerBuff</div><div class="ttdef"><b>Definition:</b> Sky.h:17</div></div>
+<div class="ttc" id="class_c_sky_html_a5375c472a2bf4c37d059331c9cd68fda"><div class="ttname"><a href="class_c_sky.html#a5375c472a2bf4c37d059331c9cd68fda">CSky::m_Index</a></div><div class="ttdeci">WORD * m_Index</div><div class="ttdef"><b>Definition:</b> Sky.h:14</div></div>
+<div class="ttc" id="class_c_sky_html_aa55e6679d0ff336b4bef47f6fad4055b"><div class="ttname"><a href="class_c_sky.html#aa55e6679d0ff336b4bef47f6fad4055b">CSky::m_CustomVer</a></div><div class="ttdeci">CUSTOMVERTEX * m_CustomVer</div><div class="ttdef"><b>Definition:</b> Sky.h:13</div></div>
+<div class="ttc" id="class_c_sky_html"><div class="ttname"><a href="class_c_sky.html">CSky</a></div><div class="ttdef"><b>Definition:</b> Sky.h:3</div></div>
+<div class="ttc" id="class_c_sky_html_afd0a527770de2f75fa5ee83a3b473533"><div class="ttname"><a href="class_c_sky.html#afd0a527770de2f75fa5ee83a3b473533">CSky::CSky</a></div><div class="ttdeci">CSky()</div><div class="ttdef"><b>Definition:</b> Sky.cpp:5</div></div>
+<div class="ttc" id="class_c_picture_html"><div class="ttname"><a href="class_c_picture.html">CPicture</a></div><div class="ttdef"><b>Definition:</b> Picture.h:3</div></div>
+<div class="ttc" id="class_c_sky_html_ac377241a5fc08d0646db3d42193a0d17"><div class="ttname"><a href="class_c_sky.html#ac377241a5fc08d0646db3d42193a0d17">CSky::pIBData</a></div><div class="ttdeci">void * pIBData</div><div class="ttdef"><b>Definition:</b> Sky.h:20</div></div>
+<div class="ttc" id="class_c_sky_html_a68b75f47c168b5de86306e70376a1662"><div class="ttname"><a href="class_c_sky.html#a68b75f47c168b5de86306e70376a1662">CSky::g_Material</a></div><div class="ttdeci">D3DMATERIAL9 g_Material</div><div class="ttdef"><b>Definition:</b> Sky.h:21</div></div>
+<div class="ttc" id="class_c_sky_html_a83cab20073b871a0340fed34dc3bb29d"><div class="ttname"><a href="class_c_sky.html#a83cab20073b871a0340fed34dc3bb29d">CSky::Init</a></div><div class="ttdeci">BOOL Init(TiXmlElement *node)</div><div class="ttdef"><b>Definition:</b> Sky.cpp:15</div></div>
+<div class="ttc" id="struct_c_u_s_t_o_m_v_e_r_t_e_x_html"><div class="ttname"><a href="struct_c_u_s_t_o_m_v_e_r_t_e_x.html">CUSTOMVERTEX</a></div><div class="ttdef"><b>Definition:</b> RenderObject.h:9</div></div>
+<div class="ttc" id="class_c_sky_html_affebddc672e898afd8730c1e310d45b8"><div class="ttname"><a href="class_c_sky.html#affebddc672e898afd8730c1e310d45b8">CSky::pVBData</a></div><div class="ttdeci">void * pVBData</div><div class="ttdef"><b>Definition:</b> Sky.h:19</div></div>
+<div class="ttc" id="class_c_sky_html_a79c8ee1bda8c39907a32da5478b68008"><div class="ttname"><a href="class_c_sky.html#a79c8ee1bda8c39907a32da5478b68008">CSky::ChangePos</a></div><div class="ttdeci">void ChangePos(D3DXVECTOR3 pos)</div><div class="ttdef"><b>Definition:</b> Sky.cpp:124</div></div>
+<div class="ttc" id="class_c_sky_html_ad2013816a90330d505f755a996d36893"><div class="ttname"><a href="class_c_sky.html#ad2013816a90330d505f755a996d36893">CSky::~CSky</a></div><div class="ttdeci">~CSky()</div><div class="ttdef"><b>Definition:</b> Sky.cpp:11</div></div>
+<div class="ttc" id="class_ti_xml_element_html"><div class="ttname"><a href="class_ti_xml_element.html">TiXmlElement</a></div><div class="ttdef"><b>Definition:</b> tinyxml.h:936</div></div>
+<div class="ttc" id="class_c_sky_html_a80728e63258606c5ff8141390799c30c"><div class="ttname"><a href="class_c_sky.html#a80728e63258606c5ff8141390799c30c">CSky::Draw</a></div><div class="ttdeci">void Draw()</div><div class="ttdef"><b>Definition:</b> Sky.cpp:89</div></div>
+<div class="ttc" id="class_c_sky_html_a1fd3cc19f7d051107a8bf068e4ce0157"><div class="ttname"><a href="class_c_sky.html#a1fd3cc19f7d051107a8bf068e4ce0157">CSky::g_pTex</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 * g_pTex</div><div class="ttdef"><b>Definition:</b> Sky.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>My Project: M:/移动硬盘/曹健/DX3D完成作业/619/D3DX封装/src/StaticText.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">StaticText.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_static_text_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//专门用于显示文字的组件</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_c_static_text.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_static_text.html">CStaticText</a> : <span class="keyword">public</span> <a class="code" href="class_c_component.html">CComponent</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">//构造函数</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_c_static_text.html#a8721c8be17e626a40390aceeadf03407">CStaticText</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">//析构函数</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_c_static_text.html#a695ad9de5fe5c01e12c64d6819de99c2">~CStaticText</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//设置输出文字的宽度和高度(当创建一个静态文字组件后,这个接口是必须实现的)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_static_text.html#ab726a8726321c419ae2e5caec108640b">SetCharWidthAndHeight</a>(<span class="keywordtype">long</span> lCharWidth,<span class="keywordtype">long</span> lCharHeight);   </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//设置输出文字的颜色</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_static_text.html#af8fc080323b50bf1b79c11e4802f3b93">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_static_text.html#af8fc080323b50bf1b79c11e4802f3b93">SetCharColor</a>(DWORD color)                                  {<a class="code" href="class_c_static_text.html#a88b708a9975047029ddc4a85dfb1a6fe">m_FontColor</a> = color;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//设置输出的文字的内容</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_static_text.html#ae809c572496c2d6077b53ff15fd15772">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_static_text.html#ae809c572496c2d6077b53ff15fd15772">SetOutputText</a>(<span class="keywordtype">string</span> str)                                  {<a class="code" href="class_c_static_text.html#aec5d3e7071b35e6ce7f6696a02e6f71b">m_strOutputText</a> = str;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//渲染文字</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_static_text.html#aab02d41b4da2170edcb354834b44b531">Draw</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//设置输出的文字在矩形区域中的对齐方式</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_static_text.html#aa51ab00bcd7e0eb5d54278e0673d4a32">   29</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_static_text.html#aa51ab00bcd7e0eb5d54278e0673d4a32">SetAlignStyle</a>(DWORD style)                                 {<a class="code" href="class_c_static_text.html#a3613dbeb9a68cc369bf84e0dc664ee12">m_dwAlignStyle</a> = style;}                       </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//设置输出文字的高度</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//void SetCharHeight(long lCharHeight)          {m_lCharHeight = lCharHeight;}</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//设置输出文字的矩形区域</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//void SetTextRect(long left,long top,long right,long bottom);</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//D3D字体对象</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_static_text.html#a208a399e33ba463300ca69c7c5b0280d">   42</a></span>&#160;    ID3DXFont* <a class="code" href="class_c_static_text.html#a208a399e33ba463300ca69c7c5b0280d">m_pFont</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//输出的文字的内容</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_c_static_text.html#aec5d3e7071b35e6ce7f6696a02e6f71b">   45</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_c_static_text.html#aec5d3e7071b35e6ce7f6696a02e6f71b">m_strOutputText</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//字体的高度</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_static_text.html#abcde213b1aa38d8a6661d2c5f3d1afec">   48</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_static_text.html#abcde213b1aa38d8a6661d2c5f3d1afec">m_lCharHeight</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//字体的宽度</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_c_static_text.html#a647661a77ef8b860c3033a4f71a2c364">   51</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_c_static_text.html#a647661a77ef8b860c3033a4f71a2c364">m_lCharWidth</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//字体的颜色</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_static_text.html#a88b708a9975047029ddc4a85dfb1a6fe">   54</a></span>&#160;    D3DCOLOR <a class="code" href="class_c_static_text.html#a88b708a9975047029ddc4a85dfb1a6fe">m_FontColor</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//输出的文字在矩形区域内的对齐方式</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_c_static_text.html#a3613dbeb9a68cc369bf84e0dc664ee12">   57</a></span>&#160;    DWORD <a class="code" href="class_c_static_text.html#a3613dbeb9a68cc369bf84e0dc664ee12">m_dwAlignStyle</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="ttc" id="class_c_static_text_html_a3613dbeb9a68cc369bf84e0dc664ee12"><div class="ttname"><a href="class_c_static_text.html#a3613dbeb9a68cc369bf84e0dc664ee12">CStaticText::m_dwAlignStyle</a></div><div class="ttdeci">DWORD m_dwAlignStyle</div><div class="ttdef"><b>Definition:</b> StaticText.h:57</div></div>
+<div class="ttc" id="class_c_static_text_html_a8721c8be17e626a40390aceeadf03407"><div class="ttname"><a href="class_c_static_text.html#a8721c8be17e626a40390aceeadf03407">CStaticText::CStaticText</a></div><div class="ttdeci">CStaticText()</div><div class="ttdef"><b>Definition:</b> StaticText.cpp:5</div></div>
+<div class="ttc" id="class_c_static_text_html_abcde213b1aa38d8a6661d2c5f3d1afec"><div class="ttname"><a href="class_c_static_text.html#abcde213b1aa38d8a6661d2c5f3d1afec">CStaticText::m_lCharHeight</a></div><div class="ttdeci">long m_lCharHeight</div><div class="ttdef"><b>Definition:</b> StaticText.h:48</div></div>
+<div class="ttc" id="class_c_static_text_html_ab726a8726321c419ae2e5caec108640b"><div class="ttname"><a href="class_c_static_text.html#ab726a8726321c419ae2e5caec108640b">CStaticText::SetCharWidthAndHeight</a></div><div class="ttdeci">bool SetCharWidthAndHeight(long lCharWidth, long lCharHeight)</div><div class="ttdef"><b>Definition:</b> StaticText.cpp:23</div></div>
+<div class="ttc" id="class_c_static_text_html_a208a399e33ba463300ca69c7c5b0280d"><div class="ttname"><a href="class_c_static_text.html#a208a399e33ba463300ca69c7c5b0280d">CStaticText::m_pFont</a></div><div class="ttdeci">ID3DXFont * m_pFont</div><div class="ttdef"><b>Definition:</b> StaticText.h:42</div></div>
+<div class="ttc" id="_component_8h_html"><div class="ttname"><a href="_component_8h.html">Component.h</a></div></div>
+<div class="ttc" id="class_c_static_text_html_aab02d41b4da2170edcb354834b44b531"><div class="ttname"><a href="class_c_static_text.html#aab02d41b4da2170edcb354834b44b531">CStaticText::Draw</a></div><div class="ttdeci">void Draw(void)</div><div class="ttdef"><b>Definition:</b> StaticText.cpp:42</div></div>
+<div class="ttc" id="class_c_static_text_html_a647661a77ef8b860c3033a4f71a2c364"><div class="ttname"><a href="class_c_static_text.html#a647661a77ef8b860c3033a4f71a2c364">CStaticText::m_lCharWidth</a></div><div class="ttdeci">long m_lCharWidth</div><div class="ttdef"><b>Definition:</b> StaticText.h:51</div></div>
+<div class="ttc" id="class_c_static_text_html_aa51ab00bcd7e0eb5d54278e0673d4a32"><div class="ttname"><a href="class_c_static_text.html#aa51ab00bcd7e0eb5d54278e0673d4a32">CStaticText::SetAlignStyle</a></div><div class="ttdeci">void SetAlignStyle(DWORD style)</div><div class="ttdef"><b>Definition:</b> StaticText.h:29</div></div>
+<div class="ttc" id="class_c_static_text_html_af8fc080323b50bf1b79c11e4802f3b93"><div class="ttname"><a href="class_c_static_text.html#af8fc080323b50bf1b79c11e4802f3b93">CStaticText::SetCharColor</a></div><div class="ttdeci">void SetCharColor(DWORD color)</div><div class="ttdef"><b>Definition:</b> StaticText.h:20</div></div>
+<div class="ttc" id="class_c_static_text_html_a88b708a9975047029ddc4a85dfb1a6fe"><div class="ttname"><a href="class_c_static_text.html#a88b708a9975047029ddc4a85dfb1a6fe">CStaticText::m_FontColor</a></div><div class="ttdeci">D3DCOLOR m_FontColor</div><div class="ttdef"><b>Definition:</b> StaticText.h:54</div></div>
+<div class="ttc" id="class_c_component_html"><div class="ttname"><a href="class_c_component.html">CComponent</a></div><div class="ttdef"><b>Definition:</b> Component.h:7</div></div>
+<div class="ttc" id="class_c_static_text_html_ae809c572496c2d6077b53ff15fd15772"><div class="ttname"><a href="class_c_static_text.html#ae809c572496c2d6077b53ff15fd15772">CStaticText::SetOutputText</a></div><div class="ttdeci">void SetOutputText(string str)</div><div class="ttdef"><b>Definition:</b> StaticText.h:23</div></div>
+<div class="ttc" id="class_c_static_text_html_a695ad9de5fe5c01e12c64d6819de99c2"><div class="ttname"><a href="class_c_static_text.html#a695ad9de5fe5c01e12c64d6819de99c2">CStaticText::~CStaticText</a></div><div class="ttdeci">~CStaticText()</div><div class="ttdef"><b>Definition:</b> StaticText.cpp:17</div></div>
+<div class="ttc" id="class_c_static_text_html_aec5d3e7071b35e6ce7f6696a02e6f71b"><div class="ttname"><a href="class_c_static_text.html#aec5d3e7071b35e6ce7f6696a02e6f71b">CStaticText::m_strOutputText</a></div><div class="ttdeci">string m_strOutputText</div><div class="ttdef"><b>Definition:</b> StaticText.h:45</div></div>
+<div class="ttc" id="class_c_static_text_html"><div class="ttname"><a href="class_c_static_text.html">CStaticText</a></div><div class="ttdef"><b>Definition:</b> StaticText.h:6</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2018年 七月 1日 星期日 22:10:09 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>
