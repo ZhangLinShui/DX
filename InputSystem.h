@@ -18,6 +18,11 @@ struct tagMouseKey
 };
 
 //鼠标类,对游戏进行基本的控制
+/**
+  *这是一个输入类
+
+
+*/
 class CInputSystem : public IObserver
 {
 
@@ -141,10 +146,55 @@ private:
 
 
 public:
+	/**
+
+	  *这是一个检测人物是否贴着模型函数
+	  
+	  * @param pos 人物当前的位置
+	  * @param it 人物当前在那个模型上
+	  * @param start 射线的起点
+	  
+	  * @note 本函数内部使用DX内部射线检测函数 对模型精确检测 \n
+	  并是逻辑代码处理人物的世界坐标的Y值
+	*/
 		bool IsDrop(D3DXVECTOR3 pos,CModelCopy*it, D3DXVECTOR3 &start);
-		bool IsCanMove(D3DXVECTOR3 pos, D3DXVECTOR3 dir, CModelCopy*);
+		/**
+
+		  *这是一个检测人物是否能水平移动的函数
+		  
+		  * @param pos 人物下一帧即将到达的位置
+		  * @param dir 人物的前进方向
+		  * @param it 人物前进方向上碰到模型 
+		  
+		  * @note 本函数内部精确检测人物和模型之间的碰撞 \n
+		  并是逻辑代码处理人物的世界坐标的位置
+		*/
+		bool IsCanMove(D3DXVECTOR3 pos, D3DXVECTOR3 dir, CModelCopy* it);
 		void SetCamera(CModelCopy*);
+		/**
+
+		*这是一个检测人物是否能水平移动的函数
+
+		* @param pos 人物下一帧即将到达的位置
+		* @param dir 人物的前进方向
+		* @param start 射线的起点 （射线经过偏移 ）
+
+		* @note 本函数内部遍历所有模型和当前的地图模型 \n
+		并找到人物前进方向上的模型
+		*/
 		bool HitTestAABBCModelCopy(D3DXVECTOR3 pos,D3DXVECTOR3 dir, D3DXVECTOR3 &start);
+		/**
+
+		*这是一个检测人物在世界坐标下的高度的函数\n
+		*也就是人物是否应该站在模型上或者地图上
+
+		* @param pos 人物下当前的位置
+		* @param dir 人物的前进方向
+		* @param start 射线的起点 
+
+		* @note 本函数内部遍历所有模型和当前的地图模型 \n
+		并找到人物前进方向上的模型
+		*/
 		bool HitTestAABBCModelCopy1(D3DXVECTOR3 pos, D3DXVECTOR3 &start);
 		bool HitTestAABBCharacter();	
 };
